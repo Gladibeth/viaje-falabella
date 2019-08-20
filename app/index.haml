@@ -1,0 +1,199 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Viajes Falabella
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/icofont.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    
+  %body
+    %header
+      %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
+        .main-brand
+          %a.navbar-brand{:href => "#"}
+            %img#iso{:src => "assets/img/logo.png"}/
+          %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+            %span.navbar-toggler-icon
+        #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+          %ul.navbar-nav.mr-autos
+            %li.nav-item.dropdown
+              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Destinos
+              .dropdown-menu{"aria-labelledby" => "dropdown01"}
+                .d-flex
+                  %a.dropdown-item{:href => "#"} Europa
+                  %a.dropdown-item{:href => "#"} Caribe
+                  %a.dropdown-item{:href => "#"} Turquía
+                  %a.dropdown-item{:href => "#"} Resto del mundo
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                ¿Cómo es tu viaje
+            %li.nav-item
+              %a.nav-link{:href => "#"} Recursos viajeros
+            %li.nav-item
+              %a.nav-link{:href => "#"} Gastronomía
+            %li.nav-item
+              %a.nav-link{:href => "#"} Sobre nosotros
+        .main-nav__search
+          %a{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-search
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .main-banner__text
+            .main-banner__number
+              %span 01
+              .main-banner-smaline
+            .main-banner__title
+              %p Lorem
+              %span ipsum
+            .main-banner__description
+              %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
+          .main-banner__img
+            %img{:src => "assets/img/Capadocia.jpg"}/
+        .main-banner__item
+          .main-banner__img
+            %img{:src => "assets/img/recomendados-1.jpg"}/
+      .main-slider__next
+        .main-slider__box
+          .main-slider__text
+            %hr.main-slider__line/
+            .main-slider__number
+              %span 2
+              .main-slider-smaline
+            .main-slider__title
+              %p Lorem
+            .main-slider__description
+              %p ipsum
+          .main-slider__img
+            %img.main-slider__img--active{:src => "assets/img/recomendados-1.jpg"}/
+        
+
+
+
+    %section.main-destiny
+      .container
+        .main-destiny__content
+          .main-destiny__items
+            .main-destiny__item
+              .main-destiny__box
+                .main-destiny__title
+                  %p Edimburgo
+                .main-destiny__site
+                  .main-destiny__icon
+                    %i
+                  .main-destiny__text
+                    Escocia
+                %hr.main-articles__line/
+                .main-destiny__descrption
+                  %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi perferendis, dignissimos.
+
+              .main-destiny__img
+                %img{:src => "assets/img/recomendados-1.jpg"}/
+          .main-destiny__item
+            .main-destiny__item
+              .main-destiny__box
+                .main-destiny__title
+                  %p Edimburgo
+                .main-destiny__site
+                  .main-destiny__icon
+                    %i
+                  .main-destiny__text
+                    Escocia
+                %hr.main-articles__line/
+                .main-destiny__descrption
+                  %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi perferendis, dignissimos.
+
+              .main-destiny__img
+                %img{:src => "assets/img/recomendados-1.jpg"}/
+        
+    %section.main-post
+      .container
+        .main-post__content
+          .main-post__box
+            .main-post__title
+              %p
+                lorem
+                %span ipsum 
+            .main-post__description
+              %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae tempore placeat dolor repudiandae architecto tempora assumenda, eos temporibus.
+            .main-post__btn
+              %a.btn_custom.btn--medium.btn-border{:href =>"country.html"}
+                Visítala!
+
+          .main-post__img
+            %img{:src => "assets/img/viajero-del-mes.jpg"}/
+    %section.main-articles
+      .container
+        .content__title
+          %h2 últimos articulos
+        .main-articles__content
+          .main-articles__item
+            .main-articles__img
+              %img.img-round{:src => "assets/img/articulo-1.jpg"}/
+            .main-articles__title
+              %p Lorem 
+              %span ipsum 
+            .main-article__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-articles__item
+            .main-articles__img
+              %img.img-round{:src => "assets/img/articulo-2.jpg"}/
+            .main-articles__title
+              %p Lorem 
+              %span ipsum 
+            .main-article__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-articles__item
+            .main-articles__img
+              %img.img-round{:src => "assets/img/articulo-3.jpg"}/
+            .main-articles__title
+              %p Lorem 
+              %span ipsum 
+            .main-article__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-articles__item
+            .main-articles__img
+              %img.img-round{:src => "assets/img/articulo-4.jpg"}/
+            .main-articles__title
+              %p Lorem 
+              %span ipsum 
+            .main-article__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+        %hr.main-articles__line/
+    %footer
+      .container
+        .main-footer
+          .content__title
+            %h2
+              FOOTER
+          %a{:href=>""}
+            Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.
+
+
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            %h5#exampleModalLabel.modal-title Modal title
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            \...
+          .modal-footer
+            %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
+            %button.btn.btn-primary{:type => "button"} Save changes
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}

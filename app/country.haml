@@ -1,0 +1,112 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Viajes Falabella
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    
+  %body
+    %section.main-parallax
+      .overlay
+      .main-parallax__title
+        %h1 Europa
+    %section.main-breadcrumb
+      .container
+        %nav{'aria-label' => 'breadcrumb'}
+          %ol.breadcrumb
+            %li.breadcrumb-item.active
+              %a{:href=>""} Recomendaciones
+            %li.breadcrumb-item{"aria-current"=>"page"} Paises
+    %section.main-country.main-country
+      .container
+        .main-country__content
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Alemania
+              -# %span ipsum 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p España
+              -# %span ipsum 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Grecia
+              -# %span ipsum 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Holanda
+              -# %span ipsum 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Inglaterra
+              -# %span ipsum 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Italia
+              -# %span ipsum 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Republica
+              %span checa 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+          .main-country__item
+            .main-country__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-country__title
+              %p Suiza
+              %span checa 
+            .main-country__btn
+              .btn_custom.btn--medium.btn--filled
+                Ver más
+        %hr.main-articles__line/
+    %footer
+      .container
+        .main-footer
+          .content__title
+            %h2
+              FOOTER
+          %a{:href=>""}
+            Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.
+
+
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/main.js"}
