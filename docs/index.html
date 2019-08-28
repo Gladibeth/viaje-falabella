@@ -30,10 +30,10 @@
             <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
             <div aria-labelledby="dropdown01" class="dropdown-menu">
               <div class="d-flex">
-                <a class="dropdown-item" href="#">Europa</a>
-                <a class="dropdown-item" href="#">Caribe</a>
-                <a class="dropdown-item" href="#">Turquía</a>
-                <a class="dropdown-item" href="#">Resto del mundo</a>
+                <a class="dropdown-item" href="recommended.html">Europa</a>
+                <a class="dropdown-item" href="recommended.html">Caribe</a>
+                <a class="dropdown-item" href="recommended.html">Turquía</a>
+                <a class="dropdown-item" href="recommended.html">Resto del mundo</a>
               </div>
             </div>
           </li>
@@ -57,6 +57,9 @@
         <a data-toggle="modal" href="#exampleModal">
             <i class="fa fa-search"></i>
           </a>
+        <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
+            <i class="fa fa-envelope-o"></i>
+          </a>
       </div>
     </nav>
   </header>
@@ -75,12 +78,47 @@
           <div class="main-banner__description">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
           </div>
+          <div class="main-banner__mail">
+            <div class="main-banner__boxmail">
+              <i class="fa fa-envelope"></i>
+              <p>mailing ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-banner__scroll">
+          <a href="#">
+              SCROLL
+            </a>
         </div>
         <div class="main-banner__img">
           <img src="assets/img/Capadocia.jpg">
         </div>
       </div>
       <div class="main-banner__item">
+        <div class="main-banner__text">
+          <div class="main-banner__number">
+            <span>02</span>
+            <div class="main-banner-smaline"></div>
+          </div>
+          <div class="main-banner__title">
+            <p>Lorem</p>
+            <span>ipsum</span>
+          </div>
+          <div class="main-banner__description">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
+          </div>
+          <div class="main-banner__mail">
+            <div class="main-banner__boxmail">
+              <i class="fa fa-envelope"></i>
+              <p>mailing ipsum</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-banner__scroll">
+          <a href="#">
+              SCROLL
+            </a>
+        </div>
         <div class="main-banner__img">
           <img src="assets/img/recomendados-1.jpg">
         </div>
@@ -130,7 +168,7 @@
               </div>
             </div>
             <div class="main-destiny__img">
-              <img src="assets/img/recomendados-1.jpg">
+              <img class="lazy" data-src="assets/img/recomendados-1.jpg">
             </div>
           </div>
         </div>
@@ -154,7 +192,7 @@
               </div>
             </div>
             <div class="main-destiny__img">
-              <img src="assets/img/recomendados-1.jpg">
+              <img class="lazy" data-src="assets/img/recomendados-1.jpg">
             </div>
           </div>
         </div>
@@ -181,7 +219,7 @@
           </div>
         </div>
         <div class="main-post__img">
-          <img src="assets/img/viajero-del-mes.jpg">
+          <img class="lazy" data-src="assets/img/viajero-del-mes.jpg">
         </div>
       </div>
     </div>
@@ -194,7 +232,7 @@
       <div class="main-articles__content">
         <div class="main-articles__item">
           <div class="main-articles__img">
-            <img class="img-round" src="assets/img/articulo-1.jpg">
+            <img class="img-round lazy" data-src="assets/img/articulo-1.jpg">
           </div>
           <div class="main-articles__title">
             <p>Lorem</p>
@@ -208,7 +246,7 @@
         </div>
         <div class="main-articles__item">
           <div class="main-articles__img">
-            <img class="img-round" src="assets/img/articulo-2.jpg">
+            <img class="img-round lazy" data-src="assets/img/articulo-2.jpg">
           </div>
           <div class="main-articles__title">
             <p>Lorem</p>
@@ -222,7 +260,7 @@
         </div>
         <div class="main-articles__item">
           <div class="main-articles__img">
-            <img class="img-round" src="assets/img/articulo-3.jpg">
+            <img class="img-round lazy" data-src="assets/img/articulo-3.jpg">
           </div>
           <div class="main-articles__title">
             <p>Lorem</p>
@@ -236,7 +274,7 @@
         </div>
         <div class="main-articles__item">
           <div class="main-articles__img">
-            <img class="img-round" src="assets/img/articulo-4.jpg">
+            <img class="img-round lazy" data-src="assets/img/articulo-4.jpg">
           </div>
           <div class="main-articles__title">
             <p>Lorem</p>
@@ -270,17 +308,41 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <div class="modal-box__title">
+            <h5 class="modal-title">Lorem</h5>
+            <h5 class="modal-subtitle">Ipsum</h5>
+            <div class="modal-box__content">
+              <p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis ab quia eaque a cum? Voluptatem repellat officia cum repudiandae doloribus optio officiis, mollitia minima quos neque deleniti quibusdam?</p>
+              <hr class="main-articles__line">
+            </div>
+          </div>
           <button aria-label="Close" class="close" data-dismiss="modal" type="button">
               <span aria-hidden="true">×</span>
             </button>
         </div>
         <div class="modal-body">
-          ...
+          <form>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput" placeholder="Nombre" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Destino" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="phone">
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
-          <button class="btn btn-primary" type="button">Save changes</button>
+          <div class="btn_modal">
+            Enviar
+          </div>
+          <div class="modal-footer__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus fugiat non veritatis, aperiam porro maiores quo.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -290,6 +352,16 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/setting-slick.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy"
+    });
+    if (lazyLoadInstance) {
+      lazyLoadInstance.update();
+    }
+  </script>
 </body>
 
 </html>

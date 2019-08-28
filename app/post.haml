@@ -8,8 +8,41 @@
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/icofont.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
     
   %body
+    %header
+      %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
+        .main-brand
+          %a.navbar-brand{:href => "#"}
+            %img#iso{:src => "assets/img/logo.png"}/
+          %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+            %span.navbar-toggler-icon
+        #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+          %ul.navbar-nav.mr-autos
+            %li.nav-item.dropdown
+              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Destinos
+              .dropdown-menu{"aria-labelledby" => "dropdown01"}
+                .d-flex
+                  %a.dropdown-item{:href => "recommended.html"} Europa
+                  %a.dropdown-item{:href => "recommended.html"} Caribe
+                  %a.dropdown-item{:href => "recommended.html"} Turquía
+                  %a.dropdown-item{:href => "recommended.html"} Resto del mundo
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                ¿Cómo es tu viaje
+            %li.nav-item
+              %a.nav-link{:href => "#"} Recursos viajeros
+            %li.nav-item
+              %a.nav-link{:href => "#"} Gastronomía
+            %li.nav-item
+              %a.nav-link{:href => "#"} Sobre nosotros
+        .main-nav__search
+          %a{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-search
+          %a.main-nav__mail{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-envelope-o
     %section.main-parallax
       .overlay
       .main-parallax__title.main-parallax__title--post
@@ -21,10 +54,10 @@
     
     %section.main-posts
       .container
-        .main-posts__content
-          .main-posts__item
-            .main-posts__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+        .main-detailsposts__content
+          -# .main-detailspost__img
+          -#   %img.img-round{:src => "assets/img/img-4.jpeg"}/
+          .main-posts__item{:href=>"post.html"}
             .main-posts__box
               .main-posts__title
                 %p
@@ -35,98 +68,94 @@
                 .main-posts__line
                 .main-posts__date
                   %span 18/08/2019
+              %hr.main-articles__line/
+              .main-posts__social
+                .main-posts__comments
+                  %p 999
+                .main-posts__tags
+                  %p tags
+                  %p tags
               .main-posts__description
                 %p 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
-              .main-posts__btn
-                .btn_custom.btn--medium.btn--filled
-                  Ver más
-              %hr.main-articles__line/
-              .main-posts__social
-                .main-posts__comments
-                  %p 999
-                .main-posts__tags
-                  %p tags
-                  %p tags
-          .main-posts__item
-            .main-posts__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
-            .main-posts__box
-              .main-posts__title
-                %p
-                  Lorem ipsum
-              .main-posts__autor
-                .main-posts__name
-                  %p Gladibeth Franco
-                .main-posts__line
-                .main-posts__date
-                  %span 18/08/2019
-              .main-posts__description
-                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
-              .main-posts__btn
-                .btn_custom.btn--medium.btn--filled
-                  Ver más
-              %hr.main-articles__line/
-              .main-posts__social
-                .main-posts__comments
-                  %p 999
-                .main-posts__tags
-                  %p tags
-                  %p tags
-          .main-posts__item
-            .main-posts__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
-            .main-posts__box
-              .main-posts__title
-                %p
-                  Lorem ipsum
-              .main-posts__autor
-                .main-posts__name
-                  %p Gladibeth Franco
-                .main-posts__line
-                .main-posts__date
-                  %span 18/08/2019
-              .main-posts__description
-                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
-              .main-posts__btn
-                .btn_custom.btn--medium.btn--filled
-                  Ver más
-              %hr.main-articles__line/
-              .main-posts__social
-                .main-posts__comments
-                  %p 999
-                .main-posts__tags
-                  %p tags
-                  %p tags
-          .main-posts__item
-            .main-posts__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
-            .main-posts__box
-              .main-posts__title
-                %p
-                  Lorem ipsum
-              .main-posts__autor
-                .main-posts__name
-                  %p Gladibeth Franco
-                .main-posts__line
-                .main-posts__date
-                  %span 18/08/2019
-              .main-posts__description
-                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
-              .main-posts__btn
-                .btn_custom.btn--medium.btn--filled
-                  Ver más
-              %hr.main-articles__line/
-              .main-posts__social
-                .main-posts__comments
-                  %p 999
-                .main-posts__tags
-                  %p tags
-                  %p tags
-              
-            
+                %p 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
+                %p 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
 
+                .main-posts__description--img
+                  %img.img-round{:src => "assets/img/img-4.jpeg"}/ 
+                %p 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.tur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
+                .main-posts__description--redes
+                  %i.fa.fa-facebook
+                  %i.fa.fa-twitter
+                  %i.fa.fa-linkedin
+              .main-posts__btn
+                .btn_custom.btn--medium.btn--filled
+                  Ver más
+          
         %hr.main-articles__line/
+    %section.main-post__contact
+      .container
+        .main-post__content
+          .main-post__info
+            %h5.modal-title Lorem 
+            %h5.modal-subtitle Ipsum
+            .modal-box__content
+              %p.modal-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis ab quia eaque a cum? Voluptatem repellat officia cum repudiandae doloribus optio officiis, mollitia minima quos neque deleniti quibusdam?
+
+          .main-post__form
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Destino", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .group-btn
+                .btn_modal
+                  Enviar
+                .modal-footer__content
+                  %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus fugiat non veritatis, aperiam porro maiores quo.
+    %section.main-post__commend
+      .container
+        .main-commend__title
+          %h2 comentarios
+        .main-commend__formbox
+          .main-commend__form
+            .main-post__form--img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-post__form--form
+              %form
+                .form-group
+                  %input#formGroupExampleInput.form-control{:placeholder => "Nombre", :type => "text"}/
+                .form-group
+                  %input#formGroupExampleInput2.form-control{:placeholder => "Destino", :type => "text"}/
+                .float-right
+                  .btn_custom.btn--medium.btn--filled
+                    Ver más
+        %hr.line-gray/
+        .main-commend__formbox
+          .main-commend__form
+            .main-post__form--img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-post__form--info
+              .main-post__form--name
+                %span.form-name Gladibeth Franco
+                %span 09/09/2019
+              .main-post__form--description
+                %p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quae nam quis ipsum cupiditate quod, culpa numquam dol.
+              .main-post__form--detail
+                .main-post__form--arrow
+                  %i.fa.fa-arrow-down
+                  %i.fa.fa-arrow-down
+                .main-post__form--compatir
+                  %span Responder
+                  %span Compartir
     %footer
       .container
         .main-footer
@@ -139,4 +168,7 @@
 
 
     %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}

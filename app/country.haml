@@ -8,8 +8,41 @@
     %link{rel: "stylesheet", href:"assets/css/main.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick.css"}/
     %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/icofont.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
     
   %body
+    %header
+      %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
+        .main-brand
+          %a.navbar-brand{:href => "#"}
+            %img#iso{:src => "assets/img/logo.png"}/
+          %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+            %span.navbar-toggler-icon
+        #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+          %ul.navbar-nav.mr-autos
+            %li.nav-item.dropdown
+              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Destinos
+              .dropdown-menu{"aria-labelledby" => "dropdown01"}
+                .d-flex
+                  %a.dropdown-item{:href => "recommended.html"} Europa
+                  %a.dropdown-item{:href => "recommended.html"} Caribe
+                  %a.dropdown-item{:href => "recommended.html"} Turquía
+                  %a.dropdown-item{:href => "recommended.html"} Resto del mundo
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                ¿Cómo es tu viaje
+            %li.nav-item
+              %a.nav-link{:href => "#"} Recursos viajeros
+            %li.nav-item
+              %a.nav-link{:href => "#"} Gastronomía
+            %li.nav-item
+              %a.nav-link{:href => "#"} Sobre nosotros
+        .main-nav__search
+          %a{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-search
+          %a.main-nav__mail{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-envelope-o
     %section.main-parallax
       .overlay
       .main-parallax__title
@@ -109,4 +142,7 @@
 
 
     %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}

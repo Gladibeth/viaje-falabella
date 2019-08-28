@@ -9,9 +9,60 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/slick.css" rel="stylesheet">
   <link href="assets/css/slick-theme.css" rel="stylesheet">
+  <link href="assets/css/icofont.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
+      <div class="main-brand">
+        <a class="navbar-brand" href="#">
+            <img id="iso" src="assets/img/logo.png">
+          </a>
+        <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      </div>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-autos">
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
+            <div aria-labelledby="dropdown01" class="dropdown-menu">
+              <div class="d-flex">
+                <a class="dropdown-item" href="recommended.html">Europa</a>
+                <a class="dropdown-item" href="recommended.html">Caribe</a>
+                <a class="dropdown-item" href="recommended.html">Turquía</a>
+                <a class="dropdown-item" href="recommended.html">Resto del mundo</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+                ¿Cómo es tu viaje
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recursos viajeros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gastronomía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre nosotros</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__search">
+        <a data-toggle="modal" href="#exampleModal">
+            <i class="fa fa-search"></i>
+          </a>
+        <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+      </div>
+    </nav>
+  </header>
   <section class="main-parallax">
     <div class="overlay"></div>
     <div class="main-parallax__title">
@@ -158,6 +209,9 @@
     </div>
   </footer>
   <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/setting-slick.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

@@ -25,10 +25,10 @@
               %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Destinos
               .dropdown-menu{"aria-labelledby" => "dropdown01"}
                 .d-flex
-                  %a.dropdown-item{:href => "#"} Europa
-                  %a.dropdown-item{:href => "#"} Caribe
-                  %a.dropdown-item{:href => "#"} Turquía
-                  %a.dropdown-item{:href => "#"} Resto del mundo
+                  %a.dropdown-item{:href => "recommended.html"} Europa
+                  %a.dropdown-item{:href => "recommended.html"} Caribe
+                  %a.dropdown-item{:href => "recommended.html"} Turquía
+                  %a.dropdown-item{:href => "recommended.html"} Resto del mundo
             %li.nav-item.active
               %a.nav-link{:href => "#"}
                 ¿Cómo es tu viaje
@@ -41,6 +41,8 @@
         .main-nav__search
           %a{:href => "#exampleModal", "data-toggle" => "modal"}
             %i.fa.fa-search
+          %a.main-nav__mail{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-envelope-o
     .main-banner
       .main-banner__content
         .main-banner__item
@@ -53,11 +55,34 @@
               %span ipsum
             .main-banner__description
               %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
+            .main-banner__mail
+              .main-banner__boxmail
+                %i.fa.fa-envelope
+                %p mailing ipsum
+          .main-banner__scroll
+            %a{:href=> "#"}
+              SCROLL
           .main-banner__img
-            %img{:src => "assets/img/Capadocia.jpg"}/
+            %img{ :src => "assets/img/Capadocia.jpg"}/
         .main-banner__item
+          .main-banner__text
+            .main-banner__number
+              %span 02
+              .main-banner-smaline
+            .main-banner__title
+              %p Lorem
+              %span ipsum
+            .main-banner__description
+              %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam. 
+            .main-banner__mail
+              .main-banner__boxmail
+                %i.fa.fa-envelope
+                %p mailing ipsum
+          .main-banner__scroll
+            %a{:href=> "#"}
+              SCROLL
           .main-banner__img
-            %img{:src => "assets/img/recomendados-1.jpg"}/
+            %img{ :src =>"assets/img/recomendados-1.jpg"}/
       .main-slider__next
         .main-slider__box
           .main-slider__text
@@ -70,7 +95,7 @@
             .main-slider__description
               %p ipsum
           .main-slider__img
-            %img.main-slider__img--active{:src => "assets/img/recomendados-1.jpg"}/
+            %img.main-slider__img--active{ :src =>"assets/img/recomendados-1.jpg"}/
         
 
 
@@ -93,7 +118,7 @@
                   %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi perferendis, dignissimos.
 
               .main-destiny__img
-                %img{:src => "assets/img/recomendados-1.jpg"}/
+                %img.lazy{"data-src" =>"assets/img/recomendados-1.jpg"}/
           .main-destiny__item
             .main-destiny__item
               .main-destiny__box
@@ -109,7 +134,7 @@
                   %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi perferendis, dignissimos.
 
               .main-destiny__img
-                %img{:src => "assets/img/recomendados-1.jpg"}/
+                %img.lazy{"data-src" => "assets/img/recomendados-1.jpg"}/
         
     %section.main-post
       .container
@@ -126,7 +151,7 @@
                 Visítala!
 
           .main-post__img
-            %img{:src => "assets/img/viajero-del-mes.jpg"}/
+            %img.lazy{"data-src" =>"assets/img/viajero-del-mes.jpg"}/
     %section.main-articles
       .container
         .content__title
@@ -134,7 +159,7 @@
         .main-articles__content
           .main-articles__item
             .main-articles__img
-              %img.img-round{:src => "assets/img/articulo-1.jpg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/articulo-1.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -143,7 +168,7 @@
                 Ver más
           .main-articles__item
             .main-articles__img
-              %img.img-round{:src => "assets/img/articulo-2.jpg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/articulo-2.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -152,7 +177,7 @@
                 Ver más
           .main-articles__item
             .main-articles__img
-              %img.img-round{:src => "assets/img/articulo-3.jpg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/articulo-3.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -161,7 +186,7 @@
                 Ver más
           .main-articles__item
             .main-articles__img
-              %img.img-round{:src => "assets/img/articulo-4.jpg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/articulo-4.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -183,17 +208,43 @@
       .modal-dialog{:role => "document"}
         .modal-content
           .modal-header
-            %h5#exampleModalLabel.modal-title Modal title
+            .modal-box__title
+              %h5.modal-title Lorem 
+              %h5.modal-subtitle Ipsum
+              .modal-box__content
+                %p.modal-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis ab quia eaque a cum? Voluptatem repellat officia cum repudiandae doloribus optio officiis, mollitia minima quos neque deleniti quibusdam?
+                %hr.main-articles__line/
             %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
               %span{"aria-hidden" => "true"} ×
           .modal-body
-            \...
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Destino", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+
           .modal-footer
-            %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
-            %button.btn.btn-primary{:type => "button"} Save changes
+            .btn_modal
+              Enviar
+            .modal-footer__content
+              %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus fugiat non veritatis, aperiam porro maiores quo.
 
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/slick.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
+    %script{:src => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
+    %script{:src => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
+  
+    :javascript
+      var lazyLoadInstance = new LazyLoad({
+          elements_selector: ".lazy"
+      });
+      if (lazyLoadInstance) {
+        lazyLoadInstance.update();
+      }

@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900");
 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900");
+
 .btn_custom {
   background-color: transparent;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   line-height: 1.1;
+  display: flex;
+  justify-content: center;
 }
 
 .btn--small {
@@ -294,6 +298,67 @@
   color: #00b050;
 }
 
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-header {
+  border-bottom: 1px solid transparent;
+  padding: 20px 35px 0 35px;
+}
+
+.modal-body {
+  padding: 0 35px;
+}
+
+.modal-title {
+  font-size: 55px;
+  font-weight: 700;
+  color: #3fae2a;
+}
+
+.modal-subtitle {
+  font-size: 55px;
+  font-weight: 300;
+  color: #3fae2a;
+}
+
+.modal-description {
+  color: #3fae2a;
+  font-size: 15px;
+}
+
+.close {
+  color: #3fae2a;
+  opacity: 1;
+}
+
+.modal-footer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 0 45px 20px 45px;
+  border-top: 1px solid transparent;
+}
+
+.modal-footer__content p {
+  color: #3fae2a;
+  font-size: 15px;
+}
+
+.form-control {
+  background-color: #eee;
+}
+
+.btn_modal {
+  border-bottom: 5px solid #3fae2a;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: #eee !important;
 }
@@ -351,9 +416,22 @@ section {
 
 .main-nav__search.main-nav__search--scroll a {
   color: #000;
+  margin-right: 10px;
+  padding: 5px 10px;
 }
 
 .main-nav__search a {
+  color: #fff;
+}
+
+.main-nav__search .main-nav__mail {
+  opacity: 0;
+}
+
+.main-nav__search .main-nav__mail.main-nav__mail--scroll {
+  opacity: 1;
+  background-color: green;
+  padding: 5px 10px;
   color: #fff;
 }
 
@@ -509,6 +587,43 @@ section {
   width: 100%;
   object-fit: cover;
   height: 100%;
+}
+
+.main-banner__mail {
+  padding: 30px 25px;
+}
+
+.main-banner__mail .main-banner__boxmail {
+  display: flex;
+  align-items: baseline;
+  background-color: #fff;
+  padding: 5px;
+  width: 50%;
+  justify-content: flex-start;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.main-banner__mail .main-banner__boxmail i {
+  margin-right: 5px;
+}
+
+.main-banner__scroll {
+  position: absolute;
+  bottom: 115px;
+  left: 50%;
+  transform: rotate(90deg);
+  border-bottom: 3px solid #fff;
+}
+
+.main-banner__scroll a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-banner__scroll a:hover {
+  text-decoration: none;
+  outline: none;
 }
 
 .main-banner__img {
@@ -673,8 +788,8 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0);
-  opacity: .8;
+  background: black;
+  opacity: .5;
 }
 
 .breadcrumb {
@@ -776,10 +891,96 @@ footer {
   margin-left: 10px;
 }
 
+.main-detailsposts__content {
+  display: grid;
+  grid-auto-columns: 70% 30% !important;
+}
+
+.main-detailsposts__content .main-detailsposts__img {
+  height: 300px;
+}
+
+.main-detailsposts__content .main-detailsposts__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-detailsposts__content .main-posts__box {
+  background-color: transparent;
+  padding: 30px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__title p {
+  font-size: 50px;
+  color: #3fae2a;
+  font-weight: 800;
+  margin: 0px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__title p span {
+  font-size: 50px;
+  color: #3fae2a;
+  font-weight: 800;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__autor {
+  display: flex;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__autor .main-posts__line {
+  width: 2px;
+  height: 25px;
+  background-color: gray;
+  margin: 0 5px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__social .main-posts__tags {
+  display: flex;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__social .main-posts__tags p:first-child {
+  margin-right: 10px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__description .main-posts__description--img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__description .main-posts__description--img img {
+  width: 100%;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__description .main-posts__description--redes {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__description .main-posts__description--redes i {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+  color: #fff;
+  margin-right: 10px;
+}
+
 .main-posts__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
+  margin-top: 100px;
 }
 
 .main-posts__content .main-posts__box {
@@ -842,4 +1043,99 @@ footer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.main-post__contact {
+  background-color: #fff;
+}
+
+.main-post__content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main-post__info {
+  padding-right: 20px;
+  border-right: 4px solid #3fae2a;
+}
+
+.main-post__form {
+  padding-left: 15px;
+}
+
+.group-btn {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.group-btn .btn_modal {
+  width: 50%;
+}
+
+.main-commend__formbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-post__form--img {
+  width: 100px;
+}
+
+.main-post__form--img img {
+  width: 100%;
+}
+
+.main-commend__form {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  width: 600px;
+}
+
+.main-commend__title {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-commend__title h2 {
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3fae2a;
+}
+
+.main-post__form--form input {
+  background-color: #fff;
+}
+
+.line-gray {
+  width: 55%;
+}
+
+.main-post__form--name {
+  display: flex;
+}
+
+.main-post__form--name .form-name {
+  font-weight: 700;
+}
+
+.main-post__form--name span {
+  margin-right: 10px;
+}
+
+.main-post__form--detail {
+  display: flex;
+}
+
+.main-post__form--compatir {
+  display: flex;
+  margin-left: 10px;
+}
+
+.main-post__form--compatir span {
+  color: #3fae2a;
+  text-transform: uppercase;
+  margin-right: 10px;
 }

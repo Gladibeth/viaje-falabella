@@ -1,0 +1,202 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Viajes Falabella
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/icofont.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    
+  %body
+    %header
+      %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
+        .main-brand
+          %a.navbar-brand{:href => "#"}
+            %img#iso{:src => "assets/img/logo.png"}/
+          %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+            %span.navbar-toggler-icon
+        #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
+          %ul.navbar-nav.mr-autos
+            %li.nav-item.dropdown
+              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Destinos
+              .dropdown-menu{"aria-labelledby" => "dropdown01"}
+                .d-flex
+                  %a.dropdown-item{:href => "recommended.html"} Europa
+                  %a.dropdown-item{:href => "recommended.html"} Caribe
+                  %a.dropdown-item{:href => "recommended.html"} Turquía
+                  %a.dropdown-item{:href => "recommended.html"} Resto del mundo
+            %li.nav-item.active
+              %a.nav-link{:href => "#"}
+                ¿Cómo es tu viaje
+            %li.nav-item
+              %a.nav-link{:href => "#"} Recursos viajeros
+            %li.nav-item
+              %a.nav-link{:href => "#"} Gastronomía
+            %li.nav-item
+              %a.nav-link{:href => "#"} Sobre nosotros
+        .main-nav__search
+          %a{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-search
+          %a.main-nav__mail{:href => "#exampleModal", "data-toggle" => "modal"}
+            %i.fa.fa-envelope-o
+    %section.main-parallax
+      .overlay
+      .main-parallax__title.main-parallax__title--post
+        %h1 Qué ver
+        %span y que hacer?
+        .main-parallax__btn
+          .btn_custom.btn--medium.btn--filled
+            Volver
+    
+    %section.main-posts
+      .container
+        %ul.nav.nav-tabs#myTab{:role=>"tablist"}
+          %li.nav-item
+            %a#home-tab.nav-link.active{"data-toggle"=>"tab", :href=>"#home", :role=>"tab", "aria-controls"=>"home", "aria-selected"=>"true"} Más Recientes
+          %li.nav-item
+            %a#profile-tab.nav-link.active{"data-toggle"=>"tab", :href=>"#profile", :role=>"tab", "aria-controls"=>"home", "aria-selected"=>"true"} Más Populares
+          %li.nav-item
+            %a#contact-tab.nav-link.active{"data-toggle"=>"tab", :href=>"#contact", :role=>"tab", "aria-controls"=>"home", "aria-selected"=>"true"} Más Comentarios
+        #myTabContent.tab-content
+          #home.tab-pane.fade.show.active{:role=>"tabpanel", "aria-labelledby"=>"home-tab" }
+            %p
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non vero dolore officia, molestias cupi
+          #profile.tab-pane.fade{:role=>"tabpanel", "aria-labelledby"=>"profile-tab" }
+            %p
+              upiditate omnis quod consequuntur, laboriosam at maiores. Quos quis itaque quam saepe et. Quasi, rem eius.
+          #contact.tab-pane.fade{:role=>"tabpanel", "aria-labelledby"=>"contact-tab" }
+            %p
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non vero dolore officia, molestias cuus.
+
+        .main-posts__content
+
+          %a.main-posts__item{:href=>"post.html"}
+            .main-posts__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-posts__box
+              .main-posts__title
+                %p
+                  Lorem ipsum
+              .main-posts__autor
+                .main-posts__name
+                  %p Gladibeth Franco
+                .main-posts__line
+                .main-posts__date
+                  %span 18/08/2019
+              .main-posts__description
+                %p 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
+              .main-posts__btn
+                .btn_custom.btn--medium.btn--filled
+                  Ver más
+              %hr.main-articles__line/
+              .main-posts__social
+                .main-posts__comments
+                  %p 999
+                .main-posts__tags
+                  %p tags
+                  %p tags
+          %a.main-posts__item{:href=>"post.html"}
+            .main-posts__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-posts__box
+              .main-posts__title
+                %p
+                  Lorem ipsum
+              .main-posts__autor
+                .main-posts__name
+                  %p Gladibeth Franco
+                .main-posts__line
+                .main-posts__date
+                  %span 18/08/2019
+              .main-posts__description
+                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
+              .main-posts__btn
+                .btn_custom.btn--medium.btn--filled
+                  Ver más
+              %hr.main-articles__line/
+              .main-posts__social
+                .main-posts__comments
+                  %p 999
+                .main-posts__tags
+                  %p tags
+                  %p tags
+          %a.main-posts__item{:href=>"post.html"}
+            .main-posts__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-posts__box
+              .main-posts__title
+                %p
+                  Lorem ipsum
+              .main-posts__autor
+                .main-posts__name
+                  %p Gladibeth Franco
+                .main-posts__line
+                .main-posts__date
+                  %span 18/08/2019
+              .main-posts__description
+                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
+              .main-posts__btn
+                .btn_custom.btn--medium.btn--filled
+                  Ver más
+              %hr.main-articles__line/
+              .main-posts__social
+                .main-posts__comments
+                  %p 999
+                .main-posts__tags
+                  %p tags
+                  %p tags
+          %a.main-posts__item{:href=>"post.html"}
+            .main-posts__img
+              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+            .main-posts__box
+              .main-posts__title
+                %p
+                  Lorem ipsum
+              .main-posts__autor
+                .main-posts__name
+                  %p Gladibeth Franco
+                .main-posts__line
+                .main-posts__date
+                  %span 18/08/2019
+              .main-posts__description
+                %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
+              .main-posts__btn
+                .btn_custom.btn--medium.btn--filled
+                  Ver más
+              %hr.main-articles__line/
+              .main-posts__social
+                .main-posts__comments
+                  %p 999
+                .main-posts__tags
+                  %p tags
+                  %p tags
+              
+            
+
+        %hr.main-articles__line/
+    %footer
+      .container
+        .main-footer
+          .content__title
+            %h2
+              FOOTER
+          %a{:href=>""}
+            Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.
+
+
+
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
+    :javascript
+      $('#myTab a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
