@@ -166,6 +166,34 @@
             Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.
 
 
+    #exampleModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog{:role => "document"}
+        .modal-content
+          .modal-header
+            .modal-box__title
+              %h5.modal-title Lorem 
+              %h5.modal-subtitle Ipsum
+              .modal-box__content
+                %p.modal-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis ab quia eaque a cum? Voluptatem repellat officia cum repudiandae doloribus optio officiis, mollitia minima quos neque deleniti quibusdam?
+                %hr.main-articles__line/
+            %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+              %span{"aria-hidden" => "true"} ×
+          .modal-body
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Destino", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+
+          .modal-footer
+            .btn_modal
+              Enviar
+            .modal-footer__content
+              %p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus fugiat non veritatis, aperiam porro maiores quo.
 
     %script{src: "assets/js/jquery.min.js"}
     %script{src: "assets/js/slick.min.js"}
