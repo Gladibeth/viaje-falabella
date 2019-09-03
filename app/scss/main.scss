@@ -97,6 +97,13 @@ section {
 
 .dropdown-item {
   color: $white;
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  img {
+    width: 28px;
+  }
 
   &.dropdown-item--scroll {
     color: $black;
@@ -183,6 +190,10 @@ select {
     width: 400px;
     left: 10%;
 
+    @include respond-to(sm) {
+      top: 160px;
+    }
+
     .main-banner__number {
       padding: 0 25px;
 
@@ -211,6 +222,7 @@ select {
         font-weight: 800;
         line-height: 1;
         margin: 0;
+        font-family: $beauSans;
       }
 
       span {
@@ -227,8 +239,10 @@ select {
       padding: 0 25px;
       color: $white;
       font-size: 16px;
-      line-height: 1.2rem;
+      line-height: 1.5rem;
       margin: 10px 0 0 0;
+      font-family: $beauSans;
+      font-weight: 600;
     }
   }
 
@@ -365,6 +379,13 @@ select {
   }
 }
 
+
+.main-destiny__title {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: $beauSans;
+}
+
 .main-post__content {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -424,9 +445,10 @@ select {
 
   h2 {
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
     color: #545759;
+    font-family: $beauSans;
   }
 }
 

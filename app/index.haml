@@ -13,7 +13,7 @@
     
   %body
     %header
-      %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
+      %nav.navbar.navbar-expand-sm.fixed-top.navbar-fixed-js
         .main-brand
           %a.navbar-brand{:href => "#"}
             %img#iso{:src => "assets/img/logo.png"}/
@@ -25,10 +25,18 @@
               %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"} Destinos
               .dropdown-menu{"aria-labelledby" => "dropdown01"}
                 .d-flex
-                  %a.dropdown-item{:href => "recommended.html"} Europa
-                  %a.dropdown-item{:href => "recommended.html"} Caribe
-                  %a.dropdown-item{:href => "recommended.html"} Turquía
-                  %a.dropdown-item{:href => "recommended.html"} Resto del mundo
+                  %a.dropdown-item{:href => "recommended.html"} 
+                    %img{:src => "assets/img/icons/Icono europa-01.svg"}/
+                    Europa
+                  %a.dropdown-item{:href => "recommended.html"} 
+                    %img{:src => "assets/img/icons/Icono caribe-01.svg"}/
+                    Caribe
+                  %a.dropdown-item{:href => "recommended.html"} 
+                    %img{:src => "assets/img/icons/Icono turquia-01.svg"}/
+                    Turquía
+                  %a.dropdown-item{:href => "recommended.html"} 
+                    %img{:src => "assets/img/icons/Icono resto del mundo-01.svg"}/
+                    Resto del mundo
             %li.nav-item.active
               %a.nav-link{:href => "#"}
                 ¿Cómo es tu viaje
@@ -102,6 +110,8 @@
 
     %section.main-destiny#destiny
       .container
+        .content__title
+          %h2 Destinos
         .main-destiny__content
           .main-destiny__items
             .main-destiny__item
