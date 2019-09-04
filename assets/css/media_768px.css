@@ -1,0 +1,102 @@
+@media (min-width: 768px) and (max-width: 991px) {
+
+   /**  Index***/
+   .main-banner .main-slider__next {
+      width: 290px;
+   }
+
+   .main-banner .main-banner__text {
+      left: 3%;
+   }
+
+   .content__title h2 {
+      font-size: 45px;
+   }
+
+   /**  All Post ***/
+   .content__title h2 {
+      font-size: 40px;
+   }
+
+   .main-destiny__content .slick-dots {
+      left: 45%;
+   }
+
+   .main-parallax__title h1 {
+      font-size: 55px;
+   }
+
+   .main-parallax__title span {
+      font-size: 45px;
+   }
+
+   .main-posts__content .main-posts__box .main-posts__title p {
+      font-size: 40px;
+   }
+
+   .main-posts__item {
+      margin-bottom: 40px;
+   }
+
+
+   /** Country **/
+   .breadcrumb-item.active {
+      font-size: 20px;
+   }
+
+   .breadcrumb-item+.breadcrumb-item {
+      font-size: 20px;
+   }
+
+   .main-parallax__title {
+      position: absolute;
+      bottom: 90px;
+      left: 6%;
+   }
+
+   .main-country {
+      padding: 0;
+   }
+
+   .main-country__content {
+      grid-template-columns: 50% 50%;
+   }
+
+   .main-articles {
+      padding: 0;
+   }
+
+
+   /** Post**/
+   .main-detailsposts__content {
+      grid-template-columns: 100%;
+   }
+
+   .main-commend__title h2 {
+      font-size: 40px;
+   }
+
+
+   /** Modals **/
+
+   .modal-description {
+      font-size: 15px;
+   }
+
+   .modal-title {
+      font-size: 55px;
+   }
+
+   .modal-subtitle {
+      font-size: 45px;
+   }
+
+   .modal-footer__content p {
+      font-size: 13px;
+   }
+
+   .btn_modal {
+      align-items: flex-end;
+   }
+
+}

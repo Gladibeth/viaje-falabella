@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Viajes Falabella</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/slick.css" rel="stylesheet">
+  <link href="assets/css/slick-theme.css" rel="stylesheet">
+  <link href="assets/css/icofont.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/media_768px.css">
+  <link rel="stylesheet" href="assets/css/media_1024px.css">
+  <link rel="stylesheet" href="assets/css/media_0px.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
+      <div class="main-brand">
+        <a class="navbar-brand" href="index.html">
+          <img class="lazy" data-src="assets/img/logo.png" id="iso">
+        </a>
+        <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-autos">
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              href="#" id="dropdown01">Destinos</a>
+            <div aria-labelledby="dropdown01" class="dropdown-menu">
+              <div class="d-flex">
+                <a class="dropdown-item" href="recommended.html">Europa</a>
+                <a class="dropdown-item" href="recommended.html">Caribe</a>
+                <a class="dropdown-item" href="recommended.html">Turquía</a>
+                <a class="dropdown-item" href="recommended.html">Resto del mundo</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              ¿Cómo es tu viaje
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recursos viajeros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gastronomía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre nosotros</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-nav__search">
+        <a data-toggle="modal" href="#exampleModal">
+          <i class="fa fa-search"></i>
+        </a>
+        <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
+          <i class="fa fa-envelope-o"></i>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <section class="main-parallax">
+    <div class="overlay"></div>
+    <div class="main-parallax__title main-parallax__title--post">
+      <h1>Qué ver</h1>
+      <span>y que hacer?</span>
+      <div class="main-parallax__btn">
+        <div class="btn_custom btn--medium btn--filled">
+          Volver
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main-posts">
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <div class="tabs-left">
+          <li class="nav-item">
+            <a aria-controls="home" aria-selected="true" class="nav-link active" data-toggle="tab" href="#home"
+              id="home-tab" role="tab">Más Recientes</a>
+          </li>
+          <li class="nav-item">
+            <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#profile"
+              id="profile-tab" role="tab">Más Popular</a>
+          </li>
+          <li class="nav-item">
+            <a aria-controls="contact" aria-selected="false" class="nav-link" data-toggle="tab" href="#contact"
+              id="contact-tab" role="tab">Más comentarios</a>
+          </li>
+        </div>
+        <div class="tabs-right">
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+              href="#" id="dropdown">Destinos</a>
+            <div aria-labelledby="dropdown" class="dropdown-menu">
+              <a class="dropdown-item" href="recommended.html">Europa</a>
+              <a class="dropdown-item" href="recommended.html">Caribe</a>
+              <a class="dropdown-item" href="recommended.html">Turquía</a>
+              <a class="dropdown-item" href="recommended.html">Resto del mundo</a>
+            </div>
+          </li>
+        </div>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div aria-labelledby="home-tab" class="tab-pane fade show active" id="home" role="tabpanel">
+          <div itemscope itemtype="http://schema.org/Article" class="main-posts__content">
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img itemprop="image" class="img-round" src="assets/img/img-4.jpeg">
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p itemprop="name">
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p itemprop="author">Gladibeth Franco</p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span itemprop="date">18/08/2019</span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  <p itemref="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius
+                    autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime
+                    voluptate similique rerum mollitia.
+                  </p>
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                    Ver más
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p>
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p>Gladibeth Franco</p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span>18/08/2019</span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius
+                    autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime
+                    voluptate similique rerum mollitia.</p>
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                    Ver más
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div aria-labelledby="profile-tab" class="tab-pane fade" id="profile" role="tabpanel">
+          <div class="main-posts__content">
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p>
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p>Gladibeth Franco</p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span>18/08/2019</span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius
+                    autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime
+                    voluptate similique rerum mollitia.
+                  </p>
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                    Ver más
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p>
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p>Gladibeth Franco</p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span>18/08/2019</span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius
+                    autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime
+                    voluptate similique rerum mollitia.</p>
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                    Ver más
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p>
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p>Gladibeth Franco</p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span>18/08/2019</span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius
+                    autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime
+                    voluptate similique rerum mollitia.</p>
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                    Ver más
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div aria-labelledby="contact-tab" class="tab-pane fade" id="contact" role="tabpanel">
+          <div class="main-posts__content">
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p>
+                    Lorem ipsum
+                  </p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p>Gladibeth Franco</p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span>18/08/2019</span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius
+                    autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime
+                    voluptate similique rerum mollitia.
+                  </p>
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                    Ver más
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="main-articles__line">
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="main-footer">
+        <div class="content__title">
+          <h2>
+            FOOTER
+          </h2>
+        </div>
+        <a href="">
+          Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog"
+    tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-box__title">
+            <h5 class="modal-title">Lorem</h5>
+            <h5 class="modal-subtitle">Ipsum</h5>
+            <div class="modal-box__content">
+              <p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore
+                reiciendis ab quia eaque a cum? Voluptatem repellat officia cum repudiandae doloribus optio officiis,
+                mollitia minima quos neque deleniti quibusdam?</p>
+              <hr class="main-articles__line">
+            </div>
+          </div>
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput" placeholder="Nombre" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Destino" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="phone">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="btn_modal">
+            Enviar
+          </div>
+          <div class="modal-footer__content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus fugiat non veritatis, aperiam
+              porro maiores quo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/setting-slick.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script class="lazy" data-src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js">
+  </script>
+  <script class="lazy" data-src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy"
+    });
+    if (lazyLoadInstance) {
+      lazyLoadInstance.update();
+    }
+  </script>
+</body>
+
+</html>

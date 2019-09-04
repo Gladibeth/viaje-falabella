@@ -1,0 +1,30 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /**Index*/
+  .main-banner .main-banner__text {
+    top: 150px;
+    left: 3%;
+  }
+
+  .main-banner .main-slider__next {
+    bottom: 0;
+  }
+
+  .main-destiny__content .slick-dots {
+    left: 45%;
+  }
+
+
+
+  .main-parallax__title {
+    left: 6%;
+  }
+
+  .main-parallax__title h1 {
+    font-size: 70px;
+  }
+
+  .main-parallax__title span {
+    font-size: 70px;
+  }
+}
