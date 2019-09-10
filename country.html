@@ -18,13 +18,17 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-fixed-js">
       <div class="main-brand">
         <a class="navbar-brand" href="index.html">
-          <img id="iso" src="assets/img/logo.png">
+          <img id="iso " class="img_desktop" src="assets/img/logo.png">
+          <img id="" class="img_movil" src="assets/img/logo-b.png">
         </a>
-        <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
+          type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
       </div>
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
@@ -34,10 +38,22 @@
               href="#" id="dropdown01">Destinos</a>
             <div aria-labelledby="dropdown01" class="dropdown-menu">
               <div class="d-flex">
-                <a class="dropdown-item" href="recommended.html">Europa</a>
-                <a class="dropdown-item" href="recommended.html">Caribe</a>
-                <a class="dropdown-item" href="recommended.html">Turquía</a>
-                <a class="dropdown-item" href="recommended.html">Resto del mundo</a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono europa-01.svg">
+                  Europa
+                </a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono caribe-01.svg">
+                  Caribe
+                </a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono turquia-01.svg">
+                  Turquía
+                </a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono resto del mundo-01.svg">
+                  Resto del mundo
+                </a>
               </div>
             </div>
           </li>
@@ -47,7 +63,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Recursos viajeros</a>
+            <a class="nav-link" href="#destiny">Recursos viajeros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Gastronomía</a>
@@ -92,7 +108,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Alemania</p>
           </div>
           <div class="main-country__btn">
@@ -105,7 +121,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>España</p>
           </div>
           <div class="main-country__btn">
@@ -118,7 +134,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Grecia</p>
           </div>
           <div class="main-country__btn">
@@ -131,7 +147,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Holanda</p>
           </div>
           <div class="main-country__btn">
@@ -144,7 +160,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Inglaterra</p>
           </div>
           <div class="main-country__btn">
@@ -157,7 +173,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Italia</p>
           </div>
           <div class="main-country__btn">
@@ -170,7 +186,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Republica</p>
             <span>checa</span>
           </div>
@@ -184,7 +200,7 @@
           <div class="main-country__img">
             <img class="img-round lazy" data-src="assets/img/img-4.jpeg">
           </div>
-          <div class="main-country__title">
+          <div class="main-country__title" itemprop="name">
             <p>Suiza</p>
             <span>checa</span>
           </div>

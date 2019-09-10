@@ -18,13 +18,17 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-fixed-js">
       <div class="main-brand">
         <a class="navbar-brand" href="index.html">
-          <img id="iso" src="assets/img/logo.png">
+          <img id="iso " class="img_desktop" src="assets/img/logo.png">
+          <img id="" class="img_movil" src="assets/img/logo-b.png">
         </a>
-        <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas"
+          type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
       </div>
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
@@ -34,10 +38,22 @@
               href="#" id="dropdown01">Destinos</a>
             <div aria-labelledby="dropdown01" class="dropdown-menu">
               <div class="d-flex">
-                <a class="dropdown-item" href="recommended.html">Europa</a>
-                <a class="dropdown-item" href="recommended.html">Caribe</a>
-                <a class="dropdown-item" href="recommended.html">Turquía</a>
-                <a class="dropdown-item" href="recommended.html">Resto del mundo</a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono europa-01.svg">
+                  Europa
+                </a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono caribe-01.svg">
+                  Caribe
+                </a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono turquia-01.svg">
+                  Turquía
+                </a>
+                <a class="dropdown-item" href="recommended.html">
+                  <img src="assets/img/icons/Icono resto del mundo-01.svg">
+                  Resto del mundo
+                </a>
               </div>
             </div>
           </li>
@@ -47,7 +63,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Recursos viajeros</a>
+            <a class="nav-link" href="#destiny">Recursos viajeros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Gastronomía</a>
@@ -79,7 +95,7 @@
       </div>
     </div>
   </section>
-  <section class="main-posts">
+  <section class="main-posts" itemscope itemtype="http://schema.org/LiveBlogPosting">
     <div class="container">
       <div class="main-detailsposts__content">
         <div itemscope itemtype="http://schema.org/Article" class="main-posts__item" href="post.html">
@@ -95,7 +111,7 @@
               </div>
               <div class="main-posts__line"></div>
               <div class="main-posts__date">
-                <span itemprop="date">18/08/2019</span>
+                <span itemprop="datePublished">18/08/2019</span>
               </div>
             </div>
             <hr class="main-articles__line">
@@ -132,7 +148,7 @@
               <div class="main-posts__description--img">
                 <img itemprop="image" alt="Description" class="img-round lazy" data-src="assets/img/img-4.jpeg">
               </div>
-              <p>
+              <p itemprop="description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem
                 quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate
                 similique rerum mollitia.tur adipisicing elit. Molestiae

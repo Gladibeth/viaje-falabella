@@ -1,4 +1,21 @@
 @media (min-width: 0px) and (max-width: 767px) {
+  .slider-container {
+    display: none;
+  }
+
+  .main-brand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img_desktop {
+    display: none;
+  }
+
+  .img_movil {
+    display: block;
+  }
 
   .content__title h2 {
     font-size: 40px;

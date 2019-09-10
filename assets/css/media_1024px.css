@@ -1,5 +1,9 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
+  .img_movil {
+    display: none;
+  }
+
   /**Index*/
   .main-banner .main-banner__text {
     top: 150px;
