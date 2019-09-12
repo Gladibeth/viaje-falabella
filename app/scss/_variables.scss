@@ -8,11 +8,11 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
 
 
 @font-face {
-  font-family: 'PF BeauSans Pro XThin';
-  src: url('../fonts/PFBEAUSANSPRO-BLACK.TTF') format('woff2'),
-    url('../fonts/PFBeauSansPro-XThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
+  font-family: 'PF BeauSans Pro';
+  src: url('../fonts/PFBeauSansPro-Black.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
@@ -23,53 +23,6 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-SemiBold.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-ThinItalic.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-BlackItalic.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-Italic.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-LightItalic.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro XThin';
-  src: url('../fonts/PFBeauSansPro-XThin.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-XThin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'PF BeauSans Pro';
@@ -81,39 +34,16 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
 
 @font-face {
   font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-Black.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-SemiBoldItalic.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-SemiBoldItalic.woff') format('woff');
+  src: url('../fonts/PFBeauSansPro-SemiBold.woff2') format('woff2'),
+    url('../fonts/PFBeauSansPro-SemiBold.woff') format('woff');
   font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-Bold.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url('../fonts/PFBeauSansPro-Thin.woff2') format('woff2'),
-    url('../fonts/PFBeauSansPro-Thin.woff') format('woff');
-  font-weight: 100;
   font-style: normal;
 }
 
 // Fonts
-$beauSans: 'PF BeauSans Pro XThin',
-sans-serif; // Titles
+$beauSans: 'PF BeauSans Pro',
+sans-serif;
+// Titles
 
 // General
 $white: #fff;

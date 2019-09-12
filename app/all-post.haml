@@ -15,8 +15,8 @@
     %header
       %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
         .main-brand
-          %a.navbar-brand{:href => "#"}
-            %img#iso{:src => "assets/img/logo.png"}/
+          %a.navbar-brand{:href => "index.html"}
+            %img#iso.lazy{"data-src" => "assets/img/logo.png"}/
           %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
             %span.navbar-toggler-icon
         #navbarsExampleDefault.navbar-collapse.offcanvas-collapse
@@ -102,7 +102,7 @@
                       %p tags
               .main-posts__item{:href=>"post.html"}
                 .main-posts__img
-                  %img.img-round{:src => "assets/img/img-4.jpeg"}/
+                  %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
                 .main-posts__box
                   .main-posts__title
                     %p
@@ -129,7 +129,7 @@
             .main-posts__content
               .main-posts__item{:href=>"post.html"}
                 .main-posts__img
-                  %img.img-round{:src => "assets/img/img-4.jpeg"}/
+                  %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
                 .main-posts__box
                   .main-posts__title
                     %p
@@ -155,7 +155,7 @@
                       %p tags
               .main-posts__item{:href=>"post.html"}
                 .main-posts__img
-                  %img.img-round{:src => "assets/img/img-4.jpeg"}/
+                  %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
                 .main-posts__box
                   .main-posts__title
                     %p
@@ -180,7 +180,7 @@
                       %p tags
               .main-posts__item{:href=>"post.html"}
                 .main-posts__img
-                  %img.img-round{:src => "assets/img/img-4.jpeg"}/
+                  %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
                 .main-posts__box
                   .main-posts__title
                     %p
@@ -207,7 +207,7 @@
             .main-posts__content
               .main-posts__item{:href=>"post.html"}
                 .main-posts__img
-                  %img.img-round{:src => "assets/img/img-4.jpeg"}/
+                  %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
                 .main-posts__box
                   .main-posts__title
                     %p
@@ -279,8 +279,13 @@
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
+    %script.lazy{"data-src" => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
+    %script.lazy{"data-src" => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
+  
     :javascript
-      $('#myTab a').on('click', function (e) {
-        e.preventDefault()
-        $(this).tab('show')
-      })
+      var lazyLoadInstance = new LazyLoad({
+          elements_selector: ".lazy"
+      });
+      if (lazyLoadInstance) {
+        lazyLoadInstance.update();
+      }

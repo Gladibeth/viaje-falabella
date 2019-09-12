@@ -32,6 +32,7 @@ section {
 .nav-link {
   color: $white;
   transition: .3s ease-in-out;
+  font-family: $beauSans;
 
   &.fixed-color {
     color: $green;
@@ -100,6 +101,7 @@ section {
   display: flex;
   align-items: center;
   height: 50px;
+  font-family: $beauSans;
 
   img {
     width: 28px;
@@ -165,6 +167,7 @@ select {
     border: 1px solid transparent;
     color: $green;
     font-size: 17px;
+    font-family: $beauSans;
 
     &:focus {
       color: #495057;
@@ -218,7 +221,7 @@ select {
       p {
         padding: 0 25px;
         color: $white;
-        font-size: 60px;
+        font-size: 80px;
         font-weight: 800;
         line-height: 1;
         margin: 0;
@@ -229,9 +232,10 @@ select {
         padding: 0 25px;
         color: $white;
         font-size: 60px;
-        font-weight: 500;
         line-height: 1;
         margin: 0;
+        font-family: $beauSans;
+        font-weight: 300;
       }
     }
 
@@ -242,7 +246,7 @@ select {
       line-height: 1.5rem;
       margin: 10px 0 0 0;
       font-family: $beauSans;
-      font-weight: 600;
+      font-weight: 300;
     }
   }
 
@@ -265,16 +269,21 @@ select {
       .main-slider__text {
         background-color: #545759;
         width: 140px;
+        font-family: $beauSans;
+        font-weight: 300;
 
         .main-slider__number {
           padding: 0 25px;
+          font-family: $beauSans;
+          font-weight: 300;
 
           span {
             color: $white;
             font-size: 20px;
-            font-weight: 800;
             line-height: 1;
             margin: 0;
+            font-family: $beauSans;
+            font-weight: 900;
           }
 
           .main-slider-smaline {
@@ -293,13 +302,16 @@ select {
           font-weight: 800;
           line-height: 1;
           margin: 0;
+          font-family: $beauSans;
+          font-weight: 900;
         }
 
         .main-slider__description {
           padding: 0 25px;
           color: $white;
           font-size: 20px;
-
+          font-family: $beauSans;
+          font-weight: 300;
           line-height: 1;
           margin: 0;
         }
@@ -332,6 +344,8 @@ select {
     justify-content: flex-start;
     height: 35px;
     border-radius: 5px;
+    font-family: $beauSans;
+    font-weight: 300;
 
     i {
       margin-right: 5px;
@@ -345,6 +359,7 @@ select {
   left: 50%;
   transform: rotate(90deg);
   border-bottom: 3px solid #fff;
+  font-family: $beauSans;
 
   a {
     color: $white;
@@ -398,20 +413,28 @@ select {
 
     .main-post__title {
       p {
-        font-size: 50px;
+        font-size: 80px;
         color: $green;
-        font-weight: 800;
-        margin: 0px;
+        font-weight: 900;
+        margin: 0px !important;
         line-height: 1;
         margin-bottom: 30px;
+        font-family: $beauSans;
 
-        span {
-          font-size: 50px;
-          color: $green;
-          font-weight: 800;
-        }
       }
 
+      span {
+        font-size: 50px;
+        color: $green;
+        font-weight: 600;
+        font-family: $beauSans;
+      }
+
+    }
+
+    .main-post__description {
+      font-family: $beauSans;
+      font-weight: 100;
     }
   }
 
@@ -473,21 +496,26 @@ select {
   top: 30px;
   left: 30px;
 
+
   p {
-    font-size: 30px;
+    font-size: 45px;
     color: $white;
     font-weight: 800;
     margin: 0px;
+    font-family: $beauSans;
+    font-weight: 900;
   }
 
   span {
     font-size: 30px;
     color: $white;
+    font-family: $beauSans;
+    font-weight: 100;
   }
 }
 
 hr.main-articles__line {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 4px solid #8bc34a;
@@ -511,11 +539,11 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  p {}
 
   a {
     color: $green;
     text-decoration: none;
+    font-family: $beauSans;
 
     &:hover {
       text-decoration: none;
@@ -555,6 +583,7 @@ footer {
     a {
       color: $green;
       text-decoration: none;
+      font-family: $beauSans;
 
       &:hover {
         text-decoration: none;
@@ -566,6 +595,7 @@ footer {
 .breadcrumb-item+.breadcrumb-item {
   font-size: 30px;
   text-transform: uppercase;
+  font-family: $beauSans;
 }
 
 
@@ -579,6 +609,7 @@ footer {
     color: $white;
     font-weight: 800;
     line-height: 1rem;
+    font-family: $beauSans
   }
 
   span {
@@ -586,10 +617,12 @@ footer {
     color: $white;
     font-weight: 300;
     margin-left: 10px;
+    font-family: $beauSans
   }
 
   &.main-parallax__title--post {
     bottom: 60px;
+    font-family: $beauSans;
   }
 }
 
@@ -621,15 +654,17 @@ footer {
   left: 30px;
 
   p {
-    font-size: 30px;
+    font-size: 40px;
     color: $white;
     font-weight: 800;
     margin: 0px;
+    font-family: $beauSans;
   }
 
   span {
     font-size: 30px;
     color: $white;
+    font-family: $beauSans;
   }
 }
 
@@ -670,12 +705,13 @@ footer {
 
     .main-posts__title {
       p {
-        font-size: 50px;
+        font-size: 65px;
         color: $green;
-        font-weight: 800;
+        font-weight: 900;
         margin: 0px;
         line-height: 1;
         margin-bottom: 30px;
+        font-family: $beauSans;
 
         span {
           font-size: 50px;
@@ -705,14 +741,21 @@ footer {
         display: flex;
 
         p {
+          font-family: $beauSans;
+
           &:first-child {
             margin-right: 10px;
           }
         }
       }
+
     }
 
     .main-posts__description {
+      p {
+        font-family: $beauSans;
+      }
+
       .main-posts__description--img {
         width: 100%;
         margin-bottom: 20px;
@@ -763,6 +806,7 @@ footer {
         margin: 0px;
         line-height: 1;
         margin-bottom: 30px;
+        font-family: $beauSans;
 
         span {
           font-size: 50px;
@@ -818,6 +862,35 @@ footer {
   }
 }
 
+.main-posts__name {
+  p {
+    font-family: $beauSans;
+  }
+}
+
+.main-posts__description {
+  p {
+    font-family: $beauSans;
+  }
+}
+
+.main-posts__date {
+  span {
+    font-family: $beauSans;
+  }
+}
+
+.main-posts__comments {
+  p {
+    font-family: $beauSans;
+  }
+}
+
+.main-posts__tags {
+  p {
+    font-family: $beauSans;
+  }
+}
 
 .main-post__contact {
   background-color: $white;
@@ -882,7 +955,12 @@ footer {
 .main-post__form--form {
   input {
     background-color: $white;
+
   }
+}
+
+input {
+  font-family: $beauSans;
 }
 
 .line-gray {
@@ -895,15 +973,24 @@ footer {
 
   .form-name {
     font-weight: 700;
+    font-family: $beauSans;
   }
 
   span {
     margin-right: 10px;
+    font-family: $beauSans;
   }
 }
 
 .main-post__form--detail {
   display: flex;
+
+}
+
+.main-post__form--description {
+  p {
+    font-family: $beauSans;
+  }
 }
 
 .main-post__form--compatir {
@@ -915,5 +1002,6 @@ footer {
     color: $green;
     text-transform: uppercase;
     margin-right: 10px;
+    font-family: $beauSans;
   }
 }

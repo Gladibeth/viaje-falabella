@@ -15,7 +15,7 @@
     %header
       %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
         .main-brand
-          %a.navbar-brand{:href => "#"}
+          %a.navbar-brand{:href => "index.html"}
             %img#iso{:src => "assets/img/logo.png"}/
           %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
             %span.navbar-toggler-icon
@@ -85,7 +85,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
 
                 .main-posts__description--img
-                  %img.img-round{:src => "assets/img/img-4.jpeg"}/ 
+                  %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/ 
                 %p 
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.tur adipisicing elit. Molestiae obcaecati deserunt natus eius autem quia laborum dolor eaque debitis corporis iure, odit possimus suscipit delectus maxime voluptate similique rerum mollitia.
                 .main-posts__description--redes
@@ -128,7 +128,7 @@
         .main-commend__formbox
           .main-commend__form
             .main-post__form--img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
             .main-post__form--form
               %form
                 .form-group
@@ -142,7 +142,7 @@
         .main-commend__formbox
           .main-commend__form
             .main-post__form--img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" => "assets/img/img-4.jpeg"}/
             .main-post__form--info
               .main-post__form--name
                 %span.form-name Gladibeth Franco
@@ -200,3 +200,13 @@
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
+    %script.lazy{"data-src" => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
+    %script.lazy{"data-src" => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
+  
+    :javascript
+      var lazyLoadInstance = new LazyLoad({
+          elements_selector: ".lazy"
+      });
+      if (lazyLoadInstance) {
+        lazyLoadInstance.update();
+      }

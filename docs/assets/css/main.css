@@ -1,56 +1,14 @@
 @font-face {
-  font-family: 'PF BeauSans Pro XThin';
-  src: url("../fonts/PFBEAUSANSPRO-BLACK.TTF") format("woff2"), url("../fonts/PFBeauSansPro-XThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
+  font-family: 'PF BeauSans Pro';
+  src: url("../fonts/PFBeauSansPro-Black.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'PF BeauSans Pro';
   src: url("../fonts/PFBeauSansPro-Regular.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-SemiBold.woff2") format("woff2"), url("../fonts/PFBeauSansPro-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-ThinItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-BlackItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Italic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-LightItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro XThin';
-  src: url("../fonts/PFBeauSansPro-XThin.woff2") format("woff2"), url("../fonts/PFBeauSansPro-XThin.woff") format("woff");
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -63,29 +21,8 @@
 
 @font-face {
   font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Black.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-SemiBoldItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-SemiBoldItalic.woff") format("woff");
+  src: url("../fonts/PFBeauSansPro-SemiBold.woff2") format("woff2"), url("../fonts/PFBeauSansPro-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Bold.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Thin.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Thin.woff") format("woff");
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -96,6 +33,7 @@
   line-height: 1.1;
   display: flex;
   justify-content: center;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .btn--small {
@@ -125,7 +63,7 @@
 .btn--filled:hover {
   background-color: transparent;
   border: 1px solid #3fae2a;
-  color: #fff;
+  color: #3fae2a;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -138,6 +76,12 @@
   border-radius: 0px;
   display: flex;
   justify-content: center;
+}
+
+.btn-border:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3fae2a;
 }
 
 @media (max-width: 767.98px) {
@@ -386,58 +330,16 @@
 }
 
 @font-face {
-  font-family: 'PF BeauSans Pro XThin';
-  src: url("../fonts/PFBEAUSANSPRO-BLACK.TTF") format("woff2"), url("../fonts/PFBeauSansPro-XThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
+  font-family: 'PF BeauSans Pro';
+  src: url("../fonts/PFBeauSansPro-Black.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'PF BeauSans Pro';
   src: url("../fonts/PFBeauSansPro-Regular.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-SemiBold.woff2") format("woff2"), url("../fonts/PFBeauSansPro-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-ThinItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-BlackItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Italic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-LightItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-LightItalic.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro XThin';
-  src: url("../fonts/PFBeauSansPro-XThin.woff2") format("woff2"), url("../fonts/PFBeauSansPro-XThin.woff") format("woff");
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -450,29 +352,8 @@
 
 @font-face {
   font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Black.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-SemiBoldItalic.woff2") format("woff2"), url("../fonts/PFBeauSansPro-SemiBoldItalic.woff") format("woff");
+  src: url("../fonts/PFBeauSansPro-SemiBold.woff2") format("woff2"), url("../fonts/PFBeauSansPro-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Bold.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PF BeauSans Pro';
-  src: url("../fonts/PFBeauSansPro-Thin.woff2") format("woff2"), url("../fonts/PFBeauSansPro-Thin.woff") format("woff");
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -490,20 +371,26 @@
 }
 
 .modal-title {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 700;
   color: #3fae2a;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 900;
 }
 
 .modal-subtitle {
   font-size: 55px;
   font-weight: 300;
   color: #3fae2a;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 100;
 }
 
 .modal-description {
   color: #3fae2a;
   font-size: 15px;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 100;
 }
 
 .close {
@@ -521,6 +408,7 @@
 .modal-footer__content p {
   color: #3fae2a;
   font-size: 15px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .form-control {
@@ -535,6 +423,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 body {
@@ -563,6 +452,7 @@ section {
 .nav-link {
   color: #fff;
   transition: .3s ease-in-out;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .nav-link.fixed-color {
@@ -629,6 +519,7 @@ section {
   display: flex;
   align-items: center;
   height: 50px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .dropdown-item img {
@@ -692,6 +583,7 @@ select.form-control {
   border: 1px solid transparent;
   color: #3fae2a;
   font-size: 17px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 select.form-control:focus {
@@ -746,20 +638,21 @@ select.form-control:focus {
 .main-banner .main-banner__text .main-banner__title p {
   padding: 0 25px;
   color: #fff;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 800;
   line-height: 1;
   margin: 0;
-  font-family: "PF BeauSans Pro XThin", sans-serif;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-banner .main-banner__text .main-banner__title span {
   padding: 0 25px;
   color: #fff;
   font-size: 60px;
-  font-weight: 500;
   line-height: 1;
   margin: 0;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .main-banner .main-banner__text .main-banner__description {
@@ -768,8 +661,8 @@ select.form-control:focus {
   font-size: 16px;
   line-height: 1.5rem;
   margin: 10px 0 0 0;
-  font-family: "PF BeauSans Pro XThin", sans-serif;
-  font-weight: 600;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .main-banner .main-slider__next {
@@ -792,18 +685,23 @@ select.form-control:focus {
 .main-banner .main-slider__next .main-slider__box .main-slider__text {
   background-color: #545759;
   width: 140px;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .main-banner .main-slider__next .main-slider__box .main-slider__text .main-slider__number {
   padding: 0 25px;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .main-banner .main-slider__next .main-slider__box .main-slider__text .main-slider__number span {
   color: #fff;
   font-size: 20px;
-  font-weight: 800;
   line-height: 1;
   margin: 0;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 900;
 }
 
 .main-banner .main-slider__next .main-slider__box .main-slider__text .main-slider__number .main-slider-smaline {
@@ -820,12 +718,16 @@ select.form-control:focus {
   font-weight: 800;
   line-height: 1;
   margin: 0;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 900;
 }
 
 .main-banner .main-slider__next .main-slider__box .main-slider__text .main-slider__description {
   padding: 0 25px;
   color: #fff;
   font-size: 20px;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 300;
   line-height: 1;
   margin: 0;
 }
@@ -855,6 +757,8 @@ select.form-control:focus {
   justify-content: flex-start;
   height: 35px;
   border-radius: 5px;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .main-banner__mail .main-banner__boxmail i {
@@ -867,6 +771,7 @@ select.form-control:focus {
   left: 50%;
   transform: rotate(90deg);
   border-bottom: 3px solid #fff;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-banner__scroll a {
@@ -903,7 +808,7 @@ select.form-control:focus {
 .main-destiny__title {
   font-weight: bold;
   font-size: 50px;
-  font-family: "PF BeauSans Pro XThin", sans-serif;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-post__content {
@@ -919,18 +824,25 @@ select.form-control:focus {
 }
 
 .main-post__content .main-post__box .main-post__title p {
-  font-size: 50px;
+  font-size: 80px;
   color: #3fae2a;
-  font-weight: 800;
-  margin: 0px;
+  font-weight: 900;
+  margin: 0px !important;
   line-height: 1;
   margin-bottom: 30px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
-.main-post__content .main-post__box .main-post__title p span {
+.main-post__content .main-post__box .main-post__title span {
   font-size: 50px;
   color: #3fae2a;
-  font-weight: 800;
+  font-weight: 600;
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
+.main-post__content .main-post__box .main-post__description {
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 100;
 }
 
 .main-post__content .main-post__img {
@@ -962,7 +874,7 @@ select.form-control:focus {
   font-weight: 900;
   text-transform: uppercase;
   color: #545759;
-  font-family: "PF BeauSans Pro XThin", sans-serif;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-articles__item {
@@ -987,19 +899,23 @@ select.form-control:focus {
 }
 
 .main-articles__title p {
-  font-size: 30px;
+  font-size: 45px;
   color: #fff;
   font-weight: 800;
   margin: 0px;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 900;
 }
 
 .main-articles__title span {
   font-size: 30px;
   color: #fff;
+  font-family: "PF BeauSans Pro", sans-serif;
+  font-weight: 100;
 }
 
 hr.main-articles__line {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
   border-top: 4px solid #8bc34a;
@@ -1027,6 +943,7 @@ footer {
 .main-footer a {
   color: #3fae2a;
   text-decoration: none;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-footer a:hover {
@@ -1065,6 +982,7 @@ footer {
 .breadcrumb-item.active a {
   color: #3fae2a;
   text-decoration: none;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .breadcrumb-item.active a:hover {
@@ -1074,6 +992,7 @@ footer {
 .breadcrumb-item + .breadcrumb-item {
   font-size: 30px;
   text-transform: uppercase;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-parallax__title {
@@ -1087,6 +1006,7 @@ footer {
   color: #fff;
   font-weight: 800;
   line-height: 1rem;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-parallax__title span {
@@ -1094,10 +1014,12 @@ footer {
   color: #fff;
   font-weight: 300;
   margin-left: 10px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-parallax__title.main-parallax__title--post {
   bottom: 60px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-country__content {
@@ -1128,15 +1050,17 @@ footer {
 }
 
 .main-country__title p {
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
   font-weight: 800;
   margin: 0px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-country__title span {
   font-size: 30px;
   color: #fff;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-country__btn {
@@ -1172,12 +1096,13 @@ footer {
 }
 
 .main-detailsposts__content .main-posts__box .main-posts__title p {
-  font-size: 50px;
+  font-size: 65px;
   color: #3fae2a;
-  font-weight: 800;
+  font-weight: 900;
   margin: 0px;
   line-height: 1;
   margin-bottom: 30px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-detailsposts__content .main-posts__box .main-posts__title p span {
@@ -1206,8 +1131,16 @@ footer {
   display: flex;
 }
 
+.main-detailsposts__content .main-posts__box .main-posts__social .main-posts__tags p {
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
 .main-detailsposts__content .main-posts__box .main-posts__social .main-posts__tags p:first-child {
   margin-right: 10px;
+}
+
+.main-detailsposts__content .main-posts__box .main-posts__description p {
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-detailsposts__content .main-posts__box .main-posts__description .main-posts__description--img {
@@ -1257,6 +1190,7 @@ footer {
   margin: 0px;
   line-height: 1;
   margin-bottom: 30px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-posts__content .main-posts__box .main-posts__title p span {
@@ -1303,6 +1237,26 @@ footer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.main-posts__name p {
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
+.main-posts__description p {
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
+.main-posts__date span {
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
+.main-posts__comments p {
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
+.main-posts__tags p {
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-post__contact {
@@ -1369,6 +1323,10 @@ footer {
   background-color: #fff;
 }
 
+input {
+  font-family: "PF BeauSans Pro", sans-serif;
+}
+
 .line-gray {
   width: 55%;
 }
@@ -1379,14 +1337,20 @@ footer {
 
 .main-post__form--name .form-name {
   font-weight: 700;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-post__form--name span {
   margin-right: 10px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-post__form--detail {
   display: flex;
+}
+
+.main-post__form--description p {
+  font-family: "PF BeauSans Pro", sans-serif;
 }
 
 .main-post__form--compatir {
@@ -1398,4 +1362,5 @@ footer {
   color: #3fae2a;
   text-transform: uppercase;
   margin-right: 10px;
+  font-family: "PF BeauSans Pro", sans-serif;
 }

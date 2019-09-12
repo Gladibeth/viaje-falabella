@@ -17,7 +17,7 @@
   <header>
     <nav class="navbar navbar-expand-sm fixed-top navbar-fixed-js">
       <div class="main-brand">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img id="iso" src="assets/img/logo.png">
           </a>
         <button class="navbar-toggler p-0 border-0" data-toggle="offcanvas" type="button">
@@ -55,7 +55,7 @@
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Recursos viajeros</a>
+            <a class="nav-link" href="#destiny">Recursos viajeros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Gastronomía</a>
@@ -141,7 +141,7 @@
         <div class="main-slider__text">
           <hr class="main-slider__line">
           <div class="main-slider__number">
-            <span>2</span>
+            <span class="number--active">2</span>
             <div class="main-slider-smaline"></div>
           </div>
           <div class="main-slider__title">
@@ -221,8 +221,8 @@
           <div class="main-post__title">
             <p>
               lorem
-              <span>ipsum</span>
             </p>
+            <span>ipsum</span>
           </div>
           <div class="main-post__description">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae tempore placeat dolor repudiandae architecto tempora assumenda, eos temporibus.</p>
@@ -366,6 +366,7 @@
   <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/setting-slick.js"></script>
+  <script src="assets/js/configuration-lazyload.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
@@ -376,6 +377,31 @@
     if (lazyLoadInstance) {
       lazyLoadInstance.update();
     }
+
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
   </script>
 </body>
 

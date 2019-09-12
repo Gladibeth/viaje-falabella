@@ -15,7 +15,7 @@
     %header
       %nav.navbar.navbar-expand-sm.fixed-top.navbar-fixed-js
         .main-brand
-          %a.navbar-brand{:href => "#"}
+          %a.navbar-brand{:href => "index.html"}
             %img#iso{:src => "assets/img/logo.png"}/
           %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
             %span.navbar-toggler-icon
@@ -41,7 +41,7 @@
               %a.nav-link{:href => "#"}
                 ¿Cómo es tu viaje
             %li.nav-item
-              %a.nav-link{:href => "#"} Recursos viajeros
+              %a.nav-link{:href => "#destiny"} Recursos viajeros
             %li.nav-item
               %a.nav-link{:href => "#"} Gastronomía
             %li.nav-item
@@ -96,7 +96,7 @@
           .main-slider__text
             %hr.main-slider__line/
             .main-slider__number
-              %span 2
+              %span.number--active 2
               .main-slider-smaline
             .main-slider__title
               %p Lorem
@@ -153,7 +153,7 @@
             .main-post__title
               %p
                 lorem
-                %span ipsum 
+              %span ipsum 
             .main-post__description
               %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae tempore placeat dolor repudiandae architecto tempora assumenda, eos temporibus.
             .main-post__btn
@@ -247,6 +247,7 @@
     %script{src: "assets/js/slick.min.js"}
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/configuration-lazyload.js"}
     %script{src: "assets/js/main.js"}
     %script{:src => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
     %script{:src => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
@@ -258,3 +259,28 @@
       if (lazyLoadInstance) {
         lazyLoadInstance.update();
       }
+
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });

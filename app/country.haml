@@ -15,7 +15,7 @@
     %header
       %nav.navbar.navbar-expand-md.fixed-top.navbar-fixed-js
         .main-brand
-          %a.navbar-brand{:href => "#"}
+          %a.navbar-brand{:href => "index.html"}
             %img#iso{:src => "assets/img/logo.png"}/
           %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
             %span.navbar-toggler-icon
@@ -59,7 +59,7 @@
         .main-country__content
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Alemania
               -# %span ipsum 
@@ -68,7 +68,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p España
               -# %span ipsum 
@@ -77,7 +77,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Grecia
               -# %span ipsum 
@@ -86,7 +86,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Holanda
               -# %span ipsum 
@@ -95,7 +95,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Inglaterra
               -# %span ipsum 
@@ -104,7 +104,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Italia
               -# %span ipsum 
@@ -113,7 +113,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Republica
               %span checa 
@@ -122,7 +122,7 @@
                 Ver más
           .main-country__item
             .main-country__img
-              %img.img-round{:src => "assets/img/img-4.jpeg"}/
+              %img.img-round.lazy{"data-src" =>"assets/img/img-4.jpeg"}/
             .main-country__title
               %p Suiza
               %span checa 
@@ -174,3 +174,13 @@
     %script{src: "assets/js/bootstrap.min.js"}
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/main.js"}
+    %script.lazy{"data-src" => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
+    %script.lazy{"data-src" => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
+  
+    :javascript
+      var lazyLoadInstance = new LazyLoad({
+          elements_selector: ".lazy"
+      });
+      if (lazyLoadInstance) {
+        lazyLoadInstance.update();
+      }
