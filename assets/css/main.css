@@ -1682,3 +1682,18 @@ input {
   padding: 20px 15px;
   margin-left: -2px;
 }
+
+.nav-pills {
+  border-bottom: 1px solid #8bc34a;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: transparent;
+  color: #000;
+  font-weight: 900;
+}
+
+.nav-pills .nav-link {
+  color: #8bc34a;
+}
