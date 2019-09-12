@@ -39,8 +39,10 @@ $('.main-slider__img').click(function () {
   var img = $('.slick-active').next().find('.main-banner__img img').attr('src');
   $('.main-slider__img--active').attr('src', img);
 
-  var text = $('.slick-active').next().find('.main-banner__number span').html();
-  $('.main-banner__number')
+  var text = $('.slick-active').next().find('.main-banner__title p').text();
+  $('.main-slider__title').text(text);
+  var text = $('.slick-active').next().find('.main-banner__number span').text();
+  $('.main-slider__number span').text(text);
 })
 
 
