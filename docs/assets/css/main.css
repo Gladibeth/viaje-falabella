@@ -444,7 +444,7 @@ section {
 }
 
 .navbar.fixed {
-  height: 60px;
+  height: 85px;
   background-color: #fff;
   transition: .3s ease-in-out;
 }
@@ -807,7 +807,7 @@ select.form-control:focus {
 
 .main-destiny__title {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "PF BeauSans Pro", sans-serif;
 }
 
