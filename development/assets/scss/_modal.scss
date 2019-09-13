@@ -1,0 +1,74 @@
+@import "variables";
+
+
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-header {
+  border-bottom: 1px solid transparent;
+  padding: 20px 35px 0 35px;
+}
+
+.modal-body {
+  padding: 0 35px;
+}
+
+.modal-title {
+  font-size: 65px;
+  font-weight: 700;
+  color: $green;
+  font-family: $beauSans;
+  font-weight: 900;
+}
+
+.modal-subtitle {
+  font-size: 55px;
+  font-weight: 300;
+  color: $green;
+  font-family: $beauSans;
+  font-weight: 100;
+}
+
+.modal-description {
+  color: $green;
+  font-size: 15px;
+  font-family: $beauSans;
+  font-weight: 100;
+}
+
+.close {
+  color: $green;
+  opacity: 1;
+}
+
+.modal-footer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 0 45px 20px 45px;
+  border-top: 1px solid transparent;
+}
+
+.modal-footer__content {
+  p {
+    color: $green;
+    font-size: 15px;
+    font-family: $beauSans;
+  }
+}
+
+.form-control {
+  background-color: #eee;
+  ;
+}
+
+.btn_modal {
+  border-bottom: 5px solid $green;
+  width: 40%;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $beauSans;
+}
