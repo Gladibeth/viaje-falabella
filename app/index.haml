@@ -128,7 +128,7 @@
                   %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi perferendis, dignissimos.
 
               .main-destiny__img
-                %img.lazy{"data-src" =>"assets/img/recomendados-1.jpg"}/
+                %img{:src =>"assets/img/recomendados-1.jpg"}/
           .main-destiny__item
             .main-destiny__item
               .main-destiny__box
@@ -144,7 +144,7 @@
                   %p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi perferendis, dignissimos.
 
               .main-destiny__img
-                %img.lazy{"data-src" => "assets/img/recomendados-1.jpg"}/
+                %img{:src => "assets/img/recomendados-1.jpg"}/
         
     %section.main-post
       .container
@@ -161,7 +161,7 @@
                 Visítala!
 
           .main-post__img
-            %img.lazy{"data-src" =>"assets/img/viajero-del-mes.jpg"}/
+            %img{:src =>"assets/img/viajero-del-mes.jpg"}/
     %section.main-articles
       .container
         .content__title
@@ -169,7 +169,7 @@
         .main-articles__content
           .main-articles__item
             .main-articles__img
-              %img.img-round.lazy{"data-src" =>"assets/img/articulo-1.jpg"}/
+              %img.img-round{:src =>"assets/img/articulo-1.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -178,7 +178,7 @@
                 Ver más
           .main-articles__item
             .main-articles__img
-              %img.img-round.lazy{"data-src" =>"assets/img/articulo-2.jpg"}/
+              %img.img-round{:src =>"assets/img/articulo-2.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -187,7 +187,7 @@
                 Ver más
           .main-articles__item
             .main-articles__img
-              %img.img-round.lazy{"data-src" =>"assets/img/articulo-3.jpg"}/
+              %img.img-round{:src =>"assets/img/articulo-3.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -196,7 +196,7 @@
                 Ver más
           .main-articles__item
             .main-articles__img
-              %img.img-round.lazy{"data-src" =>"assets/img/articulo-4.jpg"}/
+              %img.img-round{:src =>"assets/img/articulo-4.jpg"}/
             .main-articles__title
               %p Lorem 
               %span ipsum 
@@ -249,16 +249,16 @@
     %script{src: "assets/js/setting-slick.js"}
     %script{src: "assets/js/configuration-lazyload.js"}
     %script{src: "assets/js/main.js"}
-    %script{:src => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
-    %script{:src => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
+    // %script{:src => "https://cdn.jsdelivr.net/npm/intersection-observer@0.5.1/intersection-observer.js"}
+    // %script{:src => "https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"}
   
     :javascript
-      var lazyLoadInstance = new LazyLoad({
-          elements_selector: ".lazy"
-      });
-      if (lazyLoadInstance) {
-        lazyLoadInstance.update();
-      }
+      // var lazyLoadInstance = new LazyLoad({
+      //     elements_selector: ""
+      // });
+      // if (lazyLoadInstance) {
+      //   lazyLoadInstance.update();
+      // }
 
       $(document).ready(function () {
         // Add smooth scrolling to all links
