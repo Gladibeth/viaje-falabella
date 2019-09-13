@@ -26,16 +26,16 @@
               .dropdown-menu{"aria-labelledby" => "dropdown01"}
                 .d-flex
                   %a.dropdown-item{:href => "recommended.html"} 
-                    %img{:src => "assets/img/icons/Icono europa-01.svg"}/
+                    %img#site1{:src => "assets/img/icons/Icono europa-01.svg"}/
                     Europa
                   %a.dropdown-item{:href => "recommended.html"} 
-                    %img{:src => "assets/img/icons/Icono caribe-01.svg"}/
+                    %img#site2{:src => "assets/img/icons/Icono caribe-01.svg"}/
                     Caribe
                   %a.dropdown-item{:href => "recommended.html"} 
-                    %img{:src => "assets/img/icons/Icono turquia-01.svg"}/
+                    %img#site3{:src => "assets/img/icons/Icono turquia-01.svg"}/
                     Turquía
                   %a.dropdown-item{:href => "recommended.html"} 
-                    %img{:src => "assets/img/icons/Icono resto del mundo-01.svg"}/
+                    %img#site4{:src => "assets/img/icons/Icono resto del mundo-01.svg"}/
                     Resto del mundo
             %li.nav-item.active
               %a.nav-link{:href => "#"}
@@ -157,7 +157,7 @@
             .main-post__description
               %p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non beatae tempore placeat dolor repudiandae architecto tempora assumenda, eos temporibus.
             .main-post__btn
-              %a.btn_custom.btn--medium.btn-border{:href =>"country.html"}
+              %a.btn_custom.btn--medium.btn-border{:href =>"post.html"}
                 Visítala!
 
           .main-post__img
@@ -174,7 +174,7 @@
               %p Lorem 
               %span ipsum 
             .main-article__btn
-              .btn_custom.btn--medium.btn--filled
+              %a.btn_custom.btn--medium.btn--filled{:href=>"post.html"}
                 Ver más
           .main-articles__item
             .main-articles__img
@@ -183,7 +183,7 @@
               %p Lorem 
               %span ipsum 
             .main-article__btn
-              .btn_custom.btn--medium.btn--filled
+              %a.btn_custom.btn--medium.btn--filled{:href=>"post.html"}
                 Ver más
           .main-articles__item
             .main-articles__img
@@ -192,7 +192,7 @@
               %p Lorem 
               %span ipsum 
             .main-article__btn
-              .btn_custom.btn--medium.btn--filled
+              %a.btn_custom.btn--medium.btn--filled{:href=>"post.html"}
                 Ver más
           .main-articles__item
             .main-articles__img
@@ -201,7 +201,7 @@
               %p Lorem 
               %span ipsum 
             .main-article__btn
-              .btn_custom.btn--medium.btn--filled
+              %a.btn_custom.btn--medium.btn--filled{:href=>"post.html"}
                 Ver más
         %hr.main-articles__line/
     %footer
