@@ -22,6 +22,10 @@ $(window).scroll(function () {
     $('.dropdown-item').addClass('dropdown-item--scroll');
     $('.main-nav__mail').addClass('main-nav__mail--scroll');
     $(".img_desktop").addClass('img-size').attr('src', 'assets/img/logo-b.png').removeClass('scroll-up');
+    $("#site1").addClass('img-size').attr('src', 'assets/img/icons/site1.png').removeClass('scroll-up');
+    $("#site2").addClass('img-size').attr('src', 'assets/img/icons/site2.png').removeClass('scroll-up');
+    $("#site3").addClass('img-size').attr('src', 'assets/img/icons/site3.png').removeClass('scroll-up');
+    $("#site4").addClass('img-size').attr('src', 'assets/img/icons/site4.png').removeClass('scroll-up');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
@@ -31,6 +35,11 @@ $(window).scroll(function () {
     $('.dropdown-item').removeClass('dropdown-item--scroll');
     $('.main-nav__mail').removeClass('main-nav__mail--scroll');
     $(".img_desktop").removeClass('img-size').attr('src', 'assets/img/logo.png').removeClass('scroll-up');
+    $("#iso").removeClass('img-size').attr('src', 'assets/img/logo.png').addClass('scroll-up');
+    $("#site1").addClass('img-size').attr('src', 'assets/img/icons/Icono europa-01.svg').addClass('scroll-up');
+    $("#site2").addClass('img-size').attr('src', 'assets/img/icons/Icono caribe-01.svg').addClass('scroll-up');
+    $("#site3").addClass('img-size').attr('src', 'assets/img/icons/Icono turquia-01.svg').addClass('scroll-up');
+    $("#site4").addClass('img-size').attr('src', 'assets/img/icons/Icono resto del mundo-01.svg').addClass('scroll-up');
 
   }
 });

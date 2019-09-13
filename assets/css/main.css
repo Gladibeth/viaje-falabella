@@ -513,7 +513,7 @@ section {
 }
 
 .navbar.fixed {
-  height: 60px;
+  height: 85px;
   background-color: #fff;
   transition: .3s ease-in-out;
 }
@@ -534,7 +534,7 @@ section {
 }
 
 .navbar-brand {
-  width: 150px;
+  width: 170px;
 }
 
 .navbar-brand img {
