@@ -40,7 +40,7 @@ section {
   padding: 3rem 1rem !important;
 
   &.fixed {
-    height: 85px;
+    height: 165px;
     background-color: $white;
     transition: .3s ease-in-out;
   }
@@ -118,6 +118,7 @@ section {
   border: 1px solid transparent;
   border-top: 2px solid $green;
   margin-left: 10px;
+  height: 20px;
 
   &.dropdown-menu--scroll {
     background-color: $white;
@@ -698,7 +699,7 @@ footer {
 .main-parallax__title {
   position: absolute;
   bottom: 240px;
-  left: 17%;
+  left: 9%;
 
   h1 {
     font-size: 100px;
@@ -1588,7 +1589,7 @@ input {
 /** responsive 768**/
 
 .navbar-brand {
-  width: 200px;
+  width: 220px;
 }
 
 .main-country__content {
