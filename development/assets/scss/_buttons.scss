@@ -23,6 +23,10 @@
   @include respond-to(xs) {
     font-size: 14px;
   }
+
+  @include respond-to(sm) {
+    font-size: 14px;
+  }
 }
 
 .btn--large {

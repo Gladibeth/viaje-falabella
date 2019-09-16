@@ -281,7 +281,7 @@ select {
   .main-slider__next {
     position: absolute;
     right: 0px;
-    bottom: 54px;
+    bottom: 30px;
     width: 440px;
 
 
@@ -409,7 +409,7 @@ select {
   a {
     color: $white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 
     &:hover {
       text-decoration: none;
@@ -418,39 +418,42 @@ select {
   }
 }
 
+
+
 .main-banner__camara {
   position: absolute;
   bottom: 30%;
   right: 2%;
 
-  .icons__camara {
-    &:hover {
-      .text__camara {
-        opacity: 1 !important;
-      }
-    }
+  .text__camara {
+    transform: rotate(90deg);
+    position: absolute;
+    width: 200px;
+    top: -400%;
+    right: -230%;
+    display: none;
+    transition: 0.3s ease-in-out;
 
+    p {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+
+  &:hover {
+    transition: 0.3s ease-in-out;
+
+    .text__camara {
+      display: block !important;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .icons__camara {
     i {
       font-size: 30px;
       color: #fff;
-
     }
-  }
-}
-
-
-.text__camara {
-  transform: rotate(90deg);
-  position: absolute;
-  width: 200px;
-  top: -400%;
-  right: -230%;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-
-  p {
-    color: #fff;
-    font-size: 20px;
   }
 }
 
@@ -1557,6 +1560,7 @@ input {
 .main-parallax__title--post {
   @include respond-to(xs) {
     bottom: 90px;
+    left: 9%;
   }
 }
 
@@ -1688,6 +1692,30 @@ input {
 .articles-lg__none {
   @include respond-to(sm) {
     display: none;
+  }
+}
+
+.main-posts__content {
+  @include respond-to(sm) {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-parallax__title--post {
+  @include respond-to(sm) {
+    left: 9%;
+  }
+}
+
+.main-parallax__title--post h1 {
+  @include respond-to(sm) {
+    font-size: 80px;
+  }
+}
+
+.main-parallax__title--post span {
+  @include respond-to(sm) {
+    font-size: 70px;
   }
 }
 
