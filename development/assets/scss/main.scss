@@ -5,6 +5,9 @@
 @import "setting-slick";
 @import "modal";
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #eee !important;
@@ -383,12 +386,30 @@ select {
   bottom: 115px;
   left: 50%;
   transform: rotate(90deg);
-  border-bottom: 3px solid #fff;
+  // border-bottom: 3px solid #fff;
   font-family: $beauSans;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 120px;
+      transition: 0.3s ease-in-out;
+    }
+  }
 
   a {
     color: $white;
     text-decoration: none;
+    font-size: 25px;
 
     &:hover {
       text-decoration: none;
@@ -405,7 +426,7 @@ select {
   .icons__camara {
     &:hover {
       .text__camara {
-        opacity: 1;
+        opacity: 1 !important;
       }
     }
 
@@ -529,8 +550,12 @@ select {
   grid-template-columns: 50% 50%;
   grid-gap: 30px;
 
-
+  &.articles-lg__none {
+    display: none;
+  }
 }
+
+
 
 .content__title {
   margin-bottom: 30px;
@@ -1355,7 +1380,7 @@ input {
 .main-articles {
   @include respond-to(xs) {
 
-    padding: 0;
+    padding: 25px 0;
     margin-top: -30px;
   }
 }
@@ -1460,13 +1485,31 @@ input {
 
 .main-articles__img {
   @include respond-to(xs) {
-    height: 200px;
+    height: 290px !important;
+    padding: 38px !important;
+    width: 410px !important;
   }
 }
 
 .main-banner__img {
   @include respond-to(xs) {
     height: 115vh;
+  }
+}
+
+.main-articles__title {
+  @include respond-to(xs) {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+  }
+}
+
+.main-article__btn {
+  @include respond-to(xs) {
+    position: absolute;
+    bottom: 60px;
+    left: 80px;
   }
 }
 
@@ -1523,6 +1566,17 @@ input {
   }
 }
 
+.main-articles__content.articles-xs__none {
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.articles-lg__none {
+  @include respond-to(xs) {
+    display: block !important;
+  }
+}
 
 
 
@@ -1626,6 +1680,12 @@ input {
 }
 
 .main-post__contact {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
+.articles-lg__none {
   @include respond-to(sm) {
     display: none;
   }

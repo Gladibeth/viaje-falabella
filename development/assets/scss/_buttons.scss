@@ -19,6 +19,10 @@
   padding: 10px 14px;
   min-width: 85px;
   font-size: 24px;
+
+  @include respond-to(xs) {
+    font-size: 14px;
+  }
 }
 
 .btn--large {
