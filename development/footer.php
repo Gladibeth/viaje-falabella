@@ -65,7 +65,7 @@
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
-  <script>
+  <!-- <script>
    
     $(document).ready(function () {
       // Add smooth scrolling to all links
@@ -91,7 +91,7 @@
         } // End if
       });
     });
-  </script>
+  </script> -->
   <?php wp_footer(); ?> <!-- funcion de footer para traer los cambios en el footer -->
 </body>
 

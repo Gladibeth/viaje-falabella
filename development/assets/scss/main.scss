@@ -1907,3 +1907,24 @@ input {
     font-size: 15px !important;
   }
 }
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: transparent !important;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.nav-pills .nav-link {
+  text-transform: uppercase;
+  color: #3fae2a;
+  font-size: 30px;
+}
+
+.span_tabs {
+  font-size: 30px;
+  margin-top: 7px;
+  margin-left: -20px;
+
+}
