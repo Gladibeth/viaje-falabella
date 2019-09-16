@@ -697,7 +697,7 @@ footer {
 
 .main-country__content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
 
@@ -1620,6 +1620,18 @@ input {
   }
 }
 
+.main-detailsposts__content {
+  @include respond-to(sm) {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-post__contact {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
 .navbar-nav {
   margin-left: 15px;
 }
@@ -1949,7 +1961,7 @@ input {
 .nav-link {
   @include respond-to(md) {
     margin-right: 3px !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
 }
 
