@@ -9,6 +9,10 @@ $(function () {
 })
 
 
+$('.dropdown-toggle').click(function () {
+  $('.navbar-fixed-js').toggleClass('fixed-height')
+})
+
 
 
 var URLactual = window.location;

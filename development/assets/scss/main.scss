@@ -40,9 +40,13 @@ section {
   padding: 3rem 1rem !important;
 
   &.fixed {
-    height: 165px;
+    height: 85px;
     background-color: $white;
     transition: .3s ease-in-out;
+  }
+
+  &.fixed-height {
+    height: 165px;
   }
 }
 
