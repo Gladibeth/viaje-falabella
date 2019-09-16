@@ -1,8 +1,9 @@
 <?php get_header(); ?>
-<section class="main-parallax">
+<?php $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); ?>
+<section class="main-parallax" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');">
     <div class="overlay"></div>
     <div class="main-parallax__title">
-      <h1>Europa</h1>
+      <h1><?php echo $taxonomy->name; ?></h1>
     </div>
   </section>
   <section class="main-breadcrumb">
