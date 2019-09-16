@@ -8,6 +8,18 @@
 
 body {
   background-color: #eee !important;
+
+  &.fixed {
+    overflow-y: hidden;
+  }
+}
+
+.display_none {
+  display: none;
+}
+
+.display_block {
+  display: block;
 }
 
 .img-round {
@@ -21,6 +33,8 @@ section {
 .navbar {
   background-color: transparent;
   transition: .3s ease-in-out;
+  height: 85px;
+  padding: 3rem 1rem !important;
 
   &.fixed {
     height: 85px;
@@ -29,10 +43,20 @@ section {
   }
 }
 
+.navbar-nav {
+  margin-left: 120px;
+}
+
+.sub-drop-destiny {
+  display: flex;
+
+}
+
 .nav-link {
   color: $white;
   transition: .3s ease-in-out;
   font-family: $beauSans;
+  margin-right: 20px;
 
   &.fixed-color {
     color: $green;
@@ -601,11 +625,11 @@ footer {
 
 .main-parallax__title {
   position: absolute;
-  bottom: 50px;
-  left: 9%;
+  bottom: 200px;
+  left: 13%;
 
   h1 {
-    font-size: 85px;
+    font-size: 100px;
     color: $white;
     font-weight: 800;
     line-height: 1rem;
@@ -1004,4 +1028,403 @@ input {
     margin-right: 10px;
     font-family: $beauSans;
   }
+}
+
+
+
+
+
+/***** RESPONSIVE 0 > 768 **/
+
+
+
+
+
+.slider-container {
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.main-brand {
+  @include respond-to(xs) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
+.img_desktop {
+  @include respond-to(xs) {
+    display: none;
+  }
+
+}
+
+.img_movil {
+  @include respond-to(xs) {
+    display: block;
+  }
+
+}
+
+.content__title h2 {
+  @include respond-to(xs) {
+
+    font-size: 27px;
+  }
+}
+
+.main-articles__content {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.main-destiny__content .slick-dots {
+  @include respond-to(xs) {
+
+    left: 35%;
+  }
+}
+
+
+.main-country__content {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.main-footer a {
+  @include respond-to(xs) {
+
+    text-align: center;
+  }
+}
+
+.breadcrumb-item.active {
+  @include respond-to(xs) {
+
+    font-size: 20px;
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item {
+  @include respond-to(xs) {
+
+    font-size: 20px;
+  }
+}
+
+.main-country {
+  @include respond-to(xs) {
+
+    padding: 0;
+    margin-top: -30px;
+  }
+}
+
+.main-parallax__title {
+  @include respond-to(xs) {
+
+    position: absolute;
+    bottom: 150px;
+    left: 8%;
+  }
+}
+
+
+
+/**Post*/
+
+.main-parallax__title h1 {
+  @include respond-to(xs) {
+
+    font-size: 60px;
+  }
+}
+
+.main-parallax__title span {
+  @include respond-to(xs) {
+
+    font-size: 45px;
+  }
+}
+
+.main-detailsposts__content {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.main-post__content {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.main-commend__title h2 {
+  @include respond-to(xs) {
+
+    font-size: 30px;
+  }
+}
+
+.main-commend__form {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.main-post__info {
+  @include respond-to(xs) {
+
+    border-right: 3px solid transparent;
+  }
+}
+
+
+
+.main-posts__content {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  @include respond-to(xs) {
+
+    font-size: 13px;
+  }
+}
+
+.nav-tabs .nav-link {
+  @include respond-to(xs) {
+
+    font-size: 13px;
+  }
+}
+
+.main-articles__content {
+  @include respond-to(xs) {
+
+    grid-template-columns: 100%;
+  }
+}
+
+.main-articles {
+  @include respond-to(xs) {
+
+    padding: 0;
+    margin-top: -30px;
+  }
+}
+
+.navbar {
+  @include respond-to(xs) {
+    padding: 15px !important;
+  }
+}
+
+.navbar-nav {
+  @include respond-to(xs) {
+    margin-left: 15px !important;
+  }
+}
+
+.main-banner__text {
+  @include respond-to(xs) {
+    top: 120px !important;
+    width: 300px !important;
+    left: 0% !important;
+  }
+}
+
+.main-banner__scroll {
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.main-banner__mail {
+  @include respond-to(xs) {
+    display: none;
+  }
+}
+
+.main-banner__title {
+  p {
+    @include respond-to(xs) {
+      font-size: 40px !important;
+    }
+  }
+
+  span {
+    @include respond-to(xs) {
+      font-size: 40px !important;
+    }
+  }
+}
+
+.main-nav__search {
+  @include respond-to(xs) {
+    display: none !important;
+  }
+}
+
+.main-post__box {
+  @include respond-to(xs) {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+}
+
+.main-post__title {
+  p {
+    @include respond-to(xs) {
+
+      font-size: 40px !important;
+    }
+  }
+
+  span {
+    @include respond-to(xs) {
+      font-size: 40px !important;
+    }
+  }
+}
+
+.main-slider__next {
+  @include respond-to(xs) {
+    // display: none;
+    width: 320px !important;
+    bottom: 50px !important;
+  }
+}
+
+
+.main-post__content .main-post__img {
+  @include respond-to(xs) {
+    height: 300px !important;
+  }
+}
+
+.main-slider__text {
+  @include respond-to(xs) {
+    width: 170px;
+    top: 150x;
+
+  }
+}
+
+.main-articles__img {
+  @include respond-to(xs) {
+    height: 200px;
+  }
+}
+
+.main-banner__img {
+  @include respond-to(xs) {
+    height: 115vh;
+  }
+}
+
+.main-banner__description {
+  p {
+    @include respond-to(xs) {
+      font-size: 14px;
+      line-height: 1rem;
+    }
+  }
+}
+
+.main-post__contact {
+  @include respond-to(xs) {
+    display: none !important;
+  }
+}
+
+.main-post__commend {
+  @include respond-to(xs) {
+    padding: 10px 0;
+  }
+}
+
+.main-posts__box {
+  @include respond-to(xs) {
+    padding: 10px !important;
+  }
+}
+
+.main-posts__title {
+  p {
+    @include respond-to(xs) {
+      font-size: 40px !important;
+    }
+  }
+}
+
+.sub-drop-destiny {
+  @include respond-to(xs) {
+    display: block;
+  }
+}
+
+.main-parallax__title--post {
+  @include respond-to(xs) {
+    bottom: 90px;
+  }
+}
+
+
+
+
+
+/** responsive 768**/
+.main-country__content {
+  @include respond-to(sm) {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+.main-country {
+  @include respond-to(sm) {
+    padding: 0px 0px !important;
+  }
+}
+
+
+.main-brand {
+  @include respond-to(sm) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__search {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
+.main-banner__text {
+  @include respond-to(sm) {
+    top: 125px !important;
+    left: 0% !important;
+  }
+}
+
+.navbar-nav {
+  margin-left: 15px !important;
 }

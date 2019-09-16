@@ -28,10 +28,6 @@ var_dump($categories);
 
 
 
-
-
-
-
 $categories = get_categories( array(
     'parent'         => $taxonomy->term_id,
     'taxonomy' => 'tipo_destinos',
