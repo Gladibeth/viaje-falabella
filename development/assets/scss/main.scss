@@ -1656,6 +1656,23 @@ input {
   transform: translateY(-50%);
   padding: 20px 15px;
   margin-right: -2px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:before {
+    font-size: $arrow-size;
+    color: $white;
+    content: "\f053";
+    font-family: 'FontAwesome';
+    z-index: 3;
+
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .slider-container .slider-right {
@@ -1669,4 +1686,19 @@ input {
   transform: translateY(-50%);
   padding: 20px 15px;
   margin-left: -2px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:before {
+    font-size: $arrow-size;
+    color: $white;
+    content: "\f054";
+    font-family: 'FontAwesome';
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
