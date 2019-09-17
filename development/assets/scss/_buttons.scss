@@ -7,6 +7,7 @@
   justify-content: center;
   font-family: $beauSans;
   // @include font(16px, $bold);
+  text-decoration: none;
 }
 
 .btn--small {
@@ -39,8 +40,11 @@
   background-color: $green;
   color: $white !important;
   transition: 0.3s ease-in-out;
+  border: 1px solid $green;
+  text-decoration: none;
 
   &:hover {
+    text-decoration: none;
     background-color: transparent;
     border: 1px solid $green;
     color: $green;

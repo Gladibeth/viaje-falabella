@@ -40,10 +40,16 @@ section {
   padding: 3rem 1rem !important;
 
   &.fixed {
-    height: 165px;
+    height: 85px;
     background-color: $white;
     transition: .3s ease-in-out;
   }
+
+  &.fixed-height {
+    height: 165px;
+  }
+
+
 }
 
 .navbar-nav {
@@ -698,8 +704,8 @@ footer {
 
 .main-parallax__title {
   position: absolute;
-  bottom: 240px;
-  left: 9%;
+  bottom: 190px;
+  left: 10%;
 
   h1 {
     font-size: 100px;
