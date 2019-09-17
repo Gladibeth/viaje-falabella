@@ -606,6 +606,7 @@ select {
     margin: 0px;
     font-family: $beauSans;
     font-weight: 900;
+    margin-bottom: -20px;
   }
 
   span {
@@ -702,7 +703,7 @@ footer {
 
 .main-parallax__title {
   position: absolute;
-  bottom: 240px;
+  bottom: 195px;
   left: 9%;
 
   h1 {
@@ -710,7 +711,8 @@ footer {
     color: $white;
     font-weight: 800;
     line-height: 1rem;
-    font-family: $beauSans
+    font-family: $beauSans;
+    text-transform: uppercase;
   }
 
   span {
@@ -1494,8 +1496,8 @@ input {
 .main-articles__img {
   @include respond-to(xs) {
     height: 290px !important;
-    padding: 38px !important;
-    width: 410px !important;
+    padding: 15px !important;
+    width: 300px !important;
   }
 }
 
@@ -1509,7 +1511,7 @@ input {
   @include respond-to(xs) {
     position: absolute;
     top: 40px;
-    left: 80px;
+    left: 40px;
   }
 }
 
@@ -1517,7 +1519,7 @@ input {
   @include respond-to(xs) {
     position: absolute;
     bottom: 60px;
-    left: 80px;
+    left: 40px;
   }
 }
 

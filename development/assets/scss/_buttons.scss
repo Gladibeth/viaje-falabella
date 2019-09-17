@@ -1,6 +1,6 @@
 .btn_custom {
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 0.5rem 1rem;
   line-height: 1.1;
   display: flex;
@@ -39,8 +39,11 @@
   background-color: $green;
   color: $white !important;
   transition: 0.3s ease-in-out;
+  border: 1px solid $green;
+  text-decoration: none;
 
   &:hover {
+    text-decoration: none;
     background-color: transparent;
     border: 1px solid $green;
     color: $green;

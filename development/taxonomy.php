@@ -1,4 +1,4 @@
-<?php get_header(); //Obtener el header
+  <?php get_header(); //Obtener el header
 //   $subcategory = array(); //Array que permite obtener las subcategorias de recomendaciones y paises
 //   $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual -->
 //   // Listado de categorias (Recomendaciones y países)
