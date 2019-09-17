@@ -9,7 +9,9 @@ $(function () {
 })
 
 $('.dropdown-toggle').click(function () {
-  $('.navbar-fixed-js').toggleClass('fixed-height')
+  if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
+    $('.navbar-fixed-js').toggleClass('fixed-height')
+  }
 })
 
 

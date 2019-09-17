@@ -706,7 +706,7 @@ footer {
 
 .main-parallax__title {
   position: absolute;
-  bottom: 190px;
+  bottom: 45%;
   left: 10%;
 
   h1 {
@@ -1138,14 +1138,64 @@ input {
 
 
 .slider-container {
-  @include respond-to(xs) {
+  @media (min-width: 0px) and (max-width: 340px) {
     position: absolute;
-    left: 140%;
+    left: 145%;
     top: 50%;
-    width: 270px;
+    width: 255px;
     height: 600px;
     margin: -300px 0 0 -400px;
   }
+
+  @media (min-width: 341px) and (max-width: 350px) {
+    left: 145%;
+    top: 50%;
+    width: 255px;
+    height: 600px;
+    margin: -300px 0 0 -400px;
+  }
+
+  @media (min-width: 351px) and (max-width: 375px) {
+    left: 122%;
+    top: 50%;
+    width: 300px;
+    height: 600px;
+    margin: -300px 0 0 -400px;
+  }
+
+  @media (min-width: 376px) and (max-width: 450px) {
+    left: 145%;
+    top: 50%;
+    width: 255px;
+    height: 600px;
+    margin: -300px 0 0 -400px;
+  }
+
+  @media (min-width: 451px) and (max-width: 550px) {
+    left: 110%;
+    top: 50%;
+    width: 340px;
+    height: 600px;
+    margin: -300px 0 0 -400px;
+
+  }
+
+  @media (min-width: 551px) and (max-width: 650px) {
+    left: 90%;
+    top: 50%;
+    width: 360px;
+    height: 600px;
+    margin: -300px 0 0 -400px;
+  }
+
+  // @include respond-to(xs) {
+  //   position: absolute;
+  //   left: 145%;
+  //   top: 50%;
+  //   width: 255px;
+  //   height: 600px;
+  //   margin: -300px 0 0 -400px;
+  // }
 }
 
 .main-destiny__title {
@@ -1293,7 +1343,7 @@ input {
   @include respond-to(xs) {
 
     position: absolute;
-    bottom: 150px;
+    bottom: 45%;
     left: 8%;
   }
 }
@@ -2065,7 +2115,7 @@ input {
 .main-parallax__title {
   @include respond-to(md) {
     position: absolute;
-    bottom: 140px;
+    bottom: 45%;
     left: 4%;
   }
 }
