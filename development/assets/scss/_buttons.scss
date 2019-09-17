@@ -8,6 +8,16 @@
   font-family: $beauSans;
   // @include font(16px, $bold);
   text-decoration: none;
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: green;
+    }
+  }
 }
 
 .btn--small {
