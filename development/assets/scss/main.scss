@@ -712,7 +712,8 @@ footer {
     color: $white;
     font-weight: 800;
     line-height: 1rem;
-    font-family: $beauSans
+    font-family: $beauSans;
+    text-transform: uppercase;
   }
 
   span {
@@ -1932,9 +1933,9 @@ input {
   right: 85%;
   top: 100%;
   color: #ffffff;
-  background-color: #8bc34a;
+  background-color: #3fae2a !important;
   transform: translateY(-50%);
-  padding: 20px 15px;
+  padding: 8px 55px;
   margin-right: -2px;
 
   &:hover {
@@ -1962,9 +1963,9 @@ input {
   left: 22%;
   top: 100%;
   color: #ffffff;
-  background-color: #8bc34a;
+  background-color: #3fae2a !important;
   transform: translateY(-50%);
-  padding: 20px 15px;
+  padding: 8px 55px;
   margin-left: -2px;
 
   &:hover {
