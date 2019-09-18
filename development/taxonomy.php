@@ -1,5 +1,6 @@
 <?php get_header(); //Obtener el header
   $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual --> 
+
 ?>
   <section class="main-parallax">
     <div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
@@ -32,63 +33,67 @@
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
+          <?php
+            $args = array(
+              'post_type' => 'destinos',
+              'tax_query' => array(
+								array(
+									'taxonomy' => $taxonomy->taxonomy,
+									'field' => 'slug',
+									'terms' => $taxonomy->slug
+								))
+            );
+            $loop = new WP_Query( $args );
+          ?>
+          <?php while( $loop->have_posts() ) : $loop->the_post();?>
             <div class="main-posts__item" href="post.html">
-              <?php
-                $args = array(
-                  'post_type' => 'destinos'
-                  );
-                  $loop = new WP_Query( $args );
-              ?>
-              <?php while( $loop->have_posts() ) : $loop->the_post();?>
-                <div class="main-posts__img">
+              <div class="main-posts__img">
                 <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p itemprop="name"><?php the_title();?></p>
                 </div>
-                <div class="main-posts__box">
-                  <div class="main-posts__title">
-                    <p itemprop="name"><?php the_title();?></p>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p itemprop="author"><?php the_author();?></p>
                   </div>
-                  <div class="main-posts__autor">
-                    <div class="main-posts__name">
-                      <p itemprop="author"><?php the_author();?></p>
-                    </div>
-                    <div class="main-posts__line"></div>
-                    <div class="main-posts__date">
-                      <span itemprop="datePublished"><?php the_date('d/m/y');?></span>
-                    </div>
-                  </div>
-                  <div class="main-posts__description">
-                    <p itemprop="description"><?php the_excerpt();?></p>
-                  </div>
-                  <div class="main-posts__btn">
-                    <div class="btn_custom btn--medium btn--filled">
-                    <a href="<?php the_permalink(); ?>">Ver más </a>
-                    </div>
-                  </div>
-                  <hr class="main-articles__line">
-                  <div class="main-posts__social">
-                    <div class="main-posts__comments">
-                      <p>999</p>
-                    </div>
-                    <div class="main-posts__tags">
-                      <p><?php the_tags('tipo_destinos_tags'); ?></p>
-                      
-                    </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span itemprop="datePublished"><?php the_date('d/m/y');?></span>
                   </div>
                 </div>
-              <?php endwhile;
-                wp_reset_query();
-              ?>
+                <div class="main-posts__description">
+                  
+                    <?php the_excerpt();?>
+                  
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled"><a href="<?php the_permalink(); ?>">Ver más </a>
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
             </div>
-
+          <?php endwhile;
+            wp_reset_query();
+          ?>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">mas populares</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">mas comentarios</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
       </div>
 
       <hr class="main-articles__line">
     </div>
   </section>
-
-
 <?php get_footer(); ?>
