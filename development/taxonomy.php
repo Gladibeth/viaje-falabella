@@ -88,9 +88,73 @@
             wp_reset_query();
           ?>
           </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <!-- Más populares -->
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
+          <?php
+            $args = array(
+            'post_type' => 'destinos',
+            'meta_key' => 'post_views',
+            'orderby' => 'meta_value_num',
+            'order' => 'DESC',
+            'tax_query' => array(
+              array(
+                'taxonomy' => $taxonomy->taxonomy,
+                'field' => 'slug',
+                'terms' => $taxonomy->slug
+              ))
+            );
+            $loop = new WP_Query( $args );
+            $popular_posts = new WP_Query( $args );
+          ?>
+          <?php while ( $popular_posts->have_posts() ) : $popular_posts->the_post();?>
+            <div class="main-posts__item" href="post.html">
+              <div class="main-posts__img">
+                <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
+              </div>
+              <div class="main-posts__box">
+                <div class="main-posts__title">
+                  <p itemprop="name"><?php the_title();?></p>
+                </div>
+                <div class="main-posts__autor">
+                  <div class="main-posts__name">
+                    <p itemprop="author"><?php the_author();?></p>
+                  </div>
+                  <div class="main-posts__line"></div>
+                  <div class="main-posts__date">
+                    <span itemprop="datePublished"><?php the_date('d/m/y');?></span>
+                  </div>
+                </div>
+                <div class="main-posts__description">
+                  
+                    <?php the_excerpt();?>
+                  
+                </div>
+                <div class="main-posts__btn">
+                  <div class="btn_custom btn--medium btn--filled"><a href="<?php the_permalink(); ?>">Ver más </a>
+                  </div>
+                </div>
+                <hr class="main-articles__line">
+                <div class="main-posts__social">
+                  <div class="main-posts__comments">
+                    <p>999</p>
+                  </div>
+                  <div class="main-posts__tags">
+                    <p>tags</p>
+                    <p>tags</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php endwhile;
+            wp_reset_query();
+          ?>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+          <!-- End Más populares -->
+        </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
       </div>
 
