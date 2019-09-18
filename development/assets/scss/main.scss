@@ -224,7 +224,7 @@ select {
 
   .main-banner__text {
     position: absolute;
-    top: 250px;
+    top: 25%;
     width: 400px;
     left: 10%;
 
@@ -429,7 +429,7 @@ select {
 
 .main-banner__camara {
   position: absolute;
-  bottom: 30%;
+  bottom: 32%;
   right: 2%;
 
   .text__camara {
@@ -1164,9 +1164,9 @@ input {
   }
 
   @media (min-width: 376px) and (max-width: 450px) {
-    left: 145%;
+    left: 112%;
     top: 50%;
-    width: 255px;
+    width: 320px;
     height: 600px;
     margin: -300px 0 0 -400px;
   }
@@ -1198,6 +1198,12 @@ input {
   // }
 }
 
+.main-destiny {
+  @include respond-to(xs) {
+    height: 350px;
+  }
+}
+
 .main-destiny__title {
   @include respond-to(xs) {
     font-size: 20px;
@@ -1208,6 +1214,7 @@ input {
   p {
     @include respond-to(xs) {
       font-size: 13px;
+      display: none;
     }
   }
 }
@@ -1237,6 +1244,7 @@ input {
   @include respond-to(xs) {
     padding: 5px 10px !important;
     right: 80% !important;
+    display: none !important;
   }
 }
 
@@ -1244,13 +1252,14 @@ input {
   @include respond-to(xs) {
     padding: 5px 10px !important;
     left: 30% !important;
+    display: none !important;
   }
 }
 
 .content-items {
   @include respond-to(xs) {
-    height: 360px;
-    width: 180px;
+    height: 200px;
+    width: 160px;
     background-color: #fff;
     padding: 20px;
     z-index: 4;
@@ -1546,11 +1555,28 @@ input {
   }
 }
 
-.main-articles__img {
-  @include respond-to(xs) {
-    height: 290px !important;
-    padding: 38px !important;
-    width: 410px !important;
+.variable-width {
+  .main-articles__item {
+
+    .main-articles__img {
+      @include respond-to(xs) {
+        height: 290px !important;
+        padding: 38px !important;
+        width: 410px !important;
+      }
+    }
+
+    .main-articles__title {
+      @include respond-to(xs) {
+        left: 20%;
+      }
+    }
+
+    .main-article__btn {
+      @include respond-to(xs) {
+        left: 20%;
+      }
+    }
   }
 }
 
@@ -1564,7 +1590,7 @@ input {
   @include respond-to(xs) {
     position: absolute;
     top: 40px;
-    left: 80px;
+    left: 10%;
   }
 }
 
@@ -1572,7 +1598,7 @@ input {
   @include respond-to(xs) {
     position: absolute;
     bottom: 60px;
-    left: 80px;
+    left: 10%;
   }
 }
 
@@ -1646,6 +1672,18 @@ input {
 
 
 /** responsive 768**/
+
+.slider-left {
+  @include respond-to(sm) {
+    padding: 8px 25px !important;
+  }
+}
+
+.slider-right {
+  @include respond-to(sm) {
+    padding: 8px 25px !important;
+  }
+}
 
 .navbar-brand {
   width: 220px;
