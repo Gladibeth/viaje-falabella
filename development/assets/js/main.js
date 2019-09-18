@@ -8,11 +8,13 @@ $(function () {
   })
 })
 
-$('.dropdown-toggle').click(function () {
-  if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
-    $('.navbar-fixed-js').toggleClass('fixed-height')
-  }
-})
+// $('.dropdown-toggle').click(function () {
+//   if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
+//     $('.navbar-fixed-js').addClass('fixed-height')
+//   } else {
+//     $('.navbar-fixed-js').removeClass('fixed-height')
+//   }
+// })
 
 
 var URLactual = window.location;
