@@ -70,8 +70,8 @@
                       <p>999</p>
                     </div>
                     <div class="main-posts__tags">
-                      <p>tags</p>
-                      <p>tags</p>
+                      <p><?php the_tags('tipo_destinos_tags'); ?></p>
+                      
                     </div>
                   </div>
                 </div>
