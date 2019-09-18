@@ -1237,6 +1237,7 @@ input {
   @include respond-to(xs) {
     padding: 5px 10px !important;
     right: 80% !important;
+    display: none !important;
   }
 }
 
