@@ -31,8 +31,8 @@
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-          <div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
-            <div class="main-posts__item" href="post.html">
+          <div class="container">
+            <div itemscope itemtype="http://schema.org/LiveBlogPosting" class="row main-posts__content">
               <?php
                 $args = array(
                   'post_type' => 'destinos'
@@ -40,46 +40,48 @@
                   $loop = new WP_Query( $args );
               ?>
               <?php while( $loop->have_posts() ) : $loop->the_post();?>
-                <div class="main-posts__img">
-                <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
-                </div>
-                <div class="main-posts__box">
-                  <div class="main-posts__title">
-                    <p itemprop="name"><?php the_title();?></p>
+                <div class="col-lg-4 main-posts__item" href="post.html">
+                  <div class="main-posts__img">
+                  <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
                   </div>
-                  <div class="main-posts__autor">
-                    <div class="main-posts__name">
-                      <p itemprop="author"><?php the_author();?></p>
+                  <div class="main-posts__box">
+                    <div class="main-posts__title">
+                      <p itemprop="name"><?php the_title();?></p>
                     </div>
-                    <div class="main-posts__line"></div>
-                    <div class="main-posts__date">
-                      <span itemprop="datePublished"><?php the_date('d/m/y');?></span>
+                    <div class="main-posts__autor">
+                      <div class="main-posts__name">
+                        <p itemprop="author"><?php the_author();?></p>
+                      </div>
+                      <div class="main-posts__line"></div>
+                      <div class="main-posts__date">
+                        <span itemprop="datePublished"><?php the_date('d/m/y');?></span>
+                      </div>
+                    </div>
+                    <div class="main-posts__description">
+                      <p itemprop="description"><?php echo the_excerpt();?></p>
+                    </div>
+                    <div class="main-posts__btn">
+                      <div class="btn_custom btn--medium btn--filled">
+                      <a href="<?php the_permalink(); ?>">Ver más </a>
+                      </div>
+                    </div>
+                    <hr class="main-articles__line">
+                    <div class="main-posts__social">
+                      <div class="main-posts__comments">
+                        <p>999</p>
+                      </div>
+                      <div class="main-posts__tags">
+                        <p><?php the_tags('tipo_destinos_tags'); ?></p>
+                        
+                      </div>
                     </div>
                   </div>
-                  <div class="main-posts__description">
-                    <p itemprop="description"><?php the_excerpt();?></p>
-                  </div>
-                  <div class="main-posts__btn">
-                    <div class="btn_custom btn--medium btn--filled">
-                    <a href="<?php the_permalink(); ?>">Ver más </a>
-                    </div>
-                  </div>
-                  <hr class="main-articles__line">
-                  <div class="main-posts__social">
-                    <div class="main-posts__comments">
-                      <p>999</p>
-                    </div>
-                    <div class="main-posts__tags">
-                      <p>tags</p>
-                      <p>tags</p>
-                    </div>
-                  </div>
-                </div>
+              </div>
               <?php endwhile;
                 wp_reset_query();
               ?>
-            </div>
 
+          </div>
           </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">mas populares</div>
