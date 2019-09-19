@@ -3,7 +3,7 @@
     <section class="main-parallax">
         <div class="overlay"></div>
         <div class="main-parallax__title main-parallax__title--post">
-        <h1><?php the_title();?></h1>
+            <h1><?php the_title();?></h1>
         <span><span>
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled">
@@ -139,8 +139,8 @@
                 </div>
                 <div class="main-post__form--detail">
                 <div class="main-post__form--arrow">
-                    <i class="fa fa-arrow-down"></i>
-                    <i class="fa fa-arrow-down"></i>
+                    <i class="fa fa-angle-up"></i>
+                    <i class="fa fa-angle-down"></i>
                 </div>
                 <div class="main-post__form--compatir">
                     <span>Responder</span>
@@ -153,4 +153,5 @@
         </div>
     </section>
 <?php endwhile; endif; ?>
+<?php echo $pagina_anterior=$_SERVER['HTTP_REFERER'];?>
 <?php get_footer(); ?>

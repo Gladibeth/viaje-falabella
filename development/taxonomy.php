@@ -8,7 +8,8 @@
       <h1><?php echo $taxonomy->name;?></h1>
       <span><?php echo $taxonomy->description;?></span>
       <div class="main-parallax__btn">
-        <div class="btn_custom btn--medium btn--filled">
+        <div class="btn_custom btn--medium btn--filled--decoration">
+          <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
           Volver
         </div>
       </div>

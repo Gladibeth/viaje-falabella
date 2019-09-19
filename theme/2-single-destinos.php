@@ -6,6 +6,7 @@
       <span>y que hacer?</span>
       <div class="main-parallax__btn">
         <div class="btn_custom btn--medium btn--filled">
+          <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
           Volver
         </div>
       </div>
@@ -65,11 +66,11 @@
                 <i class="fa fa-linkedin"></i>
               </div>
             </div>
-            <div class="main-posts__btn">
+            <!-- <div class="main-posts__btn">
               <div class="btn_custom btn--medium btn--filled">
                 Ver más
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -133,7 +134,7 @@
               </div>
               <div class="float-right">
                 <div class="btn_custom btn--medium btn--filled">
-                  Ver más
+                  comentar
                 </div>
               </div>
             </form>
