@@ -48,11 +48,11 @@
                     <i class="fa fa-linkedin"></i>
                 </div>
                 </div>
-                <div class="main-posts__btn">
+                <!-- <div class="main-posts__btn">
                 <div class="btn_custom btn--medium btn--filled">
                     Ver más
                 </div>
-                </div>
+                </div> -->
             </div>
             </div>
         </div>
