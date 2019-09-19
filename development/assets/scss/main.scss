@@ -581,6 +581,10 @@ select {
 
 .main-articles__item {
   position: relative;
+
+  // &:hover {
+  //   cursor: pointer;
+  // }
 }
 
 .main-articles__img {
@@ -663,6 +667,7 @@ footer {
   background-attachment: fixed;
   position: relative;
   background-position: 50% -140px;
+  padding: 0px 0 !important;
 
   .overlay {
     position: absolute;
@@ -672,6 +677,13 @@ footer {
     bottom: 0;
     /* background: black; */
     opacity: .5;
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+    position: relative;
+    background-position: 50% -140px;
+    background-repeat: no-repeat;
+
   }
 }
 
@@ -706,11 +718,11 @@ footer {
 
 .main-parallax__title {
   position: absolute;
-  bottom: 45%;
+  bottom: 40%;
   left: 10%;
 
   h1 {
-    font-size: 100px;
+    font-size: 90px;
     color: $white;
     font-weight: 800;
     line-height: 1rem;
@@ -740,6 +752,10 @@ footer {
 
 .main-country__item {
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .main-country__img {
@@ -858,8 +874,12 @@ footer {
     }
 
     .main-posts__description {
+      word-break: break-all !important;
+
       p {
         font-family: $beauSans;
+        width: 100%;
+        word-break: break-all !important
       }
 
       .main-posts__description--img {
@@ -975,6 +995,8 @@ footer {
 }
 
 .main-posts__description {
+  word-break: break-word;
+
   p {
     font-family: $beauSans;
   }
@@ -1352,16 +1374,16 @@ input {
   @include respond-to(xs) {
 
     position: absolute;
-    bottom: 45%;
+    bottom: 40%;
     left: 8%;
   }
-}
 
-.span_tabs {
-  @include respond-to(xs) {
-    font-size: 25px;
-    margin-top: 0px;
-    margin-left: -20px;
+  .span_tabs {
+    @include respond-to(xs) {
+      font-size: 25px;
+      margin-top: 0px;
+      margin-left: -20px;
+    }
   }
 }
 
@@ -1372,7 +1394,7 @@ input {
 .main-parallax__title h1 {
   @include respond-to(xs) {
 
-    font-size: 60px;
+    font-size: 40px !important;
   }
 }
 
@@ -1580,6 +1602,12 @@ input {
   }
 }
 
+hr.main-articles__line {
+  @include respond-to(xs) {
+    width: 85%;
+  }
+}
+
 .main-banner__img {
   @include respond-to(xs) {
     height: 115vh;
@@ -1587,6 +1615,18 @@ input {
 }
 
 .main-articles__title {
+  p {
+    @include respond-to(xs) {
+      font-size: 35px;
+    }
+  }
+
+  span {
+    @include respond-to(xs) {
+      font-size: 25px;
+    }
+  }
+
   @include respond-to(xs) {
     position: absolute;
     top: 40px;
@@ -1594,10 +1634,32 @@ input {
   }
 }
 
+.main-articles__img {
+  @include respond-to(xs) {
+    height: 200px;
+  }
+}
+
+.main-country__img {
+  @include respond-to(xs) {
+    height: 200px;
+  }
+}
+
+.main-country__title {
+  p {
+    @include respond-to(xs) {
+      font-size: 30px;
+    }
+  }
+}
+
+
+
 .main-article__btn {
   @include respond-to(xs) {
     position: absolute;
-    bottom: 60px;
+    bottom: 10%;
     left: 10%;
   }
 }
@@ -2153,7 +2215,7 @@ input {
 .main-parallax__title {
   @include respond-to(md) {
     position: absolute;
-    bottom: 45%;
+    bottom: 40%;
     left: 4%;
   }
 }
