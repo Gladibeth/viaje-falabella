@@ -168,10 +168,4 @@
         </div>
         </div>
     </section>
-<<<<<<< HEAD
 <?php endwhile; endif; ?>
-<?php echo $pagina_anterior=$_SERVER['HTTP_REFERER'];?>
-<?php get_footer(); ?>
-=======
-<?php endwhile; endif; ?>
->>>>>>> 6d98c541b62a9f37f9c977db768b4f348797a9dc
