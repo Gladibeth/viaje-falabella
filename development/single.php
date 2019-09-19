@@ -1,10 +1,23 @@
 <?php get_header(); ?>
-<?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
+<?php
+    $page_taxonomy = basename(dirname($_SERVER['HTTP_REFERER'])); //nombre de la taxonomia; 
+    $page_referer = basename($_SERVER['HTTP_REFERER']); //nombre de la subcategoria;
+    $taxonomy = get_categories(array(
+        'slug' =>  $page_referer,
+        'taxonomy' => $page_taxonomy,
+        'hide_empty' => false, //oculta categorias que no otenga post
+        'order' => 'ASC',
+        'showposts'=> 1,
+        'post_status' => 'publish',
+    )); 
+  
+?>
     <section class="main-parallax">
         <div class="overlay"></div>
-        <div class="main-parallax__title main-parallax__title--post">
-        <h1><?php the_title();?></h1>
-        <span><span>
+        <div class="main-parallax__title main-parallax__title--post" style="background-image: url('<?php echo get_field('image-category', $taxonomy[0]); ?>');"> <!-- muestra la imagen dinamica de la taxonomia -->
+        <h1><?php echo $taxonomy[0]->name;?></h1>
+        <?php   //print_r($taxonomy);?>
+        <span><?php echo $taxonomy[0]->description;?><span>
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled">
             <a href="javascript:window.history.back();">Volver</a>
@@ -12,6 +25,7 @@
         </div>
         </div>
     </section>
+    <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
     <section class="main-posts">
         <div class="container">
         <div class="main-detailsposts__content">
@@ -33,6 +47,8 @@
                 <div class="main-posts__social">
                 <div class="main-posts__comments">
                     <p>999</p>
+                    <?php echo the_category(); ?>
+                    
                 </div>
                 <div class="main-posts__tags">
                     <p>tags</p>
@@ -153,4 +169,3 @@
         </div>
     </section>
 <?php endwhile; endif; ?>
-<?php get_footer(); ?>
