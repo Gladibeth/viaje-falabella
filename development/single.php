@@ -15,11 +15,13 @@
     <section class="main-parallax">
         <div class="overlay"></div>
         <div class="main-parallax__title main-parallax__title--post" style="background-image: url('<?php echo get_field('image-category', $taxonomy[0]); ?>');"> <!-- muestra la imagen dinamica de la taxonomia -->
+
         <h1><?php echo $taxonomy[0]->name;?></h1>
         <?php   //print_r($taxonomy);?>
         <span><?php echo $taxonomy[0]->description;?><span>
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled">
+                <i class="fa fa-angle-left" style="margin-right:10px;"></i>
             <a href="javascript:window.history.back();">Volver</a>
             </div>
         </div>
@@ -45,7 +47,8 @@
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
-                <div class="main-posts__comments">
+                <div class="main-posts__comments d-flex">
+                    <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
                     <p>999</p>
                     <?php echo the_category(); ?>
                     
