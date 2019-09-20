@@ -13,8 +13,8 @@
   
 ?>
     <section class="main-parallax">
-        <div class="overlay"></div>
-        <div class="main-parallax__title main-parallax__title--post" style="background-image: url('<?php echo get_field('image-category', $taxonomy[0]); ?>');"> <!-- muestra la imagen dinamica de la taxonomia -->
+        <div class="overlay"  style="background-image: url('<?php echo get_field('image-category', $taxonomy[0]); ?>');"></div>
+        <div class="main-parallax__title main-parallax__title--post"> <!-- muestra la imagen dinamica de la taxonomia -->
         <h1><?php echo $taxonomy[0]->name;?></h1>
         <?php   //print_r($taxonomy);?>
         <span><?php echo $taxonomy[0]->description;?><span>
@@ -169,3 +169,4 @@
         </div>
     </section>
 <?php endwhile; endif; ?>
+<?php get_footer(); ?>
