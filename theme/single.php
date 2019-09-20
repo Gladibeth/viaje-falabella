@@ -20,6 +20,7 @@
         <span><?php echo $taxonomy[0]->description;?><span>
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled">
+                <i class="fa fa-angle-left" style="margin-right:10px;"></i>
             <a href="javascript:window.history.back();">Volver</a>
             </div>
         </div>
@@ -45,7 +46,8 @@
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
-                <div class="main-posts__comments">
+                <div class="main-posts__comments d-flex">
+                    <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
                     <p>999</p>
                     <?php echo the_category(); ?>
                     
@@ -155,8 +157,8 @@
                 </div>
                 <div class="main-post__form--detail">
                 <div class="main-post__form--arrow">
-                    <i class="fa fa-arrow-down"></i>
-                    <i class="fa fa-arrow-down"></i>
+                    <i class="fa fa-angle-up"></i>
+                    <i class="fa fa-angle-down"></i>
                 </div>
                 <div class="main-post__form--compatir">
                     <span>Responder</span>
@@ -169,4 +171,3 @@
         </div>
     </section>
 <?php endwhile; endif; ?>
-<?php get_footer(); ?>

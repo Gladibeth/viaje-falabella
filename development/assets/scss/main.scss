@@ -1131,6 +1131,14 @@ input {
     text-transform: uppercase;
     margin-right: 10px;
     font-family: $beauSans;
+    font-weight: 700;
+  }
+}
+
+.main-post__form--arrow {
+  i {
+    color: #3fae2a;
+    font-size: 25px;
   }
 }
 
