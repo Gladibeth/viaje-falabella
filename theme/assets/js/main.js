@@ -256,6 +256,8 @@ $(document).on('ready', function () {
 
 $('.variable-width').slick({
   dots: false,
+  arrows: false,
+  autoplay: true,
   infinite: true,
   speed: 300,
   slidesToShow: 2,

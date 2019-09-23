@@ -66,7 +66,7 @@ section {
   transition: .3s ease-in-out;
   font-family: $beauSans;
   margin-right: 20px;
-  font-size: 20px;
+  font-size: 18px;
 
   &.fixed-color {
     color: $green;
@@ -582,9 +582,9 @@ select {
 .main-articles__item {
   position: relative;
 
-  // &:hover {
-  //   cursor: pointer;
-  // }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .main-articles__img {
@@ -985,6 +985,12 @@ footer {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+.main-posts__item {
+  &:hover {
+    cursor: pointer;
   }
 }
 
@@ -1599,11 +1605,13 @@ input {
     .main-articles__title {
       @include respond-to(xs) {
         left: 20%;
+        top: 60px;
       }
     }
 
     .main-article__btn {
       @include respond-to(xs) {
+        bottom: 60px;
         left: 20%;
       }
     }
@@ -2150,13 +2158,13 @@ hr.main-articles__line {
   background-color: transparent !important;
   color: #000;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .nav-pills .nav-link {
   text-transform: uppercase;
   color: #3fae2a;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .span_tabs {
@@ -2216,7 +2224,7 @@ hr.main-articles__line {
 .nav-link {
   @include respond-to(md) {
     margin-right: 3px !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
 }
 
@@ -2239,5 +2247,25 @@ hr.main-articles__line {
 .nav-pills .nav-link {
   @include respond-to(md) {
     font-size: 20px !important;
+  }
+}
+
+.slider-left {
+  @include respond-to(md) {
+    padding: 5px 45px !important;
+
+  }
+}
+
+.slider-right {
+  @include respond-to(md) {
+    padding: 5px 45px !important;
+
+  }
+}
+
+.main-slider__next {
+  @include respond-to(sm) {
+    width: 400px !important;
   }
 }

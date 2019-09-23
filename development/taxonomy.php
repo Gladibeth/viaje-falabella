@@ -70,12 +70,13 @@
                   
                 </div>
                 <div class="main-posts__btn">
-                  <div class="btn_custom btn--medium btn--filled"><a href="<?php the_permalink(); ?>">Ver más </a>
+                  <div class="btn_custom btn--medium btn--filled-green "><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
-                  <div class="main-posts__comments">
+                  <div class="main-posts__comments d-flex">
+                    <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
                     <p>999</p>
                   </div>
                   <div class="main-posts__tags">
@@ -134,12 +135,13 @@
                   
                 </div>
                 <div class="main-posts__btn">
-                  <div class="btn_custom btn--medium btn--filled"><a href="<?php the_permalink(); ?>">Ver más </a>
+                  <div class="btn_custom btn--medium btn--filled-green"><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
-                  <div class="main-posts__comments">
+                  <div class="main-posts__comments d-flex">
+                    <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
                     <p>999</p>
                   </div>
                   <div class="main-posts__tags">

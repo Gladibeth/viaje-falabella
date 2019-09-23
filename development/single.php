@@ -13,16 +13,14 @@
   
 ?>
     <section class="main-parallax">
-        <div class="overlay"></div>
-        <div class="main-parallax__title main-parallax__title--post" style="background-image: url('<?php echo get_field('image-category', $taxonomy[0]); ?>');"> <!-- muestra la imagen dinamica de la taxonomia -->
-
-        <h1><?php echo $taxonomy[0]->name;?></h1>
-        <?php   //print_r($taxonomy);?>
-        <span><?php echo $taxonomy[0]->description;?><span>
+        <div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
+        <div class="main-parallax__title main-parallax__title--post">
+        <!-- <h1><?php echo $taxonomy->name;?></h1>
+        <span><?php echo $taxonomy->description;?></span> -->
         <div class="main-parallax__btn">
-            <div class="btn_custom btn--medium btn--filled">
-                <i class="fa fa-angle-left" style="margin-right:10px;"></i>
-            <a href="javascript:window.history.back();">Volver</a>
+            <div class="btn_custom btn--medium btn--filled--decoration">
+            <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
+            Volver
             </div>
         </div>
         </div>
