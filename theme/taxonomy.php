@@ -75,14 +75,8 @@
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
-<<<<<<< HEAD
-                  <div class="main-posts__comments d-flex">
-                    <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
-                    <p>999</p>
-=======
                   <div class="main-posts__comments">
                     <p><?php echo $numero_de_comentarios = get_comments_number();?></p>
->>>>>>> e1244e5c1369314cc2b6fad70bdebed61bd2546d
                   </div>
                   <div class="main-posts__tags">
                     <p>tags</p>
@@ -145,14 +139,8 @@
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
-<<<<<<< HEAD
-                  <div class="main-posts__comments d-flex">
-                    <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
-                    <p>999</p>
-=======
                   <div class="main-posts__comments">
                     <p><?php echo $numero_de_comentarios = get_comments_number();?></p>
->>>>>>> e1244e5c1369314cc2b6fad70bdebed61bd2546d
                   </div>
                   <div class="main-posts__tags">
                     <p>tags</p>

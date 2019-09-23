@@ -14,7 +14,7 @@
 ?>
     <section class="main-parallax">
         <div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
-        <div class="main-parallax__title main-parallax__title--post">
+        <div class="main-parallax__title main-parallax__title--post" style="bottom: -60px;">
         <h1><?php echo $taxonomy[0]->name;?></h1>
         <?php   //print_r($taxonomy);?>
         <span><?php echo $taxonomy[0]->description;?><span>
@@ -170,7 +170,7 @@
         </div>
         </div>
     </section>
-    <h1>222</h1>
+    <!-- <h1>222</h1> -->
     <?php
     
     ?>

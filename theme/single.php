@@ -12,20 +12,12 @@
     )); 
   
 ?>
-<<<<<<< HEAD
     <section class="main-parallax">
         <div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
-        <div class="main-parallax__title main-parallax__title--post">
-        <!-- <h1><?php echo $taxonomy->name;?></h1>
-        <span><?php echo $taxonomy->description;?></span> -->
-=======
-    <section class="main-parallax" style="background-image: url('<?php echo get_field('image-category', $taxonomy[0]); ?>');">
-        <div class="overlay"></div>
-        <div class="main-parallax__title main-parallax__title--post"> <!-- muestra la imagen dinamica de la taxonomia -->
+        <div class="main-parallax__title main-parallax__title--post" style="bottom: -60px;">
         <h1><?php echo $taxonomy[0]->name;?></h1>
         <?php   //print_r($taxonomy);?>
         <span><?php echo $taxonomy[0]->description;?><span>
->>>>>>> e1244e5c1369314cc2b6fad70bdebed61bd2546d
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled--decoration">
             <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
@@ -178,7 +170,7 @@
         </div>
         </div>
     </section>
-    <h1>222</h1>
+    <!-- <h1>222</h1> -->
     <?php
     
     ?>
