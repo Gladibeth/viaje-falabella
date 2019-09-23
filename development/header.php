@@ -63,7 +63,7 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">
-                ¿Cómo es tu viaje
+                ¿Cómo es tu viaje?
               </a>
           </li>
           <li class="nav-item">

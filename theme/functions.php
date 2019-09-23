@@ -163,7 +163,7 @@ function get_post_views($post_ID){
   return $count;
 }
 // A�0�9adir columna al listado de post de wp-admin
-function posts_column_views($defaults){
+/* function posts_column_views($defaults){
   $defaults['post_views'] = __('Vistas', 'your_textdomain');
   return $defaults;
 }
@@ -173,4 +173,13 @@ function posts_custom_column_views($column_name, $id){
     echo get_post_views(get_the_ID());
   }
 }
-add_action('manage_posts_custom_column', 'posts_custom_column_views', 5, 2);
+add_action('manage_posts_custom_column', 'posts_custom_column_views', 5, 2); */
+
+
+function bld_total_comentarios() {
+
+  $numero_comentarios = wp_count_comments();
+  return $numero_comentarios->approved;
+  }
+  
+  add_shortcode('total_comentarios','bld_total_comentarios');
