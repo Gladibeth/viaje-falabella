@@ -30,7 +30,7 @@
     <section class="main-posts">
         <div class="container">
         <div class="main-detailsposts__content">
-            <div class="main-posts__item" href="post.html">
+          <div class="main-posts__item" href="post.html">
             <div class="main-posts__box">
                 <div class="main-posts__title">
                 <p><?php the_title();?></p>
@@ -72,7 +72,7 @@
                 </div>
                 </div> -->
             </div>
-            </div>
+          </div>
         </div>
         <hr class="main-articles__line">
         </div>
