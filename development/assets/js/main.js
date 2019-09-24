@@ -264,3 +264,15 @@ $('.variable-width').slick({
   centerMode: true,
   variableWidth: true
 });
+
+// Loader
+
+$(window).on("load", function (e) {
+  setTimeout(function () {
+    $('#preloader').fadeOut(250, function () {
+      $(this).remove();
+    });
+    $('.body').css('overflow-y', 'auto');
+    $('header').css('z-index', '9');
+  });
+});

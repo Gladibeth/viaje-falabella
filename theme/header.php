@@ -18,6 +18,13 @@
 	<title>Viajes</title>
 </head>
 <body>
+  <div id="preloader">
+		<div class="main-loader">
+		  <span class="loader1"></span>
+		  <span class="loader2"></span>
+		  <span class="loader3"></span>
+		</div>
+	</div>
 	<header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
       <div class="main-brand">
