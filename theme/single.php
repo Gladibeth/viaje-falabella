@@ -13,7 +13,9 @@
   
 ?>
     <section class="main-parallax">
-        <div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
+        <?php $post_thumbnail_id = get_post_thumbnail_id();
+        $url = wp_get_attachment_url( $post_thumbnail_id);?>
+        <div class="overlay" style="background-image: url('<?php echo $url; ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
         <div class="main-parallax__title main-parallax__title--post" style="bottom: -60px;">
         <h1><?php echo $taxonomy[0]->name;?></h1>
         <?php   //print_r($taxonomy);?>
@@ -21,7 +23,7 @@
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled--decoration">
             <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
-            Volver
+            <a href="javascript:window.history.back();">Volver</a>
             </div>
         </div>
         </div>
@@ -30,7 +32,7 @@
     <section class="main-posts">
         <div class="container">
         <div class="main-detailsposts__content">
-            <div class="main-posts__item" href="post.html">
+          <div class="main-posts__item" href="post.html">
             <div class="main-posts__box">
                 <div class="main-posts__title">
                 <p><?php the_title();?></p>
@@ -72,7 +74,7 @@
                 </div>
                 </div> -->
             </div>
-            </div>
+          </div>
         </div>
         <hr class="main-articles__line">
         </div>
