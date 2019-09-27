@@ -79,43 +79,6 @@
         <hr class="main-articles__line">
         </div>
     </section>
-    <section class="main-post__contact">
-        <div class="container">
-        <div class="main-post__content">
-            <div class="main-post__info">
-            <h5 class="modal-title">Lorem</h5>
-            <h5 class="modal-subtitle">Ipsum</h5>
-            <div class="modal-box__content">
-                <p class="modal-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis ab quia eaque a cum? Voluptatem repellat officia cum repudiandae doloribus optio officiis, mollitia minima quos neque deleniti quibusdam?</p>
-            </div>
-            </div>
-            <div class="main-post__form">
-            <form>
-                <div class="form-group">
-                <input class="form-control" id="formGroupExampleInput" placeholder="Nombre" type="text">
-                </div>
-                <div class="form-group">
-                <input class="form-control" id="formGroupExampleInput2" placeholder="Destino" type="text">
-                </div>
-                <div class="form-group">
-                <input class="form-control" id="formGroupExampleInput2" placeholder="Correo" type="text">
-                </div>
-                <div class="form-group">
-                <input class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" type="phone">
-                </div>
-                <div class="group-btn">
-                <div class="btn_modal">
-                    Enviar
-                </div>
-                <div class="modal-footer__content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus fugiat non veritatis, aperiam porro maiores quo.</p>
-                </div>
-                </div>
-            </form>
-            </div>
-        </div>
-        </div>
-    </section>
     <section class="main-post__commend">
         <div class="container">
         <div class="main-commend__title">
@@ -172,13 +135,9 @@
         </div>
         </div>
     </section>
-    <!-- <h1>222</h1> -->
     <?php
-    
     ?>
 <?php endwhile; endif; ?>
 
-<?php if ( comments_open() || get_comments_number() ) : ?>
-            <?php comments_template(); ?>
-          <?php endif; ?>
+            <?php //comments_template(); ?>
 <?php require('footer.php'); ?>
