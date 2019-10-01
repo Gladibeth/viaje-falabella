@@ -161,6 +161,7 @@
           $numero_de_comentarios = get_comments_number();
             $args = array(
               'post_type' => get_post_type(),
+              'orderby' => 'comment_count',
               'tax_query' => array(
 								array(
 									'taxonomy' => $taxonomy->taxonomy,

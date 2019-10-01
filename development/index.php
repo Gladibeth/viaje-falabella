@@ -1,200 +1,112 @@
-<?php get_header(); ?>
-  
+<?php get_header(); ?> 
   <div class="main-banner">
     <div class="slider slider-for__banner">
-      <div class="main-banner__item">
-        <div class="main-banner__text">
-          <div class="main-banner__number">
-            <span>01</span>
-            <div class="main-banner-smaline"></div>
-          </div>
-          <div class="main-banner__title">
-            <p>Hola</p>
-            <span>ipsum</span>
-          </div>
-          <div class="main-banner__description">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
-          </div>
-          <div class="main-banner__mail">
-            <div class="main-banner__boxmail">
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <p>mailing ipsum</p>
-              </a>
+      <?php
+	      $args = array(
+        'post_type' => 'destinos',
+        'showposts'=> 3,
+        'post_status' => 'publish',
+        'meta_key' => 'destino-destacado',
+        'orderby' => 'meta_value_num', //valor del campo seleccionado
+        'order' => 'ASC'
+        );
+        $loop = new WP_Query( $args );
+      ?>
+      <?php while( $loop->have_posts() ) : $loop->the_post();?>
+        <div class="main-banner__item">
+          <div class="main-banner__text">
+            <div class="main-banner__number">
+              <span>01</span>
+              <div class="main-banner-smaline"></div>
+            </div>
+            <div class="main-banner__title">
+              <p><?php the_title();?></p>
+              <!-- <span></span> -->
+            </div>
+            <div class="main-banner__description">
+              <p><?php the_excerpt();?></p>
+            </div>
+            <div class="main-banner__mail">
+              <div class="main-banner__boxmail">
+                <a href="">
+                  <i class="fa fa-envelope"></i>
+                  <p>mailing ipsum</p>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="main-banner__camara">
-          <div class="text__camara">
-            <p>Hello good morning</p>
-          </div>
-          <div class="icons__camara">
-            <i class="fa fa-camera" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="main-banner__scroll">
-        <div class="scroll__container">
-          <a href="#destiny">
-           SCROLL
-          </a>
-        </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/recomendados-1.jpg">
-        </div>
-      </div>
-      <div class="main-banner__item">
-        <div class="main-banner__text">
-          <div class="main-banner__number">
-            <span>02</span>
-            <div class="main-banner-smaline"></div>
-          </div>
-          <div class="main-banner__title">
-            <p>como</p>
-            <span>ipsum</span>
-          </div>
-          <div class="main-banner__description">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
-          </div>
-          <div class="main-banner__mail">
-            <div class="main-banner__boxmail">
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <p>mailing ipsum</p>
-              </a>
+          <div class="main-banner__camara">
+            <div class="text__camara">
+              <p> <?php echo the_field("descripcion_imagen_post"); ?></p>
+            </div>
+            <div class="icons__camara">
+              <i class="fa fa-camera" aria-hidden="true"></i>
             </div>
           </div>
-        </div>
-        <div class="main-banner__camara">
-          <div class="text__camara">
-            <p>Hello good morning</p>
+          <div class="main-banner__scroll">
+          <div class="scroll__container">
+            <a href="#destiny">
+            SCROLL
+            </a>
           </div>
-          <div class="icons__camara">
-            <i class="fa fa-camera" aria-hidden="true"></i>
           </div>
-        </div>
-        <div class="main-banner__scroll">
-        <div class="scroll__container">
-          <a href="#destiny">
-           SCROLL
-          </a>
-        </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-3.jpg">
-        </div>
-      </div>
-      <div class="main-banner__item">
-        <div class="main-banner__text">
-          <div class="main-banner__number">
-            <span>03</span>
-            <div class="main-banner-smaline"></div>
-          </div>
-          <div class="main-banner__title">
-            <p>estas</p>
-            <span>ipsum</span>
-          </div>
-          <div class="main-banner__description">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea molestias inventore? Consectetur doloribus aut minus error temporibus aliquam.</p>
-          </div>
-          <div class="main-banner__mail">
-            <div class="main-banner__boxmail">
-              <a href="">
-                <i class="fa fa-envelope"></i>
-                <p>mailing ipsum</p>
-              </a>
-            </div>
+          <div class="main-banner__img">
+            <img src="<?php the_post_thumbnail_url(); ?>"/>
           </div>
         </div>
-        <div class="main-banner__camara">
-          <div class="text__camara">
-            <p>Hello good morning</p>
-          </div>
-          <div class="icons__camara">
-            <i class="fa fa-camera" aria-hidden="true"></i>
-          </div>
-        </div>
-        <div class="main-banner__scroll">
-        <div class="scroll__container">
-          <a href="#destiny">
-           SCROLL
-          </a>
-        </div>
-        </div>
-        <div class="main-banner__img">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Capadocia.jpg">
-        </div>
-      </div>
-      
+      <?php endwhile;
+	      wp_reset_query();
+      ?>
     </div>
     <div class="slider slider-nav__banner">
-      <div>
-        <div class="main-slider__next">
-          <div class="main-slider__box">
-            <div class="main-slider__text">
-              <hr class="main-slider__line">
-              <div class="main-slider__number">
-                <span class="number--active">01</span>
-                <div class="main-slider-smaline"></div>
+
+
+    <?php
+	      $args = array(
+        'post_type' => 'destinos',
+        'showposts'=> 3,
+        'post_status' => 'publish',
+        'meta_key' => 'destino-destacado',
+        'orderby' => 'meta_value_num', //valor del campo seleccionado
+        'order' => 'ASC'
+        );
+        $loop = new WP_Query( $args );
+      ?>
+      <?php while( $loop->have_posts() ) : $loop->the_post();?>
+        <div>
+          <div class="main-slider__next">
+            <div class="main-slider__box">
+              <div class="main-slider__text">
+                <hr class="main-slider__line">
+                <div class="main-slider__number">
+                  <span class="number--active">01</span>
+                  <div class="main-slider-smaline"></div>
+                </div>
+                <div class="main-slider__title">
+                  <p><?php the_title();?></p>
+                </div>
+                <div class="main-slider__description">
+                  <!-- <p>ipsum</p> -->
+                </div>
               </div>
-              <div class="main-slider__title">
-                <p>Lorem</p>
+              <div class="main-slider__img">
+                <img class="main-slider__img--active" src="<?php the_post_thumbnail_url(); ?>">
               </div>
-              <div class="main-slider__description">
-                <p>ipsum</p>
-              </div>
-            </div>
-            <div class="main-slider__img">
-              <img class="main-slider__img--active" src="<?php echo get_template_directory_uri();?>/assets/img/recomendados-1.jpg">
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="main-slider__next">
-          <div class="main-slider__box">
-            <div class="main-slider__text">
-              <hr class="main-slider__line">
-              <div class="main-slider__number">
-                <span class="number--active">02</span>
-                <div class="main-slider-smaline"></div>
-              </div>
-              <div class="main-slider__title">
-                <p>Lorem</p>
-              </div>
-              <div class="main-slider__description">
-                <p>ipsum</p>
-              </div>
-            </div>
-            <div class="main-slider__img">
-              <img class="main-slider__img--active" src="<?php echo get_template_directory_uri();?>/assets/img/articulo-3.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="main-slider__next">
-          <div class="main-slider__box">
-            <div class="main-slider__text">
-              <hr class="main-slider__line">
-              <div class="main-slider__number">
-                <span class="number--active">03</span>
-                <div class="main-slider-smaline"></div>
-              </div>
-              <div class="main-slider__title">
-                <p>Lorem</p>
-              </div>
-              <div class="main-slider__description">
-                <p>ipsum</p>
-              </div>
-            </div>
-            <div class="main-slider__img">
-              <img class="main-slider__img--active" src="<?php echo get_template_directory_uri();?>/assets/img/Capadocia.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
+        <?php endwhile;
+	      wp_reset_query();
+      ?>
     </div>
+
+
+
+
+
+
+
+    
   </div>
   <section class="main-destiny" id="destiny">
     <div class="container">
