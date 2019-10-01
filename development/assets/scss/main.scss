@@ -554,15 +554,15 @@ textarea {
 
     }
 
-    .main-post__description {
+   
 
 
-      p {
-        font-size: 18px;
-        font-family: $beauSans;
-        font-weight: 100;
-      }
+    p {
+      font-size: 18px;
+      font-family: $beauSans;
+      font-weight: 100;
     }
+    
   }
 
   .main-post__img {
@@ -575,8 +575,9 @@ textarea {
     }
   }
 
-  .main-post__btn {
+  .btn_custom.btn--medium.btn-border {
     width: 50%;
+    font-weight:400;
   }
 }
 
@@ -1202,8 +1203,12 @@ input {
 
 .slider-nav__banner {
   position: absolute;
-  left: 68%;
+  left: 71%;
   bottom: 180px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .nav-team__img {
@@ -1326,7 +1331,7 @@ input {
   }
 }
 
-.main-post__description {
+.main-post__box {
   p {
 
     @include respond-to(xs) {

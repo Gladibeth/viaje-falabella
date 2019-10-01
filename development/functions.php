@@ -183,3 +183,35 @@ function bld_total_comentarios() {
   }
   
   add_shortcode('total_comentarios','bld_total_comentarios');
+
+
+
+
+
+
+
+
+
+
+//++++++++++++++++++++++++++++++++++++registrar sidebar
+if(function_exists('register_sidebar')) {
+  register_sidebar(array(
+      'name'          => 'Viajero del mes',
+      'id'            => 'viajero-del-mes',
+      'description' => 'Insertar texto y link del viajero del mes',
+      'before_widget' => ' <div class="main-post__content"><div class="main-post__box">',
+      'after_widget'  => '</div>',
+      'before_title'  => "<div class='main-post__title'><p>",
+      'after_title'   => '</p></div>',
+
+  ));
+  register_sidebar(array(
+    'name'          => 'Viajero del mes imagen',
+    'id'            => 'viajero-del-mes-imagen',
+    'description' => 'Insertar imagen del viajero del mes imagen',
+    'before_widget' => '<div class="main-post__img">',
+    'after_widget'  => '</div>'
+
+));
+};
+//+++++++++++++++++++++++++++++++++++ end siderbar

@@ -45,7 +45,6 @@
                 'order' => 'ASC',
                 'post_status' => 'publish',
               )); ?>
-              <?php var_dump($subcategories);?>
               <?php foreach ($subcategories as $sub_category) : ?>
                 <div class="main-articles__item">
                   <div class="main-articles__img">

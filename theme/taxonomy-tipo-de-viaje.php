@@ -1,1 +1,0 @@
-tipo de viaje

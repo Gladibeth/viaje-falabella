@@ -105,6 +105,7 @@ $('.slider-nav__banner').slick({
   slidesToScroll: 1,
   asNavFor: '.slider-for__banner',
   dots: true,
+  arrows: false,
   focusOnSelect: true,
   responsive: [{
       breakpoint: 1200,

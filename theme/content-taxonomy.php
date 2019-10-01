@@ -1,5 +1,6 @@
 <?php get_header(); //Obtener el header
   $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual --> 
+
 ?>
   <section class="main-parallax">
     <div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
@@ -35,7 +36,7 @@
           <div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
           <?php //Post mas recientes
             $args = array(
-              'post_type' => get_post_type(),
+              'post_type' => 'destinos',
               'tax_query' => array(
 								array(
 									'taxonomy' => $taxonomy->taxonomy,
@@ -95,7 +96,7 @@
           <div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
           <?php //mas populares
             $args = array(
-            'post_type' => get_post_type(),
+            'post_type' => 'destinos',
             'meta_key' => 'post_views',
             'orderby' => 'meta_value_num',
             'order' => 'DESC',
@@ -160,7 +161,7 @@
           <?php //Post con mas comentarios
           $numero_de_comentarios = get_comments_number();
             $args = array(
-              'post_type' => get_post_type(),
+              'post_type' => 'destinos',
               'tax_query' => array(
 								array(
 									'taxonomy' => $taxonomy->taxonomy,
