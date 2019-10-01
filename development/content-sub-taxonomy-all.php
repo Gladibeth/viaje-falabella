@@ -15,7 +15,7 @@
 <div class="overlay" style="background-image: url('<?php echo $url; ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
 <div class="main-parallax__title main-parallax__title--post">
  <h1><?php the_title();?></h1>
- <span></span>
+
  <div class="main-parallax__btn">
    <div class="btn_custom btn--medium btn--filled--decoration">
      <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>

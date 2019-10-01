@@ -554,7 +554,7 @@ textarea {
 
     }
 
-   
+
 
 
     p {
@@ -562,7 +562,7 @@ textarea {
       font-family: $beauSans;
       font-weight: 100;
     }
-    
+
   }
 
   .main-post__img {
@@ -577,7 +577,7 @@ textarea {
 
   .btn_custom.btn--medium.btn-border {
     width: 50%;
-    font-weight:400;
+    font-weight: 400;
   }
 }
 
@@ -767,8 +767,35 @@ footer {
   }
 
   &.main-parallax__title--post {
-    bottom: 60px;
+    bottom: 120px;
     font-family: $beauSans;
+
+    @include respond-to(xl) {
+      bottom: 120px;
+    }
+
+    @include respond-to(md) {
+      bottom: 40px;
+    }
+
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 45px;
+
+      @include respond-to(md) {
+        font-size: 60px !important;
+        margin-bottom: 45px;
+      }
+
+      @include respond-to(sm) {
+        line-height: 5rem;
+      }
+
+      @include respond-to(xs) {
+        line-height: 3rem;
+      }
+    }
   }
 }
 
@@ -2344,6 +2371,12 @@ hr.main-articles__line {
 .main-slider__next {
   @include respond-to(sm) {
     width: 400px !important;
+  }
+}
+
+.main-parallax__title--post {
+  @include respond-to(xl) {
+    bottom: 120px !important;
   }
 }
 
