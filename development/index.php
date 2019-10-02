@@ -29,7 +29,8 @@
             <div class="main-banner__mail">
               <div class="main-banner__boxmail">
                 <a href="">
-                  <i class="fa fa-envelope"></i>
+                  <i class="fa fa-envelope-o "></i>
+                  <span></span>
                   <p>mailing ipsum</p>
                 </a>
               </div>

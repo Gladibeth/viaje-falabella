@@ -371,7 +371,7 @@ textarea {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        height: 100%;
+        main-banner__mailheight: 100%;
       }
     }
   }
@@ -383,12 +383,12 @@ textarea {
   .main-banner__boxmail {
     display: flex;
     align-items: baseline;
-    background-color: $white;
+    background-color: #fff;
     padding: 5px;
-    width: 50%;
+    // width: 100%;
     justify-content: flex-start;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-family: $beauSans;
     font-weight: 300;
 
@@ -403,7 +403,18 @@ textarea {
       }
 
       i {
-        margin-right: 5px;
+        margin-right: 10px;
+        font-size: 25px;
+      }
+
+      span {
+        width: 1px;
+        height: 25px;
+        background-color: #545759;
+      }
+
+      p {
+        margin-left: 10px;
       }
     }
 
@@ -554,7 +565,7 @@ textarea {
 
     }
 
-   
+
 
 
     p {
@@ -562,7 +573,7 @@ textarea {
       font-family: $beauSans;
       font-weight: 100;
     }
-    
+
   }
 
   .main-post__img {
@@ -577,7 +588,7 @@ textarea {
 
   .btn_custom.btn--medium.btn-border {
     width: 50%;
-    font-weight:400;
+    font-weight: 400;
   }
 }
 
