@@ -288,9 +288,9 @@ function dcms_disable_url_comment($fields) {
   return $fields;
 }
 add_filter('comment_form_default_fields','dcms_disable_url_comment');
+//en url
 
-
-
+//editar el campo author del formulario
 function modify_comment_fields($fields){
 
   $fields =  array('author' =>'<div class="main-post__form--form"><div class="form-group">
@@ -301,3 +301,7 @@ function modify_comment_fields($fields){
 
   }
   add_filter('comment_form_default_fields','modify_comment_fields');
+//end campo ahutor formulario
+
+
+//editar lista de comentarios
