@@ -299,7 +299,7 @@ textarea {
 .main-slider__next {
   // position: absolute;
   right: 0px;
-  bottom: 30px;
+  bottom: 0px;
   width: 440px;
 
 
@@ -317,6 +317,7 @@ textarea {
       width: 140px;
       font-family: $beauSans;
       font-weight: 300;
+      padding-top: 50px;
 
       .main-slider__number {
         padding: 0 25px;
@@ -2562,4 +2563,23 @@ hr.main-articles__line {
   animation-delay: 0.5s;
   transform-origin: center;
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-slider__next {
+  position: relative;
+}
+
+/* progress bar */
+.slider-progress {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0px;
+}
+
+.slider-progress .progress {
+  width: 0%;
+  height: 5px;
+  background: #fff;
 }
