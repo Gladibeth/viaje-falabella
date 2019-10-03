@@ -29,7 +29,8 @@
             <div class="main-banner__mail">
               <div class="main-banner__boxmail">
                 <a href="">
-                  <i class="fa fa-envelope"></i>
+                  <i class="fa fa-envelope-o "></i>
+                  <span></span>
                   <p>mailing ipsum</p>
                 </a>
               </div>
@@ -73,9 +74,12 @@
       <?php while( $loop->have_posts() ) : $loop->the_post();?>
         <div>
           <div class="main-slider__next">
+            <div class="slider-progress">
+              <div class="progress"></div>
+            </div>
             <div class="main-slider__box">
               <div class="main-slider__text">
-                <hr class="main-slider__line">
+                <!-- <hr class="main-slider__line"> -->
                 <div class="main-slider__number">
                   <span class="number--active">01</span>
                   <div class="main-slider-smaline"></div>

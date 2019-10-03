@@ -299,7 +299,7 @@ textarea {
 .main-slider__next {
   // position: absolute;
   right: 0px;
-  bottom: 30px;
+  bottom: 0px;
   width: 440px;
 
 
@@ -317,6 +317,7 @@ textarea {
       width: 140px;
       font-family: $beauSans;
       font-weight: 300;
+      padding-top: 50px;
 
       .main-slider__number {
         padding: 0 25px;
@@ -371,7 +372,7 @@ textarea {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        height: 100%;
+        main-banner__mailheight: 100%;
       }
     }
   }
@@ -383,12 +384,12 @@ textarea {
   .main-banner__boxmail {
     display: flex;
     align-items: baseline;
-    background-color: $white;
+    background-color: #fff;
     padding: 5px;
-    width: 50%;
+    // width: 100%;
     justify-content: flex-start;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-family: $beauSans;
     font-weight: 300;
 
@@ -403,7 +404,18 @@ textarea {
       }
 
       i {
-        margin-right: 5px;
+        margin-right: 10px;
+        font-size: 25px;
+      }
+
+      span {
+        width: 1px;
+        height: 25px;
+        background-color: #545759;
+      }
+
+      p {
+        margin-left: 10px;
       }
     }
 
@@ -554,7 +566,7 @@ textarea {
 
     }
 
-   
+
 
 
     p {
@@ -562,7 +574,7 @@ textarea {
       font-family: $beauSans;
       font-weight: 100;
     }
-    
+
   }
 
   .main-post__img {
@@ -577,7 +589,7 @@ textarea {
 
   .btn_custom.btn--medium.btn-border {
     width: 50%;
-    font-weight:400;
+    font-weight: 400;
   }
 }
 
@@ -767,8 +779,35 @@ footer {
   }
 
   &.main-parallax__title--post {
-    bottom: 60px;
+    bottom: 120px;
     font-family: $beauSans;
+
+    @include respond-to(xl) {
+      bottom: 120px;
+    }
+
+    @include respond-to(md) {
+      bottom: 40px;
+    }
+
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 45px;
+
+      @include respond-to(md) {
+        font-size: 60px !important;
+        margin-bottom: 45px;
+      }
+
+      @include respond-to(sm) {
+        line-height: 5rem;
+      }
+
+      @include respond-to(xs) {
+        line-height: 3rem;
+      }
+    }
   }
 }
 
@@ -2347,6 +2386,12 @@ hr.main-articles__line {
   }
 }
 
+.main-parallax__title--post {
+  @include respond-to(xl) {
+    bottom: 120px !important;
+  }
+}
+
 
 
 #preloader {
@@ -2518,4 +2563,23 @@ hr.main-articles__line {
   animation-delay: 0.5s;
   transform-origin: center;
   transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.main-slider__next {
+  position: relative;
+}
+
+/* progress bar */
+.slider-progress {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0px;
+}
+
+.slider-progress .progress {
+  width: 0%;
+  height: 5px;
+  background: #fff;
 }
