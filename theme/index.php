@@ -59,8 +59,6 @@
       ?>
     </div>
     <div class="slider slider-nav__banner">
-
-
     <?php
 	      $args = array(
         'post_type' => 'destinos',
@@ -99,15 +97,8 @@
 	      wp_reset_query();
       ?>
     </div>
-
-
-
-
-
-
-
-    
   </div>
+
   <section class="main-destiny" id="destiny">
     <div class="container">
       <div class="content__title">
@@ -325,3 +316,20 @@
     });
   </script>
 <?php get_footer(); ?>
+<!-- <div class="slider slider-for__banner">
+      <?php
+	      $args = array(
+        'post_type' => 'destinos',
+        'showposts'=> 3,
+        'post_status' => 'publish',
+        'order' => 'ASC'
+        );
+        $loop = new WP_Query( $args );
+      ?>
+      <?php while( $loop->have_posts() ) : $loop->the_post();?>
+      <?php 
+      echo $term_meta = get_option("term_meta['texto01']");
+      ?>
+      <?php endwhile;
+	      wp_reset_query();
+      ?> -->

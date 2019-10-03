@@ -79,65 +79,10 @@
         <hr class="main-articles__line">
         </div>
     </section>
-    <section class="main-post__commend">
-        <div class="container">
-        <div class="main-commend__title">
-            <h2>comentarios</h2>
-        </div>
-        <div class="main-commend__formbox">
-            <div class="main-commend__form">
-            <div class="main-post__form--img">
-                <img class="img-round lazy" data-src="<?php echo get_template_directory_uri();?>/assets/img/img-4.jpeg">
-            </div>
-            <div class="main-post__form--form">
-                <form>
-                <div class="form-group">
-                    <input class="form-control" id="formGroupExampleInput" placeholder="Nombre y Apellido" type="text">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Comentario"  rows="3"></textarea>
-                </div>
-                <div class="float-right">
-                    <div class="btn_custom btn--medium btn--filled">
-                    Enviar
-                    </div>
-                </div>
-                </form>
-            </div>
-            </div>
-        </div>
-        <hr class="line-gray">
-        <div class="main-commend__formbox">
-            <div class="main-commend__form">
-            <div class="main-post__form--img">
-                <img class="img-round lazy" data-src="<?php echo get_template_directory_uri();?>/assets/img/img-4.jpeg">
-            </div>
-            <div class="main-post__form--info">
-                <div class="main-post__form--name">
-                <span class="form-name">Gladibeth Franco</span>
-                <span>09/09/2019</span>
-                </div>
-                <div class="main-post__form--description">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quae nam quis ipsum cupiditate quod, culpa numquam dol.</p>
-                </div>
-                <div class="main-post__form--detail">
-                <div class="main-post__form--arrow">
-                    <i class="fa fa-angle-up"></i>
-                    <i class="fa fa-angle-down"></i>
-                </div>
-                <div class="main-post__form--compatir">
-                    <span>Responder</span>
-                    <span>Compartir</span>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
+    
     <?php
     ?>
 <?php endwhile; endif; ?>
 
-            <?php //comments_template(); ?>
+    <?php comments_template(); ?>
 <?php require('footer.php'); ?>
