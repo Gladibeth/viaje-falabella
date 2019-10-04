@@ -130,4 +130,7 @@ form{
 .children .main-post__form--detail{
     display: none;
 }
+.main-commend__form{
+    display: block !important;
+}
 </style>

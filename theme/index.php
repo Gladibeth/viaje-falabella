@@ -26,7 +26,7 @@
             <div class="main-banner__description">
               <p><?php the_excerpt();?></p>
             </div>
-            <div class="main-banner__mail">
+            <!-- <div class="main-banner__mail">
               <div class="main-banner__boxmail">
                 <a href="">
                   <i class="fa fa-envelope-o "></i>
@@ -34,7 +34,7 @@
                   <p>mailing ipsum</p>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="main-banner__camara">
             <div class="text__camara">
@@ -118,7 +118,7 @@
                 <div class="content-items">
                   <div class="main-destiny__box">
                     <div class="main-destiny__title">
-                      <p>Edimburgo</p>
+                      <p>Edimburgo4</p>
                     </div>
                     <div class="main-destiny__site">
                       <div class="main-destiny__icon">
@@ -173,69 +173,6 @@
                 </a>
               </div>
             </div>
-
-            <div class="slider-single">
-              <div style="display:grid; grid-template-columns: 50% 50%;" class="content">
-                <div class="content-items">
-                  <div class="main-destiny__box">
-                    <div class="main-destiny__title">
-                      <p>Edimburgo</p>
-                    </div>
-                    <div class="main-destiny__site">
-                      <div class="main-destiny__icon">
-                        <i></i>
-                      </div>
-                      <div class="main-destiny__text">
-                        Escocia
-                      </div>
-                    </div>
-                    <hr class="main-articles__line">
-                    <div class="main-destiny__descrption">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi
-                        perferendis,
-                        dignissimos.</p>
-                    </div>
-                  </div>
-
-                </div>
-                <img class="slider-single-image"
-                  src="<?php echo get_template_directory_uri();?>/assets/img/recomendados-1.jpg"
-                  alt="1" />
-                </a>
-              </div>
-            </div>
-            <div class="slider-single">
-              <div style="display:grid; grid-template-columns: 50% 50%;" class="content">
-                <div class="content-items">
-                  <div class="main-destiny__box">
-                    <div class="main-destiny__title">
-                      <p>Edimburgo</p>
-                    </div>
-                    <div class="main-destiny__site">
-                      <div class="main-destiny__icon">
-                        <i></i>
-                      </div>
-                      <div class="main-destiny__text">
-                        Escocia
-                      </div>
-                    </div>
-                    <hr class="main-articles__line">
-                    <div class="main-destiny__descrption">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi
-                        perferendis,
-                        dignissimos.</p>
-                    </div>
-                  </div>
-
-                </div>
-                <img class="slider-single-image"
-                  src="<?php echo get_template_directory_uri();?>/assets/img/recomendados-1.jpg"
-                  alt="1" />
-                </a>
-              </div>
-            </div>
-
-
           </div>
 
           <a class="slider-left" href="javascript:void(0);"><i class=""></i></a>

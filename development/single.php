@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php
-    $page_taxonomy = basename(dirname($_SERVER['HTTP_REFERER'])); //nombre de la taxonomia; 
+   /*  $page_taxonomy = basename(dirname($_SERVER['HTTP_REFERER'])); //nombre de la taxonomia; 
     $page_referer = basename($_SERVER['HTTP_REFERER']); //nombre de la subcategoria;
     $taxonomy = get_categories(array(
         'slug' =>  $page_referer,
@@ -9,7 +9,7 @@
         'order' => 'ASC',
         'showposts'=> 1,
         'post_status' => 'publish',
-    )); 
+    ));  */
   
 ?>
     <section class="main-parallax">
@@ -17,9 +17,9 @@
         $url = wp_get_attachment_url( $post_thumbnail_id);?>
         <div class="overlay" style="background-image: url('<?php echo $url; ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
         <div class="main-parallax__title main-parallax__title--post" style="bottom: -60px;">
-        <h1><?php echo $taxonomy[0]->name;?></h1>
+        <h1><?php //echo $taxonomy[0]->name;?><?php the_title();?></h1>
         <?php   //print_r($taxonomy);?>
-        <span><?php echo $taxonomy[0]->description;?><span>
+        <span><?php //echo $taxonomy[0]->description;?><span>
         <div class="main-parallax__btn">
             <div class="btn_custom btn--medium btn--filled--decoration">
             <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
@@ -35,7 +35,7 @@
           <div class="main-posts__item" href="post.html">
             <div class="main-posts__box">
                 <div class="main-posts__title">
-                <p><?php the_title();?></p>
+                
                 </div>
                 <div class="main-posts__autor">
                 <div class="main-posts__name">
@@ -83,6 +83,7 @@
     <?php
     ?>
 <?php endwhile; endif; ?>
-
-    <?php comments_template(); ?>
+<?php if ( comments_open() || get_comments_number() ) : ?>
+            <?php comments_template(); ?>
+          <?php endif; ?>
 <?php require('footer.php'); ?>
