@@ -110,75 +110,56 @@
       </div>
       <div style="position:relative;">
         <div class="slider-container">
-
           <div class="slider-content">
-
-            <div class="slider-single">
+            <?php $count_category = 0; ?>
+            <?php
+            // Listado de categorias
+            $categories = get_categories( array(
+              'taxonomy' => 'tipo_destinos',
+              'hide_empty' => false,
+              'orderby' => 'name',
+              'order'   => 'DES',
+            ) );
+            ?>
+            <?php foreach ($categories as $category):?>
+            <?php if (get_field('destacar_destino',$category)): ?>
+              <?php $count_category++; ?>
+              <?php if ($count_category < 4): ?>
+              <div class="slider-single">
               <div style="display:grid; grid-template-columns: 50% 50%;" class="content">
                 <div class="content-items">
                   <div class="main-destiny__box">
                     <div class="main-destiny__title">
-                      <p>Edimburgo4</p>
+                      <p><?php echo $category->name; ?></p>
                     </div>
                     <div class="main-destiny__site">
                       <div class="main-destiny__icon">
                         <i></i>
                       </div>
                       <div class="main-destiny__text">
-                        Escocia
+                      <?php echo the_field('ciudad_destino', $category); ?>
                       </div>
                     </div>
                     <hr class="main-articles__line">
                     <div class="main-destiny__descrption">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi
-                        perferendis,
-                        dignissimos.</p>
+                      <p><?php echo the_field('descripcion_destino', $category); ?></p>
                     </div>
                   </div>
 
                 </div>
                 <img class="slider-single-image"
-                  src="<?php echo get_template_directory_uri();?>/assets/img/recomendados-1.jpg"
+                  src="<?php echo the_field('image-category', $category); ?>"
                   alt="1" />
                 </a>
               </div>
             </div>
-            <div class="slider-single">
-              <div style="display:grid; grid-template-columns: 50% 50%;" class="content">
-                <div class="content-items">
-                  <div class="main-destiny__box">
-                    <div class="main-destiny__title">
-                      <p>Edimburgo 2</p>
-                    </div>
-                    <div class="main-destiny__site">
-                      <div class="main-destiny__icon">
-                        <i></i>
-                      </div>
-                      <div class="main-destiny__text">
-                        Escocia
-                      </div>
-                    </div>
-                    <hr class="main-articles__line">
-                    <div class="main-destiny__descrption">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis aspernatur commodi
-                        perferendis,
-                        dignissimos.</p>
-                    </div>
-                  </div>
-
-                </div>
-                <img class="slider-single-image"
-                  src="<?php echo get_template_directory_uri();?>/assets/img/recomendados-1.jpg"
-                  alt="1" />
-                </a>
-              </div>
-            </div>
+              <?php else: break;?>
+              <?php endif; ?>
+              <?php endif; ?>
+            <?php endforeach; ?>   
           </div>
-
           <a class="slider-left" href="javascript:void(0);"><i class=""></i></a>
-
           <a class="slider-right" href="javascript:void(0);"><i class=""></i></a>
-
         </div>
       </div>
     </div>
@@ -257,20 +238,3 @@
     });
   </script>
 <?php get_footer(); ?>
-<!-- <div class="slider slider-for__banner">
-      <?php
-	      $args = array(
-        'post_type' => 'destinos',
-        'showposts'=> 3,
-        'post_status' => 'publish',
-        'order' => 'ASC'
-        );
-        $loop = new WP_Query( $args );
-      ?>
-      <?php while( $loop->have_posts() ) : $loop->the_post();?>
-      <?php 
-      echo $term_meta = get_option("term_meta['texto01']");
-      ?>
-      <?php endwhile;
-	      wp_reset_query();
-      ?> -->

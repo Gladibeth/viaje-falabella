@@ -76,7 +76,7 @@
           <label class="label" for="destino-destacado"><?php  _e( 'Destacar post', 'cyb_textdomain' ); ?></label>
     </p>
       <p>
-          <label class="label"  for="descripcion_imagen_post"><?php _e( 'Descripción de la imagen del post ', 'cyb_textdomain' );?></label>
+          <label class="label"  for="descripcion_imagen_post"><?php _e( 'Descripción de la imagen del post', 'cyb_textdomain' );?></label>
           <input minlength="10" maxlength="20" name="descripcion_imagen_post" id="descripcion_imagen_post" type="text" value="<?php echo esc_attr( get_post_meta( $post->ID, 'descripcion_imagen_post', true ) ); ?>">
       </p>
       <?php
@@ -221,11 +221,12 @@ if(function_exists('register_sidebar')) {
 
 
 //+++++++++++++++++++++++++++++++++++campos taxonomias
-function categorias_add_new_meta_fields(){
+/* function categorias_add_new_meta_fields(){
 	?>
 	<div class="form-field">
-		<label for="term_meta[texto01]">Texto 01</label>
-		<input type="text" name="term_meta[texto01]" id="term_meta[texto01]" value="">
+    <label for="term_meta[texto01]">Texto 01</label>
+    <input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="1">
+		<input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="">
 		<p class="description">Descripción para este campo</p>
 	</div>
 	<div class="form-field">
@@ -246,7 +247,7 @@ function categorias_edit_meta_fields($term){
 				<label for="term_meta[texto01]">Texto 01</label>
 			</th>
 			<td>
-				<input type="text" name="term_meta[texto01]" id="term_meta[texto01]" value="<?php echo esc_attr( $term_meta['texto01'] ) ? esc_attr( $term_meta['texto01'] ) : ''; ?>">
+				<input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="<?php echo esc_attr( $term_meta['texto01'] ) ? esc_attr( $term_meta['texto01'] ) : ''; ?>">
 				<p class="description">Descripción para este campo</p>
 			</td>
 		</tr>
@@ -277,7 +278,7 @@ function categorias_save_custom_meta( $term_id ) {
 }  
 
 add_action( 'edited_tipo_destinos', 'categorias_save_custom_meta', 10, 2 );  
-add_action( 'create_tipo_destinos', 'categorias_save_custom_meta', 10, 2 );
+add_action( 'create_tipo_destinos', 'categorias_save_custom_meta', 10, 2 ); */
 //+++++++++++++++++++++++++++++++++++end campos taxonomias
 
 
