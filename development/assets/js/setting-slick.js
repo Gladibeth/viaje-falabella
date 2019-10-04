@@ -105,10 +105,11 @@ $slick.slick({
   dots: true,
   arrows: false,
   focusOnSelect: true,
+  autoplay: false,
   responsive: [{
       breakpoint: 1200,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: true
@@ -214,4 +215,9 @@ function resetProgressbar() {
   clearTimeout(tick);
 }
 
+
+$('.slider-nav__banner').click(function () {
+  resetProgressbar();
+  startProgressbar();
+})
 startProgressbar();
