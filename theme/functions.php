@@ -76,7 +76,7 @@
           <label class="label" for="destino-destacado"><?php  _e( 'Destacar post', 'cyb_textdomain' ); ?></label>
     </p>
       <p>
-          <label class="label"  for="descripcion_imagen_post"><?php _e( 'Descripción de la imagen del post ', 'cyb_textdomain' );?></label>
+          <label class="label"  for="descripcion_imagen_post"><?php _e( 'Descripción de la imagen del post', 'cyb_textdomain' );?></label>
           <input minlength="10" maxlength="20" name="descripcion_imagen_post" id="descripcion_imagen_post" type="text" value="<?php echo esc_attr( get_post_meta( $post->ID, 'descripcion_imagen_post', true ) ); ?>">
       </p>
       <?php
@@ -221,40 +221,88 @@ if(function_exists('register_sidebar')) {
 
 
 //+++++++++++++++++++++++++++++++++++campos taxonomias
-function page_options_meta_box_add(){
-  add_meta_box( 'page_options_meta_box', 'Page Options', 'page_options_meta_box_content', 'page', 'side', 'high' );
+/* function categorias_add_new_meta_fields(){
+	?>
+	<div class="form-field">
+    <label for="term_meta[texto01]">Texto 01</label>
+    <input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="1">
+		<input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="">
+		<p class="description">Descripción para este campo</p>
+	</div>
+	<div class="form-field">
+		<label for="term_meta[imagen]">Imagen</label>
+		<input type="text" name="term_meta[imagen]" id="term_meta[imagen]" value="">
+		<p class="description">Imagen de la Categoría</p>
+	</div>
+	<?php
 }
+add_action( 'tipo_destinos_add_form_fields', 'categorias_add_new_meta_fields', 10, 2 );
+function categorias_edit_meta_fields($term){
+	$t_id = $term->term_id;
 
-function page_options_meta_box_content(){
-  // $post is already set, and contains an object: the WordPress post
-  global $post;
-  $values = get_post_custom( $post->ID );
-  $page_title_check = isset($values['page_title_meta_box_check']) ? esc_attr($values['page_title_meta_box_check'][0]) : 'on';
-
-  ?>
-   <p>
-      <input type="checkbox" id="page_title_meta_box_check" name="page_title_meta_box_check" <?php checked( $page_title_check, 'on' ); ?> />
-      <label for="page_title_meta_box_check">Show Page Title</label>
-  </p>
-  <?php
-
-  wp_nonce_field( 'page_options_meta_box', 'page_options_meta_box_nonce' );
+	$term_meta = get_option("taxonomy_$t_id");
+	?>
+		<tr class="form-field">
+			<th scope="row" valign="top">
+				<label for="term_meta[texto01]">Texto 01</label>
+			</th>
+			<td>
+				<input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="<?php echo esc_attr( $term_meta['texto01'] ) ? esc_attr( $term_meta['texto01'] ) : ''; ?>">
+				<p class="description">Descripción para este campo</p>
+			</td>
+		</tr>
+		<tr class="form-field">
+			<th scope="row" valign="top">
+				<label for="term_meta[imagen]">Imagen</label>
+			</th>
+			<td>
+				<input type="text" name="term_meta[imagen]" id="term_meta[imagen]" value="<?php echo esc_attr( $term_meta['imagen'] ) ? esc_attr( $term_meta['imagen'] ) : ''; ?>">
+			<p class="description">Imagen de la Categoría</p>
+			</td>
+		</tr>
+	<?php
 }
+add_action( 'tipo_destinos_edit_form_fields', 'categorias_edit_meta_fields', 10, 2 );
+function categorias_save_custom_meta( $term_id ) {
+	if ( isset( $_POST['term_meta'] ) ) {
+		$t_id = $term_id;
+		$term_meta = get_option( "taxonomy_$t_id" );
+		$cat_keys = array_keys( $_POST['term_meta'] );
+		foreach ( $cat_keys as $key ) {
+			if ( isset ( $_POST['term_meta'][$key] ) ) {
+				$term_meta[$key] = $_POST['term_meta'][$key];
+			}
+		}
+		update_option( "taxonomy_$t_id", $term_meta );
+	}
+}  
 
-function page_options_meta_box_save($post_id)
-{
-    
-    if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
-     
-   
-    if( !isset( $_POST['page_options_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['page_options_meta_box_nonce'], 'page_options_meta_box' ) ) return;
-     
- 
-    if ( !current_user_can( 'edit_post', $post_id ) ) return;
- 
-    $page_title_chk = isset($_POST['page_title_meta_box_check']) ? 'on' : 'off';
-    update_post_meta( $post_id, 'page_title_meta_box_check', $page_title_chk );
-}
- 
-add_action( 'save_post', 'page_options_meta_box_save' );
+add_action( 'edited_tipo_destinos', 'categorias_save_custom_meta', 10, 2 );  
+add_action( 'create_tipo_destinos', 'categorias_save_custom_meta', 10, 2 ); */
 //+++++++++++++++++++++++++++++++++++end campos taxonomias
+
+
+
+//eliminar url del campo formulario
+function dcms_disable_url_comment($fields) { 
+  unset($fields['url']);
+  return $fields;
+}
+add_filter('comment_form_default_fields','dcms_disable_url_comment');
+//en url
+
+//editar el campo author del formulario
+function modify_comment_fields($fields){
+
+  $fields =  array('author' =>'<div class="main-post__form--form"><div class="form-group">
+  <input class="form-control" name="author" id="author" placeholder="Nombre y Apellido" type="text"></div></div>' , 'email' => '<div class="main-post__form--form"><div class="form-group"><input class="form-control id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" placeholder="Email"  required="required"></div></div>'
+);
+
+  return $fields;
+
+  }
+  add_filter('comment_form_default_fields','modify_comment_fields');
+//end campo ahutor formulario
+
+
+//editar lista de comentarios
