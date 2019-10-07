@@ -52,6 +52,7 @@ section {
 
   &.fixed-height {
     height: 165px;
+    margin-top: -40px;
   }
 
 
@@ -63,6 +64,7 @@ section {
 
 .sub-drop-destiny {
   display: flex;
+  margin-left: -30px;
 
 }
 
@@ -688,6 +690,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 
 
   a {
@@ -793,7 +796,7 @@ footer {
 
     h1 {
       font-size: 80px;
-      margin-bottom: 45px;
+      margin-bottom: 10px;
 
       @include respond-to(md) {
         font-size: 60px !important;
@@ -870,11 +873,20 @@ footer {
 }
 
 
+.main-posts__sidebar {
+  width: 100%;
+  height: 300px;
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .main-detailsposts__content {
   display: grid;
-  grid-auto-columns: 70% 30% !important;
+  grid-template-columns: 70% 30% !important;
+  grid-gap: 20px;
 
   .main-detailsposts__img {
     height: 300px;
@@ -983,7 +995,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  margin-top: 55px;
+  margin-top: 25px;
 
   .main-posts__box {
     background-color: transparent;

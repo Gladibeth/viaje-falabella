@@ -59,47 +59,50 @@
 	      wp_reset_query();
       ?>
     </div>
-    <div class="slider slider-nav__banner">
-    <?php
-	      $args = array(
-        'post_type' => 'destinos',
-        'showposts'=> 3,
-        'post_status' => 'publish',
-        'meta_key' => 'destino-destacado',
-        'orderby' => 'meta_value_num', //valor del campo seleccionado
-        'order' => 'ASC'
-        );
-        $loop = new WP_Query( $args );
-      ?>
-      <?php while( $loop->have_posts() ) : $loop->the_post();?>
-        <div>
-          <div class="main-slider__next">
-            <div class="slider-progress">
-              <div class="progress"></div>
-            </div>
-            <div class="main-slider__box">
-              <div class="main-slider__text">
-                <!-- <hr class="main-slider__line"> -->
-                <div class="main-slider__number">
-                  <span class="number--active">01</span>
-                  <div class="main-slider-smaline"></div>
-                </div>
-                <div class="main-slider__title">
-                  <p><?php the_title();?></p>
-                </div>
-                <div class="main-slider__description">
-                  <!-- <p>ipsum</p> -->
-                </div>
+    <div class="fixed">
+
+      <div class="slider slider-nav__banner">
+      <?php
+          $args = array(
+          'post_type' => 'destinos',
+          'showposts'=> 3,
+          'post_status' => 'publish',
+          'meta_key' => 'destino-destacado',
+          'orderby' => 'meta_value_num', //valor del campo seleccionado
+          'order' => 'ASC'
+          );
+          $loop = new WP_Query( $args );
+        ?>
+        <?php while( $loop->have_posts() ) : $loop->the_post();?>
+          <div>
+            <div class="main-slider__next">
+              <div class="slider-progress">
+                <div class="progress"></div>
               </div>
-              <div class="main-slider__img">
-                <img class="main-slider__img--active" src="<?php the_post_thumbnail_url(); ?>">
+              <div class="main-slider__box">
+                <div class="main-slider__text">
+                  <!-- <hr class="main-slider__line"> -->
+                  <div class="main-slider__number">
+                    <span class="number--active">01</span>
+                    <div class="main-slider-smaline"></div>
+                  </div>
+                  <div class="main-slider__title">
+                    <p><?php the_title();?></p>
+                  </div>
+                  <div class="main-slider__description">
+                    <!-- <p>ipsum</p> -->
+                  </div>
+                </div>
+                <div class="main-slider__img">
+                  <img class="main-slider__img--active" src="<?php the_post_thumbnail_url(); ?>">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <?php endwhile;
-	      wp_reset_query();
-      ?>
+          <?php endwhile;
+          wp_reset_query();
+        ?>
+      </div>
     </div>
   </div>
 
@@ -207,8 +210,9 @@
         <?php endwhile;
             wp_reset_query();
         ?>
-      <hr class="main-articles__line">
+      
     </div>
+    <!-- <hr class="main-articles__line"> -->
   </section>
   <script>
    

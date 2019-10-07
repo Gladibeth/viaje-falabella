@@ -68,13 +68,15 @@
                     <i class="fa fa-linkedin"></i>
                 </div>
                 </div>
-                <!-- <div class="main-posts__btn">
-                <div class="btn_custom btn--medium btn--filled">
-                    Ver más
-                </div>
-                </div> -->
+
             </div>
           </div>
+          <div class="main-posts__item">
+            <div class="main-posts__sidebar">
+              <img class="img-round" src="<?php echo $url; ?>"/>
+            </div>
+          </div>
+
         </div>
         <hr class="main-articles__line">
         </div>
