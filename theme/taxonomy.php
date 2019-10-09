@@ -68,10 +68,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <!-- <div class="main-posts__btn">
+                <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled-green "><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div> -->
+                </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">
@@ -132,10 +132,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <!-- <div class="main-posts__btn">
+                <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled-green"><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div> -->
+                </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">

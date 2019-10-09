@@ -38,6 +38,8 @@ $(window).scroll(function () {
     $("#site_4").addClass('display_block');
     $("#iso").addClass('display_none');
     $("#iso_green").addClass('display_block');
+    $('.searchButton').addClass('searchButton--scroll');
+    $('.searchInput').addClass('searchInput--scroll');
     // $("#iso").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/logo-b.png').removeClass('scroll-up');
     // $("#site1").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site1.png').removeClass('scroll-up');
     // $("#site2").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site2.png').removeClass('scroll-up');
@@ -61,6 +63,8 @@ $(window).scroll(function () {
     $("#site_4").removeClass('display_block');
     $("#iso").removeClass('display_none');
     $("#iso_green").removeClass('display_block');
+    $('.searchButton').removeClass('searchButton--scroll');
+    $('.searchInput').removeClass('searchInput --scroll');
     // $("#iso").removeClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/logo.png').addClass('scroll-up');
     // $("#site1").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono europa-01.svg').addClass('scroll-up');
     // $("#site2").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono caribe-01.svg').addClass('scroll-up');
@@ -78,6 +82,8 @@ $(".hamburger").on("click", function () {
     $("#iso").addClass('display_none');
     $('#iso_green').addClass('display_block')
     $('.nav-link').addClass('fixed-color');
+
+
   } else {
     $(this).removeClass("is-active")
     if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
