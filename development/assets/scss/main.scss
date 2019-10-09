@@ -551,6 +551,18 @@ textarea {
   margin-top: -100px;
 }
 
+
+.main-destiny__site {
+  display: flex;
+  font-size: 25px;
+  margin-top: -26px;
+  color: #3fae2a;
+}
+
+.main-destiny__icon {
+  margin-right: 10px;
+}
+
 .main-destiny__item {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -2012,7 +2024,7 @@ hr.main-articles__line {
 
 .main-slider__next {
   @include respond-to(sm) {
-    bottom: 30px !important;
+    bottom: 0px !important;
   }
 }
 
@@ -2393,6 +2405,7 @@ hr.main-articles__line {
 .main-slider__next {
   @include respond-to(md) {
     bottom: 0px !important;
+    right: -25%;
   }
 }
 
@@ -2687,11 +2700,19 @@ hr.main-articles__line {
   border-radius: 40px;
   padding: 10px;
 
+  @include respond-to(md) {
+    right: 20px;
+  }
+
 }
 
 .searchBox:hover>.searchInput {
   width: 140px;
   padding: 0 6px;
+
+  @include respond-to(md) {
+    width: 100px;
+  }
 }
 
 .searchBox:hover>.searchButton {
