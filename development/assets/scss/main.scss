@@ -62,7 +62,7 @@ section {
   }
 
   &.fixed-height {
-    height: 165px;
+    height: 150px;
     margin-top: -40px;
   }
 
@@ -85,6 +85,7 @@ section {
   font-family: $beauSans;
   margin-right: 20px;
   font-size: 18px;
+  letter-spacing: -1px;
 
   &.fixed-color {
     color: $green;
@@ -153,7 +154,7 @@ section {
   color: $white;
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 30px;
   font-family: $beauSans;
 
   img {
@@ -637,6 +638,7 @@ textarea {
 
   &:hover {
     cursor: pointer;
+
   }
 }
 
@@ -644,10 +646,18 @@ textarea {
   width: 100%;
   height: 300px;
 
+  &:hover {
+    img {
+      filter: blur(5px);
+    }
+  }
+
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s ease-in-out;
 
   }
 }
@@ -2605,4 +2615,12 @@ hr.main-articles__line {
   width: 0%;
   height: 5px;
   background: #fff;
+}
+
+
+.sidebar {
+  width: 379px;
+  height: 1084px;
+  background: #54575947 0% 0% no-repeat padding-box;
+  opacity: 1;
 }

@@ -73,7 +73,7 @@
           </div>
           <div class="main-posts__item">
             <div class="main-posts__sidebar">
-              <img class="img-round" src="<?php echo $url; ?>"/>
+              <div class="sidebar"></div>
             </div>
           </div>
 

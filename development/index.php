@@ -194,7 +194,7 @@
         ?>
         <?php while( $loop->have_posts() ) : $loop->the_post();?>
           <div class="main-articles__item">
-            <a href="#">
+            <a href="<?php the_permalink(); ?>">
               <div class="main-articles__img">
                 <img class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
               </div>
@@ -202,9 +202,9 @@
                 <p><?php the_title();?></p>
                 <span></span>
               </div>
-              <div class="main-article__btn">
+              <!-- <div class="main-article__btn">
                 <a class="btn_custom btn--medium btn--filled" href="<?php the_permalink(); ?>">Ver más </a>
-              </div>
+              </div> -->
             </a>
           </div>
         <?php endwhile;
@@ -212,7 +212,6 @@
         ?>
       
     </div>
-    <!-- <hr class="main-articles__line"> -->
   </section>
   <script>
    
