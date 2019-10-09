@@ -40,6 +40,8 @@ $(window).scroll(function () {
     $("#iso_green").addClass('display_block');
     $('.searchButton').addClass('searchButton--scroll');
     $('.searchInput').addClass('searchInput--scroll');
+    $('.searchBox').addClass('searchBox--scroll');
+    // $('.searchInput').addClass('searchInput--scroll');
     // $("#iso").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/logo-b.png').removeClass('scroll-up');
     // $("#site1").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site1.png').removeClass('scroll-up');
     // $("#site2").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site2.png').removeClass('scroll-up');
@@ -64,7 +66,9 @@ $(window).scroll(function () {
     $("#iso").removeClass('display_none');
     $("#iso_green").removeClass('display_block');
     $('.searchButton').removeClass('searchButton--scroll');
-    $('.searchInput').removeClass('searchInput --scroll');
+    $('.searchInput').addClass('searchInput--scroll');
+    $('.searchBox').removeClass('searchBox--scroll');
+    // $('.searchInput').removeClass('searchInput --scroll');
     // $("#iso").removeClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/logo.png').addClass('scroll-up');
     // $("#site1").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono europa-01.svg').addClass('scroll-up');
     // $("#site2").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono caribe-01.svg').addClass('scroll-up');

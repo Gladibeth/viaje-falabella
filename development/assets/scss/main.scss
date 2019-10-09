@@ -2699,7 +2699,7 @@ hr.main-articles__line {
   color: #fff;
 }
 
-.searchButton.searchButton--scroll {
+.searchButton--scroll {
   color: #000 !important;
 }
 
@@ -2717,46 +2717,28 @@ hr.main-articles__line {
   transition: 0.4s;
 }
 
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  border-bottom: 1px solid #fff;
 
-
-
-.searchBox {
-  &:hover {
-    .searchInput {
-      &.searchInput--scroll {
-        color: #000;
-        border-bottom: 1px solid #000;
-
-        &::placeholder {
-          color: #000 !important;
-        }
-      }
-    }
-  }
-
-  .searchInput {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0px;
-    border-bottom: 1px solid #fff;
-
-    &::placeholder {
-      color: #fff !important;
-    }
-
-
+  &::placeholder {
+    color: #fff !important;
   }
 }
 
 
-.searchBox:hover>.searchInput.searchInput--scroll {
+
+
+.searchBox--scroll:hover>.searchInput--scroll {
   color: #000;
   border-bottom: 1px solid #000;
 
