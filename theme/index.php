@@ -137,7 +137,7 @@
                     </div>
                     <div class="main-destiny__site">
                       <div class="main-destiny__icon">
-                        <i></i>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
                       </div>
                       <div class="main-destiny__text">
                       <?php echo the_field('ciudad_destino', $category); ?>
