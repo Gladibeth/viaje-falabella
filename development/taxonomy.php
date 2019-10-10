@@ -16,17 +16,17 @@
   </section>
   <section class="main-posts">
     <div class="container">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <ul style="border-bottom: 2px solid #3fae2a;" class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+          <a style="text-transform: initial;" class="nav-link nav-link--text active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
             aria-controls="pills-home" aria-selected="true">Más Recientes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+          <a style="text-transform: initial;" class="nav-link nav-link--text" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
             aria-controls="pills-profile" aria-selected="false">Más Populares</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+          <a style="text-transform: initial;" class="nav-link nav-link--text" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
             aria-controls="pills-contact" aria-selected="false">Más comentarios</a>
         </li>
       </ul>
@@ -68,10 +68,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <!-- <div class="main-posts__btn">
+                <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled-green "><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div> -->
+                </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">
@@ -132,10 +132,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <!-- <div class="main-posts__btn">
+                <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled-green"><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div> -->
+                </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">

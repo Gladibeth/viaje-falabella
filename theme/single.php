@@ -16,7 +16,7 @@
         <?php $post_thumbnail_id = get_post_thumbnail_id();
         $url = wp_get_attachment_url( $post_thumbnail_id);?>
         <div class="overlay" style="background-image: url('<?php echo $url; ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
-        <div class="main-parallax__title main-parallax__title--post" style="bottom: -60px;">
+        <div class="main-parallax__title main-parallax__title--post" style="bottom: -20px;">
         <h1><?php //echo $taxonomy[0]->name;?><?php the_title();?></h1>
         <?php   //print_r($taxonomy);?>
         <span><?php //echo $taxonomy[0]->description;?><span>
@@ -78,7 +78,7 @@
           </div>
 
         </div>
-        <hr class="main-articles__line">
+        <!-- <hr class="main-articles__line"> -->
         </div>
     </section>
     

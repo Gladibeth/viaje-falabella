@@ -46,22 +46,23 @@
            )); ?>
            <?php foreach ($subcategories as $sub_category) : ?>
              <div class="main-articles__item">
-               <div class="main-articles__img">
-               <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
-               </div>
-               <div class="main-articles__title" itemprop="name">
-                 <p><?php echo ($sub_category->name); ?></p>
-                 <span><?php echo ($sub_category->description); ?></span>
-               </div>
-               <div class="main-article__btn">
-                 <div class="btn_custom btn--medium btn--filled">
-                 <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">Ver más</a>
-                 </div>
-               </div>
+               <a href="<?php the_permalink(); ?>">
+                <div class="main-articles__img">
+                <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
+                </div>
+                <div class="main-articles__title" itemprop="name">
+                  <p><?php echo ($sub_category->name); ?></p>
+                  <span><?php echo ($sub_category->description); ?></span>
+                </div>
+                <!-- <div class="main-article__btn">
+                  <div class="btn_custom btn--medium btn--filled">
+                  <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">Ver más</a>
+                  </div>
+                </div> -->
+               </a>
              </div>
            <?php endforeach;?> 
          </div>
-         <hr class="main-articles__line">
        </div>
      </section>
    </div>
