@@ -17,6 +17,10 @@ body {
   }
 }
 
+p {
+  color: #545759;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -318,12 +322,16 @@ textarea {
 
     .main-banner__description {
       padding: 0 25px;
-      color: $white;
+
       font-size: 18px;
       line-height: 1.5rem;
       margin: 10px 0 0 0;
       font-family: $beauSans;
       font-weight: 300;
+
+      p {
+        color: $white;
+      }
     }
   }
 
@@ -549,6 +557,10 @@ textarea {
 .main-destiny {
   height: 550px;
   margin-top: -100px;
+
+  @include respond-to(xs) {
+    margin-top: -150px;
+  }
 }
 
 
@@ -557,6 +569,12 @@ textarea {
   font-size: 25px;
   margin-top: -26px;
   color: #3fae2a;
+
+  @include respond-to(xs) {
+    font-size: 18px;
+    margin-top: -20px;
+    color: #3fae2a;
+  }
 }
 
 .main-destiny__icon {
@@ -657,7 +675,7 @@ textarea {
 
   h2 {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
     color: #545759;
     font-family: $beauSans;
@@ -765,6 +783,10 @@ footer {
   background-position: 50% -140px;
   padding: 0px 0 !important;
 
+  @include respond-to(xs) {
+    height: 50vh;
+  }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -780,6 +802,9 @@ footer {
     background-position: 50% -140px;
     background-repeat: no-repeat;
 
+    @include respond-to(xs) {
+      height: 50vh;
+    }
   }
 }
 
@@ -845,6 +870,17 @@ footer {
     @include respond-to(md) {
       bottom: 40px;
     }
+
+    @include respond-to(sm) {
+      left: 9%;
+    }
+
+    @include respond-to(xs) {
+      bottom: 50px;
+      left: 9%;
+    }
+
+
 
 
     h1 {
@@ -938,6 +974,10 @@ footer {
   width: 100%;
   height: 300px;
 
+  @include respond-to(xs) {
+    display: none;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -1004,6 +1044,7 @@ footer {
 
         p {
           font-family: $beauSans;
+          color: #545759;
 
           &:first-child {
             margin-right: 10px;
@@ -1019,7 +1060,8 @@ footer {
       p {
         font-family: $beauSans;
         width: 100%;
-        word-break: break-all !important
+        word-break: break-all !important;
+        color: #545759;
       }
 
       .main-posts__description--img {
@@ -1129,6 +1171,12 @@ footer {
 }
 
 .main-posts__item {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
   a {
     text-decoration: none;
 
@@ -1159,6 +1207,7 @@ footer {
 .main-posts__date {
   span {
     font-family: $beauSans;
+    color: #545759 !important;
   }
 }
 
@@ -1447,11 +1496,7 @@ input {
   }
 }
 
-.main-banner__camara {
-  @include respond-to(xs) {
-    display: none;
-  }
-}
+
 
 .slider-single-image {
   @include respond-to(xs) {
@@ -1580,7 +1625,7 @@ input {
   @include respond-to(xs) {
 
     position: absolute;
-    bottom: 40%;
+    bottom: 50px;
     left: 8%;
   }
 
@@ -1592,7 +1637,6 @@ input {
     }
   }
 }
-
 
 
 /**Post*/
@@ -1607,7 +1651,7 @@ input {
 .main-parallax__title span {
   @include respond-to(xs) {
 
-    font-size: 45px;
+    font-size: 10px;
   }
 }
 
@@ -1699,7 +1743,7 @@ input {
 
 .main-banner__text {
   @include respond-to(xs) {
-    top: 170px !important;
+    top: 145px !important;
     width: 300px !important;
     left: 0% !important;
   }
@@ -1812,7 +1856,7 @@ input {
 
 hr.main-articles__line {
   @include respond-to(xs) {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -1823,6 +1867,12 @@ hr.main-articles__line {
 }
 
 .main-articles__title {
+  @include respond-to(xs) {
+    position: absolute;
+    top: 10px !important;
+    left: 5% !important;
+  }
+
   p {
     @include respond-to(xs) {
       font-size: 35px;
@@ -1850,11 +1900,17 @@ hr.main-articles__line {
 
 .main-country__img {
   @include respond-to(xs) {
-    height: 200px;
+    height: 160px;
   }
 }
 
 .main-country__title {
+  @include respond-to(xs) {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+  }
+
   p {
     @include respond-to(xs) {
       font-size: 30px;
@@ -1913,24 +1969,20 @@ hr.main-articles__line {
   }
 }
 
-.main-parallax__title--post {
-  @include respond-to(xs) {
-    bottom: 90px;
-    left: 9%;
-  }
-}
 
 .nav-pills .nav-link {
   @include respond-to(xs) {
-    font-size: 12px !important;
+    font-size: 16px !important;
     padding: 0;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 
-.main-articles__content.articles-xs__none {
+.nav-pills .nav-link--text {
   @include respond-to(xs) {
-    display: none;
+    font-size: 14px !important;
+    padding: 0;
+    margin-right: 10px;
   }
 }
 
@@ -2078,11 +2130,6 @@ hr.main-articles__line {
   }
 }
 
-.main-parallax__title--post {
-  @include respond-to(sm) {
-    left: 9%;
-  }
-}
 
 .main-parallax__title--post h1 {
   @include respond-to(sm) {
@@ -2357,7 +2404,7 @@ hr.main-articles__line {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   background-color: transparent !important;
-  color: #000;
+  color: #545759;
   text-transform: uppercase;
   font-size: 25px;
 }
@@ -2372,8 +2419,15 @@ hr.main-articles__line {
 
 .span_tabs {
   font-size: 30px;
-  margin-top: -5px;
+  margin-top: 0px;
   margin-left: -20px;
+
+  @include respond-to(xs) {
+    font-size: 30px;
+    margin-top: -11px;
+    margin-left: -23px;
+    margin-right: 10px;
+  }
 
 }
 
@@ -2483,7 +2537,7 @@ hr.main-articles__line {
 
 .main-parallax__title--post {
   @include respond-to(xl) {
-    bottom: 120px !important;
+    bottom: 120px;
   }
 }
 

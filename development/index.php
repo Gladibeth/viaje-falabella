@@ -26,6 +26,11 @@
             <div class="main-banner__description">
               <p><?php the_excerpt();?></p>
             </div>
+            <div class="d-lg-none d-md-none btn-banner">
+              <a href="" class="btn-light">
+                Descubre
+              </a>
+            </div>
             <!-- <div class="main-banner__mail">
               <div class="main-banner__boxmail">
                 <a href="">
@@ -181,7 +186,7 @@
       <div class="content__title">
         <h2>últimos articulos</h2>
       </div>
-      <div class="main-articles__content articles-xs__none">
+      <div class="main-articles__content">
         <?php //Post mas recientes
           $args = array(
             'post_type' => 'recursos_viajeros',
