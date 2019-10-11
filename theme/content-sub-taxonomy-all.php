@@ -53,7 +53,7 @@
                 <div class="main-articles__img">
                 <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
                 </div>
-                <div class="main-articles__title" itemprop="name">
+                <div class="main-articles__title main-articles__title--small" itemprop="name">
                   <p><?php echo ($sub_category->name); ?></p>
                   <span><?php echo ($sub_category->description); ?></span>
                 </div>
