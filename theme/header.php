@@ -68,6 +68,25 @@
               </div>
             </div>
           </li>
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Productos</a>
+            <div aria-labelledby="dropdown01" class="dropdown-menu">
+              <div class="sub-drop-destiny">
+                <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
+                    <img id="site1" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
+                    <img id="site_1" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
+                    Europa
+                  
+                  </a>
+                <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/caribe';?>">
+                    <img id="site2" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-caribe-01.svg">
+                    <img id="site_2" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png">
+                    Caribe
+                  </a>
+
+              </div>
+            </div>
+          </li>
           <li class="nav-item active">
             <a class="nav-link nav-link-active" href="<?php echo bloginfo('url').'/como-es-tu-viaje';?>">
                 ¿Cómo es tu viaje?
