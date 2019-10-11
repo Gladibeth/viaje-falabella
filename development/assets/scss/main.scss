@@ -17,6 +17,10 @@ body {
   }
 }
 
+p {
+  color: #545759;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -94,6 +98,11 @@ section {
   margin-right: 20px;
   font-size: 18px;
   letter-spacing: -1px;
+
+  &.active {
+    background-color: #3baf29;
+    color: #fff;
+  }
 
   &.fixed-color {
     color: $green;
@@ -318,12 +327,16 @@ textarea {
 
     .main-banner__description {
       padding: 0 25px;
-      color: $white;
+
       font-size: 18px;
       line-height: 1.5rem;
       margin: 10px 0 0 0;
       font-family: $beauSans;
       font-weight: 300;
+
+      p {
+        color: $white;
+      }
     }
   }
 
@@ -400,12 +413,22 @@ textarea {
     .main-slider__img {
       height: 180px;
       width: 300px;
+      position: relative;
 
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         main-banner__mailheight: 100%;
+      }
+
+      .bg-box {
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        background-color: #545759;
+        bottom: 0;
+        right: 0;
       }
     }
   }
@@ -549,6 +572,10 @@ textarea {
 .main-destiny {
   height: 550px;
   margin-top: -100px;
+
+  @include respond-to(xs) {
+    margin-top: -150px;
+  }
 }
 
 
@@ -557,6 +584,12 @@ textarea {
   font-size: 25px;
   margin-top: -26px;
   color: #3fae2a;
+
+  @include respond-to(xs) {
+    font-size: 18px;
+    margin-top: -20px;
+    color: #3fae2a;
+  }
 }
 
 .main-destiny__icon {
@@ -657,7 +690,7 @@ textarea {
 
   h2 {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 600;
     text-transform: uppercase;
     color: #545759;
     font-family: $beauSans;
@@ -765,6 +798,10 @@ footer {
   background-position: 50% -140px;
   padding: 0px 0 !important;
 
+  @include respond-to(xs) {
+    height: 50vh;
+  }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -780,6 +817,9 @@ footer {
     background-position: 50% -140px;
     background-repeat: no-repeat;
 
+    @include respond-to(xs) {
+      height: 50vh;
+    }
   }
 }
 
@@ -845,6 +885,17 @@ footer {
     @include respond-to(md) {
       bottom: 40px;
     }
+
+    @include respond-to(sm) {
+      left: 9%;
+    }
+
+    @include respond-to(xs) {
+      bottom: 50px;
+      left: 9%;
+    }
+
+
 
 
     h1 {
@@ -936,7 +987,10 @@ footer {
 
 .main-posts__sidebar {
   width: 100%;
-  height: 300px;
+
+  @include respond-to(xs) {
+    display: none;
+  }
 
   img {
     width: 100%;
@@ -1004,6 +1058,7 @@ footer {
 
         p {
           font-family: $beauSans;
+          color: #545759;
 
           &:first-child {
             margin-right: 10px;
@@ -1019,7 +1074,8 @@ footer {
       p {
         font-family: $beauSans;
         width: 100%;
-        word-break: break-all !important
+        word-break: break-all !important;
+        color: #545759;
       }
 
       .main-posts__description--img {
@@ -1129,6 +1185,12 @@ footer {
 }
 
 .main-posts__item {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
   a {
     text-decoration: none;
 
@@ -1159,6 +1221,7 @@ footer {
 .main-posts__date {
   span {
     font-family: $beauSans;
+    color: #545759 !important;
   }
 }
 
@@ -1255,6 +1318,12 @@ input {
 
 .line-gray {
   width: 55%;
+
+  &.line-gray--full {
+    width: 100%;
+
+  }
+
   // margin-left: -10px;
 }
 
@@ -1447,11 +1516,7 @@ input {
   }
 }
 
-.main-banner__camara {
-  @include respond-to(xs) {
-    display: none;
-  }
-}
+
 
 .slider-single-image {
   @include respond-to(xs) {
@@ -1580,7 +1645,7 @@ input {
   @include respond-to(xs) {
 
     position: absolute;
-    bottom: 40%;
+    bottom: 50px;
     left: 8%;
   }
 
@@ -1592,7 +1657,6 @@ input {
     }
   }
 }
-
 
 
 /**Post*/
@@ -1607,7 +1671,7 @@ input {
 .main-parallax__title span {
   @include respond-to(xs) {
 
-    font-size: 45px;
+    font-size: 10px;
   }
 }
 
@@ -1699,7 +1763,7 @@ input {
 
 .main-banner__text {
   @include respond-to(xs) {
-    top: 170px !important;
+    top: 145px !important;
     width: 300px !important;
     left: 0% !important;
   }
@@ -1763,7 +1827,7 @@ input {
 .main-slider__next {
   @include respond-to(xs) {
     // display: none;
-    width: 320px !important;
+    width: 100% !important;
     bottom: 0px !important;
   }
 }
@@ -1812,7 +1876,7 @@ input {
 
 hr.main-articles__line {
   @include respond-to(xs) {
-    width: 85%;
+    width: 100%;
   }
 }
 
@@ -1823,9 +1887,15 @@ hr.main-articles__line {
 }
 
 .main-articles__title {
+  @include respond-to(xs) {
+    position: absolute;
+    top: 10px !important;
+    left: 5% !important;
+  }
+
   p {
     @include respond-to(xs) {
-      font-size: 35px;
+      font-size: 30px;
     }
   }
 
@@ -1850,11 +1920,17 @@ hr.main-articles__line {
 
 .main-country__img {
   @include respond-to(xs) {
-    height: 200px;
+    height: 160px;
   }
 }
 
 .main-country__title {
+  @include respond-to(xs) {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+  }
+
   p {
     @include respond-to(xs) {
       font-size: 30px;
@@ -1913,24 +1989,20 @@ hr.main-articles__line {
   }
 }
 
-.main-parallax__title--post {
-  @include respond-to(xs) {
-    bottom: 90px;
-    left: 9%;
-  }
-}
 
 .nav-pills .nav-link {
   @include respond-to(xs) {
-    font-size: 12px !important;
+    font-size: 16px !important;
     padding: 0;
-    margin-right: 10px;
+    margin-right: 30px;
   }
 }
 
-.main-articles__content.articles-xs__none {
+.nav-pills .nav-link--text {
   @include respond-to(xs) {
-    display: none;
+    font-size: 14px !important;
+    padding: 0;
+    margin-right: 10px;
   }
 }
 
@@ -2078,11 +2150,6 @@ hr.main-articles__line {
   }
 }
 
-.main-parallax__title--post {
-  @include respond-to(sm) {
-    left: 9%;
-  }
-}
 
 .main-parallax__title--post h1 {
   @include respond-to(sm) {
@@ -2357,7 +2424,7 @@ hr.main-articles__line {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   background-color: transparent !important;
-  color: #000;
+  color: #545759;
   text-transform: uppercase;
   font-size: 25px;
 }
@@ -2372,8 +2439,15 @@ hr.main-articles__line {
 
 .span_tabs {
   font-size: 30px;
-  margin-top: -5px;
+  margin-top: 0px;
   margin-left: -20px;
+
+  @include respond-to(xs) {
+    font-size: 30px;
+    margin-top: -11px;
+    margin-left: -23px;
+    margin-right: 10px;
+  }
 
 }
 
@@ -2483,7 +2557,7 @@ hr.main-articles__line {
 
 .main-parallax__title--post {
   @include respond-to(xl) {
-    bottom: 120px !important;
+    bottom: 120px;
   }
 }
 
@@ -2664,6 +2738,12 @@ hr.main-articles__line {
   position: relative;
 }
 
+.slider-nav__banner {
+  .slick-next {
+    right: 15px !important;
+  }
+}
+
 /* progress bar */
 .slider-progress {
   width: 100%;
@@ -2671,6 +2751,7 @@ hr.main-articles__line {
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   top: 0px;
+  z-index: 99;
 }
 
 .slider-progress .progress {
@@ -2682,7 +2763,7 @@ hr.main-articles__line {
 
 .sidebar {
   width: 379px;
-  height: 400px;
+  height: 700px;
   background: #54575947 0% 0% no-repeat padding-box;
   opacity: 1;
 
@@ -2775,5 +2856,180 @@ hr.main-articles__line {
   .searchBox:hover>.searchInput {
     width: 150px;
     padding: 0 6px;
+  }
+}
+
+.main-search__title {
+  p {
+    color: #3fae2a;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: $beauSans;
+  }
+}
+
+.main-search_content {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 20px;
+
+  @include respond-to(xs) {
+    margin-top: 0px;
+  }
+}
+
+.main-search__items {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 20px;
+
+  @include respond-to(sm) {
+    grid-template-columns: 100%;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 100%;
+  }
+}
+
+.main-search__img {
+  width: 100%;
+
+}
+
+.main-search__img img {
+  width: 100%;
+}
+
+.main-search__element {
+  display: grid;
+  grid-template-columns: 90% 10%;
+
+  @include respond-to(md) {
+    grid-template-columns: 80% 20%;
+  }
+
+  @include respond-to(xs) {
+    grid-template-columns: 80% 20%;
+  }
+}
+
+.main-search__element--green {
+  background-color: #3fae2a;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    color: #ffffff;
+  }
+}
+
+.main-search__element--white {
+  background-color: white;
+  height: 55px;
+  align-items: center;
+  display: flex;
+
+  p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #545759;
+    margin: 0;
+    padding: 10px;
+    font-family: $beauSans;
+  }
+}
+
+.main-parallax--search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+  }
+}
+
+.main-parallax--boxtitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-parallax--title {
+  width: 75%;
+  height: 40%;
+  -ms-flex-align: center;
+  position: absolute;
+  bottom: 80px;
+  flex-direction: column;
+  justify-content: space-around;
+
+  h1 {
+    font-size: 90px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1rem;
+    font-family: PF BeauSans Pro,
+      sans-serif;
+    text-transform: uppercase;
+
+    @include respond-to(md) {
+      font-size: 60px;
+    }
+
+    @include respond-to(sm) {
+      font-size: 55px;
+      color: #fff;
+      font-weight: 800;
+      line-height: 3.2rem;
+    }
+
+    @include respond-to(xs) {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 800;
+      line-height: 2rem;
+    }
+  }
+
+  .main-parallax__btn {
+    margin-top: 100px;
+
+    @include respond-to(sm) {
+      margin-top: 40px;
+    }
+
+    @include respond-to(xs) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.parallax-input {
+  color: #fff;
+  width: 60%;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 20px;
+  font-size: 20px;
+
+  &::placeholder {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: transparent;
   }
 }

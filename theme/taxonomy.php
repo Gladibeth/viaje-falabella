@@ -46,7 +46,7 @@
             $loop = new WP_Query( $args );
           ?>
           <?php while( $loop->have_posts() ) : $loop->the_post();?>
-            <div class="main-posts__item" href="post.html">
+            <a class="main-posts__item" href="<?php the_permalink(); ?>">
               <div class="main-posts__img">
                 <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
               </div>
@@ -68,10 +68,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <div class="main-posts__btn">
+                <!-- <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled-green "><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div>
+                </div> -->
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">
@@ -83,7 +83,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+          </a>
           <?php endwhile;
             wp_reset_query();
           ?>
@@ -110,7 +110,7 @@
             $popular_posts = new WP_Query( $args );
           ?>
           <?php while ( $popular_posts->have_posts() ) : $popular_posts->the_post();?>
-            <div class="main-posts__item" href="post.html">
+            <a class="main-posts__item" href="post.html">
               <div class="main-posts__img">
                 <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
               </div>
@@ -132,10 +132,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <div class="main-posts__btn">
+                <!-- <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled-green"><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div>
+                </div> -->
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">
@@ -147,7 +147,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+          </a>
           <?php endwhile;
             wp_reset_query();
           ?>
@@ -173,7 +173,7 @@
           ?>
           
           <?php while( $loop->have_posts() ) : $loop->the_post();?>
-            <div class="main-posts__item" href="post.html">
+            <a class="main-posts__item" href="post.html">
               <div class="main-posts__img">
                 <img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
               </div>
@@ -195,10 +195,10 @@
                     <?php the_excerpt();?>
                   
                 </div>
-                <div class="main-posts__btn">
+                <!-- <div class="main-posts__btn">
                   <div class="btn_custom btn--medium btn--filled"><a href="<?php the_permalink(); ?>">Ver más </a>
                   </div>
-                </div>
+                </div> -->
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
                   <div class="main-posts__comments">
@@ -210,7 +210,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+          </a>
           <?php endwhile;
             wp_reset_query();
           ?>

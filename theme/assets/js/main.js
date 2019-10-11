@@ -16,6 +16,10 @@ $('.dropdown-toggle').click(function () {
   }
 })
 
+$('.nav-link').click(function () {
+  $('.nav-link--active').toggleClass('active');
+})
+
 
 var URLactual = window.location;
 
@@ -41,12 +45,8 @@ $(window).scroll(function () {
     $('.searchButton').addClass('searchButton--scroll');
     $('.searchInput').addClass('searchInput--scroll');
     $('.searchBox').addClass('searchBox--scroll');
-    // $('.searchInput').addClass('searchInput--scroll');
-    // $("#iso").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/logo-b.png').removeClass('scroll-up');
-    // $("#site1").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site1.png').removeClass('scroll-up');
-    // $("#site2").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site2.png').removeClass('scroll-up');
-    // $("#site3").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site3.png').removeClass('scroll-up');
-    // $("#site4").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/site4.png').removeClass('scroll-up');
+    $('.searchBox').addClass('searchBox--scroll');
+    $('.hamburger-inner').addClass('js-hamburger');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
@@ -67,13 +67,8 @@ $(window).scroll(function () {
     $("#iso_green").removeClass('display_block');
     $('.searchButton').removeClass('searchButton--scroll');
     $('.searchInput').addClass('searchInput--scroll');
-    $('.searchBox').removeClass('searchBox--scroll');
-    // $('.searchInput').removeClass('searchInput --scroll');
-    // $("#iso").removeClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/logo.png').addClass('scroll-up');
-    // $("#site1").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono europa-01.svg').addClass('scroll-up');
-    // $("#site2").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono caribe-01.svg').addClass('scroll-up');
-    // $("#site3").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono turquia-01.svg').addClass('scroll-up');
-    // $("#site4").addClass('img-size').attr('src', URLactual + '/wp-content/themes/theme/assets/img/icons/Icono resto del mundo-01.svg').addClass('scroll-up');
+    $('.hamburger-inner').removeClass('js-hamburger');
+
 
   }
 });

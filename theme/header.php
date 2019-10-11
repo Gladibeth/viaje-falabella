@@ -41,7 +41,7 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-autos">
           <li class="nav-item dropdown">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle" data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
             <div aria-labelledby="dropdown01" class="dropdown-menu">
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
@@ -69,18 +69,18 @@
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="<?php echo bloginfo('url').'/como-es-tu-viaje';?>">
+            <a class="nav-link nav-link-active" href="<?php echo bloginfo('url').'/como-es-tu-viaje';?>">
                 ¿Cómo es tu viaje?
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
+            <a class="nav-link nav-link-active" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gastronomía</a>
+            <a class="nav-link nav-link-active" href="#">Gastronomía</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nosotros</a>
+            <a class="nav-link nav-link-active" href="#">Sobre nosotros</a>
           </li>
         </ul>
       </div>
@@ -100,3 +100,8 @@
       </div>
     </nav>
   </header>
+  <script>
+    $('.nav-link').click(function () {
+      $('.nav-link--active').toggleClass('active');
+    })
+  </script>
