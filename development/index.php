@@ -100,6 +100,7 @@
                 </div>
                 <div class="main-slider__img">
                   <img class="main-slider__img--active" src="<?php the_post_thumbnail_url(); ?>">
+                  <div class="bg-box d-lg-none d-md-none d-sm-none"></div>
                 </div>
               </div>
             </div>

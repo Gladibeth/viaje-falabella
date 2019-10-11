@@ -1,17 +1,5 @@
 
-<?php get_header(); ?>
-<section class="main-parallax">
-  <div class="overlay"></div>
-  <div class="main-parallax__title main-parallax__title--post">
-      <h1>Qué ver</h1>
-      <span>y que hacer?</span>
-      <div class="main-parallax__btn">
-      <div class="btn_custom btn--medium btn--filled">
-          Volver
-      </div>
-      </div>
-  </div>
-</section>
+
 <?php
 $s=get_search_query();
 $args = array(

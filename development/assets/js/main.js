@@ -16,6 +16,10 @@ $('.dropdown-toggle').click(function () {
   }
 })
 
+$('.nav-link').click(function () {
+  $('.nav-link--active').toggleClass('active');
+})
+
 
 var URLactual = window.location;
 
