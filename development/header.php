@@ -88,18 +88,18 @@
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link nav-link-active" href="<?php echo bloginfo('url').'/como-es-tu-viaje';?>">
+            <a class="nav-link" href="<?php echo bloginfo('url').'/como-es-tu-viaje';?>">
                 ¿Cómo es tu viaje?
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-active" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
+            <a class="nav-link" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-active" href="#">Gastronomía</a>
+            <a class="nav-link" href="#">Gastronomía</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-link-active" href="#">Sobre nosotros</a>
+            <a class="nav-link" href="#">Sobre nosotros</a>
           </li>
         </ul>
       </div>
