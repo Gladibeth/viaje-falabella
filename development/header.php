@@ -104,15 +104,7 @@
         </ul>
       </div>
       <div class="main-nav__search">
-        <div class="search-first">
-          <div class="searchBox">
-              <input class="searchInput"type="text" name="" placeholder="Search">
-              <button class="searchButton" href="#">
-                  <i class="fa fa-search"></i>
-              </button>
-          </div>
-        </div>
-        
+        <?php  get_search_form();?>
         <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
             <i class="fa fa-envelope-o"></i>
           </a>

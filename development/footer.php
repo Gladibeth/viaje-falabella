@@ -27,3 +27,4 @@
 </body>
 
 </html>
+<?php  get_search_form();?>
