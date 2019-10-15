@@ -16,8 +16,9 @@ $('.dropdown-toggle').click(function () {
   }
 })
 
-$('.nav-link').click(function () {
-  $('.nav-link--active').toggleClass('active');
+$('.nav-link-active').click(function () {
+  $('.nav-link-active').removeClass('active');
+  $(this).toggleClass('active');
 })
 
 

@@ -71,4 +71,9 @@
   justify-content: center;
   align-items: center;
   font-family: $beauSans;
+
+  input {
+    background-color: transparent;
+    border: none;
+  }
 }
