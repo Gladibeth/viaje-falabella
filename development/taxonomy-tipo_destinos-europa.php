@@ -51,7 +51,7 @@
                 )); ?>
                 <?php foreach ($subcategories as $sub_category) : ?>
                   <div class="main-articles__item">
-                    <a href="<?php the_permalink(); ?>">
+                  <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                       <div class="main-articles__img">
                       <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
                       </div>
