@@ -5,7 +5,9 @@
       <button class="" href="#">
           <i class="fa fa-search"></i>
       </button>
-      <input class="parallax-input"type="text" name="" placeholder="Search">
+        <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ) ?>" style="width:60%;">
+            <input type="search" class="search-field parallax-input"  placeholder="Search" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+        </form>
 
     </div>
   </section>
