@@ -10,35 +10,25 @@ $(function () {
 
 let navbar = $('.navbar-fixed-js');
 
-$('.dropdown-toggle1').click(function () {
-  $('.navbar-fixed-js').toggleClass('fixed-height')
-  // if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
-  //   $('.navbar-fixed-js').removeClass('fixed-height')
-  // } else {
-  //   $('.navbar-fixed-js').toggleClass('fixed-height')
-  // }
-})
-
-
-$('.dropdown-toggle2').click(function () {
-  $('.navbar-fixed-js').toggleClass('fixed-height')
-  // if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
-  //   $('.navbar-fixed-js').removeClass('fixed-height')
-  // } else {
-  //   $('.navbar-fixed-js').toggleClass('fixed-height')
-  // }
-})
-
-$('.searchBox').click(function () {
-  // alert('hola')
-  if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
-    $('.searchInput').toggleClass('input-active')
-    $('.searchButton').toggleClass('searchButton--scroll')
+$('.dropdown-toggle').click(function () {
+  // $('.navbar-fixed-js').removeClass('fixed-height')
+  // $(this).toggleClass('fixed-height')
+  // // if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
+  // //   $('.navbar-fixed-js').removeClass('fixed-height')
+  // // } else {
+  // //   $('.navbar-fixed-js').toggleClass('fixed-height')
+  // // }
+  navbar.addClass('fixed-height');
+  if (navbar.hasClass('fixed-height')) {
+    navbar.removeClass('fixed-height');
   } else {
-    $('.searchInput').toggleClass('input-active')
-    $('.searchButton').toggleClass('searchButton--scroll')
+    navbar.addClass('fixed-height');
   }
 })
+
+
+
+
 
 $('.nav-link-active').click(function () {
   $('.nav-link-active').removeClass('active');
@@ -123,15 +113,6 @@ $(".hamburger").on("click", function () {
   }
 });
 
-// $('.main-slider__img').click(function () {
-//   var img = $('.slick-active').next().find('.main-banner__img img').attr('src');
-//   $('.main-slider__img--active').attr('src', img);
-
-//   var text = $('.slick-active').next().find('.main-banner__title p').text();
-//   $('.main-slider__title').text(text);
-//   var text = $('.slick-active').next().find('.main-banner__number span').text();
-//   $('.main-slider__number span').text(text);
-// })
 
 $('.main-banner__content').slick({
   infinite: true,
