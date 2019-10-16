@@ -53,12 +53,16 @@
                 <div class="main-posts__comments d-flex">
                     <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
                     <p><?php echo $numero_de_comentarios = get_comments_number(); ?></p>
-                    <?php echo get_the_tag_list('tipo_destinos_tags'); ?>
                     
                 </div>
                 <div class="main-posts__tags">
-                    <p>tags</p>
-                    <p>tags</p>
+                    <?php 
+                        $tags = get_the_tags();
+                        if ($tags):?> 
+                            <?php foreach( $tags as $tag ):?>
+                            <p><?php echo $tag->name;?></p>
+                        <?php endforeach;?>
+                    <?php endif;?>
                 </div>
                 </div>
                 <div class="main-posts__description">
