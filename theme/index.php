@@ -182,7 +182,7 @@
       </div>
     </div>
   </section>
-  <section class="main-articles">
+  <section class="main-articles main-articles-home">
     <div class="container">
       <div class="content__title">
         <h2>últimos articulos</h2>

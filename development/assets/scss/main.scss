@@ -1759,6 +1759,12 @@ input {
 }
 
 .main-articles {
+  &.main-articles-home {
+    @include respond-to(xs) {
+      margin-top: 20px;
+    }
+  }
+
   @include respond-to(xs) {
 
     padding: 25px 0;
@@ -2828,9 +2834,12 @@ hr.main-articles__line {
 
 }
 
-.searchBox:hover>.searchInput {
-  width: 140px;
-  padding: 0 6px;
+.searchInput {
+  &.input-active {
+    width: 140px;
+    padding: 0 6px;
+
+  }
 
   @include respond-to(md) {
     width: 100px;
@@ -2881,7 +2890,7 @@ hr.main-articles__line {
 
 
 
-.searchBox--scroll:hover>.searchInput--scroll {
+.searchInput--scroll {
   color: #000;
   border-bottom: 1px solid #000;
 

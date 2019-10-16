@@ -65,10 +65,22 @@
                     <?php the_content(); ?>
     
                 <div class="main-posts__description--redes">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-linkedin"></i>
-                    <i class="fa fa-print"></i>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-linkedin"></i>
+                    
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-print"></i>
+                    
+                    </a>
                 </div>
                 </div>
 
