@@ -41,7 +41,7 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-autos">
           <li class="nav-item dropdown">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle dropdown-toggle1" data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle " data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
             <div aria-labelledby="dropdown01" class="dropdown-menu">
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
@@ -69,8 +69,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle dropdown-toggle2" data-toggle="dropdown" href="#" id="dropdown01">Productos</a>
-            <div aria-labelledby="dropdown01" class="dropdown-menu">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle " data-toggle="dropdown" href="#" id="dropdown01">Productos</a>
+            <div aria-labelledby="dropdown02" class="dropdown-menu">
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
                     <img id="site1" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
