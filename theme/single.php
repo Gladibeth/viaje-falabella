@@ -67,21 +67,19 @@
                 </div>
                 <div class="main-posts__description">
                     <?php the_content(); ?>
-    
                 <div class="main-posts__description--redes">
-                    <a href="#">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php bloginfo('url'); ?>" target="_blank">
                         <i class="fa fa-facebook"></i>
-                    
                     </a>
-                    <a href="#">
+                    <a  href="https://twitter.com/intent/tweet?url=<?php bloginfo('url'); ?>" target="_blank">
                         <i class="fa fa-twitter"></i>
                     
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php bloginfo('url'); ?>" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     
                     </a>
-                    <a href="#">
+                    <a href="javascript:print()">
                         <i class="fa fa-print"></i>
                     
                     </a>
