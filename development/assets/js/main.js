@@ -72,6 +72,8 @@ $(window).scroll(function () {
     $('.searchBox').addClass('searchBox--scroll');
     $('.searchBox').addClass('searchBox--scroll');
     $('.hamburger-inner').addClass('js-hamburger');
+    $('.svg-white').addClass('scroll-color ');
+    $('.search input').addClass('change-color');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
@@ -93,8 +95,8 @@ $(window).scroll(function () {
     $('.searchButton').removeClass('searchButton--scroll');
     $('.searchInput').addClass('searchInput--scroll');
     $('.hamburger-inner').removeClass('js-hamburger');
-
-
+    $('.svg-white').removeClass('scroll-color ');
+    $('.search input').removeClass('change-color');
   }
 });
 
