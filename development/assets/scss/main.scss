@@ -78,6 +78,11 @@ section {
     margin-top: -40px;
   }
 
+  &.fixed-height--two {
+    height: 150px;
+    margin-top: -40px;
+  }
+
 
 }
 
@@ -425,7 +430,6 @@ textarea {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        main-banner__mailheight: 100%;
       }
 
       .bg-box {

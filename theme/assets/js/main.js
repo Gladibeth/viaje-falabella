@@ -8,25 +8,18 @@ $(function () {
   })
 })
 
-let navbar = $('.navbar-fixed-js');
 
-$('.dropdown-toggle').click(function () {
-  // $('.navbar-fixed-js').removeClass('fixed-height')
-  // $(this).toggleClass('fixed-height')
-  // // if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
-  // //   $('.navbar-fixed-js').removeClass('fixed-height')
-  // // } else {
-  // //   $('.navbar-fixed-js').toggleClass('fixed-height')
-  // // }
-  navbar.addClass('fixed-height');
-  if (navbar.hasClass('fixed-height')) {
-    navbar.removeClass('fixed-height');
-  } else {
-    navbar.addClass('fixed-height');
-  }
+$('.dropdown-toggle1').click(function () {
+  $('.navbar-fixed-js').toggleClass('fixed-height')
+  $('.navbar-fixed-js').removeClass('fixed-height--two')
 })
 
 
+$('.dropdown-toggle2').click(function () {
+  $('.navbar-fixed-js').toggleClass('fixed-height--two')
+  $('.navbar-fixed-js').removeClass('fixed-height')
+
+})
 
 
 
@@ -38,7 +31,7 @@ $('.nav-link-active').click(function () {
 
 var URLactual = window.location;
 
-// Menú fixed
+
 $(window).scroll(function () {
   if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
     $('.navbar-fixed-js').addClass('fixed');
