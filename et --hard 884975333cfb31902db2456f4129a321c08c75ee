@@ -1,0 +1,820 @@
+[33mcommit 884975333cfb31902db2456f4129a321c08c75ee[m[33m ([m[1;36mHEAD -> [m[1;32mbackend[m[33m, [m[1;31morigin/backend[m[33m)[m
+Merge: 21c344b 8edde94
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 17 11:25:19 2019 -0500
+
+    acomodando texto del header + sidebar post como general
+
+[33mcommit 21c344b2d452b54c1bec8fb19e83638b8bf383e5[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 16 17:32:50 2019 -0500
+
+    insetando link a botonoes de compartir en el single
+
+[33mcommit 2f4538974690a2154c90e6ea79578b5dde155536[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 16 16:05:42 2019 -0500
+
+    insertando tags
+
+[33mcommit 8edde9475f60163c80cd21227f42457c136a257a[m[33m ([m[1;31morigin/search-m[m[33m)[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 16 13:11:45 2019 -0400
+
+    Add Change dropdown of nav
+
+[33mcommit b0b7b7e080cb9db42f94850c44adf341ac00ceaa[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 16 12:56:06 2019 -0400
+
+    Change search
+
+[33mcommit a0cc74595603ec544e157bc2621e1308a8eff590[m
+Merge: 4ad109f 5f6f17a
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 16 10:44:58 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit 4ad109f7e6110409afddfe93cac8c92b89d6adc2[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 16 10:44:30 2019 -0500
+
+    eventprevent default search
+
+[33mcommit 5f6f17aca3a3a72fe9fee8a9d44980584182c575[m
+Merge: bd796a4 fc8cf1e
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 16 11:17:22 2019 -0400
+
+    Merge
+
+[33mcommit bd796a4f0c02c59b2255a38add82d03f5030ed1c[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 16 11:16:03 2019 -0400
+
+    Merge
+
+[33mcommit fc8cf1ecbcb7903fd43830b61ed313a209d9e99c[m
+Merge: 60224bd 994878a
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 16 10:02:30 2019 -0500
+
+    colocando search con onclick
+
+[33mcommit 60224bd920e26b31c9db99b3108cda04c0d248b6[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 16 09:59:18 2019 -0500
+
+    search del navbar
+
+[33mcommit 994878aa681f55b3bc6a1a2e738abb894404fa15[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 16 08:34:14 2019 -0400
+
+    Add search
+
+[33mcommit 50af6839d13190a84027c5ddccd46acccad632bc[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Oct 15 23:43:17 2019 -0400
+
+    CHange in link social, search on click
+
+[33mcommit 6a58e5b239801a721d5c7384797a9fa5a84b8880[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 15 16:10:15 2019 -0500
+
+    colocando buscador en formseacrh.php
+
+[33mcommit 47e0c9885fd41254dfb0ccde623dd1f9b47d8d4f[m
+Merge: eb80a18 5c9d8bd
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 15 09:43:24 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit eb80a18ec0849456e4e5ba2a7666d7115b903084[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 15 09:43:14 2019 -0500
+
+    correcion de los link en taxonomias
+
+[33mcommit 5c9d8bd7ec63625b8ae72877e7daef1fbedbceff[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Oct 14 12:21:51 2019 -0400
+
+    Change in page
+
+[33mcommit 78864d4861d79f11849dff5dd8d1bb8c5956f546[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Oct 14 06:07:19 2019 -0400
+
+    Add icono of print, active a nav-link,btn modal, arrow slider
+
+[33mcommit 0aa78b330aa2c0e1e6af1dc19242b2292ddde53d[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Fri Oct 11 18:03:04 2019 -0400
+
+    Change
+
+[33mcommit 844f727e6861202d8eddacfab562fad2ed282253[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Fri Oct 11 17:24:38 2019 -0400
+
+    details search
+
+[33mcommit 795a30020dd822d8eae7a711d41cd2736e343855[m
+Merge: 24e6df7 1f1e223
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Oct 11 12:15:07 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit 1f1e2239dbf05ba30292676ec347456d289f204b[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Oct 10 22:42:03 2019 -0400
+
+    Slider fisrt responsive, and view search details responsive
+
+[33mcommit 926ac9b8119c0b43924993e5b6e2e0396de787a0[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Oct 10 17:28:35 2019 -0400
+
+    Responsive in views
+
+[33mcommit 24e6df76ef4c6150b2f3187f2d57ceefde4afa17[m
+Merge: e30b11e 594223d
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 10 11:48:17 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit e30b11e0d676cb1c79772889c31e2fdd7506d87b[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 10 11:48:13 2019 -0500
+
+    guardando cambios
+
+[33mcommit 13bbbdf87ab6dce2815b24e13fce6df3ed253351[m
+Merge: 92a1457 616c309
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 9 11:41:03 2019 -0400
+
+    Merge
+
+[33mcommit 594223d081cd3d6cd8771ad203bc6ee7faaa3b3f[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Oct 10 11:14:34 2019 -0400
+
+    Add change view remmended
+
+[33mcommit c0928dc8dffcc4f0e233f360385d2a4082cc818d[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 9 17:46:42 2019 -0400
+
+    Search md
+
+[33mcommit 7172e3762de5159fb5fb80d9d3f3ddb3610cd07c[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 9 17:09:30 2019 -0400
+
+    Add change search
+
+[33mcommit 5c90dd584c588b6e64018e4c9dbdbde325f6feb2[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 9 16:32:31 2019 -0400
+
+    Change responsive and search
+
+[33mcommit a6f6aaa550745cd6cef6bdedc90619f60686a3e4[m
+Merge: 92a1457 616c309
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 9 11:41:03 2019 -0400
+
+    Merge
+
+[33mcommit 92a14579680a5578ffb6257b6959785ba98a7e7e[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 9 11:40:11 2019 -0400
+
+    Add letter spacing in link nav, sidebar, and hover img
+
+[33mcommit 616c309e756f73cc2f9de52dee71ef1f00645dc5[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Oct 9 09:55:07 2019 -0500
+
+    haciendo pruebas con search.php
+
+[33mcommit 0f4ef0acb7f096b8e1123e94d034bdc558416283[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Sun Oct 6 21:10:37 2019 -0400
+
+    Add styles scrollbar
+
+[33mcommit ae739106b9691f73198b2dbf6a356a5d7fd6dfec[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Sun Oct 6 21:06:58 2019 -0400
+
+    Add line footer, sidebar in post, space post, space in dropdown in navbar
+
+[33mcommit 7e22f098ee55c4245c137a777bb93259f975b886[m
+Merge: b06a36c 62e7ba7
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Sat Oct 5 13:40:35 2019 -0400
+
+    Merge
+
+[33mcommit b06a36c0d84f55eeee50fc33dd719a811c79bec5[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Sat Oct 5 13:38:37 2019 -0400
+
+    slider
+
+[33mcommit 62e7ba7400b5692407498a6d9d24097582f0f6f7[m
+Merge: 73a7f68 af60f7c
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Oct 4 17:13:21 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit 73a7f6873bc234ce712f7b4b1620d961c3d2cb14[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Oct 4 17:12:52 2019 -0500
+
+    instalando nuevamente wordpress por problemas en cateogiras
+
+[33mcommit af60f7c0100b865cc7ef08ee1a338387481c4cb2[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Fri Oct 4 13:17:36 2019 -0400
+
+    reset progress bar
+
+[33mcommit 1e6605e2b27e69984d738cd9d7cab44301c26cb8[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Oct 4 09:58:46 2019 -0500
+
+    elimnando titulo de la página previa en la single
+
+[33mcommit a24f001fac189caee62c10ae9718902b1eaad6ce[m
+Merge: 9b2892c 3118f22
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 3 16:42:05 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit 9b2892cce8393bc83f4df02dc36d148c4faf0369[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 3 16:41:28 2019 -0500
+
+    colocando comentarios dinamicos hasta 2 niveles
+
+[33mcommit 3118f22a50c590773af90c82475f2da60ada32af[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Oct 3 14:59:57 2019 -0400
+
+    Slider destiny correct
+
+[33mcommit 835ef11d29d27e34190a377415aaee0463765a06[m
+Merge: e225363 53cb27c
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 3 10:15:46 2019 -0500
+
+    merge slider barra
+
+[33mcommit e225363996f4e879526e8a223d4409bf4cad8820[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Oct 3 09:42:38 2019 -0500
+
+    configurando comments
+
+[33mcommit 53cb27cec32a81a62fca7b91a8918d757fb5cd48[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Oct 3 10:25:53 2019 -0400
+
+    Add progress bar in banner small
+
+[33mcommit 80f5df9b6da48a1bf9b29fa934a7afeb22921f4e[m
+Merge: 15f0baf ba12d44
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 2 16:51:43 2019 -0400
+
+    merge
+
+[33mcommit 15f0baf7e5de05469a2924ab3d5df9914b78b070[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Oct 2 16:50:06 2019 -0400
+
+    Add mail banner
+
+[33mcommit ba12d4409c1d60bb93ca3444268cc0056aadb84d[m
+Merge: 30db3e4 1c9e1b2
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Oct 1 18:43:13 2019 -0400
+
+    Merge
+
+[33mcommit 30db3e4695641d359fb211a429c0049bd516e95a[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Oct 1 18:42:27 2019 -0400
+
+    Add banner como es tu vaije
+
+[33mcommit 1c9e1b2fde7000fb3c1063fee6192fafca890524[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 17:11:56 2019 -0500
+
+    colocando banner principal dinamico
+
+[33mcommit bed256f28707a9fca1fa183511775943f23176b9[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 16:04:55 2019 -0500
+
+    filtrando post por comentarios
+
+[33mcommit 776d81a0f53abed2f68cfcace7711f521204b73f[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 15:31:14 2019 -0500
+
+    acomodando gitignore
+
+[33mcommit 14a6cc9e3a224d14780204d7b89c7832088450a8[m
+Merge: e6cff0a 2b00db5
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 15:30:50 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit e6cff0a3503d0ef75d7b63db1c62325e1f19909a[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 15:30:23 2019 -0500
+
+    acomodando gitignore
+
+[33mcommit c1379f3b0787552225d8ffbd798a4c4d8df83f75[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 15:24:04 2019 -0500
+
+    acomodando menu
+
+[33mcommit 2b00db540c9bd794a90b9f9da787767c482c9dd4[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 15:24:04 2019 -0500
+
+    acomodando menu
+
+[33mcommit 0e714f3741cb164f2a983abf4c2f2328ad5ab082[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 15:22:53 2019 -0500
+
+    colocando link de destinos,viajes,recursos
+
+[33mcommit 0f6521fb91e06b5238f3ebe56084718c95d57472[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Oct 1 12:28:54 2019 -0500
+
+    agregando sidebar del viajero del mes
+
+[33mcommit 8fc8faaba57c652f67f9094434492af8b21a7807[m
+Merge: 879c812 81e2c8b
+Author: renny10037 <renny10037@gmail.com>
+Date:   Mon Sep 30 11:03:09 2019 -0500
+
+    Merge branch 'gladibeth/front' of https://github.com/Gladibeth/viaje-falabella into staging
+
+[33mcommit 81e2c8bae3fdb51a47df1d7255eac5a3ab6f8e40[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 30 09:33:20 2019 -0400
+
+    Add banner principal
+
+[33mcommit 879c81238677ba271f5c9ae26d295becd2adcb09[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Sep 27 18:09:56 2019 -0500
+
+    páginas de categorias y actualizando taxonomias
+
+[33mcommit d6a161566ea721e78a19bee73635dbe0d7aa16fa[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Sep 27 12:00:17 2019 -0500
+
+    ocultando comentarios dinamicos por error en el backend
+
+[33mcommit 1620a85adce27ff54f8be8afe19fc5d664516970[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 24 13:24:56 2019 -0400
+
+    Deleted cursor pointer the post
+
+[33mcommit 32ca9ff87a7544fb49de8f9c829e3f4f7273bdfd[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 24 13:20:41 2019 -0400
+
+    Overlay
+
+[33mcommit b672088f49b23dd9ba282e03dc42b96d7618339d[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 24 13:12:00 2019 -0400
+
+    Add cursor pointer
+
+[33mcommit 1cf6166e6eb85fecfc7953fa99c1b0864ee05f08[m
+Merge: 3dcb7c0 61a2780
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Sep 24 11:14:26 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit 3dcb7c05584d9fdda4be98c68420490407f60abe[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Sep 24 11:12:09 2019 -0500
+
+    acomodando backend borrado
+
+[33mcommit 61a27803ab61b52f72159c058d16826c5a66efa0[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 24 12:03:16 2019 -0400
+
+    Add preloader
+
+[33mcommit 44b5fc278f432253ad12acb6c35f532dcfb26fed[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 23 16:12:10 2019 -0400
+
+    Bg textatea
+
+[33mcommit c60531e234d9192ad7eeeb64648d55bdb8a8dc0e[m
+Merge: b5eef6d e1244e5
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 23 15:53:14 2019 -0400
+
+    Merge
+
+[33mcommit b5eef6dcade5b7cd9516bf936d2fc5317668b9b3[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 23 15:45:45 2019 -0400
+
+    Add change in single parallax
+
+[33mcommit e1244e5c1369314cc2b6fad70bdebed61bd2546d[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Sep 20 18:26:28 2019 -0500
+
+    insertando comentarios
+
+[33mcommit c2489a5efe2e14e6890f274c8b8a21a908e051f6[m
+Merge: cd479ce 4a45b1e
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Sep 20 09:46:24 2019 -0500
+
+    merge con estrellita y actualizando background single dinamico
+
+[33mcommit cd479cec98bbed7d7ea7267d94471504f3f9a14d[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Sep 20 09:41:59 2019 -0500
+
+    editando el single
+
+[33mcommit 4a45b1e08fe0f7c73c336d963d3181f84f81b8b4[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Sep 19 18:49:10 2019 -0400
+
+    Add icon commend color arrows in commend
+
+[33mcommit 87e68e1144a180dd6d50bf1833aad31aeb295470[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Sep 19 18:38:42 2019 -0400
+
+    Add conflect in single
+
+[33mcommit c809f610bd042c418951049b0f6ad9d99a387c5b[m
+Merge: b086ee7 6d98c54
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Sep 19 18:36:01 2019 -0400
+
+    Add merge
+
+[33mcommit b086ee7f7ca5c6a4bdf63cbfb7d1384b0eae0813[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Sep 19 18:22:48 2019 -0400
+
+    Add change in view post
+
+[33mcommit b9073c125f63b80df2d2e3e71c574e82b5a39e75[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Sep 19 16:11:51 2019 -0500
+
+    obtenido los datos de la página anterior de la categoria en el post
+
+[33mcommit 6d98c541b62a9f37f9c977db768b4f348797a9dc[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Sep 19 16:11:51 2019 -0500
+
+    obtenido los datos de la página anterior de la categoria en el post
+
+[33mcommit acf8bbe524f8c89fcc59b13e5b5650b65988dfaf[m
+Merge: 97057c9 7b1f112
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Sep 19 11:24:04 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit 97057c986c93ef1306a5403467d3094163722e78[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Sep 19 11:23:28 2019 -0500
+
+    mandando carpeta theme a gulp
+
+[33mcommit 193565b841d0138a9988114cd79de7c12bc69386[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Sep 19 11:19:47 2019 -0500
+
+    colocando taxonomias de caribe,resto del mundo, turquia
+
+[33mcommit 49f3b1c92bc9d7068b04b12f9f4e9b8e2bf301b5[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Thu Sep 19 11:19:31 2019 -0500
+
+    quitando boton ver mas
+
+[33mcommit 7b1f1128c92aaf12156a248b33b1f7ee6da31d30[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Sep 18 21:43:12 2019 -0400
+
+    Add Change
+
+[33mcommit f3cd15d7e64c74831f13eee6cc7e17527edaa1ef[m
+Merge: e967ac8 b50c445
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Sep 18 20:54:12 2019 -0400
+
+    Add merge
+
+[33mcommit e967ac8456fadae20e10034ab12cbe7711aed266[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Sep 18 20:53:21 2019 -0400
+
+    Add responsive all post
+
+[33mcommit b50c445351736fec13e21b553d4f736e98300de3[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Sep 18 17:57:48 2019 -0500
+
+    editando single y colocando boton dinamico atras
+
+[33mcommit 82749ca55dbf965015c1dc10e26eb88104e41db1[m
+Merge: f69c27b e34859c
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Sep 18 15:00:22 2019 -0500
+
+    merge con los cambios de estrellito para arreglar las card de la taxonomia
+
+[33mcommit f69c27b006ee78125971a178f086a3499c447eee[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Sep 18 14:55:46 2019 -0500
+
+    agregando post relacionados a una sub categoria final
+
+[33mcommit 863f92230358992da62e3f9d2b55f45e7389cc6f[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Sep 18 14:53:46 2019 -0500
+
+    codigo para los post mas visitados
+
+[33mcommit e34859c71514b8d82bfbffcf928a8cf7040da06d[m
+Merge: c938f05 5afc945
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Sep 18 15:26:57 2019 -0400
+
+    Add change slider destiny and articles
+
+[33mcommit c938f05eef369001831f88da1de6547b215af713[m
+Merge: 479ccb4 bc064ec
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Wed Sep 18 11:31:03 2019 -0400
+
+    Add commend in js
+
+[33mcommit 5afc945bdfecb14bb89075c7cb582804aa2f14f1[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Wed Sep 18 10:04:51 2019 -0500
+
+    agregando the_exceprt() a las taxonomias
+
+[33mcommit 479ccb45470de8907c724b312729edd2ecb1ffe6[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 22:41:50 2019 -0400
+
+    Add change
+
+[33mcommit bc064ec17cbcd2c32e382305b0594e550bf6b00e[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Sep 17 17:07:35 2019 -0500
+
+    colocando taxonomy dinamica(titulo,descripcion e imagen,link)
+
+[33mcommit 53677f0d1bae8d0ce5bba92a33bb6d5ad34df345[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Tue Sep 17 15:57:27 2019 -0500
+
+    agregando allpost en taxonomy y creando taxonomia europa
+
+[33mcommit 6dc08fde97e72b817ec608db2ec448628972c4f2[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 13:09:25 2019 -0400
+
+    Add btn
+
+[33mcommit 8a9ff4a8c04827c8ff242917bb45610bdfc9a889[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 12:50:25 2019 -0400
+
+    Add change
+
+[33mcommit 0b4eca6c0b59d9fd20d2eb839f874eb267fd82b9[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 12:10:40 2019 -0400
+
+    Add text transform
+
+[33mcommit 5c67f5429095fce3aa8473e06067dbf594ad5702[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 12:09:17 2019 -0400
+
+    Add text article
+
+[33mcommit 920b5389c4337c61e596219301a177bdc357647b[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 12:05:13 2019 -0400
+
+    Add arrows color
+
+[33mcommit 52a1e1669ea0d5f92b1e586ecf285733fb0975a2[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 17 11:27:21 2019 -0400
+
+    Add change  in article, and title parallax
+
+[33mcommit 952d00d83078b4d35173369fcb7a82b5c410e54f[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Mon Sep 16 18:04:54 2019 -0500
+
+    colocando dinamico las taxonomias incluyendo link
+
+[33mcommit 2525652352053ff83e1ca2ff4b79407f899e812f[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 17:37:41 2019 -0400
+
+    Add recomendaciones y paises
+
+[33mcommit 1c164d67f2a93497660f7ba2a3ec577d35afd9ea[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 15:59:25 2019 -0400
+
+    Add text camara
+
+[33mcommit 580d6745998664bbce7737beb868b98eece47105[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 15:29:32 2019 -0400
+
+    Add line scroll banner
+
+[33mcommit 68d5a459793069d9366881f77626a2fb70dc14dc[m
+Merge: 992ec56 7798ef5
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 14:43:11 2019 -0400
+
+    merge
+
+[33mcommit 992ec5695dc1c7c54d9ddf931c59a6a4388118c8[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 14:41:31 2019 -0400
+
+    Add recommed
+
+[33mcommit 7798ef5bc8304520f800ec3ae2ce5f24d73f7206[m
+Merge: 79c6257 dadeedd
+Author: renny10037 <renny10037@gmail.com>
+Date:   Mon Sep 16 12:13:57 2019 -0500
+
+    colocando dinamico título e imagen la las categorias
+
+[33mcommit 79c625755064898bf2b5882781f0f6354ec0476c[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Mon Sep 16 12:13:44 2019 -0500
+
+    colocando dinamico titulo, e imagen de las recomendaciones y países
+
+[33mcommit dadeedd72780f31fd438e380e9aa4fa3b4de71df[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 13:09:41 2019 -0400
+
+    Add cards width
+
+[33mcommit f18d01b94078f689792e0c6bde77a498e2d8c50f[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 12:59:15 2019 -0400
+
+    Add responsive type destiny
+
+[33mcommit e7fcb7b0e06125e26ef1c6d63330a7424f24f28d[m
+Merge: cd07c31 5a35096
+Author: renny10037 <renny10037@gmail.com>
+Date:   Mon Sep 16 11:16:31 2019 -0500
+
+    Merge branch 'backend' of https://github.com/Gladibeth/viaje-falabella into backend
+
+[33mcommit cd07c316b691381b42277bccaa07d56b81d4f0ad[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Mon Sep 16 11:16:14 2019 -0500
+
+    título e imagen de europa dinamicos
+
+[33mcommit 5a3509657d90887673fe01d7e8673757298b7616[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 12:15:33 2019 -0400
+
+    Add size logo
+
+[33mcommit ee07a30336f1f427eb3d7fe60447137c66e16a60[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 12:13:17 2019 -0400
+
+    Add tabs taxonomy
+
+[33mcommit a4c11191f7cf2996ed5741a0a26a755cb649dfae[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 11:57:27 2019 -0400
+
+    Add responsive 1024
+
+[33mcommit 582c841a61e63eb704fb2e54d7c220ddbc02beec[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 10:21:43 2019 -0400
+
+    Add arrows
+
+[33mcommit e609b8a8404b6bc0ce21ab0e25d967550d3246eb[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 10:16:20 2019 -0400
+
+    Add slider destiny
+
+[33mcommit d88377bacfa14a800da2880da45d06a9bc9925f0[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Mon Sep 16 09:37:02 2019 -0400
+
+    Add responsive movil
+
+[33mcommit c1a4c23b3fcd227e674f260afaf04c9c2c4438b2[m
+Author: renny10037 <renny10037@gmail.com>
+Date:   Fri Sep 13 18:20:05 2019 -0500
+
+    insertando página estatica a wordpress
+
+[33mcommit 3930e41b76bde4daa5c1f79a0e6539117f2bfad0[m[33m ([m[1;31morigin/frontend[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mfrontend[m[33m)[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Fri Sep 13 16:40:13 2019 -0400
+
+    Add navbar height
+
+[33mcommit 07d4c4f72715d6f1475202affc15c7c175a8fc6c[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Fri Sep 13 16:34:36 2019 -0400
+
+    Add link post
+
+[33mcommit 88d8d654d7161a3ae9ce0890c54ec55043ac5cc5[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Fri Sep 13 15:56:40 2019 -0400
+
+    Deleted lazy
+
+[33mcommit 40526fb02ded999ff623ee29936b29574bc2a07e[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Sep 12 12:10:23 2019 -0400
+
+    Add lazy load
+
+[33mcommit 161538389e30a45be297a2875967028be12a3843[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Sep 3 11:04:46 2019 -0400
+
+    Add fonts
+
+[33mcommit 50297f22f7202242fa8b5c6e7ec2b10341e7b1d2[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Thu Aug 29 12:02:42 2019 -0400
+
+    Add btn scroll banner, and tabs in all posta
+
+[33mcommit dbf4bfdb4e9d28762f5361a2f20bb5acd404478f[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Aug 27 22:17:53 2019 -0400
+
+    Add view post
+
+[33mcommit 287f55591f07747c823ac1f1fbcbe4d3e1fe193e[m
+Author: Gladibeth <gladibethdelos@gmail>
+Date:   Tue Aug 20 17:04:34 2019 -0400
+
+    Add home, country, post and recommended
