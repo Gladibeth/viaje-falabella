@@ -78,6 +78,11 @@ section {
     margin-top: -40px;
   }
 
+  &.fixed-height--two {
+    height: 150px;
+    margin-top: -40px;
+  }
+
 
 }
 
@@ -2809,8 +2814,14 @@ hr.main-articles__line {
 .sidebar {
   width: 379px;
   height: 700px;
-  background: #54575947 0% 0% no-repeat padding-box;
   opacity: 1;
+  .textwidget, p{
+    width: 100%;
+    height: 100%;
+  }
+    img{
+      object-fit: cover;
+  }
 
   @include respond-to(xs) {
     width: 100%;

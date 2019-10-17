@@ -216,11 +216,11 @@ if(function_exists('register_sidebar')) {
 
   ));
   register_sidebar(array(
-    'name'          => 'Viajero del mes imagen',
-    'id'            => 'viajero-del-mes-imagen',
-    'description' => 'Insertar imagen del viajero del mes',
-    'before_widget' => '<div class="main-post__img">',
-    'after_widget'  => '</div>'
+    'name'          => 'Sidebar',
+    'id'            => 'sidebar-post',
+    'description' => 'Insertar link e imagen(379x700px)',
+    'before_widget' => '',
+    'after_widget'  => ''
 
   ));
 };

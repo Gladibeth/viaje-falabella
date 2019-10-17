@@ -90,7 +90,15 @@
           </div>
           <div class="main-posts__item">
             <div class="main-posts__sidebar">
-              <div class="sidebar"></div>
+              <div class="sidebar">
+                  <?php if (get_field('sidebar')):?>
+                  <a href="<?php echo get_field('sidebar_link');?>" target="_blank" rel="noopener noreferrer">
+                    <img src="<?php echo get_field('sidebar_imagen');?>" alt="">
+                  </a>
+                <?php else:?>
+                    <?php if (!dynamic_sidebar('sidebar')); ?>   
+                <?php endif;?>
+              </div>
             </div>
           </div>
 

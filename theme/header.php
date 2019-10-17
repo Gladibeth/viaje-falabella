@@ -75,13 +75,13 @@
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
                     <img id="site1" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
                     <img id="site_1" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
-                    Europa
+                    Temporada
                   
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/caribe';?>">
                     <img id="site2" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-caribe-01.svg">
                     <img id="site_2" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png">
-                    Caribe
+                    Producto vendido
                   </a>
 
               </div>
@@ -96,23 +96,42 @@
             <a class="nav-link" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gastronomía</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Sobre nosotros</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Gastronomía</a>
+          </li> -->
         </ul>
       </div>
       <div class="main-nav__search">
-        <?php  get_search_form();?>
+        <?php  //get_search_form();?>
+        <!-- <div class="search-first">
+          <div class="searchBox">
+              <input class="searchInput"type="text" name="" placeholder="Search">
+              <button class="searchButton" href="#">  
+                  <i class="fa fa-search"></i>
+              </button>
+          </div>
+        </div> -->
+        <div class="search">
+          <input class="change-color" type="text" placeholder=" ">
+          <div>
+              <svg class="svg-white" >
+                  <use xlink:href="#path">
+              </svg>
+          </div>
+      </div>
+          
+      <svg class="svg-white" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+              <path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+          </symbol>
+      </svg>
+        
         <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
             <i class="fa fa-envelope-o"></i>
           </a>
       </div>
     </nav>
   </header>
-  <script>
-    $('.nav-link').click(function () {
-      $('.nav-link--active').toggleClass('active');
-    })
-  </script>
+
