@@ -15,7 +15,10 @@
     <section class="main-parallax">
         <?php $post_thumbnail_id = get_post_thumbnail_id();
         $url = wp_get_attachment_url( $post_thumbnail_id);?>
-        <div class="overlay" style="background-image: url('<?php echo $url; ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
+        <div class="overlay" style="background-image: url('');">
+        
+            <img src="<?php echo $url; ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+        </div> <!-- muestra la imagen dinamica de la taxonomia -->
         <div class="main-parallax--boxtitle">
 
         <div class="main-parallax--title">
