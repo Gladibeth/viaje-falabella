@@ -12,23 +12,13 @@ $(function () {
 $('.dropdown-toggle1').click(function () {
   $('.navbar-fixed-js').toggleClass('fixed-height')
   $('.navbar-fixed-js').removeClass('fixed-height--two')
-  // $('.dropdown-toggle1').click(function () {
-  //   $('.navbar-fixed-js').removeClass('fixed-height')
-  // })
-  // if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
-  //   $('.navbar-fixed-js').removeClass('fixed-height')
-  // } else {
-  //   $('.navbar-fixed-js').toggleClass('fixed-height')
-  // }
 })
 
 
 $('.dropdown-toggle2').click(function () {
   $('.navbar-fixed-js').toggleClass('fixed-height--two')
   $('.navbar-fixed-js').removeClass('fixed-height')
-  // $('.dropdown-toggle2').click(function () {
-  //   $('.navbar-fixed-js').removeClass('fixed-height')
-  // })
+
 })
 
 
@@ -41,7 +31,7 @@ $('.nav-link-active').click(function () {
 
 var URLactual = window.location;
 
-// Menú fixed
+
 $(window).scroll(function () {
   if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
     $('.navbar-fixed-js').addClass('fixed');

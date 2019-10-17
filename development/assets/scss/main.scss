@@ -430,7 +430,6 @@ textarea {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        main-banner__mailheight: 100%;
       }
 
       .bg-box {
@@ -2815,12 +2814,15 @@ hr.main-articles__line {
   width: 379px;
   height: 700px;
   opacity: 1;
-  .textwidget, p{
+
+  .textwidget,
+  p {
     width: 100%;
     height: 100%;
   }
-    img{
-      object-fit: cover;
+
+  img {
+    object-fit: cover;
   }
 
   @include respond-to(xs) {
