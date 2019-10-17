@@ -72,18 +72,13 @@
             <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle " data-toggle="dropdown" href="#" id="dropdown01">Productos</a>
             <div aria-labelledby="dropdown02" class="dropdown-menu">
               <div class="sub-drop-destiny">
-                <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
+                <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_productos/temporada/';?>">
                     <img id="site1" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
                     <img id="site_1" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
-                    Europa
+                    Temporada
                   
                   </a>
-                <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/caribe';?>">
-                    <img id="site2" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-caribe-01.svg">
-                    <img id="site_2" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png">
-                    Caribe
-                  </a>
-
+                
               </div>
             </div>
           </li>
@@ -96,14 +91,15 @@
             <a class="nav-link" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gastronomía</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Sobre nosotros</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Gastronomía</a>
+          </li> -->
         </ul>
       </div>
       <div class="main-nav__search">
+        <?php  //get_search_form();?>
         <!-- <div class="search-first">
           <div class="searchBox">
               <input class="searchInput"type="text" name="" placeholder="Search">

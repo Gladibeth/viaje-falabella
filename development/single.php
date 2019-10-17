@@ -53,31 +53,33 @@
                 <div class="main-posts__comments d-flex">
                     <i class="fa fa-comment-o" style="margin-right: 5px;" aria-hidden="true"></i>
                     <p><?php echo $numero_de_comentarios = get_comments_number(); ?></p>
-                    <?php echo get_the_tag_list('tipo_destinos_tags'); ?>
                     
                 </div>
                 <div class="main-posts__tags">
-                    <p>tags</p>
-                    <p>tags</p>
+                    <?php 
+                        $tags = get_the_tags();
+                        if ($tags):?> 
+                            <?php foreach( $tags as $tag ):?>
+                            <p><?php echo $tag->name;?></p>
+                        <?php endforeach;?>
+                    <?php endif;?>
                 </div>
                 </div>
                 <div class="main-posts__description">
                     <?php the_content(); ?>
-    
                 <div class="main-posts__description--redes">
-                    <a href="#">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php bloginfo('url'); ?>" target="_blank">
                         <i class="fa fa-facebook"></i>
-                    
                     </a>
-                    <a href="#">
+                    <a  href="https://twitter.com/intent/tweet?url=<?php bloginfo('url'); ?>" target="_blank">
                         <i class="fa fa-twitter"></i>
                     
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php bloginfo('url'); ?>" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     
                     </a>
-                    <a href="#">
+                    <a href="javascript:print()">
                         <i class="fa fa-print"></i>
                     
                     </a>
@@ -88,7 +90,15 @@
           </div>
           <div class="main-posts__item">
             <div class="main-posts__sidebar">
-              <div class="sidebar"></div>
+              <div class="sidebar">
+                  <?php if (get_field('sidebar')):?>
+                  <a href="<?php echo get_field('sidebar_link');?>" target="_blank" rel="noopener noreferrer">
+                    <img src="<?php echo get_field('sidebar_imagen');?>" alt="">
+                  </a>
+                <?php else:?>
+                    <?php if (!dynamic_sidebar('sidebar')); ?>   
+                <?php endif;?>
+              </div>
             </div>
           </div>
 

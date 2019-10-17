@@ -214,72 +214,18 @@ if(function_exists('register_sidebar')) {
     'before_widget' => '<div class="main-post__img">',
     'after_widget'  => '</div>'
 
-));
+  ));
+  register_sidebar(array(
+    'name'          => 'Sidebar',
+    'id'            => 'sidebar-post',
+    'description' => 'Insertar link e imagen(379x700px)',
+    'before_widget' => '',
+    'after_widget'  => ''
+
+  ));
 };
 //+++++++++++++++++++++++++++++++++++ end siderbar
 
-
-
-//+++++++++++++++++++++++++++++++++++campos taxonomias
-/* function categorias_add_new_meta_fields(){
-	?>
-	<div class="form-field">
-    <label for="term_meta[texto01]">Texto 01</label>
-    <input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="1">
-		<input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="">
-		<p class="description">Descripción para este campo</p>
-	</div>
-	<div class="form-field">
-		<label for="term_meta[imagen]">Imagen</label>
-		<input type="text" name="term_meta[imagen]" id="term_meta[imagen]" value="">
-		<p class="description">Imagen de la Categoría</p>
-	</div>
-	<?php
-}
-add_action( 'tipo_destinos_add_form_fields', 'categorias_add_new_meta_fields', 10, 2 );
-function categorias_edit_meta_fields($term){
-	$t_id = $term->term_id;
-
-	$term_meta = get_option("taxonomy_$t_id");
-	?>
-		<tr class="form-field">
-			<th scope="row" valign="top">
-				<label for="term_meta[texto01]">Texto 01</label>
-			</th>
-			<td>
-				<input type="checkbox" name="term_meta[texto01]" id="term_meta[texto01]" value="<?php echo esc_attr( $term_meta['texto01'] ) ? esc_attr( $term_meta['texto01'] ) : ''; ?>">
-				<p class="description">Descripción para este campo</p>
-			</td>
-		</tr>
-		<tr class="form-field">
-			<th scope="row" valign="top">
-				<label for="term_meta[imagen]">Imagen</label>
-			</th>
-			<td>
-				<input type="text" name="term_meta[imagen]" id="term_meta[imagen]" value="<?php echo esc_attr( $term_meta['imagen'] ) ? esc_attr( $term_meta['imagen'] ) : ''; ?>">
-			<p class="description">Imagen de la Categoría</p>
-			</td>
-		</tr>
-	<?php
-}
-add_action( 'tipo_destinos_edit_form_fields', 'categorias_edit_meta_fields', 10, 2 );
-function categorias_save_custom_meta( $term_id ) {
-	if ( isset( $_POST['term_meta'] ) ) {
-		$t_id = $term_id;
-		$term_meta = get_option( "taxonomy_$t_id" );
-		$cat_keys = array_keys( $_POST['term_meta'] );
-		foreach ( $cat_keys as $key ) {
-			if ( isset ( $_POST['term_meta'][$key] ) ) {
-				$term_meta[$key] = $_POST['term_meta'][$key];
-			}
-		}
-		update_option( "taxonomy_$t_id", $term_meta );
-	}
-}  
-
-add_action( 'edited_tipo_destinos', 'categorias_save_custom_meta', 10, 2 );  
-add_action( 'create_tipo_destinos', 'categorias_save_custom_meta', 10, 2 ); */
-//+++++++++++++++++++++++++++++++++++end campos taxonomias
 
 
 
