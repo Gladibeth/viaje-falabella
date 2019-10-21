@@ -141,7 +141,14 @@ section {
   width: 200px;
   display: flex;
   justify-content: flex-end;
-  // position: relative;
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+  }
 
   &.main-nav__search--scroll {
     a {
@@ -157,6 +164,20 @@ section {
 
   .main-nav__mail {
     opacity: 0;
+
+    @include respond-to(xs) {
+      opacity: 1;
+      background-color: green;
+      padding: 5px 10px;
+      color: $white;
+    }
+
+    @include respond-to(sm) {
+      opacity: 1;
+      background-color: green;
+      padding: 5px 10px;
+      color: $white;
+    }
 
     &.main-nav__mail--scroll {
       opacity: 1;
@@ -180,6 +201,11 @@ section {
     transition: 0.3s ease-in-out;
   }
 
+  @include respond-to(sm) {
+    height: 60px;
+    transition: 0.3s ease-in-out;
+  }
+
   &.dropdown-menu--scroll {
     background-color: $white;
   }
@@ -193,6 +219,10 @@ section {
   font-family: $beauSans;
 
   @include respond-to(xs) {
+    color: #000;
+  }
+
+  @include respond-to(sm) {
     color: #000;
   }
 
@@ -1822,8 +1852,28 @@ input {
   }
 }
 
-.main-nav__search {
+.main-nav__search--lg-none {
+  display: none;
+
+  @include respond-to(md) {
+    display: none;
+  }
+
+  @include respond-to(sm) {
+    display: flex;
+  }
+
   @include respond-to(xs) {
+    display: flex;
+  }
+}
+
+.main-nav__search--none {
+  @include respond-to(xs) {
+    display: none !important;
+  }
+
+  @include respond-to(sm) {
     display: none !important;
   }
 }
@@ -2088,11 +2138,11 @@ hr.main-articles__line {
   }
 }
 
-.main-nav__search {
-  @include respond-to(sm) {
-    display: none;
-  }
-}
+// .main-nav__search {
+//   @include respond-to(sm) {
+//     display: none;
+//   }
+// }
 
 .main-banner__text {
   @include respond-to(sm) {
@@ -3128,6 +3178,7 @@ hr.main-articles__line {
 
     &.change-color {
       color: $black;
+      // border-bottom: 1px solid black;
     }
 
     &+div {
@@ -3149,6 +3200,14 @@ hr.main-articles__line {
         stroke-dashoffset: 212.908 + 59;
         stroke-dasharray: 59 212.908;
         transition: all .6s ease;
+
+        @include respond-to(xs) {
+          stroke: #000;
+        }
+
+        @include respond-to(sm) {
+          stroke: #000;
+        }
 
         &.scroll-color {
           stroke: #000;
