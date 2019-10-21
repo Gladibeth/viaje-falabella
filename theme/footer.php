@@ -17,14 +17,25 @@
     tabindex="-1">
     <?php echo do_shortcode('[contact-form-7 id="49" title="Formulario"]'); ?>
   </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.14.0/lazyload.min.js"></script>
+    <script src="<?php echo get_template_directory_uri();?>/assets/js/configuration-lazyload.js"></script>
   <!-- <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>-->
   <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
   <?php wp_footer(); ?> <!-- funcion de footer para traer los cambios en el footer -->
+  <script></script>
 </body>
 
 </html>
 <?php  get_search_form();?>
+<!-- 
+
+<button id="miId" onclick="evento(this);">onclick</button>
+<script>
+  function evento(e){
+    console.log(e);
+  }
+</script> -->

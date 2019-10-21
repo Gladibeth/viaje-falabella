@@ -10,7 +10,7 @@
                     <div class="main-commend__formbox">
                         <div class="main-commend__form">
                             <div class="main-post__form--img">
-                                <img class="img-round lazy" data-src="<?php echo get_template_directory_uri();?>/assets/img/img-4.jpeg">
+                                <!-- <img class="img-round lazy" data-src="<?php //echo get_template_directory_uri();?>/assets/img/img-4.jpeg"> -->
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
         <div class="main-commend__formbox">
             <div class="main-commend__form">
             <div class="main-post__form--img">
-                <img class="img-round lazy" data-src="<?php echo get_template_directory_uri();?>/assets/img/img-4.jpeg">
+                <!-- <img class="img-round lazy" data-src="<?php //echo get_template_directory_uri();?>/assets/img/img-4.jpeg"> -->
             </div>
             <ul class="lista-comentarios">
                 <?php	wp_list_comments('type=comment&callback=formato_comentarios');?>

@@ -9,9 +9,8 @@
 
 
 //insertar imagen destacada en el post
-  add_theme_support( 'post-thumbnails' ); ?>
-
-<?php
+  add_theme_support( 'post-thumbnails' );
+   
   //Agregar campos personalizados en destinos
   add_action( 'init', 'cyb_register_meta_fields' );
   function cyb_register_meta_fields() {
