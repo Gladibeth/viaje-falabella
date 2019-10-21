@@ -55,7 +55,7 @@ $(window).scroll(function () {
     $('.searchBox').addClass('searchBox--scroll');
     $('.searchBox').addClass('searchBox--scroll');
     $('.hamburger-inner').addClass('js-hamburger');
-    $('.svg-white').addClass('scroll-color ');
+    $('.svg-white').addClass('scroll-color');
     $('.search input').addClass('change-color');
 
   } else {
