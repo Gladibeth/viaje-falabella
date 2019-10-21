@@ -146,6 +146,10 @@ section {
     width: 100%;
   }
 
+  @include respond-to(sm) {
+    width: 100%;
+  }
+
   &.main-nav__search--scroll {
     a {
       color: $black;
@@ -162,6 +166,13 @@ section {
     opacity: 0;
 
     @include respond-to(xs) {
+      opacity: 1;
+      background-color: green;
+      padding: 5px 10px;
+      color: $white;
+    }
+
+    @include respond-to(sm) {
       opacity: 1;
       background-color: green;
       padding: 5px 10px;
@@ -1849,7 +1860,7 @@ input {
   }
 
   @include respond-to(sm) {
-    display: none;
+    display: flex;
   }
 
   @include respond-to(xs) {
@@ -1859,6 +1870,10 @@ input {
 
 .main-nav__search--none {
   @include respond-to(xs) {
+    display: none !important;
+  }
+
+  @include respond-to(sm) {
     display: none !important;
   }
 }
@@ -2123,11 +2138,11 @@ hr.main-articles__line {
   }
 }
 
-.main-nav__search {
-  @include respond-to(sm) {
-    display: none;
-  }
-}
+// .main-nav__search {
+//   @include respond-to(sm) {
+//     display: none;
+//   }
+// }
 
 .main-banner__text {
   @include respond-to(sm) {
@@ -3187,6 +3202,10 @@ hr.main-articles__line {
         transition: all .6s ease;
 
         @include respond-to(xs) {
+          stroke: #000;
+        }
+
+        @include respond-to(sm) {
           stroke: #000;
         }
 
