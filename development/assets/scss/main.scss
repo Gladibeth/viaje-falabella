@@ -3151,90 +3151,92 @@ hr.main-articles__line {
   }
 }
 
-
-.search {
-  display: table;
-  margin-right: 20px;
-  margin-top: 5px;
-
-  input {
-    background: none;
-    border: none;
-    outline: none;
-    width: 28px;
-    min-width: 0;
-    padding: 0;
-    z-index: 1;
-    position: relative;
-    line-height: 18px;
-    margin: 5px 0;
-    font-size: 18px;
-    -webkit-appearance: none;
-    font-family: 'Mukta Malar';
-    transition: all .6s ease;
-    cursor: pointer;
-    color: $white;
-
-
-    &.change-color {
-      color: $black;
-      // border-bottom: 1px solid black;
-    }
-
-    &+div {
-      position: relative;
-      height: 28px;
-      width: 100%;
-      margin: -28px 0 0 0;
-
-      svg.svg-white {
-        display: block;
-        position: absolute;
-        height: 28px;
-        width: 160px;
-        right: 0;
-        top: 0;
-        fill: none;
-        stroke: #fff;
-        stroke-width: 1.5px;
-        stroke-dashoffset: 212.908 + 59;
-        stroke-dasharray: 59 212.908;
-        transition: all .6s ease;
-
-        @include respond-to(xs) {
-          stroke: #000;
-        }
-
-        @include respond-to(sm) {
-          stroke: #000;
-        }
-
-        &.scroll-color {
-          stroke: #000;
-        }
-      }
-    }
-
-    &:not(:placeholder-shown),
-    &:focus {
-      width: 160px;
-      padding: 0 4px;
-      cursor: text;
-
-      &+div {
-        svg {
-          stroke-dasharray: 150 212.908;
-          stroke-dashoffset: 300;
-        }
-      }
-    }
-  }
-}
-
 ::selection {
   background: rgba(#fff, .2);
 }
 
 ::-moz-selection {
   background: rgba(#fff, .2);
+}
+
+
+
+/* search model */
+.search-wrapper {
+  position: relative;
+  background: transparent;
+  border-radius: 20px;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  width: 40px;
+  height: 40px;
+  // border: 1px solid #c6c6d0;
+  cursor: pointer;
+  transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+.search-wrapper.focused {
+  width: 200px;
+}
+
+.search-wrapper.focused input {
+  padding: 0 40px 0 13px;
+  width: 100%;
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.search-wrapper input {
+  background: transparent;
+  border: 0;
+  color: white;
+  outline: none;
+  height: 40px;
+  width: 0;
+  overflow: hidden;
+  font-weight: 100;
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  transition: 275ms ease;
+
+  &.icon-scroll {
+    color: #000;
+  }
+}
+
+.search-wrapper input::-webkit-input-placeholder {
+  color: #545759;
+}
+
+.search-wrapper input:-ms-input-placeholder {
+  color: #545759;
+}
+
+.search-wrapper input::-ms-input-placeholder {
+  color: #545759;
+}
+
+.search-wrapper input:-ms-input-placeholder {
+  color: #545759;
+}
+
+.search-wrapper input::placeholder {
+  color: #545759;
+}
+
+.search-wrapper i {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+  top: 50%;
+  right: 10px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  &.icon-scroll {
+    color: #000;
+  }
 }
