@@ -55,8 +55,8 @@ $(window).scroll(function () {
     $('.searchBox').addClass('searchBox--scroll');
     $('.searchBox').addClass('searchBox--scroll');
     $('.hamburger-inner').addClass('js-hamburger');
-    $('.svg-white').addClass('scroll-color');
-    $('.search input').addClass('change-color');
+    $('.search-wrapper input').addClass('icon-scroll');
+    $('.search-wrapper i').addClass('icon-scroll');
 
   } else {
     $('.navbar-fixed-js').removeClass('fixed');
@@ -78,8 +78,8 @@ $(window).scroll(function () {
     $('.searchButton').removeClass('searchButton--scroll');
     $('.searchInput').addClass('searchInput--scroll');
     $('.hamburger-inner').removeClass('js-hamburger');
-    $('.svg-white').removeClass('scroll-color ');
-    $('.search input').removeClass('change-color');
+    $('.search-wrapper input').removeClass('icon-scroll');
+    $('.search-wrapper i').removeClass('icon-scroll');
   }
 });
 
@@ -106,6 +106,18 @@ $(".hamburger").on("click", function () {
   }
 });
 
+
+var searchWrapper = document.querySelector('.search-wrapper'),
+  searchInput = document.querySelector('.search-input');
+
+document.addEventListener('click', function (e) {
+  if (~e.target.className.indexOf('search')) {
+    searchWrapper.classList.add('focused');
+    searchInput.focus();
+  } else {
+    searchWrapper.classList.remove('focused');
+  }
+});
 
 $('.main-banner__content').slick({
   infinite: true,
