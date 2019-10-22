@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> id="body-scroll">
+<html lang="en" id="body-scroll">
 <head>
-  <meta charset="<?php bloginfo('charset'); ?>">
+	<meta charset="UTF-8">
 	<meta name="Title" content="Viajes Falabella">
-	<meta name="description" content="<?php bloginfo('description'); ?>">
+	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 	<meta name="description" content="">
@@ -15,7 +15,7 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/icofont.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
 	<?php wp_head(); ?>
-	<title><?php bloginfo('name'); ?></title>
+	<title>Viajes</title>
 </head>
 <body>
   <!-- <div id="preloader">
@@ -40,18 +40,6 @@
       </div>
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-autos">
-          <div class="main-nav__search main-nav__search--lg-none  ">
-            <div class="content-nav icon-nav">
-                <form>
-                    <div class="search-wrapper">
-                        <input class="search-input" type="text" placeholder="Search" /><i class="fa fa-search"></i>
-                    </div>
-                </form>
-            </div>
-            <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-          </div> 
           <li class="nav-item dropdown">
             <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-link-active dropdown-toggle dropdown-toggle1 " data-toggle="dropdown" href="#" id="dropdown01">Destinos</a>
             <div aria-labelledby="dropdown01" class="dropdown-menu">
@@ -105,24 +93,27 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre nosotros</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Gastronomía</a>
-          </li> -->
+          
+
+
+
+          <div class="main-nav__search main-nav__search--none  ">
+            <div class="content-nav icon-nav">
+                    <form>
+                        <div class="search-wrapper">
+                            <input class="search-input" type="text" placeholder="Search" /><i class="fa fa-search"></i>
+                        </div>
+                    </form>
+                </div>
+
+                
+              <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
+                  <i class="fa fa-envelope-o"></i>
+                </a>
+          </div> 
         </ul>
       </div>
-      <div class="main-nav__search main-nav__search--none  ">
-        <div class="content-nav icon-nav">
-                <form>
-                    <div class="search-wrapper">
-                        <input class="search-input" type="text" placeholder="Search" /><i class="fa fa-search"></i>
-                    </div>
-                </form>
-            </div>
       
-          <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-              <i class="fa fa-envelope-o"></i>
-            </a>
-      </div> 
     </nav>
   </header>
 

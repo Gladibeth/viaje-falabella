@@ -141,9 +141,12 @@ section {
   width: 200px;
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  right: 0;
 
   @include respond-to(xs) {
     width: 100%;
+    position: inherit;
   }
 
   @include respond-to(sm) {
@@ -1881,15 +1884,15 @@ input {
   }
 }
 
-.main-nav__search--none {
-  @include respond-to(xs) {
-    display: none !important;
-  }
+// .main-nav__search--none {
+//   @include respond-to(xs) {
+//     display: none !important;
+//   }
 
-  @include respond-to(sm) {
-    display: none !important;
-  }
-}
+//   @include respond-to(sm) {
+//     display: none !important;
+//   }
+// }
 
 .main-post__box {
   @include respond-to(xs) {
