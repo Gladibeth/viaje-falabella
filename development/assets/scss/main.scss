@@ -1317,6 +1317,11 @@ footer {
 
 .comment-reply-link {
   color: #3baf29;
+
+  &:hover {
+    color: #3baf29;
+    text-decoration: none;
+  }
 }
 
 .main-commend__formbox {
@@ -1398,6 +1403,14 @@ input {
 }
 
 .main-post__form--description {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+  &.p-opacity {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+  }
+
   p {
     font-family: $beauSans;
   }

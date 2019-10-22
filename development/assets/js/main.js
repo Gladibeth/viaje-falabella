@@ -106,7 +106,20 @@ $(".hamburger").on("click", function () {
   }
 });
 
+// $('.comment').click(function () {
+//   var id = $(this).attr('id');
+//   alert(id)
+// })
 
+
+$('i.visible').on('click', function () {
+  var id = $('.comment').attr('id');
+  alert(id)
+  $('.main-post__form--description').toggleClass('p-opacity')
+})
+
+
+// buscador
 var searchWrapper = document.querySelector('.search-wrapper'),
   searchInput = document.querySelector('.search-input');
 
@@ -118,6 +131,7 @@ document.addEventListener('click', function (e) {
     searchWrapper.classList.remove('focused');
   }
 });
+
 
 $('.main-banner__content').slick({
   infinite: true,

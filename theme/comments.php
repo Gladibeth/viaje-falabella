@@ -59,8 +59,8 @@
                 </div>
                 <div class="main-post__form--detail">
                 <div class="main-post__form--arrow">
-                    <i class="fa fa-angle-up"></i>
-                    <i class="fa fa-angle-down"></i>
+                    <i id="#ocultar" class="visible fa fa-angle-up"></i>
+                    <i id="#mostrar" class="visible fa fa-angle-down"></i>
                 </div>
                 <div class="main-post__form--compatir">
                     <span><?php comment_reply_link(array_merge($args, array('depth' => $depth, 
