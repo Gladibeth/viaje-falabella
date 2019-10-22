@@ -9,9 +9,8 @@
 
 
 //insertar imagen destacada en el post
-  add_theme_support( 'post-thumbnails' ); ?>
-
-<?php
+  add_theme_support( 'post-thumbnails' );
+   
   //Agregar campos personalizados en destinos
   add_action( 'init', 'cyb_register_meta_fields' );
   function cyb_register_meta_fields() {
@@ -250,5 +249,12 @@ function modify_comment_fields($fields){
   add_filter('comment_form_default_fields','modify_comment_fields');
 //end campo ahutor formulario
 
-
-//editar lista de comentarios
+//redimencionando las imágenes
+add_image_size( '1280x689', 1280, 689, true );
+add_image_size( '768x689', 768, 689, true );
+add_image_size( '555x555', 555, 555, true );
+add_image_size( '555x360', 555, 360, true );
+add_image_size( '480x792', 480, 792, true );
+add_image_size( '455x160', 455, 160, true );
+add_image_size( '170x200',170, 200, true );
+//end imágenes

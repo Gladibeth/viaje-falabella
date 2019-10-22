@@ -6,9 +6,9 @@
         'post_type' => 'destinos',
         'showposts'=> 3,
         'post_status' => 'publish',
-        'meta_key' => 'destino-destacado',
+       /*  'meta_key' => 'destino-destacado', */
         'orderby' => 'meta_value_num', //valor del campo seleccionado
-        'order' => 'ASC'
+        'order' => 'DESC'
         );
         $loop = new WP_Query( $args );
       ?>
@@ -57,7 +57,7 @@
           </div>
           </div>
           <div class="main-banner__img">
-            <img src="<?php the_post_thumbnail_url(); ?>"/>
+            <img class="lazyload" src="<?php the_post_thumbnail_url(); ?>"/>
           </div>
         </div>
       <?php endwhile;
@@ -68,16 +68,16 @@
 
       <div class="slider slider-nav__banner">
       <?php
-          $args = array(
-          'post_type' => 'destinos',
-          'showposts'=> 3,
-          'post_status' => 'publish',
-          'meta_key' => 'destino-destacado',
-          'orderby' => 'meta_value_num', //valor del campo seleccionado
-          'order' => 'ASC'
-          );
-          $loop = new WP_Query( $args );
-        ?>
+	      $args = array(
+        'post_type' => 'destinos',
+        'showposts'=> 3,
+        'post_status' => 'publish',
+       /*  'meta_key' => 'destino-destacado', */
+        'orderby' => 'meta_value_num', //valor del campo seleccionado
+        'order' => 'DESC'
+        );
+        $loop = new WP_Query( $args );
+      ?>
         <?php while( $loop->have_posts() ) : $loop->the_post();?>
           <div>
             <div class="main-slider__next">
@@ -99,7 +99,7 @@
                   </div>
                 </div>
                 <div class="main-slider__img">
-                  <img class="main-slider__img--active" src="<?php the_post_thumbnail_url(); ?>">
+                  <img class="main-slider__img--active lazyload" src="<?php the_post_thumbnail_url(); ?>">
                   <div class="bg-box d-lg-none d-md-none d-sm-none"></div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
               'taxonomy' => 'tipo_destinos',
               'hide_empty' => false,
               'orderby' => 'name',
-              'order'   => 'DES',
+              'order' => 'DESC'
             ) );
             ?>
             <?php foreach ($categories as $category):?>
@@ -156,8 +156,8 @@
                   </div>
 
                 </div>
-                <img class="slider-single-image"
-                  src="<?php echo the_field('image-category', $category); ?>"
+                <img class="slider-single-image lazyload"
+                src="<?php echo get_field('image-category', $category); ?>"
                   alt="1" />
                 </a>
               </div>
@@ -198,11 +198,17 @@
           );
           $loop = new WP_Query( $args );
         ?>
+        
         <?php while( $loop->have_posts() ) : $loop->the_post();?>
           <div class="main-articles__item">
             <a href="<?php the_permalink(); ?>">
               <div class="main-articles__img">
-                <img class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
+
+
+              
+
+
+              <img sizes="100vw" srcset="<?php the_post_thumbnail_url('555x555'); ?> 991w, <?php the_post_thumbnail_url('170x200'); ?> 767w, <?php the_post_thumbnail_url('480x792'); ?> 479w,<?php the_post_thumbnail_url('455x160'); ?>" class="lazy img-responsive" alt="<?php the_title(); ?>">
               </div>
               <div class="main-articles__title">
                 <p><?php the_title();?></p>

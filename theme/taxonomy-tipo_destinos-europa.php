@@ -53,7 +53,7 @@
                   <div class="main-articles__item">
                   <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                       <div class="main-articles__img">
-                      <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
+                      <img class="img-round lazy" data-src="<?php echo get_field('image-category', $sub_category); ?>">
                       </div>
                       <div class="main-articles__title" itemprop="name">
                         <p><?php echo ($sub_category->name); ?></p>
@@ -90,7 +90,7 @@
                 <div class="main-country__item">
                   <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                     <div class="main-country__img">
-                      <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
+                      <img class="img-round lazy" data-src="<?php echo get_field('image-category', $sub_category); ?>">
                     </div>
                     <div class="main-country__title" itemprop="name">
                       <p><?php echo ($sub_category->name); ?></p>

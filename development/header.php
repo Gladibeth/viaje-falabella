@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" id="body-scroll">
+<html <?php language_attributes(); ?> id="body-scroll">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="Title" content="Viajes Falabella">
-	<meta name="description" content="">
+	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 	<meta name="description" content="">
@@ -15,7 +15,7 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/icofont.css" rel="stylesheet">
   <link href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
 	<?php wp_head(); ?>
-	<title>Viajes</title>
+	<title><?php bloginfo('name'); ?></title>
 </head>
 <body>
   <!-- <div id="preloader">
@@ -30,7 +30,7 @@
       <div class="main-brand">
         <a class="navbar-brand" href="<?php echo bloginfo('url');?>">
             <img id="iso" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
-            <img id="iso_green" class="display_none" src="<?php echo get_template_directory_uri();?>/assets/img/logo-b.png">
+            <!-- <img id="iso_green" class="display_none" src="<?php //echo get_template_directory_uri();?>/assets/img/logo-b.png"> -->
           </a>
         <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
           <span class="hamburger-box">
