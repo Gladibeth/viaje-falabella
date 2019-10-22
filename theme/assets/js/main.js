@@ -113,8 +113,6 @@ $(".hamburger").on("click", function () {
 
 
 $('i.visible').on('click', function () {
-  var id = $('.comment').attr('id');
-  alert(id)
   $('.main-post__form--description').toggleClass('p-opacity')
 })
 
