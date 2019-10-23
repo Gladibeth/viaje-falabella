@@ -21,7 +21,7 @@
             $the_query = new WP_Query( $args );
         ?>
         <?php if ( $the_query->have_posts()):?>
-        <h1 class="main-posts__description">Post relacionados con: <?php echo "$s"; ?> </h1>  
+        <h1>Post relacionados con: <?php echo "$s"; ?> </h1>  
             <?php while ( $the_query->have_posts()): ?>
             <?php $the_query->the_post();?>
         <div class="main-search__items">
