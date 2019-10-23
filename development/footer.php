@@ -30,7 +30,7 @@
 </body>
 
 </html>
-<?php  get_search_form();?>
+
 <!-- 
 
 <button id="miId" onclick="evento(this);">onclick</button>

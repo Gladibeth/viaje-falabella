@@ -65,7 +65,6 @@
       ?>
     </div>
     <div class="fixed">
-
       <div class="slider slider-nav__banner">
       <?php
 	      $args = array(
@@ -248,4 +247,5 @@
       });
     });
   </script>
+  <?php if (!dynamic_sidebar('buscador')); ?>
 <?php get_footer(); ?>
