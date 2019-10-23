@@ -1600,11 +1600,35 @@ input {
   }
 }
 
+.slider-container .slider-left {
+  @include respond-to(xs) {
+    top: 78%;
+  }
+}
+
+.slider-container .slider-right {
+  @include respond-to(xs) {
+    top: 78%;
+  }
+}
+
+.slider-container .slider-right:before {
+  @include respond-to(xs) {
+    font-size: 15px;
+  }
+}
+
+.slider-container .slider-left:before {
+  @include respond-to(xs) {
+    font-size: 15px;
+  }
+}
+
 .slider-left {
   @include respond-to(xs) {
     padding: 5px 10px !important;
     right: 80% !important;
-    display: none !important;
+    // display: none !important;
   }
 }
 
@@ -1612,7 +1636,7 @@ input {
   @include respond-to(xs) {
     padding: 5px 10px !important;
     left: 30% !important;
-    display: none !important;
+    // display: none !important;
   }
 }
 
