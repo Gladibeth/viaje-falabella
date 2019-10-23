@@ -258,3 +258,54 @@ add_image_size( '480x792', 480, 792, true );
 add_image_size( '455x160', 455, 160, true );
 add_image_size( '170x200',170, 200, true );
 //end imágenes
+
+
+//limitar el tamaño de las imágenes
+function check_valid_image_size( $file ) {
+  $allowed_mimetypes = array('image/gif', 'image/jpeg', 'image/png', 'image/bmp');
+
+  if (!in_array($file['type'], $allowed_mimetypes)){
+      return $file;
+  }
+
+  $image = getimagesize($file['tmp_name']);
+
+  $maximum = array(
+      'width' => '1920',
+      'height' => '1300'
+  );
+
+  $image_width = $image[0];
+  $image_height = $image[1];
+
+  $too_large = "La imagen supera el tamaño permitido {$maximum['width']} x {$maximum['height']} pixeles. El tamaño de la imagen a subir es: $image_width x $image_height pixeles.";
+
+  if ( $image_width > $maximum['width'] || $image_height > $maximum['height'] ) {
+      //add in the field 'error' of the $file array the message
+      $file['error'] = $too_large;
+      return $file;
+  }else {
+      return $file;
+  }
+}
+add_filter('wp_handle_upload_prefilter', 'check_valid_image_size');
+
+
+//limitar el peso de las imágenes
+function nelio_max_image_size( $file ) {
+ 
+  $size = $file['size'];
+  $size = $size / 1920;
+  $type = $file['type'];
+  $is_image = strpos( $type, 'image' ) !== false;
+  $limit = 250;
+  $limit_output = '350kb';
+ 
+  if ( $is_image && $size > $limit ) {
+    $file['error'] = 'Peso maximo de imagen ' . $limit_output;
+  }//end if
+ 
+  return $file;
+ 
+}//end nelio_max_image_size()
+add_filter( 'wp_handle_upload_prefilter', 'nelio_max_image_size' );
