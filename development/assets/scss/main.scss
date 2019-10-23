@@ -170,21 +170,21 @@ section {
 
     @include respond-to(xs) {
       opacity: 1;
-      background-color: green;
+      // background-color: green;
       padding: 5px 10px;
       color: $white;
     }
 
     @include respond-to(sm) {
       opacity: 1;
-      background-color: green;
+      // background-color: green;
       padding: 5px 10px;
       color: $white;
     }
 
     &.main-nav__mail--scroll {
       opacity: 1;
-      background-color: green;
+      // background-color: green;
       padding: 5px 10px;
       color: $white;
     }
@@ -1545,15 +1545,6 @@ input {
     height: 600px;
     margin: -300px 0 0 -400px;
   }
-
-  // @include respond-to(xs) {
-  //   position: absolute;
-  //   left: 145%;
-  //   top: 50%;
-  //   width: 255px;
-  //   height: 600px;
-  //   margin: -300px 0 0 -400px;
-  // }
 }
 
 .slider-nav__banner {

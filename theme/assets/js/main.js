@@ -48,6 +48,8 @@ $(window).scroll(function () {
     $("#site_2").addClass('display_block');
     $("#site_3").addClass('display_block');
     $("#site_4").addClass('display_block');
+    $("#site_5").addClass('display_block');
+    $("#site_6").addClass('display_block');
     $("#iso").addClass('display_none');
     $("#iso_green").addClass('display_block');
     $('.searchButton').addClass('searchButton--scroll');
@@ -73,6 +75,8 @@ $(window).scroll(function () {
     $("#site_2").removeClass('display_block');
     $("#site_3").removeClass('display_block');
     $("#site_4").removeClass('display_block');
+    $("#site_5").removeClass('display_block');
+    $("#site_6").removeClass('display_block');
     $("#iso").removeClass('display_none');
     $("#iso_green").removeClass('display_block');
     $('.searchButton').removeClass('searchButton--scroll');

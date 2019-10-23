@@ -18,13 +18,6 @@
 	<title>Viajes</title>
 </head>
 <body>
-  <!-- <div id="preloader">
-		<div class="main-loader">
-		  <span class="loader1"></span>
-		  <span class="loader2"></span>
-		  <span class="loader3"></span>
-		</div>
-	</div> -->
 	<header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
       <div class="main-brand">
@@ -73,9 +66,16 @@
             <div aria-labelledby="dropdown02" class="dropdown-menu">
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_productos/temporada/';?>">
-                    <img id="site1" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
-                    <img id="site_1" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
+                    <img id="site5" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-1.svg">
+                    <img id="site_5" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-2.svg">
                     Temporada
+                  
+                  </a>
+
+                  <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_productos/temporada/';?>">
+                    <img id="site6" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono vendido-1.svg">
+                    <img id="site_6" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono vendido-01.svg">
+                    Vendidos
                   
                   </a>
                 
@@ -108,7 +108,7 @@
 
                 
               <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-                  <i class="fa fa-envelope-o"></i>
+                  <img  src="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
                 </a>
           </div> 
         </ul>
