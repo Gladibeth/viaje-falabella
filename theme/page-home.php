@@ -4,7 +4,7 @@
       <?php
 	      $args = array(
         'post_type' => 'destinos',
-        'showposts'=> 1,
+        'showposts'=> 3,
         'post_status' => 'publish',
        /*  'meta_key' => 'destino-destacado', */
         'orderby' => 'meta_value_num', //valor del campo seleccionado
@@ -57,7 +57,8 @@
           </div>
           </div>
           <div class="main-banner__img">
-            <img class="lazy" data-srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('large'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url();?> 1920w,">
+			
+            <img class="lazy" data-srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('large'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url(); ?> 1920w," alt="">
           </div>
         </div>
       <?php endwhile;
@@ -69,7 +70,7 @@
       <?php
 	      $args = array(
         'post_type' => 'destinos',
-        'showposts'=> 1,
+        'showposts'=> 3,
         'post_status' => 'publish',
        /*  'meta_key' => 'destino-destacado', */
         'orderby' => 'meta_value_num', //valor del campo seleccionado
