@@ -90,6 +90,11 @@ section {
   width: 70%;
   display: flex;
   justify-content: flex-start;
+
+  @include respond-to(xl) {
+    width: 50%;
+    justify-content: flex-start;
+  }
 }
 
 .sub-drop-destiny {
@@ -3011,7 +3016,8 @@ hr.main-articles__line {
   display: grid;
   grid-template-columns: 100%;
   margin-top: 20px;
-  h1{
+
+  h1 {
     font-family: $beauSans;
     width: 100%;
     word-break: break-all !important;
@@ -3021,7 +3027,7 @@ hr.main-articles__line {
   a:hover {
     color: #0056b3;
     text-decoration: none;
-}
+  }
 
   @include respond-to(xs) {
     margin-top: 0px;

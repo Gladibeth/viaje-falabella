@@ -43,10 +43,10 @@
 }
 
 .modal-footer {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  padding: 0 45px 20px 45px;
+  display: flex;
+  justify-content: flex-start;
   border-top: 1px solid transparent;
+  width: 100%;
 }
 
 .modal-footer__content {
@@ -64,16 +64,18 @@
 
 .btn_modal {
   border-bottom: 5px solid $green;
-  width: 40%;
+  width: 16%;
   font-size: 18px;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $beauSans;
+  margin-left: 20px;
 
   input {
     background-color: transparent;
     border: none;
+    margin-left: 15px;
   }
 }
