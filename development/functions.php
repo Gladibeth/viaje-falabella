@@ -340,3 +340,18 @@ function childorbit_search_groupby($groupby){
     // wasn't empty, append ours
     return $groupby.", ".$groupby_id;
 }   
+
+
+//alt imágenes
+
+/* function isa_add_img_title( $attr, $attachment = null ) {
+ 
+  $img_title = trim( strip_tags( $attachment->post_title ) );
+  $img_title = trim( strip_tags( $attachment->post_title ) );
+
+  $attr['title'] = $img_title;
+  $attr['alt'] = $img_title;
+
+  return $attr;
+}
+add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 ); */
