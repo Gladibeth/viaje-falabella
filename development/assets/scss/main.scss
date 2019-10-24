@@ -87,7 +87,9 @@ section {
 }
 
 .navbar-nav {
-  margin-left: 120px;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .sub-drop-destiny {
@@ -2270,12 +2272,6 @@ hr.main-articles__line {
     font-size: 70px;
   }
 }
-
-.navbar-nav {
-  margin-left: 15px;
-}
-
-
 
 
 
