@@ -214,14 +214,6 @@ if(function_exists('register_sidebar')) {
     'after_widget'  => '</div>'
 
   ));
-  register_sidebar(array(
-    'name'          => 'Sidebar',
-    'id'            => 'sidebar-post',
-    'description' => 'Insertar link e imagen(379x700px)',
-    'before_widget' => '',
-    'after_widget'  => ''
-
-  ));
 };
 //+++++++++++++++++++++++++++++++++++ end siderbar
 
@@ -258,3 +250,93 @@ add_image_size( '480x792', 480, 792, true );
 add_image_size( '455x160', 455, 160, true );
 add_image_size( '170x200',170, 200, true );
 //end imágenes
+
+
+//limitar el tamaño de las imágenes
+function check_valid_image_size( $file ) {
+  $allowed_mimetypes = array('image/gif', 'image/jpeg', 'image/png', 'image/bmp');
+
+  if (!in_array($file['type'], $allowed_mimetypes)){
+      return $file;
+  }
+
+  $image = getimagesize($file['tmp_name']);
+
+  $maximum = array(
+      'width' => '1920',
+      'height' => '1300'
+  );
+
+  $image_width = $image[0];
+  $image_height = $image[1];
+
+  $too_large = "La imagen supera el tamaño permitido {$maximum['width']} x {$maximum['height']} pixeles. El tamaño de la imagen a subir es: $image_width x $image_height pixeles.";
+
+  if ( $image_width > $maximum['width'] || $image_height > $maximum['height'] ) {
+      //add in the field 'error' of the $file array the message
+      $file['error'] = $too_large;
+      return $file;
+  }else {
+      return $file;
+  }
+}
+add_filter('wp_handle_upload_prefilter', 'check_valid_image_size');
+
+
+//limitar el peso de las imágenes
+function nelio_max_image_size( $file ) {
+ 
+  $size = $file['size'];
+  $size = $size / 1920;
+  $type = $file['type'];
+  $is_image = strpos( $type, 'image' ) !== false;
+  $limit = 250;
+  $limit_output = '350kb';
+ 
+  if ( $is_image && $size > $limit ) {
+    $file['error'] = 'Peso maximo de imagen ' . $limit_output;
+  }//end if
+ 
+  return $file;
+ 
+}//end nelio_max_image_size()
+add_filter( 'wp_handle_upload_prefilter', 'nelio_max_image_size' );
+
+add_filter('posts_join', 'childorbit_search_join');
+
+function childorbit_search_join($join){
+	global $wpdb;
+	
+	if ( is_search() ) {
+		$join .= "INNER JOIN {$wpdb->term_relationships} tr ON {$wpdb->posts}.ID = tr.object_id INNER JOIN {$wpdb->term_taxonomy} tt ON tt.term_taxonomy_id=tr.term_taxonomy_id INNER JOIN {$wpdb->terms} t ON t.term_id = tt.term_id INNER JOIN {$wpdb->postmeta} pm ON {$wpdb->posts}.ID = pm.post_id ";
+	}
+	return $join;
+}
+
+add_filter('posts_where','childorbit_search_where');
+
+function childorbit_search_where($where){
+	global $wpdb;
+	
+	if ( is_search() ) {
+		$where .= " OR (t.name LIKE '%".get_search_query()."%') ";
+		$where .= " OR (pm.meta_value LIKE '%".get_search_query()."%') ";
+	}
+	return $where;
+}
+
+add_filter('posts_groupby', 'childorbit_search_groupby');
+
+function childorbit_search_groupby($groupby){
+    global $wpdb;
+
+    // we need to group on post ID
+    $groupby_id = "{$wpdb->posts}.ID";
+    if(!is_search() || strpos($groupby, $groupby_id) !== false) return $groupby;
+
+    // groupby was empty, use ours
+    if(!strlen(trim($groupby))) return $groupby_id;
+
+    // wasn't empty, append ours
+    return $groupby.", ".$groupby_id;
+}   

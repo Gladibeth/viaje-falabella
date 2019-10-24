@@ -57,7 +57,7 @@
           </div>
           </div>
           <div class="main-banner__img">
-            <img class="lazyload" src="<?php the_post_thumbnail_url(); ?>"/>
+            <img class="lazy" data-srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('large'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url(); ?> 1920w,">
           </div>
         </div>
       <?php endwhile;
@@ -65,7 +65,6 @@
       ?>
     </div>
     <div class="fixed">
-
       <div class="slider slider-nav__banner">
       <?php
 	      $args = array(
@@ -99,7 +98,7 @@
                   </div>
                 </div>
                 <div class="main-slider__img">
-                  <img class="main-slider__img--active lazyload" src="<?php the_post_thumbnail_url(); ?>">
+                  <img class="main-slider__img--active lazy" data-src="<?php the_post_thumbnail_url('medium'); ?>">
                   <div class="bg-box d-lg-none d-md-none d-sm-none"></div>
                 </div>
               </div>
@@ -156,8 +155,9 @@
                   </div>
 
                 </div>
-                <img class="slider-single-image lazyload"
-                src="<?php echo get_field('image-category', $category); ?>"
+                
+                <img class="slider-single-image lazy"
+                data-src="<?php echo get_field('image-category', $category); ?>"
                   alt="1" />
                 </a>
               </div>
@@ -203,12 +203,7 @@
           <div class="main-articles__item">
             <a href="<?php the_permalink(); ?>">
               <div class="main-articles__img">
-
-
-              
-
-
-              <img sizes="100vw" srcset="<?php the_post_thumbnail_url('555x555'); ?> 991w, <?php the_post_thumbnail_url('170x200'); ?> 767w, <?php the_post_thumbnail_url('480x792'); ?> 479w,<?php the_post_thumbnail_url('455x160'); ?>" class="lazy img-responsive" alt="<?php the_title(); ?>">
+              <img class="lazy" data-srcset="<?php the_post_thumbnail_url('455x160'); ?> 480w,<?php the_post_thumbnail_url('345x300'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w,">
               </div>
               <div class="main-articles__title">
                 <p><?php the_title();?></p>
@@ -252,4 +247,5 @@
       });
     });
   </script>
+  <?php if (!dynamic_sidebar('buscador')); ?>
 <?php get_footer(); ?>

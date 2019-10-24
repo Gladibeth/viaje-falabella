@@ -2998,11 +2998,12 @@ hr.main-articles__line {
 }
 
 .main-search__title {
-  p {
+  h2 {
     color: #3fae2a;
     font-size: 50px;
     font-weight: 700;
     font-family: $beauSans;
+    text-transform: uppercase;
   }
 }
 
@@ -3010,6 +3011,17 @@ hr.main-articles__line {
   display: grid;
   grid-template-columns: 100%;
   margin-top: 20px;
+  h1{
+    font-family: $beauSans;
+    width: 100%;
+    word-break: break-all !important;
+    color: #545759;
+  }
+
+  a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
 
   @include respond-to(xs) {
     margin-top: 0px;

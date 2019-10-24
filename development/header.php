@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="body-scroll">
+<html lang="es" id="body-scroll">
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="Viajes Falabella">
@@ -99,17 +99,11 @@
 
           <div class="main-nav__search main-nav__search--none  ">
             <div class="content-nav icon-nav">
-                    <form>
-                        <div class="search-wrapper">
-                            <input class="search-input" type="text" placeholder="Search" /><i class="fa fa-search"></i>
-                        </div>
-                    </form>
-                </div>
-
-                
-              <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-                  <img  src="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
-                </a>
+              <?php  get_search_form();?>
+            </div>              
+            <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
+                <i class="fa fa-envelope-o"></i>
+            </a>
           </div> 
         </ul>
       </div>

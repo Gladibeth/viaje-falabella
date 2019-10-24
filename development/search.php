@@ -21,25 +21,16 @@
             $the_query = new WP_Query( $args );
         ?>
         <?php if ( $the_query->have_posts()):?>
+        <h1>Post relacionados con: <?php echo "$s"; ?> </h1>  
             <?php while ( $the_query->have_posts()): ?>
             <?php $the_query->the_post();?>
-
-
-
-
-
-
-
-
-
-
         <div class="main-search__items">
           <div itemscope itemtype="http://schema.org/Article" class="main-search__item" href="post.html">
             <div class="main-posts__box">
               <div class="main-search__title">
-                <p itemprop="name">
+                <h2 itemprop="name">
                   <?php the_title();?>
-                </p>
+                </h2>
               </div>
 
               <div class="main-posts__description">
@@ -72,18 +63,9 @@
 
         <hr class="line-gray line-gray--full">
       
-        
-
-
-
-
-
-
-
-
-
-
         <?php endwhile;?>
+        <?php else:?>
+        <h3>No se encontraron post relacionados con: <?php echo "$s"; ?> </h3>  
     <?php ;endif;?>
 
 
