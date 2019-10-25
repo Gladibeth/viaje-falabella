@@ -52,15 +52,15 @@
                 <span class="form-name"><?php echo get_comment_author_link();?></span>
                 <span><?php echo get_comment_date('d/m/y');?></span>
                 </div>
-                <div class="main-post__form--description">
+                <div class="main-post__form--description p-opacity">
                 <p><?php comment_text(); ?> <?php if ($comment->comment_approved == '0') : ?>
 	<em><?php _e('Tu comentario está a la espera de moderación.'); ?></em>
     <?php endif; ?> <?php edit_comment_link(__('(Edit)'),'','') ?></p>
                 </div>
                 <div class="main-post__form--detail">
                 <div class="main-post__form--arrow">
-                    <i id="#ocultar" class="visible fa fa-angle-up"></i>
-                    <i id="#mostrar" class="visible fa fa-angle-down"></i>
+                   <!--  <i id="#ocultar" class="visible fa fa-angle-up"></i>
+                    <i id="#mostrar" class="visible fa fa-angle-down"></i> -->
                 </div>
                 <div class="main-post__form--compatir">
                     <span><?php comment_reply_link(array_merge($args, array('depth' => $depth, 

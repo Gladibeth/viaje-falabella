@@ -214,6 +214,15 @@ if(function_exists('register_sidebar')) {
     'after_widget'  => '</div>'
 
   ));
+
+  register_sidebar(array(
+    'name'          => 'Footer',
+    'id'            => 'Footer',
+    'description' => 'Texto de footer',
+    'before_title'  => "<div class='content__title'><h2>",
+    'after_title'   => '</h2></div>',
+
+  ));
 };
 //+++++++++++++++++++++++++++++++++++ end siderbar
 

@@ -102,7 +102,7 @@
               <?php  get_search_form();?>
             </div>              
             <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-                <i class="fa fa-envelope-o"></i>
+              <img  src="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
             </a>
           </div> 
         </ul>
