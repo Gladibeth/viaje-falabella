@@ -353,7 +353,7 @@ function childorbit_search_groupby($groupby){
 
 //alt imágenes
 
-/* function isa_add_img_title( $attr, $attachment = null ) {
+function isa_add_img_title( $attr, $attachment = null ) {
  
   $img_title = trim( strip_tags( $attachment->post_title ) );
   $img_title = trim( strip_tags( $attachment->post_title ) );
@@ -363,4 +363,4 @@ function childorbit_search_groupby($groupby){
 
   return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 ); */
+add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 );
