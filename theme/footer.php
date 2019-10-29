@@ -19,8 +19,8 @@
       <?php echo do_shortcode('[contact-form-7 id="49" title="Formulario"]'); ?>
     </div>
   </div>
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  -->
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+  <!-- <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.14.0/lazyload.min.js"></script>
     <script src="<?php echo get_template_directory_uri();?>/assets/js/configuration-lazyload.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>

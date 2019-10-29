@@ -14,6 +14,7 @@
       ?>
       <?php while( $loop->have_posts() ) : $loop->the_post();?>
         <div class="main-banner__item">
+          <div class="mask"></div>
           <div class="main-banner__text">
             <div class="main-banner__number">
               <span>01</span>
