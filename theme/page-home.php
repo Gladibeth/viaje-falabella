@@ -57,8 +57,11 @@
           </div>
           </div>
           <div class="main-banner__img">
-			
-            <img class="lazy" data-srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('large'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url(); ?> 1920w," alt="">
+            <?php 
+              $img_id = get_post_thumbnail_id(get_the_ID());
+              $alt_banner_principal = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+            ?>
+            <img class="lazy" data-srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('large'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt_banner_principal; ?>">
           </div>
         </div>
       <?php endwhile;
@@ -98,8 +101,12 @@
                     <!-- <p>ipsum</p> -->
                   </div>
                 </div>
+                <?php 
+                  $img_id = get_post_thumbnail_id(get_the_ID());
+                  $alt_banner_secundario = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                ?>
                 <div class="main-slider__img">
-                  <img class="main-slider__img--active lazy" data-src="<?php the_post_thumbnail_url('medium'); ?>">
+                  <img class="main-slider__img--active" alt="<?php echo $alt_banner_secundario;?>" src="<?php the_post_thumbnail_url('medium'); ?>">
                   <div class="bg-box d-lg-none d-md-none d-sm-none"></div>
                 </div>
               </div>
@@ -156,10 +163,13 @@
                   </div>
 
                 </div>
-                
+                <?php 
+                  $img_id = get_post_thumbnail_id(get_the_ID());
+                  $alt_text_category = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                ?>
                 <img class="slider-single-image lazy"
                 data-src="<?php echo get_field('image-category', $category); ?>"
-                  alt="1" />
+                  alt="<?php echo $alt_text_category;?>" />
                 </a>
               </div>
             </div>
@@ -204,7 +214,11 @@
           <div class="main-articles__item">
             <a href="<?php the_permalink(); ?>">
               <div class="main-articles__img">
-              <img class="lazy" data-srcset="<?php the_post_thumbnail_url('455x160'); ?> 480w,<?php the_post_thumbnail_url('345x300'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w,">
+              <?php 
+                $img_id = get_post_thumbnail_id(get_the_ID());
+                $alt_text_articulos = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+              ?>
+              <img class="lazy" data-srcset="<?php the_post_thumbnail_url('455x160'); ?> 480w,<?php the_post_thumbnail_url('345x300'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w," alt="<?php echo $alt_text_articulos; ?>">
               </div>
               <div class="main-articles__title">
                 <p><?php the_title();?></p>

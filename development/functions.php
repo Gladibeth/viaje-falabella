@@ -209,7 +209,7 @@ if(function_exists('register_sidebar')) {
   register_sidebar(array(
     'name'          => 'Viajero del mes imagen',
     'id'            => 'viajero-del-mes-imagen',
-    'description' => 'Insertar imagen del viajero del mes',
+    'description' => 'Insertar imagen del viajero del mes tamaño: 555x555',
     'before_widget' => '<div class="main-post__img">',
     'after_widget'  => '</div>'
 
@@ -352,7 +352,7 @@ function childorbit_search_groupby($groupby){
 
 
 //alt imágenes
-
+/* 
 function isa_add_img_title( $attr, $attachment = null ) {
  
   $img_title = trim( strip_tags( $attachment->post_title ) );
@@ -363,4 +363,4 @@ function isa_add_img_title( $attr, $attachment = null ) {
 
   return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 );
+add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 ); */
