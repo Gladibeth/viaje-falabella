@@ -14,6 +14,7 @@
       ?>
       <?php while( $loop->have_posts() ) : $loop->the_post();?>
         <div class="main-banner__item">
+          <div class="mask"></div>
           <div class="main-banner__text">
             <div class="main-banner__number">
               <span>01</span>
@@ -21,7 +22,6 @@
             </div>
             <div class="main-banner__title">
               <p><?php the_title();?></p>
-              <!-- <span></span> -->
             </div>
             <div class="main-banner__description">
               <p><?php the_excerpt();?></p>
@@ -31,15 +31,6 @@
                 Descubre
               </a>
             </div>
-            <!-- <div class="main-banner__mail">
-              <div class="main-banner__boxmail">
-                <a href="">
-                  <i class="fa fa-envelope-o "></i>
-                  <span></span>
-                  <p>mailing ipsum</p>
-                </a>
-              </div>
-            </div> -->
           </div>
           <div class="main-banner__camara">
             <div class="text__camara">

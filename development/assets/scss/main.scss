@@ -316,6 +316,15 @@ textarea {
   background-color: #fff !important;
 }
 
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
 .main-banner {
   position: relative;
   overflow: hidden;
@@ -873,14 +882,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    /* background: black; */
-    opacity: .8 !important;
-    background-size: cover;
-    height: 70vh;
-    background-attachment: fixed;
-    position: relative;
-    background-position: 50% -140px;
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
 
     @include respond-to(xs) {
       height: 50vh;
