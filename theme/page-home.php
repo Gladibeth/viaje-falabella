@@ -6,7 +6,7 @@
         'post_type' => 'destinos',
         'showposts'=> 3,
         'post_status' => 'publish',
-       /*  'meta_key' => 'destino-destacado', */
+         'meta_key' => 'destino-destacado',
         'orderby' => 'meta_value_num', //valor del campo seleccionado
         'order' => 'DESC'
         );
@@ -75,7 +75,7 @@
         'post_type' => 'destinos',
         'showposts'=> 3,
         'post_status' => 'publish',
-       /*  'meta_key' => 'destino-destacado', */
+        'meta_key' => 'destino-destacado',
         'orderby' => 'meta_value_num', //valor del campo seleccionado
         'order' => 'DESC'
         );
@@ -122,7 +122,7 @@
   <section class="main-destiny" id="destiny">
     <div class="container">
       <div class="content__title">
-        <h2>Destinos</h2>
+        <h2>Destinos del mes</h2>
       </div>
       <div style="position:relative;">
         <div class="slider-container">
@@ -196,7 +196,7 @@
   <section class="main-articles main-articles-home">
     <div class="container">
       <div class="content__title">
-        <h2>últimos articulos</h2>
+        <h2>últimos artículos</h2>
       </div>
       <div class="main-articles__content">
         <?php //Post mas recientes

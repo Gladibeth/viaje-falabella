@@ -33,121 +33,162 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
 		<div class="tab-content" id="pills-tabContent">
 			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 				<div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
-<?php //Post mas recientes
-$args = array(
-	'post_type' => get_post_type(),
-	'tax_query' => array(
-		array(
-			'taxonomy' => $taxonomy->taxonomy,
-			'field' => 'slug',
-			'terms' => $taxonomy->slug
-		))
-);
-$loop = new WP_Query( $args );
-?>
-<?php function post(){?> <!--esta función permite mostrar los post de las 3 secciones-->
-	<a class="main-posts__item" href="<?php the_permalink(); ?>">
-		<div class="main-posts__img">
-			<img itemprop="image" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
+					<?php //Post mas recientes
+					$args = array(
+						'post_type' => get_post_type(),
+						'tax_query' => array(
+						array(
+							'taxonomy' => $taxonomy->taxonomy,
+							'field' => 'slug',
+							'terms' => $taxonomy->slug
+						))
+					);
+					$loop = new WP_Query( $args );
+					?>
+					<?php function post(){?> <!--esta función permite mostrar los post de las 3 secciones-->
+						<?php 
+						$count = 0;
+						$img_id = get_post_thumbnail_id(get_the_ID());
+						$alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+						?>
+						 <?php if($count <=3):?>
+							<a class="main-posts__item" href="<?php the_permalink(); ?>">
+								<div class="main-posts__img">
+									<img itemprop="image" alt="<?php echo $alt;?>" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
+								</div>
+								<div class="main-posts__box">
+									<div class="main-posts__title">
+										<p itemprop="name"><?php the_title();?></p>
+									</div>
+									<div class="main-posts__autor">
+										<div class="main-posts__name">
+											<p itemprop="author"><?php the_author();?></p>
+										</div>
+										<div class="main-posts__line"></div>
+										<div class="main-posts__date">
+											<span itemprop="datePublished"><?php the_date('d/m/y');?></span>
+										</div>
+									</div>
+									<div class="main-posts__description">
+										<?php the_excerpt();?> 
+									</div>
+									<hr class="main-articles__line">
+									<div class="main-posts__social">
+										<div class="main-posts__comments">
+											<p><?php echo $numero_de_comentarios = get_comments_number();?></p>
+										</div>
+										<div class="main-posts__tags">
+									<?php 
+										$tags = get_the_tags();
+										if ($tags):?> 
+											<?php foreach( $tags as $tag ):?>
+											<p><?php echo $tag->name;?></p>
+										<?php endforeach;?>
+									<?php endif;?>
+										</div>
+									</div>
+								</div>
+							</a>
+						 <?php else:?>
+							<a class="main-posts__item" href="<?php the_permalink(); ?>">
+								<div class="main-posts__img">
+									<img itemprop="image" alt="<?php echo $alt;?>" class="img-round lazy" data-srcset="<?php the_post_thumbnail_url(); ?>"/>
+								</div>
+								<div class="main-posts__box">
+									<div class="main-posts__title">
+										<p itemprop="name"><?php the_title();?></p>
+									</div>
+									<div class="main-posts__autor">
+										<div class="main-posts__name">
+											<p itemprop="author"><?php the_author();?></p>
+										</div>
+										<div class="main-posts__line"></div>
+										<div class="main-posts__date">
+											<span itemprop="datePublished"><?php the_date('d/m/y');?></span>
+										</div>
+									</div>
+									<div class="main-posts__description">
+										<?php the_excerpt();?> 
+									</div>
+									<hr class="main-articles__line">
+									<div class="main-posts__social">
+										<div class="main-posts__comments">
+											<p><?php echo $numero_de_comentarios = get_comments_number();?></p>
+										</div>
+										<div class="main-posts__tags">
+									<?php 
+										$tags = get_the_tags();
+										if ($tags):?> 
+											<?php foreach( $tags as $tag ):?>
+											<p><?php echo $tag->name;?></p>
+										<?php endforeach;?>
+									<?php endif;?>
+										</div>
+									</div>
+								</div>
+							</a>
+						<?php endif;?>
+					<?php }?>
+					<?php while( $loop->have_posts() ) : $loop->the_post();?>
+						<?php post();?>
+					<?php endwhile;
+					wp_reset_query();
+					?>
+				</div>
+			</div>
+		<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+		<!-- Más populares -->
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+				<div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
+					<?php //mas populares
+					$args = array(
+						'post_type' => get_post_type(),
+						'meta_key' => 'post_views',
+						'orderby' => 'meta_value_num',
+						'order' => 'DESC',
+						'tax_query' => array(
+						array(
+							'taxonomy' => $taxonomy->taxonomy,
+							'field' => 'slug',
+							'terms' => $taxonomy->slug
+						))
+					);
+					$loop = new WP_Query( $args );
+					$popular_posts = new WP_Query( $args );
+					?>
+					<?php while ( $popular_posts->have_posts() ) : $popular_posts->the_post();?>
+						<?php post();?>
+					<?php endwhile;
+					wp_reset_query();
+					?>
+				</div>
+			</div>
+			<!-- End Más populares -->
 		</div>
-		<div class="main-posts__box">
-			<div class="main-posts__title">
-				<p itemprop="name"><?php the_title();?></p>
-			</div>
-			<div class="main-posts__autor">
-				<div class="main-posts__name">
-					<p itemprop="author"><?php the_author();?></p>
-				</div>
-				<div class="main-posts__line"></div>
-				<div class="main-posts__date">
-					<span itemprop="datePublished"><?php the_date('d/m/y');?></span>
-				</div>
-			</div>
-			<div class="main-posts__description">
-				<?php the_excerpt();?> 
-			</div>
-			<hr class="main-articles__line">
-			<div class="main-posts__social">
-				<div class="main-posts__comments">
-					<p><?php echo $numero_de_comentarios = get_comments_number();?></p>
-				</div>
-				<div class="main-posts__tags">
-          	<?php 
-            	$tags = get_the_tags();
-				if ($tags):?> 
-					<?php foreach( $tags as $tag ):?>
-					<p><?php echo $tag->name;?></p>
-				<?php endforeach;?>
-            <?php endif;?>
+			<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+				<div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
+					<?php //Post con mas comentarios
+					$numero_de_comentarios = get_comments_number();
+					$args = array(
+						'post_type' => get_post_type(),
+						'orderby' => 'comment_count',
+						'tax_query' => array(
+						array(
+							'taxonomy' => $taxonomy->taxonomy,
+							'field' => 'slug',
+							'terms' => $taxonomy->slug
+						))
+					);
+					$loop = new WP_Query( $args );
+					?>
+					<?php while( $loop->have_posts() ) : $loop->the_post();?>
+						<?php post();?>
+					<?php endwhile;
+					wp_reset_query();
+					?>
 				</div>
 			</div>
 		</div>
-	</a>
-<?php }?>
-<?php while( $loop->have_posts() ) : $loop->the_post();?>
-	<?php post();?>
-<?php endwhile;
-wp_reset_query();
-?>
-</div>
-</div>
-<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-	<!-- Más populares -->
-	<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-		<div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
-<?php //mas populares
-$args = array(
-	'post_type' => get_post_type(),
-	'meta_key' => 'post_views',
-	'orderby' => 'meta_value_num',
-	'order' => 'DESC',
-	'tax_query' => array(
-		array(
-			'taxonomy' => $taxonomy->taxonomy,
-			'field' => 'slug',
-			'terms' => $taxonomy->slug
-		))
-);
-$loop = new WP_Query( $args );
-$popular_posts = new WP_Query( $args );
-?>
-<?php while ( $popular_posts->have_posts() ) : $popular_posts->the_post();?>
-	<?php post();?>
-<?php endwhile;
-wp_reset_query();
-?>
-</div>
-</div>
-<!-- End Más populares -->
-</div>
-<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-	<div itemscope itemtype="http://schema.org/LiveBlogPosting" class="main-posts__content">
-<?php //Post con mas comentarios
-$numero_de_comentarios = get_comments_number();
-$args = array(
-	'post_type' => get_post_type(),
-	'orderby' => 'comment_count',
-	'tax_query' => array(
-		array(
-			'taxonomy' => $taxonomy->taxonomy,
-			'field' => 'slug',
-			'terms' => $taxonomy->slug
-		))
-);
-$loop = new WP_Query( $args );
-?>
-
-<?php while( $loop->have_posts() ) : $loop->the_post();?>
-	<?php post();?>
-<?php endwhile;
-wp_reset_query();
-?>
-</div>
-</div>
-
-</div>
-</div>
+	</div>
 </section>
-
-
 <?php get_footer(); ?>

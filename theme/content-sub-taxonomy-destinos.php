@@ -5,7 +5,7 @@
     $categories = get_categories(array(
         'parent'         => $taxonomy->term_id,
         'taxonomy' => $taxonomy->taxonomy,
-        'hide_empty' => false, //oculta categorias que no otenga post
+        'hide_empty' => true, //oculta categorias que no otenga post
         'order' => 'ASC',
         'post_status' => 'publish',
     )); 
@@ -40,7 +40,7 @@
                 $subcategories = get_categories(array(
                 'parent'         => $taxonomy->term_id,
                 'taxonomy' => $taxonomy->taxonomy,
-                'hide_empty' => false, //oculta categorias que no otenga post
+                'hide_empty' => true, //oculta categorias que no otenga post
                 'order_by' => 'name',
                 'order' => 'ASC',
                 'post_status' => 'publish',
@@ -49,7 +49,12 @@
                 <div class="main-articles__item">
              <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                 <div class="main-articles__img">
-                <img class="img-round lazy" src="<?php echo get_field('image-category', $sub_category); ?>">
+                <?php 
+                  $img_id = get_post_thumbnail_id(get_the_ID());
+                  $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                  
+                  ?>
+                <img class="img-round lazy" alt="<?php echo $alt;?>" data-srcset="<?php echo get_field('image-category', $sub_category); ?>">
                 </div>
                 <div class="main-articles__title main-articles__title--small" itemprop="name">
                   <p><?php echo ($sub_category->name); ?></p>

@@ -67,7 +67,7 @@
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_productos/temporada/';?>">
                     <img id="site5" alt="Icono Temporada" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-1.svg">
-                    <img id="site_5" alt="Icono Temporada" class="display_none lazy" data-srcset="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-2.svg">
+                    <img id="site_5" alt="Icono Temporada" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-2.svg">
                     Temporada
                   
                   </a>
@@ -94,7 +94,7 @@
               <?php  get_search_form();?>
             </div>              
             <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-              <img  alt="Icono Email" class="lazy" data-srcset="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
+              <img  alt="Icono Email" class="lazy" data-src="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
             </a>
           </div> 
         </ul>
