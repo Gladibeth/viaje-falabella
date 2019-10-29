@@ -214,6 +214,15 @@ if(function_exists('register_sidebar')) {
     'after_widget'  => '</div>'
 
   ));
+
+  register_sidebar(array(
+    'name'          => 'Footer',
+    'id'            => 'Footer',
+    'description' => 'Texto de footer',
+    'before_title'  => "<div class='content__title'><h2>",
+    'after_title'   => '</h2></div>',
+
+  ));
 };
 //+++++++++++++++++++++++++++++++++++ end siderbar
 
@@ -344,7 +353,7 @@ function childorbit_search_groupby($groupby){
 
 //alt imágenes
 
-/* function isa_add_img_title( $attr, $attachment = null ) {
+function isa_add_img_title( $attr, $attachment = null ) {
  
   $img_title = trim( strip_tags( $attachment->post_title ) );
   $img_title = trim( strip_tags( $attachment->post_title ) );
@@ -354,4 +363,4 @@ function childorbit_search_groupby($groupby){
 
   return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 ); */
+add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 );

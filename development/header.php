@@ -71,24 +71,16 @@
                     Temporada
                   
                   </a>
-
-                  <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_productos/temporada/';?>">
-                    <img id="site6" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono vendido-1.svg">
-                    <img id="site_6" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono vendido-01.svg">
-                    Vendidos
-                  
-                  </a>
-                
               </div>
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="<?php echo bloginfo('url').'/como-es-tu-viaje';?>">
+            <a class="nav-link" href="<?php echo bloginfo('url').'/tipo_de_viajes/como-es-tu-viaje';?>">
                 ¿Cómo es tu viaje?
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo bloginfo('url').'/tipo-recursos';?>">Recursos viajeros</a>
+            <a class="nav-link" href="<?php echo bloginfo('url').'/tipo_recursos/recursos-viajeros/';?>">Recursos viajeros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre nosotros</a>

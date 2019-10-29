@@ -2,14 +2,7 @@
     <div class="container">
       <hr class="main-articles__line">
       <div class="main-footer">
-        <div class="content__title">
-          <h2>
-            FOOTER
-          </h2>
-        </div>
-        <a href="">
-          Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.
-        </a>
+          <?php if (!dynamic_sidebar('Footer')); ?>
       </div>
     </div>
   </footer>
