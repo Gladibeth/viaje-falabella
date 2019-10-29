@@ -64,13 +64,14 @@ section {
   background-color: transparent;
   transition: .3s ease-in-out;
   height: 85px;
-  padding: 3rem 1rem !important;
+  padding: 3rem 1rem;
 
 
   &.fixed {
     height: 85px;
     background-color: $white;
     transition: .3s ease-in-out;
+    padding: 0 !important;
   }
 
   &.fixed-height {
@@ -90,6 +91,10 @@ section {
   width: 70%;
   display: flex;
   justify-content: flex-start;
+
+  @include respond-to(xs) {
+    width: 100%;
+  }
 
   @include respond-to(xl) {
     width: 50%;
@@ -425,6 +430,11 @@ textarea {
       font-weight: 300;
       padding-top: 50px;
 
+      @include respond-to(xs) {
+        width: 50% !important;
+        top: 150x;
+      }
+
       .main-slider__number {
         padding: 0 25px;
         font-family: $beauSans;
@@ -684,7 +694,7 @@ textarea {
 
     .main-post__title {
       p {
-        font-size: 80px;
+        font-size: 60px;
         color: $green;
         font-weight: 900;
         margin: 0px !important;
@@ -692,6 +702,9 @@ textarea {
         margin-bottom: 30px;
         font-family: $beauSans;
 
+        @include respond-to(md) {
+          font-size: 60px;
+        }
       }
 
       span {
@@ -717,9 +730,17 @@ textarea {
   .main-post__img {
     height: 600px;
 
+    a {
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+      }
+    }
+
     img {
-      width: 100%;
-      height: 100%;
+      width: 100% !important;
+      height: 100% !important;
       object-fit: cover;
     }
   }
@@ -844,7 +865,8 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
-  li{
+
+  li {
     list-style: none;
   }
 
@@ -1137,6 +1159,12 @@ footer {
 
     .main-posts__description {
       word-break: break-all !important;
+
+      div {
+        img {
+          width: 500px;
+        }
+      }
 
       p {
         font-family: $beauSans;
@@ -1936,6 +1964,11 @@ input {
 
       font-size: 40px !important;
     }
+
+    @include respond-to(sm) {
+
+      font-size: 40px !important;
+    }
   }
 
   span {
@@ -1956,15 +1989,7 @@ input {
 
 .main-post__content .main-post__img {
   @include respond-to(xs) {
-    height: 300px !important;
-  }
-}
-
-.main-slider__text {
-  @include respond-to(xs) {
-    width: 170px;
-    top: 150x;
-
+    height: 400px !important;
   }
 }
 
