@@ -203,6 +203,7 @@
         
         <?php while( $loop->have_posts() ) : $loop->the_post();?>
           <div class="main-articles__item">
+            <div class="mask"></div>
             <a href="<?php the_permalink(); ?>">
               <div class="main-articles__img">
               <img class="lazy" data-srcset="<?php the_post_thumbnail_url('455x160'); ?> 480w,<?php the_post_thumbnail_url('345x300'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w,">
