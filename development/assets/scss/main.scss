@@ -116,6 +116,11 @@ section {
   font-size: 18px;
   letter-spacing: -1px;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 12px;
+    margin-right: 0;
+  }
+
 
 
   &.fixed-color {
@@ -139,6 +144,10 @@ section {
 
 .navbar-brand {
   width: 240px;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 140px;
+  }
 
   img {
     width: 100%;
@@ -432,7 +441,7 @@ textarea {
 
       @include respond-to(xs) {
         width: 50% !important;
-        top: 150x;
+        top: 150px;
       }
 
       .main-slider__number {
@@ -484,6 +493,10 @@ textarea {
       height: 180px;
       width: 300px;
       position: relative;
+
+      @include respond-to(xs) {
+        width: 50% !important;
+      }
 
       img {
         height: 100%;
@@ -691,6 +704,11 @@ textarea {
     padding: 30px;
     height: 400px;
     min-height: 400px;
+
+    @include respond-to(sm) {
+      height: auto;
+      min-height: auto;
+    }
 
     .main-post__title {
       p {
@@ -1478,6 +1496,7 @@ input {
   i {
     color: #3fae2a;
     font-size: 25px;
+
   }
 }
 
@@ -1492,6 +1511,10 @@ input {
 .main-destiny__descrption {
   p {
     font-size: 18px;
+
+    @include respond-to(md) {
+      font-size: 15px;
+    }
   }
 }
 
@@ -1585,6 +1608,12 @@ input {
     width: 360px;
     height: 600px;
     margin: -300px 0 0 -400px;
+  }
+
+  @media (min-width: 651px) and (max-width: 767px) {
+    left: 90%;
+    top: 50%;
+    width: 360px;
   }
 }
 
@@ -2200,6 +2229,10 @@ hr.main-articles__line {
 
 
 .main-brand {
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: inherit !important;
+  }
+
   @include respond-to(sm) {
     width: 100%;
     display: flex;
