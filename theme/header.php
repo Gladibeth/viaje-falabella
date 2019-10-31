@@ -13,12 +13,34 @@
 	<title>Viajes</title>
 </head>
 <body>
+  <style>
+  #preloader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #545759;
+  z-index: 9999999999 !important;
+
+
+}</style>
+<div id="preloader">
+		<div class="main-loader">
+		  <span class="loader1"></span>
+		  <span class="loader2"></span>
+		  <span class="loader3"></span>
+		</div>
+	</div>
 	<header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
+    <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
       <div class="main-brand">
         <a class="navbar-brand" href="<?php echo bloginfo('url');?>">
             <img id="iso" alt="logo Viajesfalabella" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
-            <img id="iso_green" alt="logo Viajesfalabella" class="display_none lazy" data-srcset="<?php echo get_template_directory_uri();?>/assets/img/logo-b.png">
+            <img id="iso_green" alt="logo Viajesfalabella" class="display_none" src="<?php echo get_template_directory_uri();?>/assets/img/logo-b.png">
           </a>
         <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
           <span class="hamburger-box">
@@ -34,23 +56,23 @@
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
                     <img id="site1" alt="Icono Europa" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
-                    <img id="site_1" alt="Icono Europa" class="display_none lazy" data-srcset="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
+                    <img id="site_1" alt="Icono Europa" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
                     Europa
                   
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/caribe';?>">
                     <img id="site2" alt="Icono Caribe" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-caribe-01.svg">
-                    <img id="site_2" alt="Icono Caribe" class="display_none lazy" data-srcset="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png">
+                    <img id="site_2" alt="Icono Caribe" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png">
                     Caribe
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/turquia';?>">
                     <img id="site3" alt="Icono Turquia" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-turquia-01.svg">
-                    <img id="site_3" alt="Icono Turquia" class="display_none lazy" data-srcset="<?php bloginfo('template_url') ?>/assets/img/icons/site3.png">
+                    <img id="site_3" alt="Icono Turquia" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site3.png">
                     Turquía
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/resto-del-mundo';?>">
                     <img id="site4" alt="Icono resto del mundo" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-resto-del-mundo-01.svg">
-                    <img id="site_4" alt="Icono resto del mundo" class="display_none lazy" data-srcset="<?php bloginfo('template_url') ?>/assets/img/icons/site4.png">
+                    <img id="site_4" alt="Icono resto del mundo" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site4.png">
                     Resto del mundo
                   </a>
               </div>
@@ -97,4 +119,3 @@
       
     </nav>
   </header>
-

@@ -31,9 +31,3 @@
 </body>
 
 </html>
-<style>
-
-</style>
-<script>
-$("body").animate({ scrollTop: $('body')[0].scrollHeight}, 1000);
-</script>
