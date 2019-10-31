@@ -213,6 +213,7 @@
         
         <?php while( $loop->have_posts() ) : $loop->the_post();?>
           <div class="main-articles__item">
+            <div class="mask"></div>
             <a href="<?php the_permalink(); ?>">
               <div class="main-articles__img">
               <?php 

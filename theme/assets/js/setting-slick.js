@@ -102,7 +102,7 @@ $slick.slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.slider-for__banner',
-  dots: true,
+  dots: false,
   arrows: false,
   focusOnSelect: true,
   autoplay: false,

@@ -14,7 +14,7 @@
 </head>
 <body>
 	<header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
+    <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
       <div class="main-brand">
         <a class="navbar-brand" href="<?php echo bloginfo('url');?>">
             <img id="iso" alt="logo Viajesfalabella" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
