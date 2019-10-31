@@ -802,6 +802,12 @@ textarea {
   &:hover {
     cursor: pointer;
 
+    .main-articles__img {
+      img {
+        filter: blur(5px);
+        transition: 0.3s ease-in-out;
+      }
+    }
   }
 }
 
@@ -809,12 +815,13 @@ textarea {
   width: 100%;
   height: 300px;
 
-  &:hover {
-    img {
-      filter: blur(5px);
-      transition: 0.3s ease-in-out;
-    }
-  }
+  // &:hover {
+
+  //   img {
+  //     filter: blur(5px);
+  //     transition: 0.3s ease-in-out;
+  //   }
+  // }
 
 
   img {

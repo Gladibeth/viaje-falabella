@@ -29,6 +29,16 @@ $('.nav-link-active').click(function () {
 })
 
 
+$(".main-articles__img").hover(
+  function () {
+    $(this).find('.main-articles__item .mask').addClass('d-none');
+  },
+  function () {
+    $(this).find(".main-articles__item .mask").removeClass('d-none');
+  }
+);
+
+
 var URLactual = window.location;
 
 
