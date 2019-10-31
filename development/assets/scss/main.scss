@@ -64,13 +64,14 @@ section {
   background-color: transparent;
   transition: .3s ease-in-out;
   height: 85px;
-  padding: 3rem 1rem !important;
+  padding: 3rem 1rem;
 
 
   &.fixed {
     height: 85px;
     background-color: $white;
     transition: .3s ease-in-out;
+    padding: 0 !important;
   }
 
   &.fixed-height {
@@ -91,6 +92,10 @@ section {
   display: flex;
   justify-content: flex-start;
 
+  @include respond-to(xs) {
+    width: 100%;
+  }
+
   @include respond-to(xl) {
     width: 50%;
     justify-content: flex-start;
@@ -110,6 +115,11 @@ section {
   margin-right: 20px;
   font-size: 18px;
   letter-spacing: -1px;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 12px;
+    margin-right: 0;
+  }
 
 
 
@@ -134,6 +144,10 @@ section {
 
 .navbar-brand {
   width: 240px;
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 140px;
+  }
 
   img {
     width: 100%;
@@ -425,6 +439,11 @@ textarea {
       font-weight: 300;
       padding-top: 50px;
 
+      @include respond-to(xs) {
+        width: 50% !important;
+        top: 150px;
+      }
+
       .main-slider__number {
         padding: 0 25px;
         font-family: $beauSans;
@@ -474,6 +493,10 @@ textarea {
       height: 180px;
       width: 300px;
       position: relative;
+
+      @include respond-to(xs) {
+        width: 50% !important;
+      }
 
       img {
         height: 100%;
@@ -682,9 +705,14 @@ textarea {
     height: 400px;
     min-height: 400px;
 
+    @include respond-to(sm) {
+      height: auto;
+      min-height: auto;
+    }
+
     .main-post__title {
       p {
-        font-size: 80px;
+        font-size: 60px;
         color: $green;
         font-weight: 900;
         margin: 0px !important;
@@ -692,6 +720,9 @@ textarea {
         margin-bottom: 30px;
         font-family: $beauSans;
 
+        @include respond-to(md) {
+          font-size: 60px;
+        }
       }
 
       span {
@@ -717,9 +748,17 @@ textarea {
   .main-post__img {
     height: 600px;
 
+    a {
+      img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+      }
+    }
+
     img {
-      width: 100%;
-      height: 100%;
+      width: 100% !important;
+      height: 100% !important;
       object-fit: cover;
     }
   }
@@ -844,7 +883,8 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
-  li{
+
+  li {
     list-style: none;
   }
 
@@ -1137,6 +1177,12 @@ footer {
 
     .main-posts__description {
       word-break: break-all !important;
+
+      div {
+        img {
+          width: 500px;
+        }
+      }
 
       p {
         font-family: $beauSans;
@@ -1450,6 +1496,7 @@ input {
   i {
     color: #3fae2a;
     font-size: 25px;
+
   }
 }
 
@@ -1464,6 +1511,10 @@ input {
 .main-destiny__descrption {
   p {
     font-size: 18px;
+
+    @include respond-to(md) {
+      font-size: 15px;
+    }
   }
 }
 
@@ -1557,6 +1608,12 @@ input {
     width: 360px;
     height: 600px;
     margin: -300px 0 0 -400px;
+  }
+
+  @media (min-width: 651px) and (max-width: 767px) {
+    left: 90%;
+    top: 50%;
+    width: 360px;
   }
 }
 
@@ -1936,6 +1993,11 @@ input {
 
       font-size: 40px !important;
     }
+
+    @include respond-to(sm) {
+
+      font-size: 40px !important;
+    }
   }
 
   span {
@@ -1956,15 +2018,7 @@ input {
 
 .main-post__content .main-post__img {
   @include respond-to(xs) {
-    height: 300px !important;
-  }
-}
-
-.main-slider__text {
-  @include respond-to(xs) {
-    width: 170px;
-    top: 150x;
-
+    height: 400px !important;
   }
 }
 
@@ -2175,6 +2229,10 @@ hr.main-articles__line {
 
 
 .main-brand {
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: inherit !important;
+  }
+
   @include respond-to(sm) {
     width: 100%;
     display: flex;

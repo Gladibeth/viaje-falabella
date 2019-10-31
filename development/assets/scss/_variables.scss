@@ -13,6 +13,7 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
     url('../fonts/PFBeauSansPro-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +22,7 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
     url('../fonts/PFBeauSansPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -30,6 +32,7 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
     url('../fonts/PFBeauSansPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -38,6 +41,7 @@ $breakpoints: ('xs': "(min-width: 0px) and (max-width: 767px)",
     url('../fonts/PFBeauSansPro-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 // Fonts

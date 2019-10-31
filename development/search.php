@@ -44,7 +44,11 @@
           </div>
           <a href="<?php the_permalink(); ?>" class="main-search_item">
             <div class="main-search__img">
-              <img src="<?php the_post_thumbnail_url(); ?>" alt="">
+            <?php 
+              $img_id = get_post_thumbnail_id(get_the_ID());
+              $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+            ?>
+              <img class="lazy" data-srcset="<?php the_post_thumbnail_url('555x360'); ?>" alt="<?php echo $alt; ?>">
             </div>
             <div class="main-search__element">
               <div class="main-search__element-item">
@@ -58,7 +62,7 @@
                 </div>
               </div>
             </div>
-</a>
+          </a>
         </div>
 
         <hr class="line-gray line-gray--full">

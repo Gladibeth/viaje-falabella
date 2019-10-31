@@ -5,7 +5,7 @@
   $categories = get_categories(array(
       'parent'         => $taxonomy->term_id,
       'taxonomy' => 'tipo_destinos',
-      'hide_empty' => true, //oculta categorias que no otenga post
+      'hide_empty' => false, //oculta categorias que no otenga post
       'order' => 'ASC',
       'post_status' => 'publish',
   )); 
@@ -44,7 +44,7 @@
                   $subcategories = get_categories(array(
                   'parent'         => $subcategory[1],
                   'taxonomy' => 'tipo_destinos',
-                  'hide_empty' => true, //oculta categorias que no otenga post
+                  'hide_empty' => false, //oculta categorias que no otenga post
                   'order_by' => 'name',
                   'order' => 'ASC',
                   'post_status' => 'publish',
@@ -86,7 +86,7 @@
                   $subcategories = get_categories(array(
                   'parent'         => $subcategory[0],
                   'taxonomy' => 'tipo_destinos',
-                  'hide_empty' => true, //oculta categorias que no otenga post
+                  'hide_empty' => false, //oculta categorias que no otenga post
                   'order_by' => 'name',
                   'order' => 'ASC',
                   'post_status' => 'publish',

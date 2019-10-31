@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="es" id="body-scroll">
+<html  id="body-scroll" <?php language_attributes(); ?>>
 <head>
 	<meta charset="UTF-8">
-	<meta name="Title" content="Viajes Falabella">
-	<meta name="description" content="">
+	<title><?php bloginfo('name'); ?></title>
+	<meta name="description" content="<?php bloginfo('description'); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 	<meta name="description" content="">
-	<link href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/main.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/media_0px.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/slick.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/slick-theme.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/icofont.css" rel="stylesheet">
-  <link href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
+	<link async href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link async href="<?php echo get_template_directory_uri();?>/assets/css/main.css" rel="stylesheet">
 	<?php wp_head(); ?>
 	<title>Viajes</title>
 </head>

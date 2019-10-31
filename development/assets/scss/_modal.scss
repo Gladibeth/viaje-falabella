@@ -64,7 +64,7 @@
 
 .btn_modal {
   border-bottom: 5px solid $green;
-  width: 16%;
+  /* width: 16%; */
   font-size: 18px;
   font-weight: 700;
   display: flex;
@@ -77,5 +77,19 @@
     background-color: transparent;
     border: none;
     margin-left: 15px;
+  }
+}
+
+.screen-reader-response{
+  padding: 10px 20% !important;
+  width: 100% !important;;
+  clip: auto !important;
+  height: auto !important;;
+  z-index: 1;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  ul{
+    display:none;
   }
 }
