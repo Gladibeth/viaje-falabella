@@ -13,28 +13,6 @@
 	<title>Viajes</title>
 </head>
 <body>
-  <style>
-  #preloader {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #545759;
-  z-index: 9999999999 !important;
-
-
-}</style>
-<div id="preloader">
-		<div class="main-loader">
-		  <span class="loader1"></span>
-		  <span class="loader2"></span>
-		  <span class="loader3"></span>
-		</div>
-	</div>
 	<header>
     <nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
       <div class="main-brand">
