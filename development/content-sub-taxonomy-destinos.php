@@ -5,7 +5,7 @@
     $categories = get_categories(array(
         'parent'         => $taxonomy->term_id,
         'taxonomy' => $taxonomy->taxonomy,
-        'hide_empty' => true, //oculta categorias que no otenga post
+        'hide_empty' => false, //oculta categorias que no otenga post
         'order' => 'ASC',
         'post_status' => 'publish',
     )); 
@@ -42,7 +42,7 @@
                 $subcategories = get_categories(array(
                 'parent'         => $taxonomy->term_id,
                 'taxonomy' => $taxonomy->taxonomy,
-                'hide_empty' => true, //oculta categorias que no otenga post
+                'hide_empty' => false, //oculta categorias que no otenga post
                 'order_by' => 'name',
                 'order' => 'ASC',
                 'post_status' => 'publish',
