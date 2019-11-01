@@ -51,6 +51,7 @@
            )); ?>
            <?php foreach ($subcategories as $sub_category) : ?>
              <div class="main-articles__item">
+             <div class="mask"></div>
              <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                 <div class="main-articles__img">
                 <?php 
