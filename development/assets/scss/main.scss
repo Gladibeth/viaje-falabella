@@ -113,7 +113,7 @@ section {
   transition: .3s ease-in-out;
   font-family: $beauSans;
   margin-right: 20px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -1px;
 
   @media (min-width: 768px) and (max-width: 991px) {
@@ -840,7 +840,7 @@ textarea {
 
 
   p {
-    font-size: 45px;
+    font-size: 35px;
     color: $white;
     font-weight: 800;
     margin: 0px;
@@ -3293,7 +3293,11 @@ hr.main-articles__line {
 }
 
 .search-wrapper.focused {
-  width: 200px;
+  width: 170px;
+
+  @include respond-to(md) {
+    width: 130px;
+  }
 }
 
 .search-wrapper.focused input {
