@@ -3293,7 +3293,11 @@ hr.main-articles__line {
 }
 
 .search-wrapper.focused {
-  width: 200px;
+  width: 170px;
+
+  @include respond-to(md) {
+    width: 130px;
+  }
 }
 
 .search-wrapper.focused input {
