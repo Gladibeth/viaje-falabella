@@ -62,7 +62,7 @@
               $img_id = get_post_thumbnail_id(get_the_ID());
               $alt_banner_principal = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
             ?>
-            <img srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url('555x360'); ?> 1920w," alt="<?php echo $alt_banner_principal; ?>">
+            <img class="lazy" data-srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url('555x360'); ?> 1920w," alt="<?php echo $alt_banner_principal; ?>">
           </div>
         </div>
       <?php endwhile;

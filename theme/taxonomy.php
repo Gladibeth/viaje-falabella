@@ -2,7 +2,9 @@
 $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual --> 
 ?>
 <section class="main-parallax">
-	<div class="overlay" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"></div> <!-- muestra la imagen dinamica de la taxonomia -->
+	<div class="overlay" style="background-image: url('');">
+    	<img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+  	</div> <!-- muestra la imagen dinamica de la taxonomia -->
 	<div class="main-parallax__title main-parallax__title--post">
 		<h1><?php echo $taxonomy->name;?></h1>
 		<span><?php echo $taxonomy->description;?></span>
