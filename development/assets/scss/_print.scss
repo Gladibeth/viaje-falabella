@@ -1,0 +1,19 @@
+@media print and (color){
+    .main-parallax{
+        height: 600px;
+    }
+    
+    .sidebar,.main-post__commend, .main-parallax__btn,footer{
+      display: none;
+    }
+  }
+  @media print {
+  
+    @media print and (-webkit-min-device-pixel-ratio:0) {
+      h1 {
+        font-size: 90px;
+        color: #fff;
+        -webkit-print-color-adjust: exact;
+      }
+    }
+ }

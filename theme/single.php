@@ -15,21 +15,21 @@
     <section class="main-parallax">
         <?php $post_thumbnail_id = get_post_thumbnail_id();
         $url = wp_get_attachment_url( $post_thumbnail_id);?>
-        <div class="overlay" style="background-image: url('');">
+        <div class="overlay">
         
             <img src="<?php echo $url; ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
         </div> <!-- muestra la imagen dinamica de la taxonomia -->
         <div class="main-parallax--boxtitle">
 
         <div class="main-parallax--title">
-        <h1><?php //echo $taxonomy[0]->name;?><?php the_title();?></h1>
+            <h1><?php //echo $taxonomy[0]->name;?><?php the_title();?></h1>
         
-        <div class="main-parallax__btn">
-            <div class="btn_custom btn--medium btn--filled--decoration">
-            <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
-            <a href="javascript:window.history.back();">Volver</a>
+            <div class="main-parallax__btn">
+                <div class="btn_custom btn--medium btn--filled--decoration">
+                    <i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
+                    <a href="javascript:window.history.back();">Volver</a>
+                </div>
             </div>
-        </div>
         </div>
         </div>
     </section>
@@ -77,15 +77,12 @@
                     </a>
                     <a  href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank">
                         <i class="fa fa-twitter"></i>
-                    
                     </a>
                     <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>" target="_blank">
                         <i class="fa fa-linkedin"></i>
-                    
                     </a>
                     <a href="javascript:print()">
-                        <i class="fa fa-print"></i>
-                    
+                        <i class="fa fa-print"></i>      
                     </a>
                 </div>
                 </div>

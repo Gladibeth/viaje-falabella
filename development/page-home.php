@@ -27,8 +27,8 @@
             <div class="main-banner__description">
               <p><?php the_excerpt();?></p>
             </div>
-            <div class="d-lg-none d-md-none btn-banner">
-              <a href="" class="btn-light">
+            <div class=" btn-banner">
+              <a href="<?php the_permalink(); ?>" class="btn-light">
                 Descubre
               </a>
             </div>
@@ -159,7 +159,7 @@
                     </div>
                     <hr class="main-articles__line">
                     <div class="main-destiny__descrption">
-                      <p><?php print_r($category->term_id); ?></p>
+                    <p><?php echo the_field('descripcion_destino', $category); ?></p>
                     </div>
                   </div>
 
