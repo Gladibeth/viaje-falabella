@@ -57,7 +57,7 @@
                       <div class="main-articles__img">
                         <?php 
                           $img_id = get_post_thumbnail_id(get_the_ID());
-                          $alt_recomendaciones = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                          $alt_recomendaciones = get_post_meta($sub_category->term_id , '_wp_attachment_image_alt', true); //alt de imágenes
                         ?>
                         <img class="img-round lazy" alt="<?php echo $alt_recomendaciones;?>" data-srcset="<?php echo get_field('image-category', $sub_category); ?>">
                       </div>

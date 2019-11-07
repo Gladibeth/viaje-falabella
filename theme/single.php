@@ -71,14 +71,15 @@
                 <div class="main-posts__description">
                     <?php the_content(); ?>
                 <div class="main-posts__description--redes">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php bloginfo('url'); ?>" target="_blank">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
+                    
                         <i class="fa fa-facebook"></i>
                     </a>
-                    <a  href="https://twitter.com/intent/tweet?url=<?php bloginfo('url'); ?>" target="_blank">
+                    <a  href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank">
                         <i class="fa fa-twitter"></i>
                     
                     </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php bloginfo('url'); ?>" target="_blank">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>" target="_blank">
                         <i class="fa fa-linkedin"></i>
                     
                     </a>
@@ -96,7 +97,11 @@
               <div class="sidebar">
                   <?php if (get_field('sidebar')):?>
                   <a href="<?php echo get_field('sidebar_link');?>" target="_blank" rel="noopener noreferrer">
-                    <img src="<?php echo get_field('sidebar_imagen');?>" alt="">
+                    <?php 
+                        $img_id = get_post_thumbnail_id(get_the_ID());
+                        $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                    ?>
+                    <img src="<?php echo get_field('sidebar_imagen');?>" alt="<?php echo $alt;?>">
                   </a>
                 <?php else:?>
                     <?php if (!dynamic_sidebar('sidebar')); ?>   

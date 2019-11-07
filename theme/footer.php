@@ -27,7 +27,5 @@
   <script defer src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
   <script defer src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
   <?php wp_footer(); ?> <!-- funcion de footer para traer los cambios en el footer -->
-  <script></script>
 </body>
-
 </html>

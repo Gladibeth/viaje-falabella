@@ -12,6 +12,14 @@
 
 .modal-body {
   padding: 0 35px;
+  p{
+    
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+
+  }
 }
 
 .modal-title {
@@ -60,6 +68,9 @@
 .form-control {
   background-color: #eee;
   ;
+}
+#wpcf7-f5-o1 > form > div.modal-dialog > div > div.modal-body > div:nth-child(5) > span > span > span{
+  margin-left: 0;
 }
 
 .btn_modal {
