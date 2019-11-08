@@ -1182,13 +1182,32 @@ footer {
       }
 
     }
-
+    .alignleft{
+      text-align: left;
+      width: 100% !important;
+    }
+    .aligncenter{
+      text-align: center;
+      width: 100% !important;
+    }
+    .alignright{
+      text-align: right;
+      width: 100% !important;
+    }
+    /* .aligncenter{
+      text-align: center;
+      margin: auto;
+    }
+    .alignright{
+      text-align: right;
+    } */
     .main-posts__description {
       /* word-break: break-all !important; */
-
+      /*de wordpress*/
       div {
         img {
           width: 500px;
+
         }
       }
 
