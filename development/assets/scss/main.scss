@@ -1184,7 +1184,7 @@ footer {
     }
 
     .main-posts__description {
-      word-break: break-all !important;
+      /* word-break: break-all !important; */
 
       div {
         img {
@@ -1195,7 +1195,7 @@ footer {
       p {
         font-family: $beauSans;
         width: 100%;
-        word-break: break-all !important;
+        /* word-break: break-all !important; */
         color: #545759;
       }
 
@@ -3092,7 +3092,7 @@ hr.main-articles__line {
   h1 {
     font-family: $beauSans;
     width: 100%;
-    word-break: break-all !important;
+    /* word-break: break-all !important; */
     color: #545759;
   }
 
