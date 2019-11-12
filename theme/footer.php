@@ -2,7 +2,32 @@
     <div class="container">
       <hr class="main-articles__line">
       <div class="main-footer">
-          <?php if (!dynamic_sidebar('Footer')); ?>
+        <div class="main-footer__content">
+          <div class="main-footer__item">
+          <?php if (!dynamic_sidebar('Footer columna 1')); ?>
+          </div>
+          <div class="main-footer__item">
+          <?php if (!dynamic_sidebar('Footer columna 2')); ?>
+          </div>
+
+          <div class="main-footer__item">
+          <?php if (!dynamic_sidebar('Footer columna 3')); ?>
+          </div>
+          <div class="main-footer__item">
+          <?php if (!dynamic_sidebar('Footer columna 4')); ?>
+          </div>
+    
+        </div>
+
+        <div class="main-footer__redes">
+          <div class="main-footer__redesitems">
+            <?php if (!dynamic_sidebar('Footer redes sociales')); ?>
+          </div>
+        </div>
+        <div class="main-footer__redes">
+          <?php if (!dynamic_sidebar('Footer copyright')); ?>
+        </div>
+        
       </div>
     </div>
   </footer>

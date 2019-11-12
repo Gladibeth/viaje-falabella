@@ -216,11 +216,52 @@ if(function_exists('register_sidebar')) {
   ));
 
   register_sidebar(array(
-    'name'          => 'Footer',
-    'id'            => 'Footer',
-    'description' => 'Texto de footer',
-    'before_title'  => "<div class='content__title'><h2>",
-    'after_title'   => '</h2></div>',
+    'name'          => 'Footer columna 1',
+    'id'            => 'footer-1',
+    'description' => 'Listado footer 1',
+    'before_title'  => "<div class='main-footer__title'><p>",
+    'after_title'   => '</p></div>',
+
+  ));
+  register_sidebar(array(
+    'name'          => 'Footer columna 2',
+    'id'            => 'footer-2',
+    'description' => 'Listado footer 2',
+    'before_title'  => "<div class='main-footer__title'><p>",
+    'after_title'   => '</p></div>',
+
+  ));
+  register_sidebar(array(
+    'name'          => 'Footer columna 3',
+    'id'            => 'footer-3',
+    'description' => 'Listado footer 3',
+    'before_title'  => "<div class='main-footer__title'><p>",
+    'after_title'   => '</p></div>',
+
+  ));
+  register_sidebar(array(
+    'name'          => 'Footer columna 4',
+    'id'            => 'footer-4',
+    'description' => 'Listado footer 4',
+    'before_title'  => "<div class='main-footer__title'><p>",
+    'after_title'   => '</p></div>',
+
+  ));
+  register_sidebar(array(
+    'name'          => 'Footer redes sociales',
+    'id'            => 'footer-redes-sociales',
+    'description' => 'Listado footer redes sociales',
+    'before_title'  => "<div class='main-footer__title'><p>",
+    'after_title'   => '</p></div>',
+
+  ));
+
+  register_sidebar(array(
+    'name'          => 'Footer copyright',
+    'id'            => 'footer-copyright',
+    'description' => 'copyright',
+    'before_title'  => "<div class='main-footer__title'><p>",
+    'after_title'   => '</p></div>',
 
   ));
 };
