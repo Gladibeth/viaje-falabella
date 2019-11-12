@@ -13,11 +13,12 @@
   
 ?>
     <section class="main-parallax">
-        <?php $post_thumbnail_id = get_post_thumbnail_id();
-        $url = wp_get_attachment_url( $post_thumbnail_id);?>
+        <?php 
+            $img_id = get_post_thumbnail_id(get_the_ID());
+            $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+        ?>
         <div class="overlay">
-        
-            <img src="<?php echo $url; ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+            <img srcset="<?php the_post_thumbnail_url('480x792'); ?> 480w,<?php the_post_thumbnail_url('768x689'); ?> 768w,<?php the_post_thumbnail_url('555x360'); ?> 1024w,<?php the_post_thumbnail_url('1280x689'); ?> 1280w, <?php the_post_thumbnail_url(); ?> 1920w," alt="<?php echo $alt; ?>" style="width: 100%;height: 100%;object-fit: cover;">
         </div> <!-- muestra la imagen dinamica de la taxonomia -->
         <div class="main-parallax--boxtitle">
 

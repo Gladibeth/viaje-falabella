@@ -299,8 +299,8 @@ function nelio_max_image_size( $file ) {
   $size = $size / 1920;
   $type = $file['type'];
   $is_image = strpos( $type, 'image' ) !== false;
-  $limit = 250;
-  $limit_output = '350kb';
+  $limit = 500;
+  $limit_output = '550kb';
  
   if ( $is_image && $size > $limit ) {
     $file['error'] = 'Peso maximo de imagen ' . $limit_output;
