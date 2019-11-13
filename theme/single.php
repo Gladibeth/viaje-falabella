@@ -41,16 +41,29 @@
           <div class="main-posts__item" href="post.html">
             <div class="main-posts__box">
                 <div class="main-posts__title">
-                
                 </div>
                 <div class="main-posts__autor">
-                <div class="main-posts__name">
-                    <p><?php the_author();?></p>
-                </div>
-                <div class="main-posts__line"></div>
-                <div class="main-posts__date">
-                    <span><?php the_date('d/m/y');?></span>
-                </div>
+                    <div class="main-posts__name">
+                        <p><?php the_author();?></p>
+                    </div>
+                    <div class="main-posts__line"></div>
+                    <div class="main-posts__date">
+                        <span><?php the_date('d/m/y');?></span>
+                    </div>
+                    <div class="main-posts__description--redes">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a  href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="javascript:print()">
+                            <i class="fa fa-print"></i>      
+                        </a>
+                    </div>
                 </div>
                 <hr class="main-articles__line">
                 <div class="main-posts__social">
@@ -71,21 +84,6 @@
                 </div>
                 <div class="main-posts__description">
                     <?php the_content(); ?>
-                <div class="main-posts__description--redes">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
-                    
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a  href="https://twitter.com/intent/tweet?url=<?php the_permalink(); ?>" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="javascript:print()">
-                        <i class="fa fa-print"></i>      
-                    </a>
-                </div>
                 </div>
 
             </div>

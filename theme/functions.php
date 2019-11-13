@@ -255,15 +255,6 @@ if(function_exists('register_sidebar')) {
     'after_title'   => '</p></div>',
 
   ));
-
-  register_sidebar(array(
-    'name'          => 'Footer copyright',
-    'id'            => 'footer-copyright',
-    'description' => 'copyright',
-    'before_title'  => "<div class='main-footer__title'><p>",
-    'after_title'   => '</p></div>',
-
-  ));
 };
 //+++++++++++++++++++++++++++++++++++ end siderbar
 
