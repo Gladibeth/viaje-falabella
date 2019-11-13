@@ -7,7 +7,6 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
   	</div> <!-- muestra la imagen dinamica de la taxonomia -->
 	<div class="main-parallax__title main-parallax__title--post">
 		<h1><?php echo $taxonomy->name;?></h1>
-		<span><?php echo $taxonomy->description;?></span>
 		<div class="main-parallax__btn">
 			<div class="btn_custom btn--medium btn--filled--decoration">
 				<i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>
