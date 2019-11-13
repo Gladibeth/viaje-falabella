@@ -35,7 +35,7 @@
         </div>
     </section>
     <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-    <section class="main-posts">
+    <section class="main-posts single">
         <div class="container">
         <div class="main-detailsposts__content">
           <div class="main-posts__item" href="post.html">
