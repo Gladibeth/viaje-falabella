@@ -9,15 +9,15 @@
      'post_status' => 'publish',
  )); 
 ?>
+<?php 
+    $img_id = get_post_thumbnail_id(get_the_ID());
+    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+?>
 <section class="main-parallax">
-<?php $post_thumbnail_id = get_post_thumbnail_id();
-        $url = wp_get_attachment_url( $post_thumbnail_id);?>
-<div class="overlay" style="background-image: url('');">
-  <img src="<?php echo $url; ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
-</div> <!-- muestra la imagen dinamica de la taxonomia -->
-<div class="main-parallax--boxtitle">
-
-  <div class="main-parallax--title">
+    <div class="overlay">
+      <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+    </div>
+    <div class="main-parallax__title">
    <h1><?php the_title();?></h1>
   
    <div class="main-parallax__btn">

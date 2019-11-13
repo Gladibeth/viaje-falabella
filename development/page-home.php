@@ -168,9 +168,18 @@
                   echo $img_id = get_post_thumbnail_id($category);
                   $alt_text_category = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
                 ?>
+                <?php 
+$image = get_field('image-category', $category->term_id);
+$size = 'full'; // (thumbnail, medium, large, full or custom size)
+if( $image ) {
+    echo wp_get_attachment_image( $image, $size );
+}
+?>
+
                 <img class="slider-single-image lazy"
                 data-src="<?php echo get_field('image-category', $category); ?>"
                   alt="<?php echo $alt_text_category;?>" />
+                 
                 </a>
               </div>
             </div>

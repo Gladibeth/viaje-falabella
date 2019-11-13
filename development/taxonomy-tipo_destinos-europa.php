@@ -15,9 +15,14 @@
     <!--<h1><?php //echo ($category->name); ?></h1>-->
 <?php endforeach; 
 ?>
-
-<section class="main-parallax" style="background-image: url('<?php echo get_field('image-category', $taxonomy); ?>');"> <!-- muestra la imagen dinamica de la taxonomia -->
-    <div class="overlay"></div>
+<?php 
+    $img_id = get_post_thumbnail_id(get_the_ID());
+    $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+?>
+<section class="main-parallax">
+    <div class="overlay">
+      <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+    </div>
     <div class="main-parallax__title">
     <h1><?php echo $taxonomy->name; ?></h1>
     </div>

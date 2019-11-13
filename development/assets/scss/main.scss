@@ -1257,6 +1257,24 @@ footer {
       }
     }
   }
+  .main-posts__compartir--redes {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    i {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #202020;
+      color: #fff;
+      margin-right: 10px;
+    }
+
+  }
 }
 
 .main-posts__content {
@@ -1297,7 +1315,7 @@ footer {
         width: 2px;
         height: 25px;
         background-color: gray;
-        margin: 0 5px;
+        margin: auto 5px;
       }
     }
 
@@ -1356,6 +1374,7 @@ footer {
 }
 
 .main-posts__name {
+  margin: auto;
   p {
     font-family: $beauSans;
   }
@@ -1370,6 +1389,7 @@ footer {
 }
 
 .main-posts__date {
+  margin: auto;
   span {
     font-family: $beauSans;
     color: #545759 !important;
