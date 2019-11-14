@@ -19,12 +19,12 @@ $(document).ready(function () {
     }]
   });
 
-  $('.team-carousel').slick({
+  $('.main-about__slider').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    arrows: false,
+    arrows: true,
     responsive: [{
         breakpoint: 1200,
         settings: {

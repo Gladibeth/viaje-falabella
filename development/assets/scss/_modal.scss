@@ -12,10 +12,10 @@
 
 .modal-body {
   padding: 0 35px;
-  p{
-    
-  }
-  a{
+
+  p {}
+
+  a {
     text-decoration: none;
     color: inherit;
 
@@ -69,7 +69,8 @@
   background-color: #eee;
   ;
 }
-#wpcf7-f5-o1 > form > div.modal-dialog > div > div.modal-body > div:nth-child(5) > span > span > span{
+
+#wpcf7-f5-o1>form>div.modal-dialog>div>div.modal-body>div:nth-child(5)>span>span>span {
   margin-left: 0;
 }
 
@@ -91,16 +92,38 @@
   }
 }
 
-.screen-reader-response{
+.screen-reader-response {
   padding: 10px 20% !important;
-  width: 100% !important;;
+  width: 100% !important;
+  ;
   clip: auto !important;
-  height: auto !important;;
+  height: auto !important;
+  ;
   z-index: 1;
   bottom: 0;
   margin: auto;
   text-align: center;
-  ul{
-    display:none;
+
+  ul {
+    display: none;
+  }
+}
+
+.modal-body--ubications {
+  padding: 0;
+}
+
+.modal-dialog--ubication {
+  max-width: 850px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.main-modal__title {
+  p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #3fae2a;
   }
 }

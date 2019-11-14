@@ -25,6 +25,12 @@
     </div>
     <div class="main-parallax__title">
     <h1><?php echo $taxonomy->name; ?></h1>
+
+
+    <ul class="breadcrumb">
+      <li><a href="#">Europa</a></li>
+      <li><a href="#">Alemania</a></li>
+    </ul>
     </div>
   </section>
   <section class="main-breadcrumb">
