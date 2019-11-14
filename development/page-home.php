@@ -28,6 +28,7 @@
               <p><?php the_excerpt();?></p>
             </div>
             <div class=" btn-banner">
+              
               <a href="<?php the_permalink(); ?>" class="btn-light">
                 Descubre
               </a>
@@ -119,6 +120,8 @@
       </div>
     </div>
   </div>
+
+  
 
   <section class="main-destiny" id="destiny">
     <div class="container">

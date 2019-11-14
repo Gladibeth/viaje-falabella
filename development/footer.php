@@ -2,24 +2,29 @@
     <div class="container">
       <hr class="main-articles__line">
       <div class="main-footer">
-        <div class="main-footer__content">    
-        </div>
+        <div class="main-footer__content">
+          <div class="main-footer__item">
+            <?php if (!dynamic_sidebar('Footer columna 1')); ?>
+          </div>
+          <div class="main-footer__item">
+            <?php if (!dynamic_sidebar('Footer columna 2')); ?>
+          </div>
 
+          <div class="main-footer__item">
+            <?php if (!dynamic_sidebar('Footer columna 3')); ?>
+          </div>
+          <div class="main-footer__item">
+            <?php if (!dynamic_sidebar('Footer columna 4')); ?>
+          </div>
+    
+        </div>
         <div class="main-footer__redes">
           <div class="main-footer__redesitems">
-            <a href="https://www.facebook.com/ViajesFalabellaColombia" target="_blank" class="main-footer__redesitem">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/logo-facebook-footer.svg" alt="Logo facebook">
-            </a>
-            <a href="https://twitter.com/VFalabellaCo" target="_blank" class="main-footer__redesitem">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/logo-twitter-footer.svg" alt="Logo twitter">
-            </a>
-            <a href="https://www.linkedin.com/company/viajes-falabella-colombia/" target="_blank" class="main-footer__redesitem">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/logo-linkedin-footer.svg" alt="Logo linkedin">
-            </a>
+            <?php if (!dynamic_sidebar('Footer redes sociales')); ?>
           </div>
         </div>
         <div class="main-footer__redes">
-          <p>Viajes Falabella, Colombia - 2019 - Todos los derechos reservados.</p>
+          <?php if (!dynamic_sidebar('Footer copyright')); ?>
         </div>
         
       </div>

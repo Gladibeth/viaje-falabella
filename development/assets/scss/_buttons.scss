@@ -105,16 +105,21 @@
 }
 
 .btn-border {
-  border: 1px solid $green;
-  color: $green;
+  color: $white;
+  background-color: $green;
   border-radius: 0px;
   display: flex;
   justify-content: center;
+  border: 1px solid $green;
+  transition: 0.3s ease-in-out;
+
 
   &:hover {
     text-decoration: none;
-    color: $white;
-    background-color: $green;
+    color: $green;
+    border: 1px solid $green;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
   }
 }
 
@@ -130,4 +135,8 @@
   border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
+}
+
+.main-post__btn {
+  width: 20%;
 }
