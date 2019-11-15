@@ -168,15 +168,15 @@
             </div>
             <div class="main-modal__item">
               <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="tab-pane tab-pane--modal fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15904.16865099533!2d-74.05417073022461!3d4.762666399999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f859394581b81%3A0x49a68dce30e7149f!2sFalabella%20SantaF%C3%A9!5e0!3m2!1ses-419!2sve!4v1573742526153!5m2!1ses-419!2sve" width="" height="" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="tab-pane tab-pane--modal fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2086995298246!2d-74.06834878584232!3d4.733774996561886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f851a62f14a77%3A0x1ac79ea4d13d41c9!2sFalabella%20Parque%20La%20Colina!5e0!3m2!1ses-419!2sve!4v1573742558506!5m2!1ses-419!2sve" width="" height="" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                <div class="tab-pane tab-pane--modal fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                <div class="tab-pane tab-pane--modal fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
               </div>
 
             </div>
