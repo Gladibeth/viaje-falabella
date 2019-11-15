@@ -35,80 +35,51 @@
               </div>
             </div>
             <div class="main-about__slider">
-              <?php 
-                $images = get_field('gallery');
-                if( $images ): ?>
-                  <?php foreach( $images as $image ): ?>
-                    <div class="main-about__slideritem">
-                      <div class="main-about__sliderimg">
-                        <img src="<?php echo esc_url($image['sizes']['medium']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-                        <hr class="main-about__line">
-                      </div>
-                      <div class="main-about__slidertitle">
-                        <p><?php echo esc_html($image['description']); ?></p>
-                      </div>
-                    </div>
-                <?php endforeach; ?>
-              <?php endif; ?>
-            </div>
-
-
-            <div class="main-about__slider">
-              <div class="main-about__slideritem">
-                <div class="main-about__sliderimg">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg" alt="">
-                  <hr class="main-about__line">
+              <?php
+                $args = array(
+                'post_type' => 'galerias',
+              );
+                $loop = new WP_Query( $args );
+              ?>
+              <?php while( $loop->have_posts() ) : $loop->the_post();?>
+                <?php 
+                  $img_id = get_post_thumbnail_id(get_the_ID());
+                  $alt_carousel = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                ?>
+                <div class="main-about__slideritem">
+                  <div class="main-about__sliderimg">
+                    <img src="<?php the_post_thumbnail_url('455x160'); ?>" alt="<?php echo $alt_carousel;?>">
+                    <hr class="main-about__line">
+                  </div>
+                  <div class="main-about__slidertitle">
+                    <p><?php the_title();?></p>
+                  </div>
                 </div>
-                <div class="main-about__slidertitle">
-                  <p>Respaldo de la marca</p>
-                </div>
-              </div>
-
-              <div class="main-about__slideritem">
-                <div class="main-about__sliderimg">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg" alt="">
-                  <hr class="main-about__line">
-                </div>
-                <div class="main-about__slidertitle">
-                  <p>Amplia red de proveedores</p>
-                </div>
-              </div>
-
-              <div class="main-about__slideritem">
-                <div class="main-about__sliderimg">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg" alt="">
-                  <hr class="main-about__line">
-                </div>
-                <div class="main-about__slidertitle">
-                  <p>Servicio al cliente 24 horas en nuestra línea telefónicaAmplia red de proveedores</p>
-                </div>
-              </div>
-              <div class="main-about__slideritem">
-                <div class="main-about__sliderimg">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg" alt="">
-                  <hr class="main-about__line">
-                </div>
-                <div class="main-about__slidertitle">
-                  <p>Servicio al cliente 24 horas en nuestra línea telefónicaAmplia red de proveedores</p>
-                </div>
-              </div>
-
-              <div class="main-about__slideritem">
-                <div class="main-about__sliderimg">
-                  <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg" alt="">
-                  <hr class="main-about__line">
-                </div>
-                <div class="main-about__slidertitle">
-                  <p>Servicio al cliente 24 horas en nuestra línea telefónicaAmplia red de proveedores</p>
-                </div>
-              </div>
-              
+              <?php endwhile;
+	              wp_reset_query();
+              ?>
             </div>
           </div>
         </div>
         <div class="main-about__item">
           <div class="main-about__img">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg" alt="">
+            <div class="main-posts__item">
+              <div class="main-posts__sidebar">
+                <div class="sidebar">
+                    <?php if (get_field('sidebar')):?>
+                    <a href="<?php echo get_field('sidebar_link');?>" target="_blank" rel="noopener noreferrer">
+                      <?php 
+                          $img_id = get_post_thumbnail_id(get_the_ID());
+                          $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                      ?>
+                      <img src="<?php echo get_field('sidebar_imagen');?>" alt="<?php echo $alt;?>">
+                    </a>
+                  <?php else:?>
+                      <?php if (!dynamic_sidebar('sidebar')); ?>   
+                  <?php endif;?>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>

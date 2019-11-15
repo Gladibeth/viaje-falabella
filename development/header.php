@@ -78,12 +78,9 @@
             <a class="nav-link" href="<?php echo bloginfo('url').'/tipo_recursos/recursos-viajeros/';?>">Recursos viajeros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre nosotros</a>
+            <a class="nav-link" href="<?php echo bloginfo('url').'/sobre-nosotros/';?>">Sobre nosotros</a>
           </li>
-          
-
-
-
+        
           <div class="main-nav__search main-nav__search--none  ">
             <div class="content-nav icon-nav">
               <?php  get_search_form();?>
