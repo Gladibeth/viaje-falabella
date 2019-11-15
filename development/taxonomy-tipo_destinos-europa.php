@@ -20,9 +20,9 @@
     $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
 ?>
 <section class="main-parallax">
-    <div class="overlay">
-      <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+    <div class="mask">
     </div>
+    <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
     <div class="main-parallax__title">
     <h1><?php echo $taxonomy->name; ?></h1>
     <ul class="breadcrumb">
