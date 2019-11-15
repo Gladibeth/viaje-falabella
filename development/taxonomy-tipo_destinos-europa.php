@@ -25,10 +25,7 @@
     <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
     <div class="main-parallax__title">
     <h1><?php echo $taxonomy->name; ?></h1>
-    <ul class="breadcrumb">
-      <li><a href="#">Europa</a></li>
-      <li><a href="#">Alemania</a></li>
-    </ul>
+    
     </div>
   </section>
   <section class="main-breadcrumb">
@@ -53,7 +50,7 @@
                   $subcategories = get_categories(array(
                   'parent'         => $subcategory[1],
                   'taxonomy' => 'tipo_destinos',
-                  'hide_empty' => false, //oculta categorias que no otenga post
+                  'hide_empty' => true, //oculta categorias que no otenga post
                   'order_by' => 'name',
                   'order' => 'ASC',
                   'post_status' => 'publish',
@@ -96,7 +93,7 @@
                   $subcategories = get_categories(array(
                   'parent'         => $subcategory[0],
                   'taxonomy' => 'tipo_destinos',
-                  'hide_empty' => false, //oculta categorias que no otenga post
+                  'hide_empty' => true, //oculta categorias que no otenga post
                   'order_by' => 'name',
                   'order' => 'ASC',
                   'post_status' => 'publish',
