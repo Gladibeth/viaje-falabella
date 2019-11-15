@@ -1,7 +1,7 @@
 <?php get_header(); ?> 
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
   <section class="main-parallax main-parallax__banner--parallax" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg')">
-    <div class="overlay"></div>
+    <div class="mask"></div>
     <div class="main-parallax--search">
       <div class="container">
         <div class="main-about__bannertitle">
