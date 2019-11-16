@@ -3595,6 +3595,7 @@ ul.breadcrumb {
   /* display: flex;
   flex-direction: row-reverse; 
   float: left; */
+  
   li:nth-child(4){
     display: none;
   }
@@ -3603,6 +3604,7 @@ ul.breadcrumb li {
   display: inline;
   font-size: 18px;
   text-transform: uppercase;
+
 
 }
 
@@ -3680,6 +3682,7 @@ ul.breadcrumb li a:hover {
     margin-bottom: 30px;
     font-family: $beauSans;
     text-transform: uppercase;
+    margin: auto;
   }
 }
 
@@ -3753,9 +3756,10 @@ ul.breadcrumb li a:hover {
 }
 
 .main-about__sliderimg {
-  width: 100%;
+  width: 200px;
   height: 200px;
   padding: 20px;
+  margin: auto;
 
   img {
     width: 100%;
@@ -3776,6 +3780,7 @@ ul.breadcrumb li a:hover {
     margin-right: 20px;
     font-size: 16px;
     letter-spacing: -1px;
+    margin: auto;
   }
 }
 

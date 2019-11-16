@@ -11,8 +11,10 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
 	<?php  if (!empty($taxonomy->description)):?>
 		<span><?php echo $taxonomy->description;?></span>
 	<?php endif;?>
-		
-	<?php echo get_the_term_list( $post->ID,$taxonomy->taxonomy, '<ul class="breadcrumb"><li>', '</li><li>', '</li></ul>' );?>
+	<div>
+		<?php echo get_the_term_list( $post->ID,$taxonomy->taxonomy, '<ul class="breadcrumb"><li>', '</li><li>', '</li></ul>' );?>
+
+	</div>	
 	<div class="main-parallax__btn">
 		<div class="btn_custom btn--medium btn--filled--decoration">
 			<i class="fa fa-angle-left" style="margin-right:10px;" aria-hidden="true"></i>

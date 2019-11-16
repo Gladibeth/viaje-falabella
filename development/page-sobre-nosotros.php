@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
 <?php if (have_posts()) : while( have_posts() ) : the_post(); ?>
-  <section class="main-parallax main-parallax__banner--parallax" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/articulo-1.jpg')">
+  <section class="main-parallax main-parallax__banner--parallax" style="background-image: url('<?php the_post_thumbnail_url()?>">
     <div class="mask"></div>
     <div class="main-parallax--search">
       <div class="container">
@@ -48,7 +48,7 @@
                 ?>
                 <div class="main-about__slideritem">
                   <div class="main-about__sliderimg">
-                    <img src="<?php the_post_thumbnail_url('455x160'); ?>" alt="<?php echo $alt_carousel;?>">
+                    <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php echo $alt_carousel;?>">
                     <hr class="main-about__line">
                   </div>
                   <div class="main-about__slidertitle">
