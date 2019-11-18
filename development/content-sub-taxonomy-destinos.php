@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     $subcategory = array(); //Array que permite obtener las subcategorias de recomendaciones y paises
     $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual -->
     // Listado de categorias (Recomendaciones y países)
@@ -9,7 +9,7 @@
         'order' => 'ASC',
         'post_status' => 'publish',
     )); 
-?>
+?> -->
 <section class="main-parallax">
   <div class="mask" style="background-image: url('');">
   </div> <!-- muestra la imagen dinamica de la taxonomia -->
