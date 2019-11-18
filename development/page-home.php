@@ -12,12 +12,13 @@
         );
         $loop = new WP_Query( $args );
       ?>
+      <?php $count= 0;?>
       <?php while( $loop->have_posts() ) : $loop->the_post();?>
         <div class="main-banner__item">
           <div class="mask"></div>
           <div class="main-banner__text">
             <div class="main-banner__number">
-              <span>01</span>
+              <span><?php echo '0'.$count +=1;?></span>
               <div class="main-banner-smaline"></div>
             </div>
             <div class="main-banner__title">
@@ -72,6 +73,7 @@
     </div>
     <div class="fixed">
       <div class="slider slider-nav__banner">
+      <?php $count= 0;?>
       <?php
 	      $args = array(
         'post_type' => 'destinos',
@@ -93,7 +95,7 @@
                 <div class="main-slider__text">
                   <!-- <hr class="main-slider__line"> -->
                   <div class="main-slider__number">
-                    <span class="number--active">01</span>
+                    <span class="number--active"><?php echo '0'.$count +=1;?></span>
                     <div class="main-slider-smaline"></div>
                   </div>
                   <div class="main-slider__title">
