@@ -158,21 +158,4 @@
       </div>
     </div>
   </section>
-<?php 
-  $image = get_field('image-category',$taxonomy);
-var_dump($image);
-$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-if( $image ) {
-    echo wp_get_attachment_image( $image, $size);
-}?>
-<br>
-<br>
-<br>
-<br>
-<br>
-<?php
-  $image_sizes = $image['sizes'];
-  var_dump($image_sizes['555x360']);
-  ?>
-  <img src="<?php echo $image_sizes['thumbnail'];?>" alt="">
 <?php get_footer(); ?>
