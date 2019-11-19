@@ -23,7 +23,7 @@
   ?>
 
   <!-- navegador -->
-<meta name="name" content="<?php echo the_field('seo_title',$taxonomy) . ' | ' ;?>v<?php echo bloginfo('name'); ?>">
+<meta name="name" content="<?php echo the_field('seo_title',$taxonomy) . ' | ' ;?><?php echo bloginfo('name'); ?>">
 <meta name="description" 	content="<?php echo the_field('seo_description',$taxonomy); ?>">
 <meta name="keywords" content="<?php echo the_field('seo_keywords',$taxonomy); ?>">
 <link rel="canonical" href="<?php echo $url_actual = home_url( add_query_arg( array(), $wp->request ) );?>" />
