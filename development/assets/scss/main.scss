@@ -3588,6 +3588,13 @@ hr.main-articles__line {
 }
 
 
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  text-transform: uppercase;
+
+
+}
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -3596,19 +3603,16 @@ ul.breadcrumb {
   flex-direction: row-reverse; 
   float: left; */
   
-  li:nth-child(4){
+  li{
     display: none;
   }
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-  text-transform: uppercase;
-
-
+  li:nth-child(1),li:nth-child(2),li:nth-child(3){
+    display: block;
+  }
+  
 }
 
-ul.breadcrumb li+li:before {
+ul.breadcrumb li+li+li:before {
   padding: 8px;
   color: #fff;
   content: ">";
