@@ -13,10 +13,8 @@
       </div>
     </div>
   </section>
-
   <section class="main-about">
     <div class="container">
-
       <div class="main-about__content">
         <div class="main-about__item">
           <div class="main-about__text">
@@ -81,12 +79,12 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div> 
   </section>
-  <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <?php endwhile; endif; ?>
+    <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog--ubication" role="document">
       <div class="modal-content">
       
@@ -99,6 +97,7 @@
                 </div>
                 <select class="form-control">
                   <option>Bogotá</option>
+                  <option>Medellín</option>
                 </select>
               </div>
               <div class="main-content__options">
@@ -187,5 +186,24 @@
       </div>
     </div>
   </div>
-<?php endwhile; endif; ?>
+  
+ <!--  <?php
+   /*  $args = array(
+    'post_type' => 'sucursales',
+
+    'post_status' => 'publish',
+    'order' => 'DESC'
+    );
+    $loop = new WP_Query( $args ); */
+  ?>
+ 
+      <?php /* while( $loop->have_posts() ) : $loop->the_post(); */?>
+        <?php //the_title();?>	
+        <?php //endwhile;
+	      //wp_reset_query();
+        
+	
+
+//echo get_the_term_list( get_the_ID(), 'ciudades', '', ', ' ); ?> -->
+
 <?php get_footer(); ?> 
