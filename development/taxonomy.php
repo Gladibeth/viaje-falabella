@@ -2,10 +2,15 @@
 $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual --> 
 ?>
 <section class="main-parallax">
-  <div class="mask" style="background-image: url('');">
-  </div> <!-- muestra la imagen dinamica de la taxonomia -->
-  <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
-  	</div> <!-- muestra la imagen dinamica de la taxonomia -->
+	<div class="mask">
+	</div>
+	<?php 
+      $image = get_field('image-category',$taxonomy);
+      $image_sizes = $image['sizes'];
+    ?>
+    <img class="img-round" srcset="<?php echo $image_sizes['480x792']; ?> 480w,<?php echo $image_sizes['768x689']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1280w,<?php echo $image['url']; ?> 1920w," alt="<?php echo $image['alt'];?>" style="width: 100%;height: 100%;object-fit: cover;">
+
+	
 	<div class="main-parallax__title main-parallax__title--post">
 	<h1><?php echo $taxonomy->name;?></h1>
 	<?php  if (!empty($taxonomy->description)):?>
@@ -62,7 +67,7 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
 						 <?php if($count <=3):?>
 							<a class="main-posts__item" href="<?php the_permalink(); ?>">
 								<div class="main-posts__img">
-									<img itemprop="image" alt="<?php echo $alt;?>" class="img-round" src="<?php the_post_thumbnail_url(); ?>"/>
+									<img itemprop="image" alt="<?php echo $alt;?>" class="img-round" src="<?php the_post_thumbnail_url('555x360');?>"/>
 								</div>
 								<div class="main-posts__box">
 									<div class="main-posts__title">
@@ -100,7 +105,7 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
 						 <?php else:?>
 							<a class="main-posts__item" href="<?php the_permalink(); ?>">
 								<div class="main-posts__img">
-									<img itemprop="image" alt="<?php echo $alt;?>" class="img-round lazy" data-srcset="<?php the_post_thumbnail_url(); ?>"/>
+									<img itemprop="image" alt="<?php echo $alt;?>" class="img-round lazy" data-srcset="<?php the_post_thumbnail_url('555x360');?>"/>
 								</div>
 								<div class="main-posts__box">
 									<div class="main-posts__title">
