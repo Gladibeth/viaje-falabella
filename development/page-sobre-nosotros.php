@@ -5,9 +5,10 @@
     <div class="main-parallax--search">
       <div class="container">
         <div class="main-about__bannertitle">
-          <h2>
-            <?php the_title();?>
-          </h2>
+          <?php $title = explode( ' ',get_the_title());?>
+          <h1><?php echo $title[0];?>
+            <span><?php echo $title[1];?></span>
+          </h1>
 
         </div>
       </div>
@@ -18,7 +19,7 @@
       <div class="main-about__content">
         <div class="main-about__item">
           <div class="main-about__text">
-            <?php the_content();?>
+              <?php the_content();?>
             <div class="main-about__descrption">
               <div class="main-post__btn">
                 <a class="btn_custom btn--medium btn-border" data-toggle="modal" href="#about">
