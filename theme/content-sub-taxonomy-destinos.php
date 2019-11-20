@@ -11,9 +11,9 @@
     )); 
 ?>
 <section class="main-parallax">
-  <div class="overlay" style="background-image: url('');">
-    <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+  <div class="mask" style="background-image: url('');">
   </div> <!-- muestra la imagen dinamica de la taxonomia -->
+  <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
   <div class="main-parallax__title main-parallax__title--post">
     <h1><?php echo $taxonomy->name;?></h1>
     <span><?php echo $taxonomy->description;?></span>
