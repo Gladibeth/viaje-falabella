@@ -187,24 +187,4 @@
       </div>
     </div>
   </div>
-  
- <!--  <?php
-   /*  $args = array(
-    'post_type' => 'sucursales',
-
-    'post_status' => 'publish',
-    'order' => 'DESC'
-    );
-    $loop = new WP_Query( $args ); */
-  ?>
- 
-      <?php /* while( $loop->have_posts() ) : $loop->the_post(); */?>
-        <?php //the_title();?>	
-        <?php //endwhile;
-	      //wp_reset_query();
-        
-	
-
-//echo get_the_term_list( get_the_ID(), 'ciudades', '', ', ' ); ?> -->
-
 <?php get_footer(); ?> 
