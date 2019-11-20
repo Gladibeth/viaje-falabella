@@ -297,7 +297,7 @@ add_image_size( '555x360', 555, 360, true );
 add_image_size( '480x792', 480, 792, true );
 add_image_size( '455x160', 455, 160, true );
 add_image_size( '170x200',170, 200, true );
-//end imágenes
+//end redimención de imágenes
 
 
 //limitar el tamaño de las imágenes
@@ -389,59 +389,24 @@ function childorbit_search_groupby($groupby){
     return $groupby.", ".$groupby_id;
 }   
 
-
-//alt imágenes
-/* 
-function isa_add_img_title( $attr, $attachment = null ) {
- 
-  $img_title = trim( strip_tags( $attachment->post_title ) );
-  $img_title = trim( strip_tags( $attachment->post_title ) );
-
-  $attr['title'] = $img_title;
-  $attr['alt'] = $img_title;
-
-  return $attr;
-}
-add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 ); */
+//end peso de imágenes
 
 
-function breadcrumb() {
-  global $post;
-  echo '<ul id="breadcrumbs">';
-  if (!is_home()) {
-  echo '<li><a href="';
-  echo get_option('home');
-  echo '">';
-  echo 'Inicio';
-  echo '</a></li><li class="separator"> > </li>';
-  if (is_category() || is_single()) {
-  echo '<li>';
-  the_category(' </li><li class="separator"> > </li><li> ');
-  if (is_single()) {
-  echo '</li><li class="separator"> > </li><li>';
-  the_title();
-  echo '</li>';
-  }
-  } elseif (is_page()) {
-  if($post->post_parent){
-  $anc = get_post_ancestors( $post->ID );
-  $title = get_the_title();
-  foreach ( $anc as $ancestor ) {
-  $output = '<li><a href="'.get_permalink($ancestor).'" title="'.get_the_title($ancestor).' ">'.get_the_title($ancestor).'</a></li> <li class="separator"> > </li>';
-  }
-  echo $output;
-  echo '<strong title="'.$title.'"> '.$title.'</strong>';
-  } else {
-  echo '<li><strong> '.get_the_title().'</strong></li>';
-  }
-  }
-  }
-  elseif (is_tag()) {single_tag_title();}
-  elseif (is_day()) {echo"<li>Archive for "; the_time('F jS, Y'); echo'</li>';}
-  elseif (is_month()) {echo"<li>Archive for "; the_time('F, Y'); echo'</li>';}
-  elseif (is_year()) {echo"<li>Archive for "; the_time('Y'); echo'</li>';}
-  elseif (is_author()) {echo"<li>Author Archive"; echo'</li>';}
-  elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {echo "<li>Blog Archives"; echo'</li>';}
-  elseif (is_search()) {echo"<li>Search Results"; echo'</li>';}
-  echo '</ul>';
-  }
+
+//colocar logo en el login de wordpress
+  function wprin_my_logo_on_login() {
+    // Pon el path a tu imagen.
+    $image = get_template_directory_uri().'/assets/img/logo-b.png';
+    echo '<style type="text/css">h1 a { background-image:url(' . $image . ') !important; content/themes/theme/assets/img/logo-b.png) !important;background-size: auto !important;background-position: center !important;width: 100% !important;
+  }</style>';
+  }//end wprin_my_logo_on_login()
+  add_action( 'login_head', 'wprin_my_logo_on_login' );
+//end logo login de wordpress
+
+
+//modificar el admin del footer de wordpress
+  function wprin_custom_text_in_footer_admin() {
+    return 'Realizado por: Si Señor Agencia';
+  }//end wprin_custom_text_in_footer_admin()
+  add_action( 'admin_footer_text', 'wprin_custom_text_in_footer_admin' );
+// end footer admin de wordpres
