@@ -17,8 +17,14 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
 		<span><?php echo $taxonomy->description;?></span>
 	<?php endif;?>
 	<div>
-		<?php echo get_the_term_list( $post->ID,$taxonomy->taxonomy, '<ul class="breadcrumb"><li>', '</li><li>', '</li></ul>' );?>
-
+		<ul class="breadcrumb">
+			<?php
+				$breadcrumbs = wp_get_post_terms( $post->ID, $taxonomy->taxonomy, array( 'order' => 'DESC' ) );
+			?>
+			<?php foreach ($breadcrumbs as $breadcrumb):?>
+			<li><a href="<?php echo bloginfo('url').'/'.$taxonomy->taxonomy.'/'.$breadcrumb->slug;?>"><?php echo $breadcrumb->name;?></a><li>
+			<?php endforeach;?>
+		</ul>
 	</div>	
 	<div class="main-parallax__btn">
 		<div class="btn_custom btn--medium btn--filled--decoration">
