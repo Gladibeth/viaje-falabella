@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     $subcategory = array(); //Array que permite obtener las subcategorias de recomendaciones y paises
     $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual -->
     // Listado de categorias (Recomendaciones y países)
@@ -9,11 +9,15 @@
         'order' => 'ASC',
         'post_status' => 'publish',
     )); 
-?>
+?> -->
 <section class="main-parallax">
-  <div class="mask" style="background-image: url('');">
-  </div> <!-- muestra la imagen dinamica de la taxonomia -->
-  <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+  <div class="mask">
+  </div>
+  <?php 
+      $image = get_field('image-category',$taxonomy);
+      $image_sizes = $image['sizes'];
+    ?>
+    <img class="img-round" srcset="<?php echo $image_sizes['480x792']; ?> 480w,<?php echo $image_sizes['768x689']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1280w,<?php echo $image['url']; ?> 1920w," alt="<?php echo $image['alt'];?>" style="width: 100%;height: 100%;object-fit: cover;">
   <div class="main-parallax__title main-parallax__title--post">
     <h1><?php echo $taxonomy->name;?></h1>
     <span><?php echo $taxonomy->description;?></span>
@@ -42,7 +46,7 @@
                 $subcategories = get_categories(array(
                 'parent'         => $taxonomy->term_id,
                 'taxonomy' => $taxonomy->taxonomy,
-                'hide_empty' => false, //oculta categorias que no otenga post
+                'hide_empty' => true, //oculta categorias que no otenga post
                 'order_by' => 'name',
                 'order' => 'ASC',
                 'post_status' => 'publish',
@@ -52,12 +56,11 @@
                   <div class="mask"></div>
              <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                 <div class="main-articles__img">
-                <?php 
-                  $img_id = get_post_thumbnail_id(get_the_ID());
-                  $alt = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
-                  
+                  <?php 
+                    $image = get_field('image-category',$sub_category);
+                    $image_sizes = $image['sizes'];
                   ?>
-                <img class="img-round lazy" alt="<?php echo $alt;?>" data-srcset="<?php echo get_field('image-category', $sub_category); ?>">
+                  <img class="img-round lazy" data-srcset="<?php echo $image_sizes['455x160']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1024w,<?php echo $image_sizes['555x360']; ?>" alt="<?php echo $image['alt'];?>">
                 </div>
                 <div class="main-articles__title main-articles__title--small" itemprop="name">
                   <p><?php echo ($sub_category->name); ?></p>

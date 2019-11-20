@@ -3577,9 +3577,27 @@ ul.breadcrumb li {
   font-size: 18px;
   text-transform: uppercase;
 
+
 }
 
-ul.breadcrumb li+li:before {
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: transparent;
+
+  li {
+    display: none;
+  }
+
+  li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3) {
+    display: block;
+  }
+
+}
+
+ul.breadcrumb li+li+li:before {
   padding: 8px;
   color: #fff;
   content: ">";
@@ -3606,7 +3624,7 @@ ul.breadcrumb li a:hover {
 }
 
 .main-about__bannertitle {
-  h2 {
+  h1 {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
@@ -3653,6 +3671,7 @@ ul.breadcrumb li a:hover {
     margin-bottom: 30px;
     font-family: $beauSans;
     text-transform: uppercase;
+    margin: auto;
   }
 }
 
@@ -3725,9 +3744,10 @@ ul.breadcrumb li a:hover {
 }
 
 .main-about__sliderimg {
-  width: 100%;
+  width: 200px;
   height: 200px;
   padding: 20px;
+  margin: auto;
 
   img {
     width: 100%;
@@ -3747,6 +3767,7 @@ ul.breadcrumb li a:hover {
     margin-right: 20px;
     font-size: 16px;
     letter-spacing: -1px;
+    margin: auto;
   }
 }
 

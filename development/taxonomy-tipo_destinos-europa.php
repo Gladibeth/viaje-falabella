@@ -22,13 +22,15 @@
 <section class="main-parallax">
     <div class="mask">
     </div>
-    <img src="<?php echo get_field('image-category', $taxonomy); ?>" alt="" style="width: 100%;height: 100%;object-fit: cover;">
+    <?php 
+      $image = get_field('image-category',$taxonomy);
+      $image_sizes = $image['sizes'];
+    ?>
+    <img class="img-round" srcset="<?php echo $image_sizes['480x792']; ?> 480w,<?php echo $image_sizes['768x689']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1280w,<?php echo $image['url']; ?> 1920w," alt="<?php echo $image['alt'];?>" style="width: 100%;height: 100%;object-fit: cover;">
+
     <div class="main-parallax__title">
     <h1><?php echo $taxonomy->name; ?></h1>
-    <ul class="breadcrumb">
-      <li><a href="#">Europa</a></li>
-      <li><a href="#">Alemania</a></li>
-    </ul>
+    
     </div>
   </section>
   <section class="main-breadcrumb">
@@ -53,7 +55,7 @@
                   $subcategories = get_categories(array(
                   'parent'         => $subcategory[1],
                   'taxonomy' => 'tipo_destinos',
-                  'hide_empty' => false, //oculta categorias que no otenga post
+                  'hide_empty' => true, //oculta categorias que no otenga post
                   'order_by' => 'name',
                   'order' => 'ASC',
                   'post_status' => 'publish',
@@ -64,11 +66,11 @@
                     <div class="mask"></div>
                   <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                       <div class="main-articles__img">
-                        <?php 
-                          $img_id = get_post_thumbnail_id(get_the_ID());
-                          $alt_recomendaciones = get_post_meta($sub_category->term_id , '_wp_attachment_image_alt', true); //alt de imágenes
-                        ?>
-                        <img class="img-round lazy" alt="<?php echo $alt_recomendaciones;?>" data-srcset="<?php echo get_field('image-category', $sub_category); ?>">
+                      <?php 
+                        $image = get_field('image-category',$sub_category);
+                        $image_sizes = $image['sizes'];
+                      ?>
+                      <img class="img-round lazy" data-srcset="<?php echo $image_sizes['455x160']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1024w,<?php echo $image_sizes['555x360']; ?>" alt="<?php echo $image['alt'];?>">
                       </div>
                       <div class="main-articles__title" itemprop="name">
                         <p><?php echo ($sub_category->name); ?></p>
@@ -96,7 +98,7 @@
                   $subcategories = get_categories(array(
                   'parent'         => $subcategory[0],
                   'taxonomy' => 'tipo_destinos',
-                  'hide_empty' => false, //oculta categorias que no otenga post
+                  'hide_empty' => true, //oculta categorias que no otenga post
                   'order_by' => 'name',
                   'order' => 'ASC',
                   'post_status' => 'publish',
@@ -104,14 +106,15 @@
                 <?php $count = 0;?>
                 <?php foreach ($subcategories as $sub_category) : ?>
                   <?php if($count <=3):?>
-                      <?php 
-                        $img_id = get_post_thumbnail_id(get_the_ID());
-                        $alt_paises_a = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
-                      ?>
+                     
                     <div class="main-country__item">
                       <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                         <div class="main-country__img">
-                          <img class="img-round" alt="<?php echo $alt_paises_a;?>" src="<?php echo get_field('image-category', $sub_category); ?>">
+                          <?php 
+                          $image = get_field('image-category',$sub_category);
+                          $image_sizes = $image['sizes'];
+                        ?>
+                        <img class="img-round " srcset="<?php echo $image_sizes['455x160']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1024w,<?php echo $image_sizes['555x360']; ?>" alt="<?php echo $image['alt'];?>">
                         </div>
                         <div class="main-country__title" itemprop="name">
                           <p><?php echo ($sub_category->name); ?></p>
@@ -125,13 +128,13 @@
                     </div>
                   <?php else:?>
                     <div class="main-country__item">
-                      <?php 
-                        $img_id = get_post_thumbnail_id(get_the_ID());
-                        $alt_paises_a = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
-                      ?>
                       <a href="<?php echo bloginfo('url').'/'.$sub_category->taxonomy.'/'.$sub_category->slug;?>">
                         <div class="main-country__img">
-                          <img class="img-round lazy" alt="<?php echo $alt_paises_b;?>" data-srcset="<?php echo get_field('image-category', $sub_category); ?>">
+                          <?php 
+                          $image = get_field('image-category',$sub_category);
+                          $image_sizes = $image['sizes'];
+                        ?>
+                        <img class="img-round lazy" data-srcset="<?php echo $image_sizes['455x160']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1024w,<?php echo $image_sizes['555x360']; ?>" alt="<?php echo $image['alt'];?>">
                         </div>
                         <div class="main-country__title" itemprop="name">
                           <p><?php echo ($sub_category->name); ?></p>
@@ -155,5 +158,4 @@
       </div>
     </div>
   </section>
-  
 <?php get_footer(); ?>

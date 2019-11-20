@@ -12,12 +12,13 @@
         );
         $loop = new WP_Query( $args );
       ?>
+      <?php $count= 0;?>
       <?php while( $loop->have_posts() ) : $loop->the_post();?>
         <div class="main-banner__item">
           <div class="mask"></div>
           <div class="main-banner__text">
             <div class="main-banner__number">
-              <span>01</span>
+              <span><?php echo '0'.$count +=1;?></span>
               <div class="main-banner-smaline"></div>
             </div>
             <div class="main-banner__title">
@@ -72,6 +73,7 @@
     </div>
     <div class="fixed">
       <div class="slider slider-nav__banner">
+      <?php $count= 0;?>
       <?php
 	      $args = array(
         'post_type' => 'destinos',
@@ -93,7 +95,7 @@
                 <div class="main-slider__text">
                   <!-- <hr class="main-slider__line"> -->
                   <div class="main-slider__number">
-                    <span class="number--active">01</span>
+                    <span class="number--active"><?php echo '0'.$count +=1;?></span>
                     <div class="main-slider-smaline"></div>
                   </div>
                   <div class="main-slider__title">
@@ -144,7 +146,7 @@
             <?php foreach ($categories as $category):?>
             <?php if (get_field('destacar_destino',$category)): ?>
               <?php $count_category++; ?>
-              <?php if ($count_category < 4): ?>
+              <?php if ($count_category < 4): ?>l
               <div class="slider-single">
               <div style="display:grid; grid-template-columns: 50% 50%;" class="content">
                 <div class="content-items">
@@ -168,20 +170,10 @@
 
                 </div>
                 <?php 
-                  echo $img_id = get_post_thumbnail_id($category);
-                  $alt_text_category = get_post_meta($img_id , '_wp_attachment_image_alt', true); //alt de imágenes
+                  $image = get_field('image-category',$category);
+                  $image_sizes = $image['sizes'];
                 ?>
-                <?php 
-$image = get_field('image-category', $category->term_id);
-$size = 'full'; // (thumbnail, medium, large, full or custom size)
-if( $image ) {
-    echo wp_get_attachment_image( $image, $size );
-}
-?>
-
-                <img class="slider-single-image lazy"
-                data-src="<?php echo get_field('image-category', $category); ?>"
-                  alt="<?php echo $alt_text_category;?>" />
+                  <img class="slider-single-image lazy" data-srcset="<?php echo $image_sizes['555x360'];?>" alt="<?php echo $image['alt'];?>">
                  
                 </a>
               </div>
