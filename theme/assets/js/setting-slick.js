@@ -143,7 +143,7 @@ $('.slider-for__banner').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
-  fade: true,
+  fade: false,
   dots: false,
   asNavFor: '.slider-nav__banner',
 
