@@ -112,7 +112,7 @@ $slick.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -128,7 +128,7 @@ $slick.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        arrows: true,
+        arrows: false,
         autoplay: false,
         autoplaySpeed: 1000
       }
@@ -144,6 +144,7 @@ $('.slider-for__banner').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  dots: false,
   asNavFor: '.slider-nav__banner',
 
 });
