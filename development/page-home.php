@@ -54,7 +54,7 @@
           </div>
           <div class="main-banner__scroll">
           <div class="scroll__container">
-            <a href="#destiny">
+            <a href="#scroll-destiny">
             SCROLL
             </a>
           </div>
@@ -71,8 +71,8 @@
 	      wp_reset_query();
       ?>
     </div>
-    <div class="fixed">
-      <div class="slider slider-nav__banner">
+  
+      <div class="slider slider-nav__banner" >
       <?php $count= 0;?>
       <?php
 	      $args = array(
@@ -120,12 +120,12 @@
           wp_reset_query();
         ?>
       </div>
-    </div>
+    
   </div>
 
   
 
-  <section class="main-destiny" id="destiny">
+  <section class="main-destiny" id="scroll-destiny">
     <div class="container">
       <div class="content__title">
         <h2>Destinos del mes</h2>

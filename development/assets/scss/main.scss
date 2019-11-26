@@ -73,16 +73,26 @@ section {
     transition: 0.3s ease-in-out;
     /* padding: 0 !important; */
 
+    @include respond-to(xs) {
+      height: auto;
+    }
+
   }
 
   &.fixed-height {
     //height: 150px;
     // margin-top: -40px;
+    @include respond-to(xs) {
+      height: auto;
+    }
   }
 
   &.fixed-height--two {
     //height: 150px;
     // margin-top: -40px;
+    @include respond-to(xs) {
+      height: auto;
+    }
   }
 
 }
@@ -648,7 +658,8 @@ textarea {
 
 .main-destiny {
   height: 550px;
-  margin-top: -100px;
+  margin-top: -180px;
+  padding-top: 120px;
 
   @include respond-to(xs) {
     margin-top: -150px;
@@ -916,7 +927,7 @@ footer {
   }
 
   @include respond-to(xs) {
-    height: 50vh;
+    height: 70vh;
   }
 
   .overlay {
@@ -1019,7 +1030,15 @@ footer {
 
       @include respond-to(xs) {
         line-height: 3rem;
+        margin-bottom: -20px;
+        font-size: 27px !important;
       }
+    }
+  }
+
+  &.main-parallax__title-center {
+    @include respond-to(xs) {
+      bottom: 40%;
     }
   }
 }
@@ -1260,6 +1279,10 @@ footer {
       background-color: #202020;
       color: #fff;
       margin-right: 10px;
+
+      @include respond-to(xs) {
+        margin-right: 3px;
+      }
     }
 
   }
@@ -3613,6 +3636,10 @@ ul.breadcrumb li a {
   font-family: $beauSans;
   transition: 0.3s ease-in-out;
   font-size: 20px;
+
+  @include respond-to(xs) {
+    font-size: 13px;
+  }
 }
 
 ul.breadcrumb li a:hover {
@@ -3877,6 +3904,12 @@ ul.breadcrumb li a:hover {
   }
 }
 
+.main-breadcrumb {
+  @include respond-to(xs) {
+    padding: 0;
+  }
+}
+
 @media (min-width: 1024px) and (max-height: 1366px) {
   .main-parallax__title.main-parallax__title--post {
     bottom: 35% !important;
@@ -3885,3 +3918,10 @@ ul.breadcrumb li a:hover {
 
 .js-ocultarCiudad{display:none}
 .js-mostrarCiudad{display:block};
+@media (min-width: 1920px) and (max-height: 841px) {
+  .main-slider__next {
+    right: -120px;
+    bottom: 0;
+    width: 440px;
+  }
+}
