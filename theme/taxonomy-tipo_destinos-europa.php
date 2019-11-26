@@ -28,7 +28,7 @@
     ?>
     <img class="img-round" srcset="<?php echo $image_sizes['480x792']; ?> 480w,<?php echo $image_sizes['768x689']; ?> 768w,<?php echo $image_sizes['555x360']; ?> 1280w,<?php echo $image['url']; ?> 1920w," alt="<?php echo $image['alt'];?>" style="width: 100%;height: 100%;object-fit: cover;">
 
-    <div class="main-parallax__title">
+    <div class="main-parallax__title main-parallax__title-center">
     <h1><?php echo $taxonomy->name; ?></h1>
     
     </div>
