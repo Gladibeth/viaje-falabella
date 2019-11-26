@@ -26,6 +26,7 @@
                   Visítanos!
                 </a>
               </div>
+              <hr class="main-about__line">
               <div class="main-about__subtitle">
                 <p>
                   20 RAZONES PARA COMPRAR EN 
@@ -96,12 +97,12 @@
                 <div class="main-modal__title">
                   <p>Sucursales</p>
                 </div>
-                <select class="form-control">
-                  <option>Bogotá</option>
-                  <option>Medellín</option>
+                <select class="form-control" name="sucursales" id="sucursales">
+                  <option value="bogota">Bogotá</option>
+                  <option value="medellin">Medellín</option>
                 </select>
               </div>
-              <div class="main-content__options">
+              <div class="main-content__options js-ocultarCiudad ciudad" id="medellin">
                 
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                   <a class="tabs-a active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
@@ -166,7 +167,7 @@
               </div>
               
             </div>
-            <div class="main-modal__item">
+            <div class="main-modal__item js-ocultarCiudad ciudad" id="papa-medellin">
               <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane tab-pane--modal fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 

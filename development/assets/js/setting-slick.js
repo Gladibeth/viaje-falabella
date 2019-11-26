@@ -138,7 +138,7 @@ $slick.slick({
 });
 
 
-
+//banner principal
 $('.slider-for__banner').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -198,7 +198,7 @@ function startProgressbar() {
 
 function interval() {
   if (isPause === false) {
-    percentTime += 1 / (time + 0.1);
+    percentTime += 1 / (time + 0.11111111111111111111111111111111111111111111111111111111111);
     $bar.css({
       width: percentTime + "%"
     });
