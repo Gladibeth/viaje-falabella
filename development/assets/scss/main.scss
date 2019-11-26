@@ -73,16 +73,28 @@ section {
     transition: 0.3s ease-in-out;
     padding: 0 !important;
 
+    @include respond-to(xs) {
+      height: auto;
+    }
+
   }
 
   &.fixed-height {
     height: 150px;
+
     // margin-top: -40px;
+    @include respond-to(xs) {
+      height: auto;
+    }
   }
 
   &.fixed-height--two {
     height: 150px;
+
     // margin-top: -40px;
+    @include respond-to(xs) {
+      height: auto;
+    }
   }
 
 }
@@ -916,7 +928,7 @@ footer {
   }
 
   @include respond-to(xs) {
-    height: 50vh;
+    height: 70vh;
   }
 
   .overlay {
@@ -1268,6 +1280,10 @@ footer {
       background-color: #202020;
       color: #fff;
       margin-right: 10px;
+
+      @include respond-to(xs) {
+        margin-right: 3px;
+      }
     }
 
   }

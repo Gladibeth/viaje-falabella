@@ -43,6 +43,7 @@
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/icofont.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
   <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  -->
+  <script async src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
   <script async src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.14.0/lazyload.min.js"></script>
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/configuration-lazyload.js"></script>
