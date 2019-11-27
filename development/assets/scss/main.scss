@@ -701,6 +701,10 @@ textarea {
   font-family: $beauSans;
 }
 
+.main-post {
+  margin-top: 100px;
+}
+
 .main-post__content {
   display: grid;
   grid-template-columns: 30% 70%;
@@ -3708,7 +3712,7 @@ ul.breadcrumb li a:hover {
   }
 }
 
-.main-about__text {
+.main-size--text {
   p {
     font-size: 45px !important;
     color: #3fae2a;

@@ -19,7 +19,9 @@
       <div class="main-about__content">
         <div class="main-about__item">
           <div class="main-about__text">
+            <div class="main-size--text">
               <?php the_content();?>
+            </div>
             <div class="main-about__descrption">
               <div class="main-post__btn">
                 <a class="btn_custom btn--medium btn-border" data-toggle="modal" href="#about">
