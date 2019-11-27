@@ -3935,11 +3935,11 @@ ul.breadcrumb li a:hover {
 }
 
 .js-ocultarCiudad {
-  display: none
+  display: none;
 }
 
 .js-mostrarCiudad {
-  display: block
+  display: block;
 }
 
 .sidebar {
@@ -3970,5 +3970,9 @@ ul.breadcrumb li a:hover {
 
   .slick-dots {
     display: none;
+  }
+
+  .main-parallax__title.main-parallax__title--post {
+    bottom: 300px;
   }
 }
