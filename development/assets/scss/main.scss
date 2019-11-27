@@ -80,6 +80,7 @@ section {
   }
 
   &.fixed-height {
+
     //height: 150px;
     // margin-top: -40px;
     @include respond-to(xs) {
@@ -88,6 +89,7 @@ section {
   }
 
   &.fixed-height--two {
+
     //height: 150px;
     // margin-top: -40px;
     @include respond-to(xs) {
@@ -3916,9 +3918,17 @@ ul.breadcrumb li a:hover {
   }
 }
 
-.js-ocultarCiudad{display:none}
-.js-mostrarCiudad{display:block};
-@media (min-width: 1920px) and (max-height: 841px) {
+.js-ocultarCiudad {
+  display: none
+}
+
+.js-mostrarCiudad {
+  display: block
+}
+
+;
+
+@media (min-width: 1920px) and (max-height: 1080px) {
   .main-slider__next {
     right: -120px;
     bottom: 0;
