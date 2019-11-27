@@ -1112,7 +1112,7 @@ footer {
 .main-parallax__btn {
   display: flex;
   justify-content: start;
-  margin-left: 10px;
+  // margin-left: 10px;
 }
 
 .main-posts__sidebar {
@@ -2296,7 +2296,7 @@ hr.main-articles__line {
 
 .main-brand {
   @media (min-width: 768px) and (max-width: 991px) {
-    width: inherit !important;
+    width: 100% !important;
   }
 
   @include respond-to(sm) {
@@ -3599,7 +3599,7 @@ hr.main-articles__line {
 }
 
 ul.breadcrumb {
-  padding: 20px 16px;
+  padding: 20px 0px;
   list-style: none;
   background-color: transparent;
 }
