@@ -849,6 +849,7 @@ textarea {
     font-weight: 900;
     margin-bottom: -20px;
     text-transform: uppercase;
+    line-height: 1;
   }
 
   &.main-articles__title--small {
@@ -1031,11 +1032,12 @@ footer {
       }
 
       @include respond-to(sm) {
-        line-height: 5rem;
+        line-height: 2rem;
+        font-size: 50px !important;
       }
 
       @include respond-to(xs) {
-        line-height: 3rem;
+        line-height: 2rem;
         margin-bottom: -20px;
         font-size: 27px !important;
       }
@@ -1891,6 +1893,10 @@ input {
 /**Post*/
 
 .main-parallax__title h1 {
+  @include respond-to(sm) {
+    font-size: 75px !important;
+  }
+
   @include respond-to(xs) {
 
     font-size: 40px !important;
@@ -2674,6 +2680,12 @@ hr.main-articles__line {
   font-size: 30px;
   margin-top: 0;
   margin-left: -20px;
+
+  @include respond-to(sm) {
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 0px;
+  }
 
   @include respond-to(xs) {
     font-size: 30px;
@@ -3598,11 +3610,7 @@ hr.main-articles__line {
   }
 }
 
-ul.breadcrumb {
-  padding: 20px 0px;
-  list-style: none;
-  background-color: transparent;
-}
+
 
 ul.breadcrumb li {
   display: inline;
@@ -3614,9 +3622,13 @@ ul.breadcrumb li {
 }
 
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 20px 0px;
   list-style: none;
   background-color: transparent;
+
+  @include respond-to(sm) {
+    padding: 0;
+  }
 
   li {
     display: none;
