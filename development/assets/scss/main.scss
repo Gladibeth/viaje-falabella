@@ -3965,3 +3965,10 @@ ul.breadcrumb li a:hover {
     height: 500px;
   }
 }
+
+@media (min-width: 1024px) and (max-height: 1366px) {
+
+  .slick-dots {
+    display: none;
+  }
+}
