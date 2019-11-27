@@ -232,12 +232,12 @@ section {
   border-radius: 0 !important;
 
   @include respond-to(xs) {
-    height: 140px;
+    height: auto;
     transition: 0.3s ease-in-out;
   }
 
   @include respond-to(sm) {
-    height: 60px;
+    height: auto;
     transition: 0.3s ease-in-out;
   }
 
