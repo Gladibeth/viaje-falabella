@@ -849,6 +849,7 @@ textarea {
     font-weight: 900;
     margin-bottom: -20px;
     text-transform: uppercase;
+    line-height: 1;
   }
 
   &.main-articles__title--small {
@@ -1031,11 +1032,12 @@ footer {
       }
 
       @include respond-to(sm) {
-        line-height: 5rem;
+        line-height: 2rem;
+        font-size: 50px !important;
       }
 
       @include respond-to(xs) {
-        line-height: 3rem;
+        line-height: 2rem;
         margin-bottom: -20px;
         font-size: 27px !important;
       }
@@ -1112,7 +1114,7 @@ footer {
 .main-parallax__btn {
   display: flex;
   justify-content: start;
-  margin-left: 10px;
+  // margin-left: 10px;
 }
 
 .main-posts__sidebar {
@@ -1891,6 +1893,10 @@ input {
 /**Post*/
 
 .main-parallax__title h1 {
+  @include respond-to(sm) {
+    font-size: 75px !important;
+  }
+
   @include respond-to(xs) {
 
     font-size: 40px !important;
@@ -2296,7 +2302,7 @@ hr.main-articles__line {
 
 .main-brand {
   @media (min-width: 768px) and (max-width: 991px) {
-    width: inherit !important;
+    width: 100% !important;
   }
 
   @include respond-to(sm) {
@@ -2674,6 +2680,12 @@ hr.main-articles__line {
   font-size: 30px;
   margin-top: 0;
   margin-left: -20px;
+
+  @include respond-to(sm) {
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 0px;
+  }
 
   @include respond-to(xs) {
     font-size: 30px;
@@ -3598,11 +3610,7 @@ hr.main-articles__line {
   }
 }
 
-ul.breadcrumb {
-  padding: 20px 16px;
-  list-style: none;
-  background-color: transparent;
-}
+
 
 ul.breadcrumb li {
   display: inline;
@@ -3614,9 +3622,13 @@ ul.breadcrumb li {
 }
 
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 20px 0px;
   list-style: none;
   background-color: transparent;
+
+  @include respond-to(sm) {
+    padding: 0;
+  }
 
   li {
     display: none;
@@ -3930,12 +3942,33 @@ ul.breadcrumb li a:hover {
   display: block
 }
 
-;
+.sidebar {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
 
 @media (min-width: 1920px) and (max-height: 1080px) {
   .main-slider__next {
     right: -120px;
     bottom: 0;
     width: 440px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .main-detailsposts__content .main-posts__box .aligncenter {
+    text-align: center;
+    width: 100% !important;
+    object-fit: cover;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 1366px) {
+
+  .slick-dots {
+    display: none;
   }
 }
