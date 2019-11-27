@@ -3942,12 +3942,26 @@ ul.breadcrumb li a:hover {
   display: block
 }
 
-;
+.sidebar {
+  @include respond-to(sm) {
+    display: none;
+  }
+}
 
 @media (min-width: 1920px) and (max-height: 1080px) {
   .main-slider__next {
     right: -120px;
     bottom: 0;
     width: 440px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .main-detailsposts__content .main-posts__box .aligncenter {
+    text-align: center;
+    width: 100% !important;
+    object-fit: cover;
+    height: 500px;
   }
 }
