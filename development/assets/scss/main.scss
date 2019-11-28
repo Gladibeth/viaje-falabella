@@ -3681,6 +3681,9 @@ ul.breadcrumb li a:hover {
     flex-direction: column;
     color: #fff;
     font-family: $beauSans;
+    @media (max-width: 768px){
+      font-size: 40px !important;
+    }
   }
 
   span {
@@ -3710,9 +3713,23 @@ ul.breadcrumb li a:hover {
   height: 400px;
 }
 
-.main-about__title {
-  p {
-    font-size: 50px;
+.main-about__text {
+  /*renny*/
+  @media (max-width: 360px){
+    p{font-size: 18px !important;}
+  }
+  @media (min-width: 361px) and (max-width: 480px){
+    p{font-size: 20px !important;}
+  }
+  @media (min-width: 481px) and (max-width: 768px){
+    p{font-size: 25px !important;}
+  }
+  @media (max-width: 1200px){
+    p{font-size: 40px !important;}
+  }
+}
+  /*p {
+     font-size: 50px;
     color: #3fae2a;
     font-weight: 900;
     margin: 0 !important;
@@ -3721,8 +3738,8 @@ ul.breadcrumb li a:hover {
     font-family: $beauSans;
     text-transform: uppercase;
     margin: auto;
-  }
-}
+  } */
+
 
 .main-size--text {
   p {
@@ -3974,5 +3991,13 @@ ul.breadcrumb li a:hover {
 
   .main-parallax__title.main-parallax__title--post {
     bottom: 300px;
+  }
+}
+@media (max-width: 768px){
+  #site1,#site2,#site3,#site4,#site5{
+    display: none !important;
+  }
+  #site_1,#site_2,#site_3,#site_4,#site_5{
+    display: block !important;
   }
 }
