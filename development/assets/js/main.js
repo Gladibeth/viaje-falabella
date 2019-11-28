@@ -335,3 +335,175 @@ $(window).on("load", function (e) {
     $('header').css('z-index', '9');
   });
 });
+
+
+//select
+var select = document.getElementById('sucursales');
+select.addEventListener('change',
+  function(){
+
+    var selectedOption = this.options[select.selectedIndex];
+    console.log(selectedOption.value);
+    $('.ciudad').removeClass( "js-mostrarCiudad" );
+    $('#'+selectedOption.value).addClass( "js-mostrarCiudad" );
+    if(selectedOption.value === 'bogota'){
+      //oculto el contenido
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+
+      //muestro mapa
+        $('#mapa-bogota').removeClass( "js-ocultarCiudad" );
+    }
+    else if(selectedOption.value === 'chia'){
+      //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+       //muestro mapa
+        $('#mapa-chia').removeClass( "js-ocultarCiudad" );
+    }
+    else if(selectedOption.value === 'medellin'){
+       //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+      //muestro mapa
+        $('#mapa-medellin').removeClass( "js-ocultarCiudad" );
+    }
+    else if(selectedOption.value === 'cali'){
+      //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-bucaramanga').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+      //muestro mapa
+        $('#mapa-cali').removeClass( "js-ocultarCiudad" );
+    }
+    else if(selectedOption.value === 'bucaramanga'){
+      //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+       //muestro mapa
+        $('#mapa-bucaramanga').removeClass( "js-ocultarCiudad" );
+    }
+
+    else if(selectedOption.value === 'barranquilla'){
+      //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+       //muestro mapa
+        $('#mapa-barranquilla').removeClass( "js-ocultarCiudad" );
+    }
+
+    else if(selectedOption.value === 'pereira'){
+      //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#manizales').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+        $('#mapa-manizales').addClass( "js-ocultarCiudad" );
+       //muestro mapa
+        $('#mapa-pereira').removeClass( "js-ocultarCiudad" );
+    }
+
+    else if(selectedOption.value === 'manizales'){
+      //oculto el contenido
+        $('#bogota').addClass( "js-ocultarCiudad" );
+        $('#chia').addClass( "js-ocultarCiudad" );
+        $('#medellin').addClass( "js-ocultarCiudad" );
+        $('#cali').addClass( "js-ocultarCiudad" );
+        $('#barranquilla').addClass( "js-ocultarCiudad" );
+        $('#pereira').addClass( "js-ocultarCiudad" );
+      //oculto el mapa
+        $('#mapa-bogota').addClass( "js-ocultarCiudad" );
+        $('#mapa-chia').addClass( "js-ocultarCiudad" );
+        $('#mapa-medellin').addClass( "js-ocultarCiudad" );
+        $('#mapa-cali').addClass( "js-ocultarCiudad" );
+        $('#mapa-barranquilla').addClass( "js-ocultarCiudad" );
+        $('#mapa-pereira').addClass( "js-ocultarCiudad" );
+       //muestro mapa
+        $('#mapa-manizales').removeClass( "js-ocultarCiudad" );
+    }
+   /*  console.log('#mapa-'+selectedOption.value); */
+  });

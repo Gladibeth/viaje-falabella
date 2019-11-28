@@ -115,7 +115,7 @@
             <a class="nav-link" href="<?php echo bloginfo('url').'/sobre-nosotros/';?>">Sobre nosotros</a>
           </li>
         
-          <div class="main-nav__search main-nav__search--none  ">
+          <div class="main-nav__search ">
             <div class="content-nav icon-nav">
               <?php  get_search_form();?>
             </div>              
