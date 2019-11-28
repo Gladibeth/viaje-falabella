@@ -518,7 +518,7 @@ textarea {
         position: absolute;
         width: 20%;
         height: 100%;
-        background-color: #545759;
+        // background-color: #545759;
         bottom: 0;
         right: 0;
       }
@@ -665,6 +665,7 @@ textarea {
 
   @include respond-to(xs) {
     margin-top: -150px;
+    padding-top: 60px;
   }
 }
 
@@ -703,6 +704,10 @@ textarea {
 
 .main-post {
   margin-top: 100px;
+
+  @include respond-to(xs) {
+    margin-top: 50px;
+  }
 }
 
 .main-post__content {
@@ -850,12 +855,20 @@ textarea {
     margin-bottom: -20px;
     text-transform: uppercase;
     line-height: 1;
+
+    @include respond-to(xs) {
+      font-size: 30px;
+    }
   }
 
   &.main-articles__title--small {
     p {
       font-size: 35px;
       line-height: 1;
+
+      @include respond-to(xs) {
+        font-size: 30px;
+      }
     }
   }
 
@@ -980,8 +993,12 @@ footer {
 }
 
 .main-parallax__title {
+  // position: absolute;
+  // bottom: 40%;
+  // left: 10%;
   position: absolute;
-  bottom: 40%;
+  top: 55%;
+  transform: translateY(-55%);
   left: 10%;
 
   h1 {
@@ -1002,25 +1019,25 @@ footer {
   }
 
   &.main-parallax__title--post {
-    bottom: 120px;
+    // bottom: 120px;
     font-family: $beauSans;
 
-    @include respond-to(xl) {
-      bottom: 120px;
-    }
+    // @include respond-to(xl) {
+    //   bottom: 120px;
+    // }
 
-    @include respond-to(md) {
-      bottom: 40px;
-    }
+    // @include respond-to(md) {
+    //   bottom: 40px;
+    // }
 
-    @include respond-to(sm) {
-      left: 9%;
-    }
+    // @include respond-to(sm) {
+    //   left: 9%;
+    // }
 
-    @include respond-to(xs) {
-      bottom: 50px;
-      left: 9%;
-    }
+    // @include respond-to(xs) {
+    //   bottom: 50px;
+    //   left: 9%;
+    // }
 
     h1 {
       font-size: 80px;
@@ -1045,9 +1062,9 @@ footer {
   }
 
   &.main-parallax__title-center {
-    @include respond-to(xs) {
-      bottom: 40%;
-    }
+    // @include respond-to(xs) {
+    //   bottom: 40%;
+    // }
   }
 }
 
@@ -1874,12 +1891,12 @@ input {
 }
 
 .main-parallax__title {
-  @include respond-to(xs) {
+  // @include respond-to(xs) {
 
-    position: absolute;
-    bottom: 50px;
-    left: 8%;
-  }
+  //   position: absolute;
+  //   bottom: 50px;
+  //   left: 8%;
+  // }
 
   .span_tabs {
     @include respond-to(xs) {
@@ -2050,15 +2067,7 @@ input {
   }
 }
 
-// .main-nav__search--none {
-//   @include respond-to(xs) {
-//     display: none !important;
-//   }
 
-//   @include respond-to(sm) {
-//     display: none !important;
-//   }
-// }
 
 .main-post__box {
   @include respond-to(xs) {
@@ -2758,11 +2767,11 @@ hr.main-articles__line {
 }
 
 .main-parallax__title {
-  @include respond-to(md) {
-    position: absolute;
-    bottom: 40%;
-    left: 4%;
-  }
+  // @include respond-to(md) {
+  //   position: absolute;
+  //   bottom: 40%;
+  //   left: 4%;
+  // }
 }
 
 .span_tabs {
@@ -2801,9 +2810,9 @@ hr.main-articles__line {
 }
 
 .main-parallax__title--post {
-  @include respond-to(xl) {
-    bottom: 120px;
-  }
+  // @include respond-to(xl) {
+  //   bottom: 120px;
+  // }
 }
 
 #preloader {
@@ -3930,7 +3939,7 @@ ul.breadcrumb li a:hover {
 
 @media (min-width: 1024px) and (max-height: 1366px) {
   .main-parallax__title.main-parallax__title--post {
-    bottom: 90px !important;
+    // bottom: 90px !important;
   }
 }
 
@@ -3971,4 +3980,24 @@ ul.breadcrumb li a:hover {
   .slick-dots {
     display: none;
   }
+
+  .main-parallax__title.main-parallax__title--post {
+    // bottom: 300px;
+  }
+}
+
+.dropdown-item img {
+  filter: brightness(1);
+
+  @include respond-to(sm) {
+    filter: brightness(0.5);
+  }
+
+  @include respond-to(xs) {
+    filter: brightness(0.5);
+  }
+}
+
+.dropdown-item img.icon-nav-color {
+  filter: brightness(0.5);
 }
