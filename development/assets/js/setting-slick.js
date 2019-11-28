@@ -128,7 +128,7 @@ $slick.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        arrows: true,
+        arrows: false,
         autoplay: false,
         autoplaySpeed: 1000
       }

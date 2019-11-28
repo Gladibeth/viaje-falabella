@@ -66,24 +66,25 @@
             <div aria-labelledby="dropdown01" class="dropdown-menu">
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/europa';?>">
-                    <img id="site1" alt="Icono Europa" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
-                    <img id="site_1" alt="Icono Europa" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png">
+                    <img id="icons-nav" alt="Icono Europa" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-europa-01.svg">
+                    <!-- <img id="site_1" alt="Icono Europa" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site1.png"> -->
+                    
                     Europa
                   
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/caribe';?>">
-                    <img id="site2" alt="Icono Caribe" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-caribe-01.svg">
-                    <img id="site_2" alt="Icono Caribe" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png">
+                    <img id="icons-nav" alt="Icono Caribe" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-caribe-01.svg">
+                    <!-- <img id="site_2" alt="Icono Caribe" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site2.png"> -->
                     Caribe
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/turquia';?>">
-                    <img id="site3" alt="Icono Turquia" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-turquia-01.svg">
-                    <img id="site_3" alt="Icono Turquia" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site3.png">
+                    <img id="icons-nav" alt="Icono Turquia" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-turquia-01.svg">
+                    <!-- <img id="site_3" alt="Icono Turquia" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site3.png"> -->
                     Turquía
                   </a>
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_destinos/resto-del-mundo';?>">
-                    <img id="site4" alt="Icono resto del mundo" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-resto-del-mundo-01.svg">
-                    <img id="site_4" alt="Icono resto del mundo" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site4.png">
+                    <img id="icons-nav" alt="Icono resto del mundo" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono-resto-del-mundo-01.svg">
+                    <!-- <img id="site_4" alt="Icono resto del mundo" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/site4.png"> -->
                     Resto del mundo
                   </a>
               </div>
@@ -114,7 +115,7 @@
             <a class="nav-link" href="<?php echo bloginfo('url').'/sobre-nosotros/';?>">Sobre nosotros</a>
           </li>
         
-          <div class="main-nav__search main-nav__search--none  ">
+          <div class="main-nav__search ">
             <div class="content-nav icon-nav">
               <?php  get_search_form();?>
             </div>              

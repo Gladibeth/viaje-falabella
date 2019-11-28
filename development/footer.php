@@ -37,6 +37,7 @@
     </div>
   </div>
 
+  <!-- <script async src="<?php // echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script> -->
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/media_0px.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/slick.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/slick-theme.css" rel="stylesheet">

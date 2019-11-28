@@ -9,7 +9,6 @@
           <h1><?php echo $title[0];?>
             <span><?php echo $title[1];?></span>
           </h1>
-
         </div>
       </div>
     </div>
