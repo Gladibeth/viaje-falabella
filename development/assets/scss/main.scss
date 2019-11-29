@@ -3384,6 +3384,16 @@ hr.main-articles__line {
   transform-origin: 0 50%;
   transition: 275ms ease;
 
+  @include respond-to(sm) {
+    border-bottom: 1px solid #000;
+    color: #000;
+  }
+
+  @include respond-to(xs) {
+    border-bottom: 1px solid #000;
+    color: #000;
+  }
+
   &.icon-scroll {
     color: #000;
   }
@@ -3417,6 +3427,14 @@ hr.main-articles__line {
   right: 10px;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+  @include respond-to(sm) {
+    color: #000;
+  }
+
+  @include respond-to(xs) {
+    color: #000;
+  }
 
   &.icon-scroll {
     color: #000;
@@ -3977,8 +3995,8 @@ ul.breadcrumb li a:hover {
 
 @media (min-width: 768px) and (max-height: 1024px) {
   .main-nav__search {
-    width: 100%;
-    position: inherit !important;
+    // width: 100%;
+    // position: inherit !important;
   }
 }
 
@@ -4015,7 +4033,7 @@ ul.breadcrumb li a:hover {
 
   .main-nav__search {
     width: 100% !important;
-    position: inherit !important;
+    position: inherit;
     right: 0;
   }
 
