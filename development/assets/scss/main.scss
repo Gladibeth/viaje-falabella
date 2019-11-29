@@ -175,15 +175,20 @@ section {
   position: absolute;
   right: 0;
 
+  @include respond-to(md) {
+    position: absolute !important;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+    // position: inherit;
+  }
+
   @include respond-to(xs) {
     width: 100%;
     position: inherit;
   }
 
-  @include respond-to(sm) {
-    width: 100%;
-    position: inherit !important;
-  }
 
   &.main-nav__search--scroll {
     a {
@@ -3978,7 +3983,7 @@ ul.breadcrumb li a:hover {
 @media (min-width: 768px) and (max-height: 1024px) {
   .main-nav__search {
     width: 100%;
-    position: inherit !important;
+    // position: inherit;
   }
 }
 
@@ -4015,7 +4020,7 @@ ul.breadcrumb li a:hover {
 
   .main-nav__search {
     width: 100% !important;
-    position: inherit !important;
+    position: inherit;
     right: 0;
   }
 

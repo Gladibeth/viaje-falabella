@@ -37,7 +37,6 @@
     </div>
   </div>
 
-  <!-- <script async src="<?php // echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script> -->
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/media_0px.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/slick.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/slick-theme.css" rel="stylesheet">
@@ -54,3 +53,16 @@
   <?php wp_footer(); ?> <!-- funcion de footer para traer los cambios en el footer -->
 </body>
 </html>
+<script>
+var select = document.getElementById('sucursales');
+select.addEventListener('change',
+  function(){
+
+    var selectedOption = this.options[select.selectedIndex];
+    console.log(selectedOption.value);
+    $('.ciudad').removeClass( "js-mostrarCiudad" );
+    $('#'+selectedOption.value).addClass( "js-mostrarCiudad" );
+    $('#papa-medellin').addClass( "js-mostrarCiudad" );
+    console.log('#mapa-'+selectedOption.value);
+  });
+</script>
