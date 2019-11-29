@@ -175,15 +175,20 @@ section {
   position: absolute;
   right: 0;
 
+  @include respond-to(md) {
+    position: absolute !important;
+  }
+
+  @include respond-to(sm) {
+    width: 100%;
+    // position: inherit;
+  }
+
   @include respond-to(xs) {
     width: 100%;
     position: inherit;
   }
 
-  @include respond-to(sm) {
-    width: 100%;
-    position: inherit !important;
-  }
 
   &.main-nav__search--scroll {
     a {

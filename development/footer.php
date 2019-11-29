@@ -37,18 +37,19 @@
     </div>
   </div>
 
-  <!-- <script async src="<?php // echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script> -->
+  <script async src="<?php  echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/media_0px.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/slick.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/slick-theme.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/icofont.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/font-awesome.css" rel="stylesheet">
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  -->
   <!-- <script async src="<?php //echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script> -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.14.0/lazyload.min.js"></script>
     <script defer src="<?php echo get_template_directory_uri();?>/assets/js/configuration-lazyload.js"></script>
   <script defer src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
-  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script defer src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
+  <!-- <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
   <script defer src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
   <script defer src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
   <?php wp_footer(); ?> <!-- funcion de footer para traer los cambios en el footer -->
