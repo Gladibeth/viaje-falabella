@@ -28,6 +28,14 @@
   color: $green;
   font-family: $beauSans;
   font-weight: 900;
+
+  @include respond-to(sm) {
+    font-size: 30px
+  }
+
+  @include respond-to(xs) {
+    font-size: 30px
+  }
 }
 
 .modal-subtitle {
