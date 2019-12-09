@@ -26,6 +26,9 @@
         <div class="main-footer__redes">
           <?php if (!dynamic_sidebar('Footer copyright')); ?>
         </div>
+        <div class="main-footer__advertencia">
+        <?php if (!dynamic_sidebar('Footer advertencia')); ?>
+        </div>
         
       </div>
     </div>
@@ -53,16 +56,3 @@
   <?php wp_footer(); ?> <!-- funcion de footer para traer los cambios en el footer -->
 </body>
 </html>
-<script>
-var select = document.getElementById('sucursales');
-select.addEventListener('change',
-  function(){
-
-    var selectedOption = this.options[select.selectedIndex];
-    console.log(selectedOption.value);
-    $('.ciudad').removeClass( "js-mostrarCiudad" );
-    $('#'+selectedOption.value).addClass( "js-mostrarCiudad" );
-    $('#papa-medellin').addClass( "js-mostrarCiudad" );
-    console.log('#mapa-'+selectedOption.value);
-  });
-</script>

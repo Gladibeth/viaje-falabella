@@ -262,6 +262,13 @@ if(function_exists('register_sidebar')) {
     'description' => 'copyright',
 
   ));
+
+  register_sidebar(array(
+    'name'          => 'Footer advertencia',
+    'id'            => 'footer-advertencia',
+    'description' => 'advertencia',
+
+  ));
 };
 //+++++++++++++++++++++++++++++++++++ end siderbar
 

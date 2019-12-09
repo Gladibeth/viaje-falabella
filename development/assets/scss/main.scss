@@ -3590,7 +3590,7 @@ hr.main-articles__line {
   p {
     color: #545759;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: $beauSans;
     letter-spacing: -0.21px;
   }
@@ -3622,6 +3622,22 @@ hr.main-articles__line {
   p {
     color: #3FAE2A;
     font-size: 18px;
+    font-style: italic;
+    text-align: center;
+
+    @include respond-to(xs) {
+      text-align: center;
+    }
+  }
+}
+
+.main-footer__advertencia {
+  margin: 0px auto;
+  width: 100%;
+
+  p {
+    color: #3FAE2A;
+    font-size: 14px;
     font-style: italic;
     text-align: center;
 
