@@ -858,7 +858,7 @@ textarea {
     margin: 0;
     font-family: $beauSans;
     font-weight: 900;
-    margin-bottom: -20px;
+    margin-bottom: -10px;
     text-transform: uppercase;
     line-height: 1;
 
@@ -3675,11 +3675,11 @@ ul.breadcrumb {
 
 }
 
-ul.breadcrumb li+li+li:before {
+/* ul.breadcrumb li+li+li:before {
   padding: 8px;
   color: #fff;
   content: ">";
-}
+} */
 
 ul.breadcrumb li a {
   color: #fff;
@@ -3707,7 +3707,7 @@ ul.breadcrumb li a:hover {
 
 .main-about__bannertitle {
   h1 {
-    font-size: 60px;
+    font-size: 90px;
     text-transform: uppercase;
     font-weight: 700;
     display: flex;
@@ -3902,7 +3902,7 @@ ul.breadcrumb li a:hover {
 
   p {
     text-align: center;
-    color: #3fae2a;
+    color: #545759;
     transition: 0.3s ease-in-out;
     font-family: PF BeauSans Pro, sans-serif;
     margin-right: 20px;
@@ -4073,3 +4073,5 @@ ul.breadcrumb li a:hover {
 .dropdown-item img.icon-nav-color {
   filter: brightness(0.5);
 }
+
+/* ul.breadcrumb {display: none;} */

@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   $('.main-about__slider').slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 3,
     dots: true,
     arrows: true,

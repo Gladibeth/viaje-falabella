@@ -28,7 +28,7 @@
               <hr class="main-about__line">
               <div class="main-about__subtitle">
                 <p>
-                  20 RAZONES PARA COMPRAR EN 
+                  10 RAZONES PARA COMPRAR EN 
                   <span>VIAJES FALABELLA</span>
                 </p>
               </div>
@@ -37,6 +37,7 @@
               <?php
                 $args = array(
                 'post_type' => 'galerias',
+                'showposts'=> 10
               );
                 $loop = new WP_Query( $args );
               ?>

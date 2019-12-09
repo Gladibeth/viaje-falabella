@@ -18,12 +18,10 @@ $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')
 	<?php endif;?>
 	<div>
 		<ul class="breadcrumb">
-			<?php
-				$breadcrumbs = wp_get_post_terms( $post->ID, $taxonomy->taxonomy, array( 'order' => 'DESC' ) );
-			?>
-			<?php foreach ($breadcrumbs as $breadcrumb):?>
-			<li><a href="<?php echo bloginfo('url').'/'.$taxonomy->taxonomy.'/'.$breadcrumb->slug;?>"><?php echo $breadcrumb->name;?></a><li>
-			<?php endforeach;?>
+			<?php if(function_exists('bcn_display'))
+			{
+				bcn_display();
+			}?>
 		</ul>
 	</div>	
 	<div class="main-parallax__btn">

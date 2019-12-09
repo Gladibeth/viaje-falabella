@@ -24,12 +24,10 @@
 		  <span><?php echo $taxonomy->description;?></span>
 	  <?php endif;?>
     <ul class="breadcrumb">
-			<?php
-				$breadcrumbs = wp_get_post_terms( $post->ID, $taxonomy->taxonomy, array( 'order' => 'DESC' ) );
-			?>
-			<?php foreach ($breadcrumbs as $breadcrumb):?>
-			<li><a href="<?php echo bloginfo('url').'/'.$taxonomy->taxonomy.'/'.$breadcrumb->slug;?>"><?php echo $breadcrumb->name;?></a><li>
-			<?php endforeach;?>
+			
+		
+			<li><li>
+			
 		</ul>
     <div class="main-parallax__btn">
       
