@@ -216,6 +216,16 @@ if(function_exists('register_sidebar')) {
   ));
 
   register_sidebar(array(
+    'name'          => 'sidebar',
+    'id'            => 'sidebar',
+    'description' => 'Insertar imagen del viajero del mes tamaño: 555x555',
+    'before_widget' => '<div class="main-post__img">',
+    'after_widget'  => '</div>'
+
+  ));
+
+
+  register_sidebar(array(
     'name'          => 'Footer columna 1',
     'id'            => 'footer-1',
     'description' => 'Listado footer 1',

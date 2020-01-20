@@ -53,7 +53,7 @@
             <img id="iso" alt="logo Viajesfalabella" src="<?php echo get_template_directory_uri();?>/assets/img/logo.png">
             <img id="iso_green" alt="logo Viajesfalabella" class="display_none" src="<?php echo get_template_directory_uri();?>/assets/img/logo-b.png">
           </a>
-        <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
+        <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button" onclick="menuHamburguesa()">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -119,8 +119,8 @@
             <div class="content-nav icon-nav">
               <?php  get_search_form();?>
             </div>              
-            <a class="main-nav__mail" data-toggle="modal" href="#exampleModal">
-              <img  alt="Icono Email" class="lazy" data-src="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
+            <a class="main-nav__mail js-formulario" data-toggle="modal" href="#formulario" >
+              <img  alt="Icono Email" src="<?php bloginfo('template_url') ?>/assets/img/icons/Group 4.svg">
             </a>
           </div> 
         </ul>

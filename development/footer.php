@@ -33,7 +33,7 @@
       </div>
     </div>
   </footer>
-  <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog"
+  <div aria-hidden="true" aria-labelledby="formularioLabel" class="modal fade" id="formulario" role="dialog"
     tabindex="-1">
     <div class="modal-dialog">
       <?php echo do_shortcode('[contact-form-7 id="49" title="Formulario"]'); ?>

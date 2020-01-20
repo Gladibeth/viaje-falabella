@@ -1,3 +1,42 @@
+  //saber página actual
+  const page = window.location.pathname;
+  //localStorage
+  // verifica que el localStorage sea null para mostrar el mensaje
+  if( !localStorage.getItem('ingreso') ){
+    $( document ).ready(function() {
+      setTimeout(function(){
+        $("#formulario").addClass('show');
+        $("#formulario").css('padding-right','8px');
+        $("#formulario").css('display','block');
+      }, 1000);
+    });
+    function  closeModal() {
+      $("#formulario").removeClass('show');
+      $("#formulario").removeClass('face');
+      $("#formulario").css('display','none');
+    }
+
+  // estableces el localstorage en 1 para que no se vuelva a cumplir la condicion
+  localStorage.setItem('ingreso',1); 
+  
+  } else {
+    if (page == '/'){
+      $( document ).ready(function() {
+        setTimeout(function(){
+          $("#formulario").addClass('show');
+          $("#formulario").css('padding-right','8px');
+          $("#formulario").css('display','block');
+        }, 1000);
+      });
+      function  closeModal() {
+        $("#formulario").removeClass('show');
+        $("#formulario").removeClass('face');
+        $("#formulario").css('display','none');
+      }
+    }
+  }
+
+
 $(function () {
   'use strict'
 
@@ -65,7 +104,7 @@ $(window).scroll(function () {
     $('.searchBox').addClass('searchBox--scroll');
     $('.searchBox').addClass('searchBox--scroll');
     $('.hamburger-inner').addClass('js-hamburger');
-    $('.search-wrapper input').addClass('icon-scroll');
+    $('.search-wrapper input').addClass('searchInput--scroll');
     $('.search-wrapper i').addClass('icon-scroll');
 
   } else {
@@ -90,7 +129,7 @@ $(window).scroll(function () {
     $('.searchButton').removeClass('searchButton--scroll');
     $('.searchInput').addClass('searchInput--scroll');
     $('.hamburger-inner').removeClass('js-hamburger');
-    $('.search-wrapper input').removeClass('icon-scroll');
+    $('.search-wrapper input').removeClass('searchInput--scroll');
     $('.search-wrapper i').removeClass('icon-scroll');
   }
 });
@@ -114,18 +153,15 @@ $(".hamburger").on("click", function () {
     $('.nav-link').addClass('fixed-color');
     $('html').css('overflow', 'hidden ');
 
-
   } else {
     $(this).removeClass("is-active")
+    $('html').css('overflow', 'auto');
     if ($(document).scrollTop() <= 70 && ($(window).width() >= 0)) {
       $('.navbar-fixed-js').removeClass('fixed');
       $('.hamburger-inner').removeClass('js-hamburger');
       $("#iso").removeClass('display_none');
       $('#iso_green').removeClass('display_block')
       $('.nav-link').removeClass('fixed-color');
-      $('html').css('overflow', 'hidden auto');
-
-
     }
   }
 });
@@ -507,3 +543,5 @@ select.addEventListener('change',
     }
    /*  console.log('#mapa-'+selectedOption.value); */
   });
+
+

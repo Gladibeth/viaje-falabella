@@ -63,6 +63,12 @@
   justify-content: flex-start;
   border-top: 1px solid transparent;
   width: 100%;
+  & .btn_modal input{
+    cursor: pointer;
+  }
+  & .btn_modal:focus{
+    border:none;
+  }
 }
 
 .modal-footer__content {
@@ -125,6 +131,14 @@
   max-width: 850px;
   height: 500px;
   overflow: hidden;
+
+  @include respond-to(sm){
+    height: 550px;
+  }
+
+  @include respond-to(xs){
+    height: auto;
+  }
 }
 
 .main-modal__title {

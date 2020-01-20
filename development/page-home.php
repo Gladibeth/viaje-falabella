@@ -33,17 +33,16 @@
               <a href="<?php the_permalink(); ?>" class="btn-light">
                 Descubre
               </a>
+              
+         
             </div>
-            <!-- <div class="main-banner__mail">
-              <div class="main-banner__boxmail">
-                <a href="">
-                  <i class="fa fa-envelope-o "></i>
-                  <span></span>
-                  <p>mailing ipsum</p>
-                </a>
-              </div>
-            </div> -->
+            
+
           </div>
+          <a href="#formulario" data-toggle="modal"  class="btn-light main-nav__mail btn-email-banner">
+            <img  alt="Icono Email" src="<?php bloginfo('template_url') ?>/assets/img/icons/email-white.svg">  Conoce nuestras ofertas
+    
+          </a>
           <div class="main-banner__camara">
             <div class="text__camara">
               <p> <?php echo the_field("descripcion_imagen_post"); ?></p>

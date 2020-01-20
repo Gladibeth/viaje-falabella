@@ -23,7 +23,7 @@
         <div class="main-parallax--boxtitle">
 
         <div class="main-parallax--title">
-            <h1><?php //echo $taxonomy[0]->name;?><?php the_title();?></h1>
+            <h1 id="title__post"><?php the_title();?></h1>
         
             <div class="main-parallax__btn">
                 <div class="btn_custom btn--medium btn--filled--decoration">

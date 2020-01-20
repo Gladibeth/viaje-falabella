@@ -8,11 +8,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: initial;
 }
 
 body {
   background-color: #eee !important;
-
+  overflow-x: initial;
   &.fixed {
     overflow-y: hidden;
   }
@@ -398,7 +399,7 @@ textarea {
       p {
         padding: 0 25px;
         color: $white;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 800;
         line-height: 1;
         margin: 0;
@@ -435,7 +436,7 @@ textarea {
 
 .main-slider__next {
   // position: absolute;
-  right: 0;
+  right: -30px;
   bottom: 0;
   width: 440px;
 
@@ -492,6 +493,9 @@ textarea {
         margin: 0;
         font-family: $beauSans;
         font-weight: 900;
+        & p {
+          color: $white;
+        }
       }
 
       .main-slider__description {
@@ -719,6 +723,7 @@ textarea {
 .main-post__content {
   display: grid;
   grid-template-columns: 30% 70%;
+  
 
   .main-post__box {
     background-color: $white;
@@ -765,6 +770,10 @@ textarea {
 
   .main-post__img {
     height: 600px;
+
+    @include respond-to(sm){
+      height: auto;
+    }
 
     a {
       img {
@@ -861,7 +870,9 @@ textarea {
     margin-bottom: -10px;
     text-transform: uppercase;
     line-height: 1;
-
+    @include respond-to(md) {
+      font-size: 30px;
+    }
     @include respond-to(xs) {
       font-size: 30px;
     }
@@ -871,7 +882,9 @@ textarea {
     p {
       font-size: 35px;
       line-height: 1;
-
+      @include respond-to(md) {
+        font-size: 30px;
+      }
       @include respond-to(xs) {
         font-size: 30px;
       }
@@ -1470,6 +1483,10 @@ footer {
 .main-post__content {
   display: grid;
   grid-template-columns: 50% 50%;
+
+  @include respond-to(sm){
+    grid-template-columns: 100%;
+  }
 }
 
 .main-post__info {
@@ -1767,12 +1784,18 @@ input {
 }
 
 .slider-container .slider-left {
+  @include respond-to(sm){
+    top:104%;
+  }
   @include respond-to(xs) {
     top: 78%;
   }
 }
 
 .slider-container .slider-right {
+  @include respond-to(sm){
+    top: 104%;
+  }
   @include respond-to(xs) {
     top: 78%;
   }
@@ -2739,9 +2762,13 @@ hr.main-articles__line {
 }
 
 .main-slider__next {
+
+  @include respond-to(xl){
+    right: -30px;
+  }
   @include respond-to(md) {
     bottom: 0 !important;
-    right: -25%;
+    right: -30%;
   }
 }
 
@@ -3123,18 +3150,24 @@ hr.main-articles__line {
   border-bottom: 1px solid #fff;
 
   &::placeholder {
-    color: #fff !important;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+
+    @include respond-to(xs){
+      color: #000;
+    }
+  }
+  &.searchInput--scroll {
+    color: #000;
+    border-bottom: 1px solid #000;
+  
+    &::placeholder {
+      color: #000 !important;
+    }
   }
 }
 
-.searchInput--scroll {
-  color: #000;
-  border-bottom: 1px solid #000;
 
-  &::placeholder {
-    color: #000 !important;
-  }
-}
 
 @media screen and (max-width: 620px) {
   .searchBox:hover>.searchInput {
@@ -3278,7 +3311,7 @@ hr.main-articles__line {
   justify-content: space-around;
 
   h1 {
-    font-size: 90px;
+    font-size: 70px;
     color: #fff;
     font-weight: 800;
     line-height: 1rem;
@@ -3360,7 +3393,7 @@ hr.main-articles__line {
 }
 
 .search-wrapper.focused {
-  width: 170px;
+  width: 300px;
 
   @include respond-to(md) {
     width: 130px;
@@ -3368,10 +3401,24 @@ hr.main-articles__line {
 }
 
 .search-wrapper.focused input {
-  padding: 0 40px 0 13px;
-  width: 100%;
-  -ms-transform: scale(1);
-  transform: scale(1);
+  // padding: 0 40px 0 13px;
+    width: 45%;
+    transform: scale(1);
+    margin-left: 130px;
+    font-size: 14px;
+  @include respond-to(sm){
+    padding: 0 40px 0 13px;
+    width: 50%;
+    transform: scale(1);
+    margin-left: 110px;
+    font-size: 12px;
+  }
+
+  @include respond-to(xs){
+    width: 60%;
+    margin-left: 80px;
+    
+  }
 }
 
 .search-wrapper input {
@@ -3399,34 +3446,64 @@ hr.main-articles__line {
     color: #000;
   }
 
-  &.icon-scroll {
-    color: #000;
-  }
+  
 }
 
 .search-wrapper input::-webkit-input-placeholder {
-  color: #545759;
+  color: #fff;
+  @include respond-to(sm){
+    color:#000;
+  }
+  @include respond-to(xs){
+    color:#000;
+  }
 }
 
 .search-wrapper input:-ms-input-placeholder {
-  color: #545759;
+  color: #fff;
+  @include respond-to(sm){
+    color:#000;
+  }
+  @include respond-to(xs){
+    color:#000;
+  }
+  
 }
 
 .search-wrapper input::-ms-input-placeholder {
-  color: #545759;
+  color: #fff;
+  @include respond-to(sm){
+    color:#000;
+  }
+  @include respond-to(xs){
+    color:#000;
+  }
 }
 
 .search-wrapper input:-ms-input-placeholder {
-  color: #545759;
+  color: #fff;
+  @include respond-to(sm){
+    color:#000;
+  }
+  @include respond-to(xs){
+    color:#000;
+  }
 }
 
 .search-wrapper input::placeholder {
-  color: #545759;
+  color: #fff;
+  @include respond-to(sm){
+    color:#000;
+  }
+  @include respond-to(xs){
+    color:#000;
+  }
 }
 
 .search-wrapper i {
   position: absolute;
   color: #fff;
+  
   font-size: 18px;
   top: 50%;
   right: 10px;
@@ -3791,6 +3868,24 @@ ul.breadcrumb li a:hover {
   }
 }
 
+
+.main-about__slidertitle{
+  @media (max-width: 1200px) {
+    p {
+      font-size: 18px !important;
+    }
+  }
+}
+
+.main-articles__title p{
+  @media (max-width: 1200px) {
+    p {
+      font-size: 30px;
+    }
+  }
+}
+
+
 /*p {
      font-size: 50px;
     color: #3fae2a;
@@ -4049,7 +4144,7 @@ ul.breadcrumb li a:hover {
     text-align: center;
     width: 100% !important;
     object-fit: cover;
-    height: 500px;
+    height: auto;
   }
 
   .main-nav__search {
@@ -4091,3 +4186,49 @@ ul.breadcrumb li a:hover {
 }
 
 /* ul.breadcrumb {display: none;} */
+#wpcf7-f5-o1 > form > div.modal-dialog > div > div.modal-body > div:nth-child(6) > p > a{
+  text-decoration: underline !important;
+  cursor:pointer;
+}
+
+@media (min-width: 1601px) and (max-width: 1920px) {
+  .main-slider__next{
+    right: -116px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width:1600px){
+    .main-parallax--title h1 {
+        font-size: 50px;
+    }
+}
+
+.btn-email-banner{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  margin-left: 20px;
+  @include respond-to(sm){
+    bottom: 10%;
+    left: 0%;
+  }
+  @include respond-to(xs){
+    bottom: 31%;
+    left: 0%;
+  }
+}
+.btn-email-banner img{
+  margin-right: 10px;
+  width: 40px;
+}
+.btn-email-banner:hover{
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  text-decoration: underline;
+}
