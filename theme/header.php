@@ -9,7 +9,6 @@
 	<link async href="<?php echo get_template_directory_uri();?>/assets/css/bootstrap.min.css" rel="stylesheet">
   <link async href="<?php echo get_template_directory_uri();?>/assets/css/main.css" rel="stylesheet">
 	<?php wp_head(); ?>
-  <title>Viajes</title>
   <?php if (is_tax()):
     $taxonomy = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy')); //obtiene los datos de la taxonomia actual -->
     // Listado de categorias (Recomendaciones y países)
