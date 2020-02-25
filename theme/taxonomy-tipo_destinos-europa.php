@@ -35,16 +35,28 @@
   </section>
   <section class="main-breadcrumb">
     <div class="container">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Recomendaciones</a>
-        </li>
-        <span class="span_tabs">/</span>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Paises</a>
-        </li>
-       
-      </ul>
+      <div class="destinations__tabs">
+        <ul class="nav nav-pills mb-3 tabs-left" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Recomendaciones</a>
+          </li>
+          <span class="span_tabs">/</span>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Paises</a>
+          </li>
+        </ul>
+        <div class="destinations__tabs--paquetes">
+          <ul class="nav nav-pills mb-3 tabs-right" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" target="_blank" href=" <?php echo 'https://viajesfalabella.blog/paquetes-en-oferta/category/'.$taxonomy->slug;?>">
+                <span><img alt="Icono Temporada" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-1.svg"></span>
+                <div class="separator"></div>
+                Paquetes en oferta
+              </a>
+            </li>  
+          </ul>
+        </div>
+      </div>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <section class="main-articles" itemscope itemtype="http://schema.org/ScholarlyArticle">

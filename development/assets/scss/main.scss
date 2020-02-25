@@ -2307,6 +2307,49 @@ hr.main-articles__line {
   }
 }
 
+.destinations__tabs{
+  display: flex;
+  justify-content: space-between;
+  .tabs-left{
+    padding-left: 0;
+  }
+  .tabs-right{
+    padding-right:0;
+    margin-right:-15px;
+    a{
+      font-size: 20px;
+      padding: 5px 15px !important;
+      margin-right: 0;
+      background: $green;
+      color:white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .separator{
+    padding: 0;
+    background: white;
+    height: 30px;
+    width: 2px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .destinations__tabs{
+    justify-content: center;
+    flex-wrap: wrap;
+    .tabs-left{
+      padding: 0 20px;
+      margin: 0 !important;
+    }
+    .tabs-right{
+      padding: 0 20px;
+      margin-right:0;
+    }
+  }
+}
 /** responsive 768**/
 
 .slider-nav__banner {
