@@ -94,11 +94,15 @@
             <div aria-labelledby="dropdown02" class="dropdown-menu">
               <div class="sub-drop-destiny">
                 <a class="dropdown-item" href="<?php echo bloginfo('url').'/tipo_productos/temporada/';?>">
-                    <img id="site5" alt="Icono Temporada" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-1.svg">
-                    <img id="site_5" alt="Icono Temporada" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-2.svg">
+                  <img id="site5" alt="Icono Temporada" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-1.svg">
+                  <img id="site_5" alt="Icono Temporada" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/Icono temporadas-2.svg">
                     Temporada
-                  
-                  </a>
+                </a>
+                <a class="dropdown-item" target="_blank" href="<?php echo bloginfo('url').'/paquetes-en-oferta/';?>">
+                  <img id="site6" alt="Icono paquetes en oferta" src="<?php bloginfo('template_url') ?>/assets/img/icons/icono-paquetes-white.svg">
+                  <img id="site_6" alt="Icono paquetes en oferta" class="display_none" src="<?php bloginfo('template_url') ?>/assets/img/icons/icono-paquetes-gray.svg">
+                    Paquetes en oferta
+                </a>
               </div>
             </div>
           </li>

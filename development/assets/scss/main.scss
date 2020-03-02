@@ -912,7 +912,7 @@ hr.main-articles__line {
   bottom: 30px;
   left: 30px;
 }
-
+/* 
 footer {
   padding: 40px 0 10px;
 }
@@ -951,7 +951,7 @@ footer {
       text-decoration: none;
     }
   }
-}
+} */
 
 .main-parallax {
   background-size: cover;
@@ -1894,13 +1894,13 @@ input {
     grid-template-columns: 100%;
   }
 }
-
+/* 
 .main-footer a {
   @include respond-to(xs) {
 
     text-align: center;
   }
-}
+} */
 
 .breadcrumb-item.active {
   @include respond-to(xs) {
@@ -3697,93 +3697,6 @@ hr.main-articles__line {
   }
 }
 
-.main-footer__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-
-  @include respond-to(sm) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @include respond-to(xs) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.main-footer__title {
-  p {
-    color: #545759;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: $beauSans;
-    letter-spacing: -0.21px;
-  }
-}
-
-.main-footer__item ul {
-  padding: 0;
-
-  li {
-    a {
-      font-size: 16px;
-      letter-spacing: -0.18px;
-      color: #989898;
-      font-weight: 100;
-      font-family: $beauSans;
-
-      &:hover {
-        text-decoration: none;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-.main-footer__redes {
-  margin: 20px auto;
-  width: 100%;
-
-  p {
-    color: #3FAE2A;
-    font-size: 18px;
-    font-style: italic;
-    text-align: center;
-
-    @include respond-to(xs) {
-      text-align: center;
-    }
-  }
-}
-
-.main-footer__advertencia {
-  margin: 0px auto;
-  width: 100%;
-
-  p {
-    color: #3FAE2A;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-
-    @include respond-to(xs) {
-      text-align: center;
-    }
-  }
-}
-
-.main-footer__redesitems {
-  display: flex;
-  width: 30%;
-
-  justify-content: space-between;
-  margin: auto;
-
-  a {
-    margin-right: 5px;
-  }
-}
-
 
 
 ul.breadcrumb li {
@@ -3791,7 +3704,6 @@ ul.breadcrumb li {
   font-size: 18px;
   text-transform: uppercase;
   margin-top: 5px;
-
 
 }
 
@@ -3815,12 +3727,6 @@ ul.breadcrumb {
   }
 
 }
-
-/* ul.breadcrumb li+li+li:before {
-  padding: 8px;
-  color: #fff;
-  content: ">";
-} */
 
 ul.breadcrumb li a {
   color: #fff;
@@ -3888,9 +3794,207 @@ ul.breadcrumb li a:hover {
   height: 400px;
 }
 
+//footer
+.footer{ 
+  hr{
+    width:100%; 
+    border-top: 1px solid $gray;
+    margin: 4em 0;
+    @include respond-to(xs) {
+      margin: 3em 0;
+    }
+    
+  }
+  .d-flex{
+    justify-content: center;
+    align-items: center;
+  }
+  .elegirnos{
+    text-align: center;
+      @include respond-to(xs){
+        font-size: 1.5em;
+      }
+      h3{
+        text-align: center;
+        color: $gray;
+      }
+      img{
+        width: 130px;
+        margin: auto;
+      }
+      h4{
+        color: $green;
+        font-size: 1.25em;
+        padding: 20px 0;
+        @include respond-to(xs){
+          font-size: 16px;
+        }
+      }
+      p{
+        font-size: 0.94em;
+        color: $gray;
+        @include respond-to(xs){
+          font-size: 12px;
+        }
+        a{
+            color: $green;
+        } 
+        a:hover {
+            color: $green !important;
+        } 
+      }
+      span {
+        width: 100%;
+        display: block;
+        img{
+          height: 20px;
+          width: 20px;
+        }
+      }
+   }
+  .footer__content{
+    text-align: center;
+    @include respond-to(xs){
+      font-size: 1.5em;
+    }
+    h4{
+      color: #545759;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -.21px;
+      padding: 20px 0 0px;
+      @include respond-to(xs){
+        font-size: 16.8px;
+      }
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+        line-height: 1;
+      }
+    }
+    a{
+      color: $gray;
+      font-size: 14.4px;
+    }
+    a:hover {
+      color: $gray !important;
+    }
+  }
+  .footer__row1--redes{
+      height: 20px;
+      display: flex;
+      width: 50%;
+      @include respond-to(xs){
+        justify-content: center;
+      }
+      a{
+        padding: 0 10px;
+        @include respond-to(xs){
+          padding: 0 2px;
+        }
+      }
+      img{
+        height: 20px;
+      }
+      @include respond-to(xs){
+          margin: 10px 0;
+      }
+  }
+  .footer__row1--ventas{
+      @include respond-to(m-1024){
+          font-size: 1.1em;
+      }
+      @include respond-to(xs){
+          font-size: 1.3em;
+      }
+      p{
+          font-size: 0.94em;
+          color: $gray;
+          font-weight: 600;
+          margin: 0;
+          @include respond-to(xs){
+            font-size: 13.2px;
+          }
+      }
+      a{
+          color: $gray;
+          font-weight: 100;
+      }
+      a:hover {
+          color: $gray !important;
+      }
+  }
+  .footer__row1--whatsapp{
+      @include respond-to(m-1024){
+          font-size: 1.1em;
+      }
+      @include respond-to(xs){
+          font-size: 1.3em;
+      }
+      p{
+          font-size: 0.94em;
+          color: $gray;
+          font-weight: 600;
+          margin: 0;
+          @include respond-to(xs){
+            font-size: 13.2px;
+          }
+      }
+      a{
+          color: $gray;
+          font-weight: 100;
+      }
+      a:hover {
+          color: $gray !important;
+      }
+  }
+  .footer__logo{
+      padding-top: 2em;
+      .row{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+      }
+      img{
+          width: 60px;
+          height: 50px;
+      }
+  }
+  .footer__description{
+      @include respond-to(m-1024){
+          font-size: 1.2em;
+      }
+      @include respond-to(xs){
+          font-size: 1.6em;
+      }
+      color: $gray;
+      a{
+          color: $gray;
+          font-weight: 600;
+      }
+      a:hover {
+          color: $gray !important;
+      }
+      h5{
+          font-size: 13px;
+          font-weight: 600;
+          span{
+              font-weight: 100;
+          }
+      }
+      p{
+          font-size: 13px;
+      }
+  }
+}
+
+
 .main-about__text {
 
   /*renny*/
+  
   @media (max-width: 360px) {
     p {
       font-size: 18px !important;
