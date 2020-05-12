@@ -679,11 +679,14 @@ textarea {
   }
 }
 
-.main-destiny__site {
+.main-destiny__site{
   display: flex;
   font-size: 25px;
   margin-top: -26px;
   color: #3fae2a;
+  a{
+    color: #3fae2a;
+  }
 
   @include respond-to(xs) {
     font-size: 18px;
@@ -952,6 +955,59 @@ footer {
     }
   }
 } */
+.horoscopo{
+  display: flex;
+  flex-wrap: wrap;
+  @include respond-to(sm) {
+    height: 400px;
+  }
+  @include respond-to(xs) {
+    height: 400px;
+  }
+  a{
+    width: 50%;
+    height: 50%;
+    position: relative;
+      .horoscopo__container{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding: 5px;
+      }
+      .mask{
+        margin: 5px;
+      }
+      p{
+        position: absolute;
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 20%;
+        text-align: center;
+        line-height: 1;
+        flex-wrap: wrap;
+      }
+     
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width:600px){
+  .horoscopo{
+    margin-bottom: 360px;
+    a{
+      width: 100%;
+    }
+    p span{
+      width: 100% !important;
+    }
+  }
+}
+
 
 .main-parallax {
   background-size: cover;

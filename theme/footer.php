@@ -115,8 +115,8 @@
 		<div class="footer__logo row3">
 			<div class="container">
 				<div class="row">
-					<!-- <img src="<?php bloginfo('template_url') ?>/assets/img/footer/iata.jpg" alt="icono iata">
-					<img src="<?php bloginfo('template_url') ?>/assets/img/footer/anato.jpg" alt="icono anato"> -->
+					<img src="<?php bloginfo('template_url') ?>/assets/img/footer/iata.jpg" alt="icono iata">
+					<img src="<?php bloginfo('template_url') ?>/assets/img/footer/anato.jpg" alt="icono anato">
 					<hr>
 				</div>
 			</div>

@@ -158,7 +158,9 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                       </div>
                       <div class="main-destiny__text">
-                      <?php echo the_field('ciudad_destino', $category); ?>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <?php echo the_field('ciudad_destino', $category); ?>
+                      </a>
                       </div>
                     </div>
                     <hr class="main-articles__line">
@@ -191,10 +193,92 @@
 
   <section class="main-post">
     <div class="container">
-      <?php if (!dynamic_sidebar('Viajero del mes')); ?>   
-          <?php if (!dynamic_sidebar('Viajero del mes imagen')); ?>
-          
-      </div>
+      <!-- <?php if (!dynamic_sidebar('Contenido del mes left')); ?>   
+        <div class="horoscopo">
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/agua.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-1.png"  alt="agua">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de agua 
+                  <span>♏♋♓</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Aire.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-2.png"  alt="Aire">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de Aire 
+                  <span>♒♊♎</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Tierra.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-3.png"  alt="tierra">
+      <?php if (!dynamic_sidebar('Contenido del mes left')); ?>   
+        <div class="horoscopo">
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/agua.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-1.png"  alt="agua">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de agua 
+                  <span>♏♋♓</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Aire.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-2.png"  alt="Aire">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de Aire 
+                  <span>♒♊♎</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Tierra.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-3.png"  alt="tierra">
+      <?php if (!dynamic_sidebar('Contenido del mes left')); ?>   
+        <div class="horoscopo">
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/agua.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-1.png"  alt="agua">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de agua 
+                  <span>♏♋♓</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Aire.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-2.png"  alt="Aire">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de Aire 
+                  <span>♒♊♎</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Tierra.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-3.png"  alt="tierra">
+      <?php if (!dynamic_sidebar('Contenido del mes left')); ?>   
+        <div class="horoscopo">
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/agua.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-1.png"  alt="agua">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de agua 
+                  <span>♏♋♓</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Aire.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-2.png"  alt="Aire">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de Aire 
+                  <span>♒♊♎</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Tierra.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-3.png"  alt="tierra">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de Tierra 
+                  <span>♐♈♌</span>
+                </p>
+          </a>
+          <a target="_blank" href="https://viajesfalabella.blog/wp-content/uploads/2020/03/Fuego.pdf" class="enlaces">
+                <img class="horoscopo__container" src="https://viajesfalabella.blog/wp-content/uploads/2020/03/zodiaco-4.png"  alt="fuego">
+                <div class="mask"></div>
+                <p>Haz clic aquí si eres un signo de Fuego 
+                  <span>♍♉♑</span>
+                </p>
+          </a>
+        </div>
+      </div> -->
     </div>
   </section>
   <section class="main-articles main-articles-home">
