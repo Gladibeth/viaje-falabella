@@ -158,7 +158,7 @@
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                       </div>
                       <div class="main-destiny__text">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://viajesfalabella.blog/viajes/vida-silvestre-en-africa/" rel="noopener noreferrer">
                         <?php echo the_field('ciudad_destino', $category); ?>
                       </a>
                       </div>

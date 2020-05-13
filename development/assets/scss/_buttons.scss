@@ -39,6 +39,12 @@
   @include respond-to(sm) {
     font-size: 14px;
   }
+  @media all and (max-width: 800px) and (orientation : landscape) {
+    &{
+      padding: 7px 5px !important;
+      min-width: 75px;
+    }
+}
 }
 
 .btn--large {
@@ -127,6 +133,11 @@
 .btn-banner {
   position: absolute;
   left: 6%;
+  @media all and (max-width: 800px) and (orientation : landscape) {
+    &{
+      left: 10%;
+    }
+  }
 }
 
 .btn-light {
@@ -136,6 +147,12 @@
   color: #fff;
   background-color: transparent;
   width: 100px;
+  @media all and (max-width: 800px) and (orientation : landscape) {
+    &{
+      padding: 5px !important;
+      margin-top: 5px !important;
+    }
+  }
 }
 
 .main-post__btn {
